@@ -1,0 +1,20 @@
+{
+  "name": "ANDchievements-UI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "next": "^9.2.1",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
+}
