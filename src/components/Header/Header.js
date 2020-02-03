@@ -1,11 +1,14 @@
 import React from 'react';
-import { HeaderWrapper } from './styles';
-import Logo from '../Logo'
+import { HeaderWrapper, LogoWrapper } from './styles';
+import Logo from '../Logo';
+import Link from 'next/link';
 
 const Header = () =>{
   return (
     <HeaderWrapper>
-      <Logo />
+      <Link href="/">
+        <LogoWrapper><Logo /></LogoWrapper>
+      </Link>
     </HeaderWrapper>
   );
 };

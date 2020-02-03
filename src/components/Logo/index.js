@@ -12,4 +12,4 @@ const Index = () => (
   </svg>
 );
 
-export default Index
+export default Index;
