@@ -1,9 +1,9 @@
-import { HeaderWrapper, LogoWrapper } from './styles';
-
+import { HeaderWrapper } from './styles';
+import Index from '../Logo'
 const Header = () =>{
   return (
     <HeaderWrapper>
-      <LogoWrapper />
+      <Index/>
     </HeaderWrapper>
   );
 };

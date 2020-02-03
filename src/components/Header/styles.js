@@ -10,7 +10,6 @@ export const HeaderWrapper = styled.div`
 export const LogoWrapper = styled.div`
   width: 160px;
   height: 37px;
-  background-color: #fff;
   margin-left: 40px;
   border-top: solid 5px ${theme.colours.brand.red};
 `;
