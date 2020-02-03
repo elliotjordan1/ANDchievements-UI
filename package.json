@@ -6,17 +6,49 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "./node_modules/.bin/eslint -c ./.eslintrc . --ext .js && echo 'Lint completed successfully!'"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "next": "^9.2.1",
+    "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.0",
     "svg-url-loader": "^3.0.3"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-native": "^3.7.0",
+    "husky": "^4.2.1",
     "jest": "^25.1.0"
+  },
+  "jest": {
+    "preset": "react",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "plugins": [
+    "react"
+  ],
+  "eslintConfig": {
+    "extends": "airbnb"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   }
 }
