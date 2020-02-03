@@ -1,9 +1,11 @@
+import React from 'react';
 import { HeaderWrapper } from './styles';
-import Index from '../Logo'
+import Logo from '../Logo'
+
 const Header = () =>{
   return (
     <HeaderWrapper>
-      <Index/>
+      <Logo />
     </HeaderWrapper>
   );
 };

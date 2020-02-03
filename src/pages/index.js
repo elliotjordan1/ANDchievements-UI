@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import Header from '../components/Header/Header';
 
 const Homepage = () => {
@@ -7,6 +7,6 @@ const Homepage = () => {
       <Header />
     </>
   )
-}
+};
 
 export default Homepage;

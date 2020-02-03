@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Index = () => (
   <svg width="127" height="21" viewBox="0 0 127 21" fill="none" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink">
     <rect x="0.893921" width="125.982" height="20.7119" fill="url(#pattern0)"/>
