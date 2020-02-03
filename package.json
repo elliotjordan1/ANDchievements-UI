@@ -1,5 +1,5 @@
 {
-  "name": "and-achievements-ui",
+  "name": "and-achievements-u",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,10 +7,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
-    "lint": "./node_modules/.bin/eslint -c ./.eslintrc . --ext .js && echo 'Lint completed successfully!'"
+    "lint": "./node_modules/.bin/eslint -c ./.eslintrc . --ext .js && echo 'Lint completed successfully!'",
+    "test": "jest"
   },
   "dependencies": {
+    "@testing-library/react": "^9.4.0",
     "axios": "^0.19.2",
     "next": "^9.2.1",
     "prettier": "^1.19.1",
@@ -20,8 +21,12 @@
     "svg-url-loader": "^3.0.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-google": "^0.13.0",
@@ -32,13 +37,9 @@
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-native": "^3.7.0",
     "husky": "^4.2.1",
-    "jest": "^25.1.0"
-  },
-  "jest": {
-    "preset": "react",
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+    "jest": "^25.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
   },
   "plugins": [
     "react"
