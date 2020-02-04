@@ -1,13 +1,15 @@
-import React from 'react';
-import { HeaderWrapper, LogoWrapper } from './styles';
-import Logo from '../Logo';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
+import { HeaderWrapper, LogoWrapper } from "./styles";
+import Logo from "../Logo";
 
-const Header = () =>{
+const Header = () => {
   return (
     <HeaderWrapper>
       <Link href="/">
-        <LogoWrapper><Logo /></LogoWrapper>
+        <LogoWrapper>
+          <Logo />
+        </LogoWrapper>
       </Link>
     </HeaderWrapper>
   );
