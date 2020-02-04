@@ -6,6 +6,8 @@ export const SummaryBox = styled.div`
   height: 300px;
   display: flex;
   background-image: ${ ({ image })  => `url(${image})`};
+  background-size: cover;
+  background-position: center;
   flex-direction: row;
   margin: 10px auto 0;
   cursor: pointer;
@@ -14,7 +16,7 @@ export const SummaryBox = styled.div`
     filter: brightness(80%);
   }
   @media ${theme.media.tablet}{
-    margin: 35px auto 0;
+    margin: 20px auto 15px;
   }
   @media ${theme.media.desktop}{
     width: 440px;
@@ -31,6 +33,7 @@ export const ProjectName = styled.div`
   font-family: ${theme.fontFamily.primary};
   font-weight: 500;
   font-size: 32px;
+  font-family: 'Roboto';
   letter-spacing: 0.05em;
   line-height: 1.35;
   bottom: 0;
