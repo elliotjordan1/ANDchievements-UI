@@ -1,13 +1,13 @@
 const theme = {
   colours: {
     brand: {
-      red: "#C52626"
+      red: '#C52626'
     }
   },
   media: {
-    mobile: `(min-width: 375px)`,
-    tablet: `(min-width: 768px)`,
-    desktop: `(min-width: 1024px)`
+    mobile: '(min-width: 375px)',
+    tablet: '(min-width: 768px)',
+    desktop: '(min-width: 1024px)'
   }
 };
 

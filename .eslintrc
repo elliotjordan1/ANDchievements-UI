@@ -4,17 +4,10 @@
     "browser": false,
     "es6": true,
     "jest": true
-},
-"extends": [
-  "airbnb",
-  "prettier",
-  "prettier/react"
-],
-"rules": {
-  "quotes": [
-    0,
-    "single"
-  ],
-  "react/jsx-filename-extension": "off"
-}
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "rules": {
+    "quotes": [2, "single"],
+    "react/jsx-filename-extension": "off"
+  }
 }

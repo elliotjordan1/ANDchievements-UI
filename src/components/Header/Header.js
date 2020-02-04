@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import { HeaderWrapper, LogoWrapper } from "./styles";
-import Logo from "../Logo";
+import React from 'react';
+import Link from 'next/link';
+import { HeaderWrapper, LogoWrapper } from './styles';
+import Logo from '../Logo';
 
 const Header = () => {
   return (

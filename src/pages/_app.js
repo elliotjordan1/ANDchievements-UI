@@ -1,7 +1,7 @@
-import "./styles.css";
-import PropTypes from "prop-types";
-import React from "react";
-import Header from "../components/Header/Header";
+import './styles.css';
+import PropTypes from 'prop-types';
+import React from 'react';
+import Header from '../components/Header/Header';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
