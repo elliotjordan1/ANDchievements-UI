@@ -1,10 +1,7 @@
 import React from 'react';
 
 const Homepage = () => {
-  return (
-    <>
-    </>
-  )
+  return <></>;
 };
 
 export default Homepage;
