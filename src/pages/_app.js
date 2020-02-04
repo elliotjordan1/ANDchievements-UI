@@ -1,6 +1,6 @@
-import React from 'react';
+import './styles.css';
 import PropTypes from 'prop-types';
-import './styles.css'
+import React from 'react';
 import Header from '../components/Header/Header';
 import AppWrapper from './styles';
 
@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
 };
 
 MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
+  Component: PropTypes.element.isRequired,
   pageProps: PropTypes.shape.isRequired
 };
 

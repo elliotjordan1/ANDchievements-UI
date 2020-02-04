@@ -6,12 +6,12 @@ const theme = {
     }
   },
   media: {
-    mobile: `(min-width: 375px)`,
-    tablet: `(min-width: 768px)`,
-    desktop: `(min-width: 1024px)`,
+    mobile: '(min-width: 375px)',
+    tablet: '(min-width: 768px)',
+    desktop: '(min-width: 1024px)',
   },
   fontFamily: {
-    primary: "",
+    primary: '',
   }
 };
 

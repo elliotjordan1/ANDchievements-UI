@@ -1,20 +1,13 @@
 {
   "parser": "babel-eslint",
   "env": {
-  "browser": false,
+    "browser": false,
     "es6": true,
     "jest": true
-},
-  "extends": [
-    "airbnb",
-    "prettier",
-    "prettier/react"
-  ],
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
   "rules": {
-    "quotes": [
-      0,
-      "single"
-    ],
+    "quotes": [2, "single"],
     "react/jsx-filename-extension": "off"
   }
 }
