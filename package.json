@@ -1,20 +1,56 @@
 {
-  "name": "ANDchievements-UI",
+  "name": "and-achievements-u",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "./node_modules/.bin/eslint -c ./.eslintrc . --ext .js && echo 'Lint completed successfully!'",
+    "test": "jest"
   },
   "dependencies": {
+    "@testing-library/react": "^9.4.0",
     "axios": "^0.19.2",
     "next": "^9.2.1",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "styled-components": "^5.0.0"
+    "styled-components": "^5.0.0",
+    "svg-url-loader": "^3.0.3"
   },
   "devDependencies": {
-    "jest": "^25.1.0"
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-google": "^0.13.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-native": "^3.7.0",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "plugins": [
+    "react"
+  ],
+  "eslintConfig": {
+    "extends": "airbnb"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   }
 }
