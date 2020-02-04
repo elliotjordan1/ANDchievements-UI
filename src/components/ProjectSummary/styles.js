@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../theme';
+import theme from '../../global/theme';
 
 export const SummaryBox = styled.div`
   width: 358px;
@@ -12,6 +12,13 @@ export const SummaryBox = styled.div`
   : active {
     transform: translateY(1px);
     filter: brightness(80%);
+  }
+  @media ${theme.media.tablet}{
+    margin: 35px auto 0;
+  }
+  @media ${theme.media.desktop}{
+    width: 440px;
+    height: 369px;
   }
 `;
 

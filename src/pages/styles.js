@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../components/theme';
+import theme from '../global/theme';
 
 const AppWrapper = styled.div`
   padding-top: 48px;

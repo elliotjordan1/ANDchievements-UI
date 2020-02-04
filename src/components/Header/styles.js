@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../theme';
+import theme from '../../global/theme';
 
 export const HeaderWrapper = styled.div`
   background-color: ${theme.colours.brand.red};
