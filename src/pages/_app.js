@@ -2,13 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css'
 import Header from '../components/Header/Header';
+import AppWrapper from './styles';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <>
-    <Header />
-    <Component {...pageProps} />
-  </>
+    <AppWrapper>
+      <Header />
+      <Component {...pageProps} />
+    </ AppWrapper>
   );
 };
 

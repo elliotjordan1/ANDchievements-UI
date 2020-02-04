@@ -8,30 +8,38 @@ export const SummaryBox = styled.div`
   display: flex;
   flex-direction: row;
   margin: 10px auto 0;
+  cursor: pointer;
+  : active {
+    transform: translateY(1px);
+    background-color: #dd0;
+  }
 `;
 
-export const Title = styled.div`
+export const ProjectName = styled.div`
   display: block;
   width: max-content;
   padding: 5px;
+  text-transform: uppercase;
   height: 37px;
   font-family: ${theme.fontFamily.primary};
   font-weight: 500;
   font-size: 32px;
-  line-height: 140%;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
+  line-height: 1.35;
   bottom: 0;
   margin: 3px 0 8px 8px;
   color: ${theme.colours.brand.grey};
   background-color: white;
 `;
 
-export const Subtitle = styled(Title)`
+export const ClientName = styled(ProjectName)`
   height: 36px;
+  text-transform: none;
+  line-height: 1.25;
   margin-bottom: 0;
-  letter-spacing: 0.05em;
   font-weight: 500;
   color: white;
+  text-align: center;
   background-color: black;
 `;
 

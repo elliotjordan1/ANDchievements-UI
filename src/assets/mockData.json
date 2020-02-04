@@ -1,0 +1,14 @@
+{
+  "projects":[
+    {
+      "id": "1",
+      "name": "Project Name",
+      "client": "The Client",
+      "imageURL": "http://www.pasadenanow.com/main/wp-content/uploads/2013/01/Going-to-Work.jpg",
+      "blurb": "project described here",
+      "Tech Stack": ["React", "Nodejs"],
+      "ANDis": ["Elliot Jordan", "Damiola Olufemi"],
+      "clientLogoURL": "https://carlease.bpce.fr/wp-content/uploads/2015/06/engagement.png"
+    }
+  ]
+}

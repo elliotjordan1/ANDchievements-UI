@@ -5,6 +5,7 @@ export const HeaderWrapper = styled.div`
   background-color: ${theme.colours.brand.red};
   position: fixed;
   top: 0;
+  z-index: 999;
   width: 100%;
   height: 48px;
   display: flex;

@@ -1,14 +1,22 @@
 import React from 'react';
-import { SummaryBox, Title, Subtitle, TextWrapper } from './styles';
+import PropTypes from 'prop-types';
+import { SummaryBox, ProjectName, ClientName, TextWrapper } from './styles';
 
-const ProjectSummary = () => {
+const ProjectSummary = ({ projectName, projectClient, projectImageURL }) => {
   return (
-    <SummaryBox>
+    <SummaryBox image={projectImageURL}>
       <TextWrapper>
-        <Subtitle>Bestway</Subtitle>
-        <Title>Web Application</Title>
+        <ClientName>{projectClient}</ClientName>
+        <ProjectName>{projectName}</ProjectName>
       </TextWrapper>
     </SummaryBox>
   );
 };
+
+ProjectSummary.propTypes = {
+  projectImageURL: PropTypes.string.isRequired,
+  projectName: PropTypes.string.isRequired,
+  projectClient: PropTypes.string.isRequired
+};
+
 export default ProjectSummary;
