@@ -7,6 +7,7 @@
     "jest": true
 },
   "extends": [
+  "prettier",
   "airbnb-base",
   "eslint:recommended",
   "plugin:react/recommended",
@@ -25,9 +26,11 @@
 },
   "plugins": [
   "react",
+  "prettier",
   "react-native"
 ],
   "rules": {
+  "prettier/prettier": "error",
   "no-console": "off",
     "react/jsx-filename-extension": [
     1,
