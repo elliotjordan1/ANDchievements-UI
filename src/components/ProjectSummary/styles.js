@@ -4,14 +4,14 @@ import theme from '../theme';
 export const SummaryBox = styled.div`
   width: 358px;
   height: 300px;
-  background-color: #ff0;
   display: flex;
+  background-image: ${ ({ image })  => `url(${image})`};
   flex-direction: row;
   margin: 10px auto 0;
   cursor: pointer;
   : active {
     transform: translateY(1px);
-    background-color: #dd0;
+    filter: brightness(80%);
   }
 `;
 
