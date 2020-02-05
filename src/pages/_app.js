@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import 'typeface-roboto';
 import React from 'react';
 import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 import AppWrapper from './styles';
 
 const MyApp = ({ Component, pageProps }) => {
@@ -10,6 +11,7 @@ const MyApp = ({ Component, pageProps }) => {
     <AppWrapper>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </ AppWrapper>
   );
 };
