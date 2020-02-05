@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "./node_modules/.bin/eslint -c ./.eslintrc . --ext .js && echo 'Lint completed successfully!'",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "@testing-library/react": "^9.4.0",
@@ -54,7 +54,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm test"
+      "pre-push": "npm test --coverage"
     }
   }
 }
