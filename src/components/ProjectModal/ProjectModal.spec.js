@@ -1,12 +1,22 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import ProjectModal from './ProjectModal';
+import mockData from '../../assets/mockData.json';
+
+const project = mockData.projects[0];
 
 const mockFunc = jest.fn;
 
 describe('Header component', () => {
-  it('renders correctly', () => {
-    const wrapper = render(<ProjectModal image="http://2.bp.blogspot.com/_xmTzO3Zx0ZQ/TJCcIqVZGoI/AAAAAAAAE1M/fR7XKlnGR20/s1600/robot-posters-inspiration-01.jpg" onClick={mockFunc}/>);
+  it('renders correctly with mock project', () => {
+    const wrapper = render(<ProjectModal 
+      image={project.imageURL} 
+      name={project.name} 
+      client={project.client} 
+      blurb={project.blurb} 
+      ANDis={project.ANDis} 
+      techStack={project.techStack} 
+      logo={project.clientLogoURL} onClick={mockFunc}/>);
     expect(wrapper).toMatchSnapshot();
   });
 });
