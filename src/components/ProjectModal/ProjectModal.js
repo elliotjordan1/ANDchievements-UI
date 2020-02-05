@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Background, ModalWrapper, HeadingText, ProjectBody, BodyText, ListItem, StackedList, ListWrapper } from './styles';
+import { Background, ModalWrapper, HeadingText, ProjectBody, BodyText, ListItem, StackedList, ListWrapper, LogoWrapper } from './styles';
 import { TextWrapper } from '../../global/styles';
 
-const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack }) => {
+const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, logo }) => {
   return (
     <>
     <Background onClick={onClick}>
       <ModalWrapper image={image} onClick={onClick}>
+        <LogoWrapper image={logo}/>
         <TextWrapper>
           <HeadingText><em>{client}</em><br />{name}</HeadingText>
           <ProjectBody>
@@ -41,7 +42,8 @@ ProjectModal.propTypes = {
   client: PropTypes.string.isRequired,
   blurb: PropTypes.string.isRequired,
   ANDis: PropTypes.shape.isRequired,
-  techStack: PropTypes.shape.isRequired
+  techStack: PropTypes.shape.isRequired,
+  logo: PropTypes.string.isRequired
 };
 
 export default ProjectModal;
