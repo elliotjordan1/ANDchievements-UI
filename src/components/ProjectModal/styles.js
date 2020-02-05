@@ -57,6 +57,7 @@ export const HeadingText = styled.div`
     padding: 0 10px;
     font-size: 40px;
     margin: 0 0 0 20px;
+    line-height: 1.1;
     & > em{
       color: white;
       font-size: 22px;
@@ -65,10 +66,12 @@ export const HeadingText = styled.div`
   };
   @media ${theme.media.desktop}{
     padding: 0 20px;
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 1.1;
     margin: 0 0 0 30px;
     & > em{
       color: white;
+      line-height: 0.4;
       font-size: 30px;
       font-style: normal;
     }
@@ -91,6 +94,7 @@ export const ProjectBody = styled.div`
 export const BodyText = styled.div`
   max-width: 100%;
   padding: 5px;
+  font-family: ${theme.fontFamily.primary};
   font-size: 12px;
   text-align: justify;
   @media ${theme.media.tablet}{
@@ -102,6 +106,7 @@ export const BodyText = styled.div`
     padding: 20px;
     font-size: 18px;
     max-width: 65%;
+    line-height: 1.5;
   }
 `;
 
@@ -119,6 +124,7 @@ export const ListWrapper = styled.div`
 
 export const StackedList = styled.ul`
   list-style-type: none;
+  font-family: ${theme.fontFamily.primary};
   margin: 0 20px;
   padding: 10px 0 0 0;
   white-space: nowrap;
@@ -139,9 +145,10 @@ export const StackedList = styled.ul`
 export const ListItem = styled.li`
   background-image: ${ ({ image })  => `url(${image})`};
   max-width: 100vw;
+  font-family: ${theme.fontFamily.primary};
   font-size: 12px;
   text-indent: 40px;
-  line-height: 1.8;
+  line-height: 1.6;
   background-repeat: no-repeat;
   background-size: 30px;
   height: 30px;
@@ -158,7 +165,7 @@ export const ListItem = styled.li`
   @media ${theme.media.desktop}{
     font-size: 18px;
     text-indent: 40px;
-    line-height: 1.8;
+    line-height: 1.6;
     background-repeat: no-repeat;
     background-size: 30px;
     height: 30px;

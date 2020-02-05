@@ -35,7 +35,7 @@ export const ProjectName = styled.div`
   font-size: 32px;
   font-family: 'Roboto';
   letter-spacing: 0.05em;
-  line-height: 1.35;
+  line-height: 1.2;
   bottom: 0;
   margin: 3px 0 8px 8px;
   color: ${theme.colours.brand.grey};
@@ -45,7 +45,7 @@ export const ProjectName = styled.div`
 export const ClientName = styled(ProjectName)`
   height: 36px;
   text-transform: none;
-  line-height: 1.25;
+  line-height: 1.1;
   margin-bottom: 0;
   font-weight: 500;
   color: white;

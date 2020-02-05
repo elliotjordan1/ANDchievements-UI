@@ -1,5 +1,6 @@
 import './styles.css';
 import PropTypes from 'prop-types';
+import 'typeface-roboto';
 import React from 'react';
 import Header from '../components/Header/Header';
 import AppWrapper from './styles';
