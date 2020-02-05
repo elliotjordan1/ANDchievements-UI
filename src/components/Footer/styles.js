@@ -22,27 +22,28 @@ export const FooterWrapper = styled.div`
 
 export const FooterText = styled.a`
   display: flex;
+  text-decoration: none;
   align-items: center;
   width: 100%;
-  font-family: 'Roboto';
+  font-family: ${theme.fontFamily.primary};
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 140.62%;
+  line-height: 140%;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: #fff;
   height: 20px;
   margin-left: 12px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
   @media ${theme.media.tablet} {
     height: 30px;
-    font-size: 18px;
+    font-size: 14px;
   };
   @media ${theme.media.desktop} {
     height: 40px;
-    font-size: 24px;
+    font-size: 18px;
   };
 `;
 
