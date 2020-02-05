@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styles__HeaderWrapper-sc-1pf3re-0 kaRcpS"
+        class="styles__HeaderWrapper-sc-8u5dvs-0 jJItSU"
       >
         <a
-          class="styles__LogoWrapper-sc-1pf3re-1 mOKwi"
+          class="styles__LogoWrapper-sc-8u5dvs-1 jVVpaU"
         >
           <svg
             fill="none"
@@ -51,10 +51,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styles__HeaderWrapper-sc-1pf3re-0 kaRcpS"
+      class="styles__HeaderWrapper-sc-8u5dvs-0 jJItSU"
     >
       <a
-        class="styles__LogoWrapper-sc-1pf3re-1 mOKwi"
+        class="styles__LogoWrapper-sc-8u5dvs-1 jVVpaU"
       >
         <svg
           fill="none"
