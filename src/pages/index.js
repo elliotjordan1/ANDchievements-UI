@@ -16,7 +16,15 @@ const Homepage = () => {
   return (
     <HomepageWrapper>
       {viewModal ? 
-        <ProjectModal image={data.projects[modal].imageURL} onClick={() => {setViewModal(false)}}/> 
+        <ProjectModal 
+          image={data.projects[modal].imageURL} 
+          name={data.projects[modal].name} 
+          client={data.projects[modal].client} 
+          blurb={data.projects[modal].blurb} 
+          ANDis={data.projects[modal].ANDis} 
+          techStack={data.projects[modal].techStack} 
+          logo={data.projects[modal].clientLogoURL}
+          onClick={() => {setViewModal(false)}}/> 
       : null}
       {data.projects.map((project) => 
         <ProjectSummary 

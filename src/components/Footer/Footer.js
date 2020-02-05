@@ -5,39 +5,25 @@ const Header = () => {
   return (
     <FooterWrapper>
         <FooterDiv>
-            <a href="https://and.digital/about/">
-               <FooterText>About</FooterText>
-            </a>
+               <FooterText href="https://and.digital/about/">About</FooterText>
         </FooterDiv>
         <FooterDiv>
-            <div>
                <FooterText>/</FooterText>
-            </div>
         </FooterDiv>
         <FooterDiv>
-            <a href="https://and.digital/contact/">
-               <FooterText>Contact Us</FooterText>
-            </a>
+               <FooterText href="https://and.digital/contact/">Contact Us</FooterText>
         </FooterDiv>
         <FooterDiv>
-            <div>
                <FooterText>/</FooterText>
-            </div>
         </FooterDiv>
         <FooterDiv>
-            <a href="https://and.digital/join-us/">
-               <FooterText>Join Us</FooterText>
-            </a>
+               <FooterText href="https://and.digital/join-us/">Join Us</FooterText>
         </FooterDiv>
         <FooterDiv>
-            <div>
                <FooterText>/</FooterText>
-            </div>
         </FooterDiv>
         <FooterDiv>
-            <a href="https://and.digital/">
-               <FooterText>AND Digital</FooterText>
-            </a>
+               <FooterText href="https://and.digital/">AND Digital</FooterText>
         </FooterDiv>
     </FooterWrapper>
   );

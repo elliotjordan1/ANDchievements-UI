@@ -11,7 +11,7 @@ const theme = {
     desktop: '(min-width: 1024px)',
   },
   fontFamily: {
-    primary: '',
+    primary: 'Roboto',
   }
 };
 

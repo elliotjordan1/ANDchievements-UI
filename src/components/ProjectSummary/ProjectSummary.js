@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SummaryBox, ProjectName, ClientName, TextWrapper } from './styles';
+import { SummaryBox, ProjectName, ClientName } from './styles';
+import { TextWrapper } from '../../global/styles';
 
 const ProjectSummary = ({ projectName, projectClient, projectImageURL, onClick }) => {
   return (
