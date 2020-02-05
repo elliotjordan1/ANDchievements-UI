@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
 import { FooterWrapper, FooterText, FooterDiv } from './styles';
-import Logo from '../Logo';
 
 const Header = () => {
   return (
