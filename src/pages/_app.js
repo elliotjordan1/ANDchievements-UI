@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
 };
 
 MyApp.propTypes = {
-  Component: PropTypes.element.isRequired,
+  Component: PropTypes.shape.isRequired,
   pageProps: PropTypes.shape.isRequired
 };
 

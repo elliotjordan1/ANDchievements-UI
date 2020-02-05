@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import data from '../assets/mockData.json';
 import HomepageWrapper from '../global/styles';
+import ProjectModal from '../components/ProjectModal/ProjectModal';
 
 const Homepage = () => {
+  const [modal, setModal] = useState(0);
+  const [viewModal, setViewModal] = useState(false);
+
+  const boxClick = id => {
+    setModal(id);
+    setViewModal(true);  
+  };
+
   return (
     <HomepageWrapper>
+      {viewModal ? 
+        <ProjectModal image={data.projects[modal].imageURL} onClick={() => {setViewModal(false)}}/> 
+      : null}
       {data.projects.map((project) => 
-        <ProjectSummary key={project.id} projectName={project.name} projectClient={project.client} projectImageURL={project.imageURL}/>
+        <ProjectSummary 
+          onClick = {() => {boxClick(project.projectId)}} 
+          key={project.projectId} 
+          projectName={project.name} 
+          projectClient={project.client} 
+          projectImageURL={project.imageURL}
+        />
       )}
     </HomepageWrapper>
   )
