@@ -52,8 +52,3 @@ export const ClientName = styled(ProjectName)`
   text-align: center;
   background-color: black;
 `;
-
-export const TextWrapper = styled.div`
-  align-self: flex-end;
-  position: relative;
-`;
