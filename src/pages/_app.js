@@ -5,6 +5,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import AppWrapper from './styles';
+import 'babel-polyfill';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -17,8 +18,8 @@ const MyApp = ({ Component, pageProps }) => {
 };
 
 MyApp.propTypes = {
-  Component: PropTypes.shape.isRequired,
-  pageProps: PropTypes.shape.isRequired
+  Component: PropTypes.func.isRequired,
+  pageProps: PropTypes.objectOf(PropTypes.shape).isRequired
 };
 
 export default MyApp;
