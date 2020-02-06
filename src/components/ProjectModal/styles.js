@@ -135,15 +135,17 @@ export const ListWrapper = styled.div`
 export const StackedList = styled.ul`
   list-style-type: none;
   font-family: ${theme.fontFamily.primary};
-  margin: 0 20px;
-  padding: 10px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
+  margin: 0 8px;
+  padding: 10px 0 0 0;
   max-width: 100vw;
   font-size: 18px;
   @media ${theme.media.tablet}{
     max-width: 20vw;
+    margin: 0 20px;
+    padding: 10px 0 0 0;
     font-size: 22px;
   };
   @media ${theme.media.desktop}{
@@ -187,13 +189,13 @@ export const LogoWrapper = styled.div`
   background-image: ${ ({ image })  => `url(${image})`};
   z-value: 3;
   position: absolute;
-  margin: 20px;
   background-size: contain;
   background-repeat: no-repeat;
   width: 175px;
   height: 70px;
   @media ${theme.media.tablet}{
     width: 200px;
+    margin: 20px;
     height: 75px;
   };
   @media ${theme.media.desktop}{
