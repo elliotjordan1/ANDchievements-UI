@@ -18,7 +18,8 @@ export const Background = styled.div`
 
 export const ModalWrapper = styled.div`
   width: auto;
-  height: 50vh;
+  height: 90vh;
+  margin: 20px 10px;
   background-image: ${ ({ image })  => `url(${image})`};
   background-size: cover;
   background-position: center;
@@ -48,9 +49,10 @@ export const HeadingText = styled.div`
   bottom: 0;
   color: ${theme.colours.brand.red};
   background-color: black;
+  font-size: 30px;
   & > em{
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
   }
   @media ${theme.media.tablet}{
@@ -82,12 +84,15 @@ export const ProjectBody = styled.div`
   line-height: 1.25;
   background-color: rgba(256, 256, 256, 0.95);
   display: flex;
+  flex-direction: column;
   color: ${theme.colours.brand.grey};
   @media ${theme.media.tablet}{
     margin: 0 20px 15px 20px;
+    flex-direction: row;
   };
   @media ${theme.media.desktop}{
     margin: 0 30px 25px 30px;
+    flex-direction: row;
   }
 `;
 
@@ -97,14 +102,19 @@ export const BodyText = styled.div`
   font-family: ${theme.fontFamily.primary};
   font-size: 12px;
   text-align: justify;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 20vh;
   @media ${theme.media.tablet}{
     padding: 10px;
     font-size: 16px;
+    max-height: none;
     max-width: 80%;
   };
   @media ${theme.media.desktop}{
     padding: 20px;
     font-size: 18px;
+    max-height: none;
     max-width: 65%;
     line-height: 1.5;
   }
@@ -176,10 +186,18 @@ export const ListItem = styled.li`
 export const LogoWrapper = styled.div`
   background-image: ${ ({ image })  => `url(${image})`};
   z-value: 3;
-  width: 300px;
   position: absolute;
   margin: 20px;
-  height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
+  width: 175px;
+  height: 70px;
+  @media ${theme.media.tablet}{
+    width: 200px;
+    height: 75px;
+  };
+  @media ${theme.media.desktop}{
+    width: 300px;
+    height: 100px;
+  }
 `;

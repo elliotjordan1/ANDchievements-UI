@@ -17,13 +17,13 @@ const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, l
               <StackedList>
                 ANDis <br />
                 {ANDis.map((andi) => 
-                  <ListItem image={andi.url}>{andi.name}</ListItem>
+                  <ListItem image={andi.imageURL}>{andi.name}</ListItem>
                 )}
               </StackedList>
               <StackedList>
                 Tech Stack <br />
                 {techStack.map((item) => 
-                  <ListItem image={item.url}>{item.name}</ListItem>
+                  <ListItem image={item.imageURL}>{item.name}</ListItem>
                 )}
               </StackedList>
             </ListWrapper>
