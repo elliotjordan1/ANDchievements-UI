@@ -17,7 +17,13 @@ const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, l
               <StackedList>
                 ANDis <br />
                 {ANDis && ANDis.map((item) => {
-                    const andi = JSON.parse(item);
+                    let andi;
+                    try {
+                      andi = JSON.parse(item);                    
+                    } catch {
+                      andi = item;
+                    }
+
                     return (<ListItem key={andi.andiId} image={andi.imageURL}>{andi.name}</ListItem>);
                   }
                   )}
@@ -25,7 +31,13 @@ const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, l
               <StackedList>
                 Tech Stack <br />
                 {techStack && techStack.map((item) => {
-                    const tech = JSON.parse(item);
+                    let tech;
+                    try {
+                      tech = JSON.parse(item);
+                    } catch {
+                      tech = item;
+                    }
+                    
                     return (<ListItem key={tech.technologyId} image={tech.imageURL}>{tech.name}</ListItem>);
                 }
                   )}
@@ -45,8 +57,8 @@ ProjectModal.propTypes = {
   name: PropTypes.string.isRequired,
   client: PropTypes.string.isRequired,
   blurb: PropTypes.string.isRequired,
-  ANDis: PropTypes.arrayOf(PropTypes.string).isRequired,
-  techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  ANDis: PropTypes.arrayOf(PropTypes.object).isRequired,
+  techStack: PropTypes.arrayOf(PropTypes.object).isRequired,
   logo: PropTypes.string.isRequired
 };
 
