@@ -16,7 +16,7 @@ import {
   TechList 
 } from './styles';
 
-const ProjectModal = ({ image, onClick, name, client, blurbOne, ANDis, techStack, logo }) => {
+const ProjectModal = ({ image, onClick, name, client, blurbOne, blurbTwo, blurbThree, ANDis, techStack, logo }) => {
   return (
     <>
     <Background onClick={onClick}>
@@ -27,43 +27,43 @@ const ProjectModal = ({ image, onClick, name, client, blurbOne, ANDis, techStack
           <ProjectBody>
             <HeadingText><em>{client}</em><br />{name}</HeadingText>
             <BodyText>{blurbOne}</BodyText>
-              <StackedList>
-                ANDis <br />
-                {ANDis && ANDis.map((item) => {
-                    let andi;
-                    try {
-                      andi = JSON.parse(item);                    
-                    } catch {
-                      andi = item;
-                    }
-
-                    return (
-                      <ListItem key={andi.andiId}>
-                        <Icon image={andi.imageURL}/>
-                        <ListDescription>
-                          {andi.name}
-                          <em>{andi.name}</em>
-                        </ListDescription>
-                      </ListItem>);
+            {blurbTwo ? <BodyText>{blurbTwo}</BodyText> : null}
+            {blurbThree ? <BodyText>{blurbThree}</BodyText> : null}
+            <StackedList>ANDis <br /></StackedList>
+            <StackedList>
+              {ANDis && ANDis.map((item) => {
+                  let andi;
+                  try {
+                    andi = JSON.parse(item);                    
+                  } catch {
+                    andi = item;
                   }
-                  )}
-              </StackedList>
-              <TechList>
-                {techStack && techStack.map((item) => {
-                    let tech;
-                    try {
-                      tech = JSON.parse(item);
-                    } catch {
-                      tech = item;
-                    }
-                    
-                    return (
-                      <TechListItem key={tech.technologyId}>
-                        <Icon image={tech.imageURL}/>
-                      </TechListItem>);
-                }
-                  )}
-              </TechList>
+                   return (
+                    <ListItem key={andi.andiId}>
+                      <Icon image={andi.imageURL}/>
+                      <ListDescription>
+                        {andi.name}
+                        <em>{andi.andiProjectRole}</em>
+                      </ListDescription>
+                    </ListItem>);
+                  }
+                )}
+            </StackedList>
+            <TechList>
+              {techStack && techStack.map((item) => {
+                  let tech;
+                  try {
+                    tech = JSON.parse(item);
+                  } catch {
+                    tech = item;
+                  }
+                  return (
+                    <TechListItem key={tech.technologyId}>
+                      <Icon image={tech.imageURL}/>
+                    </TechListItem>);
+              }
+              )}
+            </TechList>
           </ProjectBody>
       </ModalWrapper>
     </Background>
@@ -77,9 +77,16 @@ ProjectModal.propTypes = {
   name: PropTypes.string.isRequired,
   client: PropTypes.string.isRequired,
   blurbOne: PropTypes.string.isRequired,
-  ANDis: PropTypes.arrayOf(PropTypes.object).isRequired,
+  blurbTwo: PropTypes.string,
+  blurbThree: PropTypes.string,
+  ANDis: PropTypes.arrayOf(PropTypes.string).isRequired,
   techStack: PropTypes.arrayOf(PropTypes.object).isRequired,
   logo: PropTypes.string.isRequired
+};
+
+ProjectModal.defaultProps = {
+  blurbTwo: null,
+  blurbThree: null
 };
 
 export default ProjectModal;

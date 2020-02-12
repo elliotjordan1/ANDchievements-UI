@@ -33,7 +33,9 @@ const Homepage = () => {
           image={projects[modal].imageurl} 
           name={projects[modal].name} 
           client={projects[modal].client} 
-          blurbOne={projects[modal].blurb_one} 
+          blurbOne={projects[modal].blurb_one}
+          blurbTwo={projects[modal].blurb_two}
+          blurbThree={projects[modal].blurb_three} 
           ANDis={projects[modal].andis} 
           techStack={projects[modal].techstack} 
           logo={projects[modal].clientlogourl}

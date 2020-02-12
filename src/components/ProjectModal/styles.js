@@ -21,10 +21,11 @@ export const ModalWrapper = styled.div`
   height: 90vh;
   margin: 20px 10px;
   z-index: 1;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   @media ${theme.media.tablet}{
     margin: 30px 40px;
+    flex-direction: row;
     height: 85vh;
   };
   @media ${theme.media.desktop}{
@@ -37,12 +38,15 @@ export const Image = styled.div`
   background-image: ${ ({ image })  => `url(${image})`};
   background-size: cover;
   background-position: center;
-  width: 60%;
-  height: 100%;
+  padding-top: 200px;
+  width: 100%;
   display: flex;
   @media ${theme.media.tablet}{
+    width: 60%;
+    padding: 0;
+    height: 100%;
     background-color: white;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   };
   @media ${theme.media.desktop}{
@@ -115,11 +119,15 @@ export const HeadingText = styled.div`
 export const ProjectBody = styled.div`
   line-height: 1.25;
   background-color: white;
-  display: flex;
-  width: 40%;
+  display: flex;  
+  width: 100%;
   height: 100%;
   flex-direction: column;
   color: ${theme.colours.brand.grey};
+  @media ${theme.media.tablet}{
+    width: 40%;
+    min-width: 600px;
+  };
 `;
 
 export const BodyText = styled.div`
@@ -139,7 +147,7 @@ export const BodyText = styled.div`
   }
 `;
 
-export const StackedList = styled.ul`
+export const StackedList = styled.div`
   list-style-type: none;
   font-family: ${theme.fontFamily.primary};
   font-weight: 400;
@@ -148,6 +156,11 @@ export const StackedList = styled.ul`
   color: ${theme.colours.brand.grey};
   margin: 0 20px;
   padding: 0;
+  max-width: 50%;
+  max-height: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   max-width: 100%;
   font-size: 18px;
   @media ${theme.media.tablet}{
@@ -183,7 +196,7 @@ export const TechList = styled.ul`
   }
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.div`
   max-width: 100%;
   font-family: ${theme.fontFamily.primary};
   font-size: 12px;
