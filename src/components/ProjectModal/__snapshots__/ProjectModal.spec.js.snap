@@ -9,17 +9,17 @@ Object {
         class="styles__Background-sc-1txlban-0 hbjsxj"
       >
         <div
-          class="styles__ModalWrapper-sc-1txlban-1 kUDfvM"
+          class="styles__ModalWrapper-sc-1txlban-1 fYNNFE"
         >
           <div
-            class="styles__Image-sc-1txlban-2 hMZSDy"
+            class="styles__Image-sc-1txlban-2 dguuta"
           >
             <div
               class="styles__LogoWrapper-sc-1txlban-3 ksmEOo"
             />
           </div>
           <div
-            class="styles__ProjectBody-sc-1txlban-5 cgcGWF"
+            class="styles__ProjectBody-sc-1txlban-5 hPhjVv"
           >
             <div
               class="styles__HeadingText-sc-1txlban-4 bLyHwQ"
@@ -33,12 +33,16 @@ Object {
             <div
               class="styles__BodyText-sc-1txlban-6 hbqQrq"
             />
-            <ul
-              class="styles__StackedList-sc-1txlban-7 iJtVpi"
+            <div
+              class="styles__StackedList-sc-1txlban-7 QPIDB"
             >
               ANDis 
               <br />
-              <li
+            </div>
+            <div
+              class="styles__StackedList-sc-1txlban-7 QPIDB"
+            >
+              <div
                 class="styles__ListItem-sc-1txlban-9 kumVVM"
               >
                 <div
@@ -48,12 +52,10 @@ Object {
                   class="styles__ListDescription-sc-1txlban-11 fCCIAy"
                 >
                   Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
-                  <em>
-                    Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
-                  </em>
+                  <em />
                 </div>
-              </li>
-              <li
+              </div>
+              <div
                 class="styles__ListItem-sc-1txlban-9 kumVVM"
               >
                 <div
@@ -63,12 +65,10 @@ Object {
                   class="styles__ListDescription-sc-1txlban-11 fCCIAy"
                 >
                   Damiola Olufemi
-                  <em>
-                    Damiola Olufemi
-                  </em>
+                  <em />
                 </div>
-              </li>
-            </ul>
+              </div>
+            </div>
             <ul
               class="styles__TechList-sc-1txlban-8 iISPXu"
             >
@@ -97,17 +97,17 @@ Object {
       class="styles__Background-sc-1txlban-0 hbjsxj"
     >
       <div
-        class="styles__ModalWrapper-sc-1txlban-1 kUDfvM"
+        class="styles__ModalWrapper-sc-1txlban-1 fYNNFE"
       >
         <div
-          class="styles__Image-sc-1txlban-2 hMZSDy"
+          class="styles__Image-sc-1txlban-2 dguuta"
         >
           <div
             class="styles__LogoWrapper-sc-1txlban-3 ksmEOo"
           />
         </div>
         <div
-          class="styles__ProjectBody-sc-1txlban-5 cgcGWF"
+          class="styles__ProjectBody-sc-1txlban-5 hPhjVv"
         >
           <div
             class="styles__HeadingText-sc-1txlban-4 bLyHwQ"
@@ -121,12 +121,16 @@ Object {
           <div
             class="styles__BodyText-sc-1txlban-6 hbqQrq"
           />
-          <ul
-            class="styles__StackedList-sc-1txlban-7 iJtVpi"
+          <div
+            class="styles__StackedList-sc-1txlban-7 QPIDB"
           >
             ANDis 
             <br />
-            <li
+          </div>
+          <div
+            class="styles__StackedList-sc-1txlban-7 QPIDB"
+          >
+            <div
               class="styles__ListItem-sc-1txlban-9 kumVVM"
             >
               <div
@@ -136,12 +140,10 @@ Object {
                 class="styles__ListDescription-sc-1txlban-11 fCCIAy"
               >
                 Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
-                <em>
-                  Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
-                </em>
+                <em />
               </div>
-            </li>
-            <li
+            </div>
+            <div
               class="styles__ListItem-sc-1txlban-9 kumVVM"
             >
               <div
@@ -151,12 +153,10 @@ Object {
                 class="styles__ListDescription-sc-1txlban-11 fCCIAy"
               >
                 Damiola Olufemi
-                <em>
-                  Damiola Olufemi
-                </em>
+                <em />
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <ul
             class="styles__TechList-sc-1txlban-8 iISPXu"
           >
