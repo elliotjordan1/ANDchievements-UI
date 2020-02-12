@@ -1,19 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Background, ModalWrapper, HeadingText, ProjectBody, BodyText, ListItem, StackedList, ListWrapper, LogoWrapper } from './styles';
-import { TextWrapper } from '../../global/styles';
+import { 
+  Background, 
+  ModalWrapper, 
+  HeadingText, 
+  ProjectBody, 
+  BodyText, 
+  ListItem, 
+  TechListItem, 
+  StackedList, 
+  LogoWrapper, 
+  Image, 
+  Icon, 
+  ListDescription, 
+  TechList 
+} from './styles';
 
-const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, logo }) => {
+const ProjectModal = ({ image, onClick, name, client, blurbOne, ANDis, techStack, logo }) => {
   return (
     <>
     <Background onClick={onClick}>
-      <ModalWrapper image={image} onClick={onClick}>
-        <LogoWrapper image={logo}/>
-        <TextWrapper>
-          <HeadingText><em>{client}</em><br />{name}</HeadingText>
+      <ModalWrapper onClick={onClick}>
+        <Image image={image}>
+          <LogoWrapper image={logo}/>
+        </Image>
           <ProjectBody>
-            <BodyText>{blurb}</BodyText>
-            <ListWrapper>
+            <HeadingText><em>{client}</em><br />{name}</HeadingText>
+            <BodyText>{blurbOne}</BodyText>
               <StackedList>
                 ANDis <br />
                 {ANDis && ANDis.map((item) => {
@@ -24,12 +37,18 @@ const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, l
                       andi = item;
                     }
 
-                    return (<ListItem key={andi.andiId} image={andi.imageURL}>{andi.name}</ListItem>);
+                    return (
+                      <ListItem key={andi.andiId}>
+                        <Icon image={andi.imageURL}/>
+                        <ListDescription>
+                          {andi.name}
+                          <em>{andi.name}</em>
+                        </ListDescription>
+                      </ListItem>);
                   }
                   )}
               </StackedList>
-              <StackedList>
-                Tech Stack <br />
+              <TechList>
                 {techStack && techStack.map((item) => {
                     let tech;
                     try {
@@ -38,13 +57,14 @@ const ProjectModal = ({ image, onClick, name, client, blurb, ANDis, techStack, l
                       tech = item;
                     }
                     
-                    return (<ListItem key={tech.technologyId} image={tech.imageURL}>{tech.name}</ListItem>);
+                    return (
+                      <TechListItem key={tech.technologyId}>
+                        <Icon image={tech.imageURL}/>
+                      </TechListItem>);
                 }
                   )}
-              </StackedList>
-            </ListWrapper>
+              </TechList>
           </ProjectBody>
-        </TextWrapper>
       </ModalWrapper>
     </Background>
     </>
@@ -56,7 +76,7 @@ ProjectModal.propTypes = {
   onClick: PropTypes.func.isRequired,
   name: PropTypes.string.isRequired,
   client: PropTypes.string.isRequired,
-  blurb: PropTypes.string.isRequired,
+  blurbOne: PropTypes.string.isRequired,
   ANDis: PropTypes.arrayOf(PropTypes.object).isRequired,
   techStack: PropTypes.arrayOf(PropTypes.object).isRequired,
   logo: PropTypes.string.isRequired
