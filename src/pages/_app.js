@@ -6,8 +6,7 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import AppWrapper from './styles';
 import 'babel-polyfill';
-import FormContainer from '../components/FormContainer/FormContainer';
-import ProjectForm from '../components/FormContainer/ProjectForm';
+import ProjectForm from '../components/ProjectForm/ProjectForm';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
