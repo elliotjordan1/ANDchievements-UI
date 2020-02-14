@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import Select from 'react-select';
-import makeAnimated from 'react-select/animated';
+import CreatableSelect from 'react-select/creatable';
 import { Form, Label, Input, TextArea } from './styles';
 
 const ProjectForm = () => {
 
     const [projectTitle, setName] = useState('');
-    const [projectDescription, setProjectDescription] = useState('');
+    const [projectDescription1, setProjectDescription1] = useState('');
+    const [projectDescription2, setProjectDescription2] = useState('');
+    const [projectDescription3, setProjectDescription3] = useState('');
     const [projectCoverImageUrl, setProjectCoverImageUrl] = useState('');
 
     const clientOptions = [
@@ -26,12 +28,10 @@ const ProjectForm = () => {
       { value: 'elliot', label: 'Elliot', color: '#5243AA' },
     ];
 
-    const animatedComponents = makeAnimated();
-
 
     const handleSubmit = (evt) => {
       evt.preventDefault();
-
+      console.log(projectTitle, projectDescription1, projectDescription2, projectDescription3, projectCoverImageUrl);
     }
 
     return (
@@ -42,39 +42,59 @@ const ProjectForm = () => {
               type='text'
               value={projectTitle}
               onChange={e => setName(e.target.value)}
-              placeholder='Enter your project projectTitle'
+              placeholder='Enter your project title'
             />
             </Label>
             <Label>
             Client:
-                <Select options = {clientOptions}
+                <CreatableSelect
+                onChange={e => console.log(e.value)}
+                options = {clientOptions}
                 />
             </Label>
             <Label>
-                Project Description:
+                About the client:
                 <TextArea
                     type='text'
-                    value={projectDescription}
-                    onChange={e => setProjectDescription(e.target.value)}
-                    placeholder='Enter your project description'
+                    value={projectDescription1}
+                    onChange={e => setProjectDescription1(e.target.value)}
+                    placeholder='Enter client info'
+                />
+            </Label>
+            <Label>
+                Goals of the project:
+                <TextArea
+                    type='text'
+                    value={projectDescription2}
+                    onChange={e => setProjectDescription2(e.target.value)}
+                    placeholder='Enter project goals'
+                />
+            </Label>
+            <Label>
+                End result of the project:
+                <TextArea
+                    type='text'
+                    value={projectDescription3}
+                    onChange={e => setProjectDescription3(e.target.value)}
+                    placeholder='Enter project results'
                 />
             </Label>
             <Label>
             Technology Stack:
-                <Select
+                <CreatableSelect
                       closeMenuOnSelect={false}
-                      components={animatedComponents}
                       isMulti
                       options={technologyOptions}
+                      onChange={e => console.log(e)}
                 />
             </Label>
             <Label>
             Andis:
-                <Select
+                <CreatableSelect
                       closeMenuOnSelect={false}
-                      components={animatedComponents}
                       isMulti
                       options={andiOptions}
+                      onChange={e => console.log(e)}
                 />
             </Label>
             <Label>
@@ -87,7 +107,7 @@ const ProjectForm = () => {
                 />
             </Label>
             <Label>
-              <input type='submit' value='Submit' />
+              <Input type='submit' value='Submit' />
             </Label>
         </Form>
       );

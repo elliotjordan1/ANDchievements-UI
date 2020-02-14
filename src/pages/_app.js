@@ -13,7 +13,6 @@ const MyApp = ({ Component, pageProps }) => {
     <AppWrapper>
       <Header />
       <Component {...pageProps} />
-      < ProjectForm />
       <Footer />
     </ AppWrapper>
   );
