@@ -1,9 +1,75 @@
-import React, { useState } from 'react';
-import Select from 'react-select';
+import React, { useState, useEffect } from 'react';
 import CreatableSelect from 'react-select/creatable';
 import { Form, Label, Input, TextArea } from './styles';
+import getAllAndis from '../../api/handlers/andis';
+import getAllTechnologies from '../../api/handlers/technologies';
+import getAllClients from '../../api/handlers/clients';
 
 const ProjectForm = () => {
+
+    const fetchAndis = async () => {
+        const response = await getAllAndis();
+
+        response.data.res.forEach(element => {
+          let andiValues = { value: element["andiid"], label: element["firstname"] };
+          andiOptions.push(andiValues);
+        });
+    }
+
+    const fetchTechnologies = async () => {
+        const response = await getAllTechnologies();
+
+        response.data.res.forEach(element => {
+          let technologyValues = { value: element["technologyid"], label: element["name"] };
+          technologyOptions.push(technologyValues);
+        });
+    }
+
+    const fetchClients = async () => {
+        const response = await getAllClients();
+        response.data.res.forEach(element => {
+          let clientsValues = { value: element["clientid"], label: element["clientname"] };
+          clientOptions.push(clientsValues);
+        });
+    }
+
+    if (andis === undefined) {
+      fetchAndis();
+    }
+
+    if (technologies === undefined) {
+      fetchTechnologies();
+    }
+
+    if (technologies === undefined) {
+      fetchClients();
+    }
+
+    const clientOptions = [
+    ];
+
+    const technologyOptions = [
+    ];
+
+    const andiOptions = [];
+
+    const clients = [];
+
+    const technologies = [];
+
+    const andis = [];
+
+    clients.forEach(element => {
+      let clientsValues = { value: element["value"], label: element["label"] };
+      clientOptions.push(clientsValues);
+    });
+
+    technologies.forEach(element => {
+      let technologiesValues = { value: element["value"], label: element["label"] };
+      technologyOptions.push(technologiesValues);
+    });
+
+
 
     const [projectTitle, setName] = useState('');
     const [projectDescription1, setProjectDescription1] = useState('');
@@ -11,27 +77,8 @@ const ProjectForm = () => {
     const [projectDescription3, setProjectDescription3] = useState('');
     const [projectCoverImageUrl, setProjectCoverImageUrl] = useState('');
 
-    const clientOptions = [
-        { value: 'condenast', label: 'Conde Nast' },
-        { value: 'ordo', label: 'Ordo' }
-    ];
-
-     const technologyOptions = [
-      { value: 'java', label: 'Java', color: '#00B8D9'},
-      { value: 'react', label: 'React JS', color: '#0052CC',  },
-      { value: 'csharp', label: 'C#', color: '#5243AA' },
-    ];
-
-     const andiOptions = [
-      { value: 'jai', label: 'Jai', color: '#00B8D9', isFixed: true },
-      { value: 'henry', label: 'Henry', color: '#0052CC',  },
-      { value: 'elliot', label: 'Elliot', color: '#5243AA' },
-    ];
-
-
     const handleSubmit = (evt) => {
       evt.preventDefault();
-      console.log(projectTitle, projectDescription1, projectDescription2, projectDescription3, projectCoverImageUrl);
     }
 
     return (
@@ -48,7 +95,6 @@ const ProjectForm = () => {
             <Label>
             Client:
                 <CreatableSelect
-                onChange={e => console.log(e.value)}
                 options = {clientOptions}
                 />
             </Label>
@@ -85,7 +131,6 @@ const ProjectForm = () => {
                       closeMenuOnSelect={false}
                       isMulti
                       options={technologyOptions}
-                      onChange={e => console.log(e)}
                 />
             </Label>
             <Label>
@@ -94,7 +139,6 @@ const ProjectForm = () => {
                       closeMenuOnSelect={false}
                       isMulti
                       options={andiOptions}
-                      onChange={e => console.log(e)}
                 />
             </Label>
             <Label>
