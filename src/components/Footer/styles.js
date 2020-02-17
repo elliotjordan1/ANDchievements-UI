@@ -5,6 +5,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   -webkit-align-items: center;
   justify-content: center;
+  align-self: flex-end;
   background-color: ${theme.colours.brand.red};
   position: relative;
   bottom: 0;
