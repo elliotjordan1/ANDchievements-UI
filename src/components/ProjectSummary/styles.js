@@ -9,7 +9,7 @@ export const SummaryBox = styled.div`
   background-size: cover;
   background-position: center;
   flex-direction: row;
-  margin: 10px auto 0;
+  margin: 10px auto 10px;
   cursor: pointer;
   : active {
     transform: translateY(1px);
@@ -27,12 +27,11 @@ export const SummaryBox = styled.div`
 export const ProjectName = styled.div`
   display: block;
   width: max-content;
-  padding: 5px;
+  padding: 3px;
   text-transform: uppercase;
-  height: 37px;
   font-family: ${theme.fontFamily.primary};
   font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   font-family: 'Roboto';
   letter-spacing: 0.05em;
   line-height: 1.2;
@@ -40,10 +39,14 @@ export const ProjectName = styled.div`
   margin: 3px 0 8px 8px;
   color: ${theme.colours.brand.grey};
   background-color: white;
+  @media ${theme.media.desktop}{
+    font-size: 32px;
+    padding: 5px;
+    height: 37px;
+  }
 `;
 
 export const ClientName = styled(ProjectName)`
-  height: 36px;
   text-transform: none;
   line-height: 1.1;
   margin-bottom: 0;
@@ -51,4 +54,7 @@ export const ClientName = styled(ProjectName)`
   color: white;
   text-align: center;
   background-color: black;
+  @media ${theme.media.desktop}{
+    height: 36px;
+  }
 `;

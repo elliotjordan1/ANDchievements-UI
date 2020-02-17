@@ -77,16 +77,16 @@ export const HeadingText = styled.div`
   display: block;
   width: 100% - 20px;
   text-transform: uppercase;
-  height: max-content;
+  height: min-content;
   font-family: ${theme.fontFamily.primary};
   font-weight: 500;
   font-family: 'Roboto';
   letter-spacing: 0.05em;
+  padding: 2px 10px;
   line-height: 1;
-  padding: 10px 10px;
   color: ${theme.colours.brand.red};
   background-color: ${theme.colours.brand.grey2};
-  font-size: 32px;
+  font-size: 28px;
   & > em{
     color: ${theme.colours.brand.grey};
     font-size: 20px;
@@ -96,6 +96,7 @@ export const HeadingText = styled.div`
   @media ${theme.media.tablet}{
     line-height: 1.1;  
     font-size: 28px;
+    padding: 10px 10px;
     & > em{
       color: ${theme.colours.brand.grey};
       font-size: 22px;
@@ -126,8 +127,11 @@ export const ProjectBody = styled.div`
   color: ${theme.colours.brand.grey};
   @media ${theme.media.tablet}{
     width: 40%;
-    min-width: 600px;
+    min-width: 280px;
   };
+  @media ${theme.media.desktop}{
+    min-width: 530px;
+  }
 `;
 
 export const BodyText = styled.div`
@@ -158,16 +162,20 @@ export const StackedList = styled.div`
   padding: 0;
   max-width: 50%;
   max-height: 40%;
-  display: flex;
   flex-direction: column;
+  overflow: scroll;
+  max-height: 30%;
   flex-wrap: wrap;
   max-width: 100%;
   font-size: 18px;
   @media ${theme.media.tablet}{
-    font-size: 22px;
+    font-size: 20px;
+    max-height: 40%;
   };
   @media ${theme.media.desktop}{
     font-size: 28px;
+    display: flex;
+    overflow: visible;
   }
 `;
 
@@ -188,8 +196,10 @@ export const TechList = styled.ul`
   bottom: 0;
   max-width: 100%;
   font-size: 18px;
+  max-height: 60px;
   @media ${theme.media.tablet}{
     font-size: 22px;
+    max-height: none;
   };
   @media ${theme.media.desktop}{
     font-size: 28px;
@@ -213,7 +223,7 @@ export const ListItem = styled.div`
     font-size: 14px;
   };
   @media ${theme.media.desktop}{
-    font-size: 22px;
+    font-size: 18px;
   }
 `;
 
@@ -230,11 +240,18 @@ export const TechListItem = styled.li`
 export const ListDescription = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   & > em{
     color: ${theme.colours.brand.light};
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 300;
     font-style: normal;
+    @media ${theme.media.tablet}{
+      font-size: 14px;
+    };
+    @media ${theme.media.desktop}{
+      font-size: 16px;
+    }
   }
 `;
 
@@ -243,6 +260,14 @@ export const Icon = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
+  @media ${theme.media.tablet}{
+    height: 50px;
+    width: 50px;
+  };
+  @media ${theme.media.desktop}{
+    height: 60px;
+    width: 60px;
+  }
 `;

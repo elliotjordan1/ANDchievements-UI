@@ -19,10 +19,10 @@ Object {
             />
           </div>
           <div
-            class="styles__ProjectBody-sc-1txlban-5 hPhjVv"
+            class="styles__ProjectBody-sc-1txlban-5 iIlSOP"
           >
             <div
-              class="styles__HeadingText-sc-1txlban-4 bLyHwQ"
+              class="styles__HeadingText-sc-1txlban-4 kRmCwS"
             >
               <em>
                 Big Boss
@@ -34,35 +34,38 @@ Object {
               class="styles__BodyText-sc-1txlban-6 hbqQrq"
             />
             <div
-              class="styles__StackedList-sc-1txlban-7 QPIDB"
+              class="styles__BodyText-sc-1txlban-6 hbqQrq"
             >
-              ANDis 
+              <b>
+                ANDis
+              </b>
+               
               <br />
             </div>
             <div
-              class="styles__StackedList-sc-1txlban-7 QPIDB"
+              class="styles__StackedList-sc-1txlban-7 gLjYdJ"
             >
               <div
-                class="styles__ListItem-sc-1txlban-9 kumVVM"
+                class="styles__ListItem-sc-1txlban-9 hFMaVB"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 hjwGt"
+                  class="styles__Icon-sc-1txlban-12 gxNaRa"
                 />
                 <div
-                  class="styles__ListDescription-sc-1txlban-11 fCCIAy"
+                  class="styles__ListDescription-sc-1txlban-11 bCAKlF"
                 >
                   Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
                   <em />
                 </div>
               </div>
               <div
-                class="styles__ListItem-sc-1txlban-9 kumVVM"
+                class="styles__ListItem-sc-1txlban-9 hFMaVB"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 hjwGt"
+                  class="styles__Icon-sc-1txlban-12 gxNaRa"
                 />
                 <div
-                  class="styles__ListDescription-sc-1txlban-11 fCCIAy"
+                  class="styles__ListDescription-sc-1txlban-11 bCAKlF"
                 >
                   Damiola Olufemi
                   <em />
@@ -70,20 +73,20 @@ Object {
               </div>
             </div>
             <ul
-              class="styles__TechList-sc-1txlban-8 iISPXu"
+              class="styles__TechList-sc-1txlban-8 fbPxwq"
             >
               <li
                 class="styles__TechListItem-sc-1txlban-10 ktjAfh"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 hjwGt"
+                  class="styles__Icon-sc-1txlban-12 gxNaRa"
                 />
               </li>
               <li
                 class="styles__TechListItem-sc-1txlban-10 ktjAfh"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 hjwGt"
+                  class="styles__Icon-sc-1txlban-12 gxNaRa"
                 />
               </li>
             </ul>
@@ -107,10 +110,10 @@ Object {
           />
         </div>
         <div
-          class="styles__ProjectBody-sc-1txlban-5 hPhjVv"
+          class="styles__ProjectBody-sc-1txlban-5 iIlSOP"
         >
           <div
-            class="styles__HeadingText-sc-1txlban-4 bLyHwQ"
+            class="styles__HeadingText-sc-1txlban-4 kRmCwS"
           >
             <em>
               Big Boss
@@ -122,35 +125,38 @@ Object {
             class="styles__BodyText-sc-1txlban-6 hbqQrq"
           />
           <div
-            class="styles__StackedList-sc-1txlban-7 QPIDB"
+            class="styles__BodyText-sc-1txlban-6 hbqQrq"
           >
-            ANDis 
+            <b>
+              ANDis
+            </b>
+             
             <br />
           </div>
           <div
-            class="styles__StackedList-sc-1txlban-7 QPIDB"
+            class="styles__StackedList-sc-1txlban-7 gLjYdJ"
           >
             <div
-              class="styles__ListItem-sc-1txlban-9 kumVVM"
+              class="styles__ListItem-sc-1txlban-9 hFMaVB"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 hjwGt"
+                class="styles__Icon-sc-1txlban-12 gxNaRa"
               />
               <div
-                class="styles__ListDescription-sc-1txlban-11 fCCIAy"
+                class="styles__ListDescription-sc-1txlban-11 bCAKlF"
               >
                 Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
                 <em />
               </div>
             </div>
             <div
-              class="styles__ListItem-sc-1txlban-9 kumVVM"
+              class="styles__ListItem-sc-1txlban-9 hFMaVB"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 hjwGt"
+                class="styles__Icon-sc-1txlban-12 gxNaRa"
               />
               <div
-                class="styles__ListDescription-sc-1txlban-11 fCCIAy"
+                class="styles__ListDescription-sc-1txlban-11 bCAKlF"
               >
                 Damiola Olufemi
                 <em />
@@ -158,20 +164,20 @@ Object {
             </div>
           </div>
           <ul
-            class="styles__TechList-sc-1txlban-8 iISPXu"
+            class="styles__TechList-sc-1txlban-8 fbPxwq"
           >
             <li
               class="styles__TechListItem-sc-1txlban-10 ktjAfh"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 hjwGt"
+                class="styles__Icon-sc-1txlban-12 gxNaRa"
               />
             </li>
             <li
               class="styles__TechListItem-sc-1txlban-10 ktjAfh"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 hjwGt"
+                class="styles__Icon-sc-1txlban-12 gxNaRa"
               />
             </li>
           </ul>

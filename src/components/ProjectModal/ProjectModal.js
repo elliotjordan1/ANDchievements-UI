@@ -29,7 +29,7 @@ const ProjectModal = ({ image, onClick, name, client, blurbOne, blurbTwo, blurbT
             <BodyText>{blurbOne}</BodyText>
             {blurbTwo ? <BodyText>{blurbTwo}</BodyText> : null}
             {blurbThree ? <BodyText>{blurbThree}</BodyText> : null}
-            <StackedList>ANDis <br /></StackedList>
+            <BodyText><b>ANDis</b> <br /></BodyText>
             <StackedList>
               {ANDis && ANDis.map((item) => {
                   let andi;
