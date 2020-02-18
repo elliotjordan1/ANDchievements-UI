@@ -20,14 +20,12 @@ export const ModalWrapper = styled.div`
   width: auto;
   height: 90vh;
   margin: 20px 10px;
-  background-image: ${ ({ image })  => `url(${image})`};
-  background-size: cover;
-  background-position: center;
   z-index: 1;
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   @media ${theme.media.tablet}{
     margin: 30px 40px;
+    flex-direction: row;
     height: 85vh;
   };
   @media ${theme.media.desktop}{
@@ -36,45 +34,84 @@ export const ModalWrapper = styled.div`
   };
 `;
 
+export const Image = styled.div`
+  background-image: ${ ({ image })  => `url(${image})`};
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  width: 100%;
+  display: flex;
+  @media ${theme.media.tablet}{
+    width: 60%;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+  };
+  @media ${theme.media.desktop}{
+    background-size: cover;
+  }
+`;
+
+export const LogoWrapper = styled.div`
+  background-image: ${ ({ image })  => `url(${image})`};
+  z-value: 3;
+  display: flex;
+  align-self: flex-end;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 175px;
+  height: 70px;
+  @media ${theme.media.tablet}{
+    width: 200px;
+    height: 75px;
+  };
+  @media ${theme.media.desktop}{
+    width: 300px;
+    height: 100px;
+  }
+`;
+
 export const HeadingText = styled.div`
   display: block;
-  width: max-content;
+  width: 100% - 20px;
   text-transform: uppercase;
-  text-align: right;
+  height: min-content;
   font-family: ${theme.fontFamily.primary};
   font-weight: 500;
   font-family: 'Roboto';
   letter-spacing: 0.05em;
+  padding: 2px 10px;
   line-height: 1;
-  bottom: 0;
   color: ${theme.colours.brand.red};
-  background-color: black;
-  font-size: 30px;
+  background-color: ${theme.colours.brand.grey2};
+  font-size: 28px;
   & > em{
-    color: white;
+    color: ${theme.colours.brand.grey};
     font-size: 20px;
+    font-weight: 300;
     font-style: normal;
   }
   @media ${theme.media.tablet}{
-    padding: 0 10px;
-    font-size: 40px;
-    margin: 0 0 0 20px;
-    line-height: 1.1;
+    line-height: 1.1;  
+    font-size: 28px;
+    padding: 10px 10px;
     & > em{
-      color: white;
+      color: ${theme.colours.brand.grey};
       font-size: 22px;
+      font-weight: 300;
       font-style: normal;
     }
   };
   @media ${theme.media.desktop}{
-    padding: 0 20px;
-    font-size: 50px;
+    font-size: 38px;
     line-height: 1.1;
-    margin: 0 0 0 30px;
     & > em{
-      color: white;
+      color: ${theme.colours.brand.grey};
       line-height: 0.4;
-      font-size: 30px;
+      font-size: 32px;
+      font-weight: 300;
       font-style: normal;
     }
   };
@@ -82,124 +119,155 @@ export const HeadingText = styled.div`
 
 export const ProjectBody = styled.div`
   line-height: 1.25;
-  background-color: rgba(256, 256, 256, 0.95);
-  display: flex;
+  background-color: white;
+  display: flex;  
+  width: 100%;
+  height: 100%;
   flex-direction: column;
   color: ${theme.colours.brand.grey};
   @media ${theme.media.tablet}{
-    margin: 0 20px 15px 20px;
-    flex-direction: row;
+    width: 40%;
+    min-width: 280px;
   };
   @media ${theme.media.desktop}{
-    margin: 0 30px 25px 30px;
-    flex-direction: row;
+    min-width: 530px;
   }
 `;
 
 export const BodyText = styled.div`
   max-width: 100%;
-  padding: 5px;
+  padding: 16px 20px 0 20px;
   font-family: ${theme.fontFamily.primary};
   font-size: 12px;
+  font-weight: 300;
   text-align: justify;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-height: 20vh;
+  max-height: 9em;
   @media ${theme.media.tablet}{
-    padding: 10px;
     font-size: 16px;
-    max-height: none;
-    max-width: 80%;
   };
   @media ${theme.media.desktop}{
-    padding: 20px;
-    font-size: 18px;
-    max-height: none;
-    max-width: 65%;
+    font-size: 24px;
     line-height: 1.5;
   }
 `;
 
-export const ListWrapper = styled.div`
-  flex-direction: column;
-  padding-bottom: 10px;
-  max-width: 100vw;
-  @media ${theme.media.tablet}{
-    max-width: 30vw;
-  };
-  @media ${theme.media.desktop}{
-    max-width: 60vw;
-  }
-`;
-
-export const StackedList = styled.ul`
+export const StackedList = styled.div`
   list-style-type: none;
   font-family: ${theme.fontFamily.primary};
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  margin: 0 8px;
-  padding: 10px 0 0 0;
-  max-width: 100vw;
+  font-weight: 400;
+  line-height: 2.4;
+  letter-spacing: 0.1em;
+  color: ${theme.colours.brand.grey};
+  margin: 0 20px;
+  padding: 0;
+  max-width: 50%;
+  max-height: 40%;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 30%;
+  flex-wrap: wrap;
+  max-width: 100%;
   font-size: 18px;
   @media ${theme.media.tablet}{
-    max-width: 20vw;
-    margin: 0 20px;
-    padding: 10px 0 0 0;
-    font-size: 22px;
+    font-size: 20px;
+    max-height: 40%;
   };
   @media ${theme.media.desktop}{
-    max-width: 60vw;
-    font-size: 26px;
+    font-size: 28px;
+    display: flex;
+    overflow: visible;
   }
 `;
 
-export const ListItem = styled.li`
-  background-image: ${ ({ image })  => `url(${image})`};
-  max-width: 100vw;
+export const TechList = styled.ul`
+  list-style-type: none;
+  font-family: ${theme.fontFamily.primary};
+  font-weight: 400;
+  line-height: 2.4;
+  flex-direction: row;
+  flex: content;
+  display: flex;
+  justify-content: space-evenly;
+  bottom: 0;
+  letter-spacing: 0.1em;
+  color: ${theme.colours.brand.grey};
+  margin: 0 20px;
+  padding: 0;
+  bottom: 0;
+  max-width: 100%;
+  font-size: 18px;
+  max-height: 60px;
+  @media ${theme.media.tablet}{
+    font-size: 22px;
+    max-height: none;
+  };
+  @media ${theme.media.desktop}{
+    font-size: 28px;
+  }
+`;
+
+export const ListItem = styled.div`
+  max-width: 100%;
   font-family: ${theme.fontFamily.primary};
   font-size: 12px;
-  text-indent: 40px;
-  line-height: 1.6;
-  background-repeat: no-repeat;
-  background-size: 30px;
-  height: 30px;
-  margin-bottom: 5px;
+  text-indent: 16px;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  height: max-content;
+  margin-bottom: 16px;
+  margin-left: 8px;
   @media ${theme.media.tablet}{
     font-size: 14px;
-    text-indent: 30px;
-    line-height: 1.6;
-    background-repeat: no-repeat;
-    background-size: 25px;
-    height: 20px;
-    margin-bottom: 5px;
   };
   @media ${theme.media.desktop}{
     font-size: 18px;
-    text-indent: 40px;
-    line-height: 1.6;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    height: 30px;
-    margin-bottom: 5px;
   }
 `;
 
-export const LogoWrapper = styled.div`
+export const TechListItem = styled.li`
+  width: max-content;
+  display: flex;
+  align-self: flex-end;
+  flex-direction: row;
+  height: max-content;
+  margin-bottom: 16px;
+  margin-left: 8px;
+`;
+
+export const ListDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & > em{
+    color: ${theme.colours.brand.light};
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    @media ${theme.media.tablet}{
+      font-size: 14px;
+    };
+    @media ${theme.media.desktop}{
+      font-size: 16px;
+    }
+  }
+`;
+
+export const Icon = styled.div`
   background-image: ${ ({ image })  => `url(${image})`};
-  z-value: 3;
-  position: absolute;
-  background-size: contain;
   background-repeat: no-repeat;
-  width: 175px;
-  height: 70px;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  width: 40px;
   @media ${theme.media.tablet}{
-    width: 200px;
-    margin: 20px;
-    height: 75px;
+    height: 50px;
+    width: 50px;
   };
   @media ${theme.media.desktop}{
-    width: 300px;
-    height: 100px;
+    height: 60px;
+    width: 60px;
   }
 `;
