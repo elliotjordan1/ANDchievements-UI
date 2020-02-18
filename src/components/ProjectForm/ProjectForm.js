@@ -7,20 +7,41 @@ import getAllClients from '../../api/handlers/clients';
 
 const ProjectForm = () => {
 
-    const fetchAndis = async () => {
+    const clientOptions = [];
+    const technologyOptions = [];
+    const andiOptions = [];
+
+    const clientList = [];
+    const technologyList = [];
+    const andiList = [];
+
+    const [andis, setAndis] = useState(undefined);
+
+    useEffect(() => {
+        const fetchAndis = async () => {
         const response = await getAllAndis();
 
-        response.data.res.forEach(element => {
-          let andiValues = { value: element["andiid"], label: element["firstname"] };
-          andiOptions.push(andiValues);
-        });
-    }
+        console.log(response.data.res);
+        setAndis(response.data.res);
+
+        console.log(andis);
+
+        //        projects.forEach(element => {
+        //          const andiValues = { value: element.andiid, label: element.firstname};
+        //          andiOptions.push(andiValues);
+        //        });
+        }
+
+        if (andis === undefined) {
+            fetchAndis();
+        }
+    });
 
     const fetchTechnologies = async () => {
         const response = await getAllTechnologies();
 
         response.data.res.forEach(element => {
-          let technologyValues = { value: element["technologyid"], label: element["name"] };
+          const technologyValues = { value: element.technologyid, label: element.name };
           technologyOptions.push(technologyValues);
         });
     }
@@ -28,48 +49,28 @@ const ProjectForm = () => {
     const fetchClients = async () => {
         const response = await getAllClients();
         response.data.res.forEach(element => {
-          let clientsValues = { value: element["clientid"], label: element["clientname"] };
+          const clientsValues = { value: element.clientid, label: element.clientname };
           clientOptions.push(clientsValues);
         });
     }
 
-    if (andis === undefined) {
-      fetchAndis();
-    }
+    fetchTechnologies();
+    fetchClients();
 
-    if (technologies === undefined) {
-      fetchTechnologies();
-    }
-
-    if (technologies === undefined) {
-      fetchClients();
-    }
-
-    const clientOptions = [
-    ];
-
-    const technologyOptions = [
-    ];
-
-    const andiOptions = [];
-
-    const clients = [];
-
-    const technologies = [];
-
-    const andis = [];
-
-    clients.forEach(element => {
-      let clientsValues = { value: element["value"], label: element["label"] };
+    clientList.forEach(element => {
+      const clientsValues = { value: element.value, label: element.label };
       clientOptions.push(clientsValues);
     });
 
-    technologies.forEach(element => {
-      let technologiesValues = { value: element["value"], label: element["label"] };
+    technologyList.forEach(element => {
+      const technologiesValues = { value: element.value, label: element.label };
       technologyOptions.push(technologiesValues);
     });
 
-
+    andiList.forEach(element => {
+      const andiValues = { value: element.value, label: element.label };
+      technologyOptions.push(andiValues);
+    });
 
     const [projectTitle, setName] = useState('');
     const [projectDescription1, setProjectDescription1] = useState('');
@@ -77,12 +78,8 @@ const ProjectForm = () => {
     const [projectDescription3, setProjectDescription3] = useState('');
     const [projectCoverImageUrl, setProjectCoverImageUrl] = useState('');
 
-    const handleSubmit = (evt) => {
-      evt.preventDefault();
-    }
-
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form >
             <Label>
             Project Title:
             <Input
@@ -151,7 +148,7 @@ const ProjectForm = () => {
                 />
             </Label>
             <Label>
-              <Input type='submit' value='Submit' />
+              <Input type='submit' value='Submit'/>
             </Label>
         </Form>
       );
