@@ -1,8 +1,10 @@
 const theme = {
   colours: {
     brand: {
-      red: '#C52626',
-      grey: '#2d2e2f'
+      red: '#ff313b',
+      grey: '#2d2e2f',
+      light: '#6d6e6f',
+      grey2: '#dddedf'
     }
   },
   media: {
