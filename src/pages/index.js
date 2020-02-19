@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
-import HomepageWrapper from '../global/styles';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
-import getAllProjects from '../api/handlers/projects';
+import getAllProjects from '../api/handlers/getprojects/getProjects';
+import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 
 const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
   const [projects, setProjects] = useState(undefined);
+  const [error, setError] = useState(null);
 
   const boxClick = id => {
     setModal(id);
@@ -17,7 +18,12 @@ const Homepage = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await getAllProjects();
-      setProjects(response.data.projects);
+      if(response.status === 200){
+        setProjects(response.projects);
+      }
+      else{
+        setError(response.message);
+      }
     };
 
     if (projects === undefined) {
@@ -26,6 +32,7 @@ const Homepage = () => {
   });
   
   return (
+    error ? (<ErrorWrapper >{error}</ErrorWrapper>) :
     <HomepageWrapper>
       {
         (viewModal && (

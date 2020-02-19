@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from './theme';
 
-const HomepageWrapper = styled.div`
+export const HomepageWrapper = styled.div`
   align-content: row;
   min-height: calc(100vh - 78px);
   @media ${theme.media.tablet}{
@@ -21,4 +21,11 @@ export const TextWrapper = styled.div`
   width: 100%;
 `;
 
-export default HomepageWrapper;
+export const ErrorWrapper = styled(HomepageWrapper)`
+  color: ${theme.colours.brand.red};
+  font-family: ${theme.fontFamily.primary};
+  font-size: 22px;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 20;
+`;
