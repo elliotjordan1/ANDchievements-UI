@@ -1,4 +1,4 @@
-FROM node:12.1.0
+FROM node:12.1.0-stretch
 
 ARG AUTH_TOKEN
 ARG API_URL
@@ -10,8 +10,8 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install
 
-ENV AUTHENTICATION_TOKEN=${AUTH_TOKEN}
-ENV API_URL=${API_URL}
+RUN echo "AUTHENTICATION_TOKEN="${AUTH_TOKEN} >> ./.env
+RUN echo "API_URL="${API_URL} >> ./.env
 
 # Copying source files
 COPY . .
