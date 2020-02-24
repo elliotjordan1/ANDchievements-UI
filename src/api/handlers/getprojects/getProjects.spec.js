@@ -1,7 +1,5 @@
 import getAllProjects from './getProjects';
-import makeGetRequest from '../../requests/getRequest';
 
-makeGetRequest.mock = jest.fn((endpoint) => {return(`www.url.com${endpoint}`)});
 
 describe('getProjects', () => {
   it('calls makeGetRequest with correct endpoint', () => {
