@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectForm from '../components/ProjectForm/ProjectForm';
+import MultiSelect from '../components/MultiSelect/index';
 
 
 
@@ -7,5 +8,6 @@ import ProjectForm from '../components/ProjectForm/ProjectForm';
 export default function CreateProject() {
   return (
       < ProjectForm />
+
   );
 }

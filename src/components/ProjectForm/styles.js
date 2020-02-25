@@ -1,8 +1,22 @@
 import styled from 'styled-components';
 import theme from '../../global/theme';
+import { MultiSelectWrapper, Input as Option } from '../MultiSelect/styles';
 
 export const Form = styled.form`
+& ${MultiSelectWrapper} > ${Option}{
+    font-size: 16px;
+        font-family: ${theme.fontFamily.primary};
+        @media ${theme.media.tablet} {
+            font-size: 18px;
+        };
+        @media ${theme.media.desktop} {
+            font-size: 22px;
+        };
+
+
+}
 `;
+
 
 export const Label = styled.label`
     width: 50%;
@@ -36,6 +50,8 @@ export const Input = styled.input`
         font-size: 22px;
     };
 `;
+
+
 
 export const TextArea = styled.textarea`
     width: 100%;

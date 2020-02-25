@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CreatableSelect from 'react-select/creatable';
 import { Form, Label, Input, TextArea } from './styles';
+import MultiSelect from '../MultiSelect';
 
 const ProjectForm = () => {
 
@@ -80,11 +81,19 @@ const ProjectForm = () => {
             <Label>
             Technology Stack:
                 <CreatableSelect
-                      closeMenuOnSelect={false}
-                      isMulti
-                      options={technologyOptions}
+
                 />
             </Label>
+
+          <Label>
+            select:
+            <MultiSelect 
+              placeholder="this is my placeholder"
+              options={[1,2,3,4]}
+            />
+          </Label>
+
+
             <Label>
             Andis:
                 <CreatableSelect
