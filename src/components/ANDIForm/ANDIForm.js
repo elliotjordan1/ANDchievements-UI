@@ -14,6 +14,8 @@ const ANDIForm = ({ name }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    createANDi(name, imageUrl);
+    return role;
   };
 
   return (

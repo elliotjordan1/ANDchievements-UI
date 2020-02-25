@@ -29,6 +29,7 @@ export const ErrorWrapper = styled(HomepageWrapper)`
   font-weight: 300;
   justify-content: center;
   line-height: 20;
+  text-align: center;
 `;
 
 export const FormWrapper = styled.div`
