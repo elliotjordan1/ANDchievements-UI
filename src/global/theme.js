@@ -2,6 +2,7 @@ const theme = {
   colours: {
     brand: {
       red: '#ff313b',
+      red2: '#df111b',
       grey: '#2d2e2f',
       light: '#6d6e6f',
       grey2: '#dddedf',

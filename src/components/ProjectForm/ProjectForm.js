@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FormWrapper, HomepageWrapper } from '../../global/styles';
 import { FormTitle, FormBody, Label, FormInput, TextArea, InputContainer, SubmitButton } from './styles';
+import FormModal from '../FormModal/FormModal';
+import ANDIForm from '../ANDIForm/ANDIForm';
 
-const ProjectForm = () => (
+const ProjectForm = () => { 
+  const [viewModal, setViewModal] = useState(false);
+  const [formType, setFormType] = useState();
+  const [formTitle, setFormTitle] = useState();
+
+  const setToANDi = () => {
+    setFormType(<ANDIForm />); 
+    setFormTitle('Add an ANDi')
+    setViewModal(true); 
+  };
+  
+  return (
   <HomepageWrapper>
     <FormWrapper >
       <FormTitle>Add a Project</FormTitle>
@@ -28,7 +41,7 @@ const ProjectForm = () => (
           <FormInput placeholder='Cover image url' />
         </div>
         <div>
-          <Label>ANDis</Label>
+          <Label onClick={() => {setToANDi()}} >ANDis</Label>
           <FormInput placeholder='Select ANDis' />
         </div>
         <div>
@@ -36,12 +49,20 @@ const ProjectForm = () => (
           <FormInput placeholder='Select Tech Stack' />
         </div>
         <div>
-          <SubmitButton >SUBMIT</SubmitButton>
+          <SubmitButton onClick={() => {}} >SUBMIT</SubmitButton>
         </div>
       </FormBody>
     </FormWrapper>
+    {
+        (viewModal && (
+          <FormModal 
+            title={formTitle}
+            form={formType}
+          /> 
+        ))
+        }
   </HomepageWrapper>
-);
+)};
 
 export default ProjectForm;
 
