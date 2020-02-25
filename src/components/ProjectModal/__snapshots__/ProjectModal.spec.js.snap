@@ -6,23 +6,23 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styles__Background-sc-1txlban-0 hbjsxj"
+        class="styles__Background-sc-1txlban-0 bjxKWf"
       >
         <div
-          class="styles__ModalWrapper-sc-1txlban-1 fYNNFE"
+          class="styles__ModalWrapper-sc-1txlban-1 dPUzzM"
         >
           <div
-            class="styles__Image-sc-1txlban-2 dguuta"
+            class="styles__Image-sc-1txlban-2 eVmPMe"
           >
             <div
-              class="styles__LogoWrapper-sc-1txlban-3 ksmEOo"
+              class="styles__LogoWrapper-sc-1txlban-3 jrDgkw"
             />
           </div>
           <div
-            class="styles__ProjectBody-sc-1txlban-5 iIlSOP"
+            class="styles__ProjectBody-sc-1txlban-5 gZPoAr"
           >
             <div
-              class="styles__HeadingText-sc-1txlban-4 kRmCwS"
+              class="styles__HeadingText-sc-1txlban-4 eWeUYm"
             >
               <em>
                 Big Boss
@@ -31,12 +31,12 @@ Object {
               Best Project
             </div>
             <div
-              class="styles__BodyText-sc-1txlban-6 hbqQrq"
+              class="styles__BodyText-sc-1txlban-6 hOVuee"
             >
               Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.
             </div>
             <div
-              class="styles__BodyText-sc-1txlban-6 hbqQrq"
+              class="styles__BodyText-sc-1txlban-6 hOVuee"
             >
               <b>
                 ANDis
@@ -45,29 +45,29 @@ Object {
               <br />
             </div>
             <div
-              class="styles__StackedList-sc-1txlban-7 gLjYdJ"
+              class="styles__StackedList-sc-1txlban-7 qumkh"
             >
               <div
-                class="styles__ListItem-sc-1txlban-9 hFMaVB"
+                class="styles__ListItem-sc-1txlban-9 dIENqN"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 gxNaRa"
+                  class="styles__Icon-sc-1txlban-12 hlrEDO"
                 />
                 <div
-                  class="styles__ListDescription-sc-1txlban-11 bCAKlF"
+                  class="styles__ListDescription-sc-1txlban-11 gVVnxp"
                 >
                   Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
                   <em />
                 </div>
               </div>
               <div
-                class="styles__ListItem-sc-1txlban-9 hFMaVB"
+                class="styles__ListItem-sc-1txlban-9 dIENqN"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 gxNaRa"
+                  class="styles__Icon-sc-1txlban-12 hlrEDO"
                 />
                 <div
-                  class="styles__ListDescription-sc-1txlban-11 bCAKlF"
+                  class="styles__ListDescription-sc-1txlban-11 gVVnxp"
                 >
                   Damiola Olufemi
                   <em />
@@ -75,20 +75,20 @@ Object {
               </div>
             </div>
             <ul
-              class="styles__TechList-sc-1txlban-8 fbPxwq"
+              class="styles__TechList-sc-1txlban-8 fPubje"
             >
               <li
                 class="styles__TechListItem-sc-1txlban-10 ktjAfh"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 gxNaRa"
+                  class="styles__Icon-sc-1txlban-12 hlrEDO"
                 />
               </li>
               <li
                 class="styles__TechListItem-sc-1txlban-10 ktjAfh"
               >
                 <div
-                  class="styles__Icon-sc-1txlban-12 gxNaRa"
+                  class="styles__Icon-sc-1txlban-12 hlrEDO"
                 />
               </li>
             </ul>
@@ -99,23 +99,23 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styles__Background-sc-1txlban-0 hbjsxj"
+      class="styles__Background-sc-1txlban-0 bjxKWf"
     >
       <div
-        class="styles__ModalWrapper-sc-1txlban-1 fYNNFE"
+        class="styles__ModalWrapper-sc-1txlban-1 dPUzzM"
       >
         <div
-          class="styles__Image-sc-1txlban-2 dguuta"
+          class="styles__Image-sc-1txlban-2 eVmPMe"
         >
           <div
-            class="styles__LogoWrapper-sc-1txlban-3 ksmEOo"
+            class="styles__LogoWrapper-sc-1txlban-3 jrDgkw"
           />
         </div>
         <div
-          class="styles__ProjectBody-sc-1txlban-5 iIlSOP"
+          class="styles__ProjectBody-sc-1txlban-5 gZPoAr"
         >
           <div
-            class="styles__HeadingText-sc-1txlban-4 kRmCwS"
+            class="styles__HeadingText-sc-1txlban-4 eWeUYm"
           >
             <em>
               Big Boss
@@ -124,12 +124,12 @@ Object {
             Best Project
           </div>
           <div
-            class="styles__BodyText-sc-1txlban-6 hbqQrq"
+            class="styles__BodyText-sc-1txlban-6 hOVuee"
           >
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.
           </div>
           <div
-            class="styles__BodyText-sc-1txlban-6 hbqQrq"
+            class="styles__BodyText-sc-1txlban-6 hOVuee"
           >
             <b>
               ANDis
@@ -138,29 +138,29 @@ Object {
             <br />
           </div>
           <div
-            class="styles__StackedList-sc-1txlban-7 gLjYdJ"
+            class="styles__StackedList-sc-1txlban-7 qumkh"
           >
             <div
-              class="styles__ListItem-sc-1txlban-9 hFMaVB"
+              class="styles__ListItem-sc-1txlban-9 dIENqN"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 gxNaRa"
+                class="styles__Icon-sc-1txlban-12 hlrEDO"
               />
               <div
-                class="styles__ListDescription-sc-1txlban-11 bCAKlF"
+                class="styles__ListDescription-sc-1txlban-11 gVVnxp"
               >
                 Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
                 <em />
               </div>
             </div>
             <div
-              class="styles__ListItem-sc-1txlban-9 hFMaVB"
+              class="styles__ListItem-sc-1txlban-9 dIENqN"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 gxNaRa"
+                class="styles__Icon-sc-1txlban-12 hlrEDO"
               />
               <div
-                class="styles__ListDescription-sc-1txlban-11 bCAKlF"
+                class="styles__ListDescription-sc-1txlban-11 gVVnxp"
               >
                 Damiola Olufemi
                 <em />
@@ -168,20 +168,20 @@ Object {
             </div>
           </div>
           <ul
-            class="styles__TechList-sc-1txlban-8 fbPxwq"
+            class="styles__TechList-sc-1txlban-8 fPubje"
           >
             <li
               class="styles__TechListItem-sc-1txlban-10 ktjAfh"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 gxNaRa"
+                class="styles__Icon-sc-1txlban-12 hlrEDO"
               />
             </li>
             <li
               class="styles__TechListItem-sc-1txlban-10 ktjAfh"
             >
               <div
-                class="styles__Icon-sc-1txlban-12 gxNaRa"
+                class="styles__Icon-sc-1txlban-12 hlrEDO"
               />
             </li>
           </ul>

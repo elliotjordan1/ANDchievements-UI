@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import theme from '../../global/theme';
 
 export const FormTitle = styled.div`
-  color: ${theme.colours.brand.red};
-  background-color: ${theme.colours.brand.grey2};
+  color: white;
+  background-color: black;
   font: 500 20px ${theme.fontFamily.primary};
-  line-height: 1.4;
+  line-height: 1.8;
   letter-spacing: 2px;
   width: 100%;
   text-indent: 8px;
@@ -43,11 +43,10 @@ export const ModalBody = styled.div`
   display: flex;
   @media ${theme.media.tablet}{
     margin: 30px auto;
-    height: 50vh;
-    max-width: 660px
+    max-width: 460px
   };
   @media ${theme.media.desktop}{
     margin: 30px auto;
-    height: 400px;
+    max-width: 730px;
   };
 `;

@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import theme from '../../global/theme';
 
 export const Label = styled.div`
-    font: 500 16px ${theme.fontFamily.primary};
+    font: 500 14px ${theme.fontFamily.primary};
     letter-spacing: 1px;
     @media ${theme.media.tablet} {
-        font-size: 18px;
+        font-size: 16px;
     };
     @media ${theme.media.desktop} {
-        font-size: 20px;
+        font-size: 18px;
     };
 `;
 
@@ -23,16 +23,16 @@ export const FormInput = styled.input`
     box-sizing: border-box;
     border:  1px solid black;
     margin: 8px 0;
-    font: 300 14px ${theme.fontFamily.primary};
+    font: 300 12px ${theme.fontFamily.primary};
     height: 40px;
     @media ${theme.media.tablet} {
-        font-size: 16px;
+        font-size: 14px;
         margin: 8px 0 16px 0;
         height: 40px;
         padding-left: 16px;
     };
     @media ${theme.media.desktop} {
-        font-size: 18px;
+        font-size: 16px;
         height: 50px;
         margin: 8px 0 24px 0;
     };
@@ -47,7 +47,7 @@ export const SubmitButton = styled.button`
     margin: 8px auto;
     border: none;
     color: white;
-    font: 500 14px ${theme.fontFamily.primary};
+    font: 500 12px ${theme.fontFamily.primary};
     letter-spacing: 2px;
     margin-top: 8px;
     :hover{
@@ -59,14 +59,14 @@ export const SubmitButton = styled.button`
     @media ${theme.media.tablet} {
         width: 160px;
         height: 50px;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 2px;
         margin-top: 16px;
     };
     @media ${theme.media.desktop} {
         width: 200px;
         height: 60px;
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 3px;
         margin-top: 24px;
     };

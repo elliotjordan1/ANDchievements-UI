@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styles__Background-sc-2y3647-1 bodkgJ"
+        class="styles__Background-sc-2y3647-1 gLNmeB"
       >
         <div
-          class="styles__ModalBody-sc-2y3647-2 bkFiot"
+          class="styles__ModalBody-sc-2y3647-2 edftre"
         >
           <div
-            class="styles__FormTitle-sc-2y3647-0 fBBFGL"
+            class="styles__FormTitle-sc-2y3647-0 jVbOoG"
           >
             Test Form Title
           </div>
@@ -23,13 +23,13 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styles__Background-sc-2y3647-1 bodkgJ"
+      class="styles__Background-sc-2y3647-1 gLNmeB"
     >
       <div
-        class="styles__ModalBody-sc-2y3647-2 bkFiot"
+        class="styles__ModalBody-sc-2y3647-2 edftre"
       >
         <div
-          class="styles__FormTitle-sc-2y3647-0 fBBFGL"
+          class="styles__FormTitle-sc-2y3647-0 jVbOoG"
         >
           Test Form Title
         </div>

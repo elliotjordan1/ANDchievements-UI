@@ -37,7 +37,7 @@ export const FormWrapper = styled.div`
   height: 100%;
   background-color: white;
   @media ${theme.media.tablet}{
-    margin: 25px 40px;
+    margin: 25px 30px;
     height: min-content;
   }
   @media ${theme.media.desktop}{
