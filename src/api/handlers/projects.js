@@ -1,14 +1,15 @@
 import Axios from 'axios';
+import { API_URL, AUTHENTICATION_TOKEN } from 'react-native-dotenv';
 
 const options = {
   method: 'GET',
   headers: {
-    'x-api-key' : 'YsO9MGt0DwUu2PDTQ4y4TrhRtnJlYFzYWa1NW92PmvDFqcyDGLiacSNDWape'
+    'x-api-key' : AUTHENTICATION_TOKEN
   }
 };
 
 const getAllProjects = async () => {
-  const response = await Axios.get('https://658m0jk5l3.execute-api.us-east-1.amazonaws.com/prod/projects/get', options);
+  const response = await Axios.get(`${API_URL}/projects/get`, options);
   return response;
 };
 
