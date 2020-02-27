@@ -14,6 +14,12 @@ const Homepage = () => {
     setViewModal(true);  
   };
 
+  const shuffleAndSliceArray = (array, sliceLength) => {
+    const arrayLength = array.length;
+
+    return array.sort(() => Math.random() - 0.5).slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
+  }
+
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await getAllProjects();
@@ -37,7 +43,7 @@ const Homepage = () => {
           blurbTwo={projects[modal].blurb_two}
           blurbThree={projects[modal].blurb_three} 
           ANDis={projects[modal].andis} 
-          techStack={projects[modal].techstack} 
+          techStack={shuffleAndSliceArray(projects[modal].techstack, 5)} 
           logo={projects[modal].clientlogourl}
           onClick={() => {setViewModal(false)}}/> 
         ))
