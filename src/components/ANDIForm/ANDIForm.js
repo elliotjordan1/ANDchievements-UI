@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import onInputChange from '../../global/helpers';
+import { onInputChange } from '../../global/helpers';
 import { 
   Label, 
   SubmitButton,
@@ -14,7 +14,6 @@ const ANDIForm = ({ name }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    createANDi(name, imageUrl);
     return role;
   };
 

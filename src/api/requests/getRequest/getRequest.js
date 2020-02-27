@@ -10,6 +10,7 @@ const options = {
 
 const makeGetRequest = async (endpoint) => {
   try {
+    console.log(API_URL);
     return await Axios.get(`${API_URL}${endpoint}`, options);
   } catch (error) {
     if (!error.response) {

@@ -1,4 +1,4 @@
-import makeGetRequest from '../../requests/getRequest';
+import makeGetRequest from '../../requests/getRequest/getRequest';
 
 const getAllProjects = async () => {
   const response = await makeGetRequest('/projects/get');
