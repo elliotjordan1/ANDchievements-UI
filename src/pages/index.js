@@ -5,10 +5,12 @@ import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/projects';
 
 
-export const sliceArray = (array, sliceLength) => {
+export const shuffleAndSliceArray = (array, sliceLength) => {
   const arrayLength = array.length;
 
-  return array.slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
+  const shuffledArray = array.sort(() => Math.random() - 0.5);
+  
+  return shuffledArray.slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
 }
 
 const Homepage = () => {
@@ -43,8 +45,8 @@ const Homepage = () => {
           blurbOne={projects[modal].blurb_one}
           blurbTwo={projects[modal].blurb_two}
           blurbThree={projects[modal].blurb_three} 
-          ANDis={sliceArray(projects[modal].andis, 8)} 
-          techStack={sliceArray(projects[modal].techstack, 5)} 
+          ANDis={shuffleAndSliceArray(projects[modal].andis, 8)} 
+          techStack={shuffleAndSliceArray(projects[modal].techstack, 5)} 
           logo={projects[modal].clientlogourl}
           onClick={() => {setViewModal(false)}}/> 
         ))
