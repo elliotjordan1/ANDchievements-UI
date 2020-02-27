@@ -4,6 +4,13 @@ import HomepageWrapper from '../global/styles';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/projects';
 
+
+export const sliceArray = (array, sliceLength) => {
+  const arrayLength = array.length;
+
+  return array.slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
+}
+
 const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
@@ -13,12 +20,6 @@ const Homepage = () => {
     setModal(id);
     setViewModal(true);  
   };
-
-  const shuffleAndSliceArray = (array, sliceLength) => {
-    const arrayLength = array.length;
-
-    return array.sort(() => Math.random() - 0.5).slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
-  }
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -42,8 +43,8 @@ const Homepage = () => {
           blurbOne={projects[modal].blurb_one}
           blurbTwo={projects[modal].blurb_two}
           blurbThree={projects[modal].blurb_three} 
-          ANDis={projects[modal].andis} 
-          techStack={shuffleAndSliceArray(projects[modal].techstack, 5)} 
+          ANDis={sliceArray(projects[modal].andis, 8)} 
+          techStack={sliceArray(projects[modal].techstack, 5)} 
           logo={projects[modal].clientlogourl}
           onClick={() => {setViewModal(false)}}/> 
         ))
