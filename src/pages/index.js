@@ -7,6 +7,9 @@ import HomepageWrapper from '../global/styles';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/projects';
 
+const SPACE_BAR_KEY_CODE = 32;
+const INTERVAL_TIME = 45000;
+const TIMEOUT_INTERVAL = 40000;
 
 export const shuffleAndSliceArray = (array, sliceLength) => {
   const arrayLength = array.length;
@@ -19,8 +22,8 @@ export const shuffleAndSliceArray = (array, sliceLength) => {
 const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
+  const [animationLength, setAnimationLength] = useState(0);
   const [projects, setProjects] = useState(undefined);
-  let animationLength = 0;
 
   const boxClick = id => {
     setModal(id);
@@ -31,20 +34,24 @@ const Homepage = () => {
       let run = start;
       setViewModal(true);
       setModal(run);
+      
       setTimeout(() => {
         run +=1;
-        if(run===animationLength){
+
+        if(run === animationLength){
           run = 0;
         }
+
         setViewModal(false);
-      }, 40000);
+
+      }, TIMEOUT_INTERVAL);
   };
 
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await getAllProjects();
       setProjects(response.data.projects);
-      animationLength = response.data.projects.length;
+      setAnimationLength(response.data.projects.length);
     };
 
     if (projects === undefined) {
@@ -53,20 +60,21 @@ const Homepage = () => {
   });
 
   useEffect(() => {
-    const handleSpace = (e) => {
-      
-      if (e.keyCode === 32) {
+    const handleSpace = (e) => {      
+      if (e.keyCode === SPACE_BAR_KEY_CODE) {
         let start = 0;
+
         setViewModal(true);
         setInterval(() => {
           animate(start);
           start +=1;
-          if(start===animationLength){
+          if(start === animationLength){
             start = 0;
-          } 
-        }, 45000);
+          }
+        }, INTERVAL_TIME);
       }
     };
+
     window.addEventListener('keydown', handleSpace);
 
     return () => {
