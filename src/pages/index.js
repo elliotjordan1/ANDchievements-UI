@@ -4,6 +4,13 @@ import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/getprojects/getProjects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 
+
+export const sliceArray = (array, sliceLength) => {
+  const arrayLength = array.length;
+
+  return array.slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
+}
+
 const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
@@ -43,8 +50,8 @@ const Homepage = () => {
           blurbOne={projects[modal].blurb_one}
           blurbTwo={projects[modal].blurb_two}
           blurbThree={projects[modal].blurb_three} 
-          ANDis={projects[modal].andis} 
-          techStack={projects[modal].techstack} 
+          ANDis={sliceArray(projects[modal].andis, 8)} 
+          techStack={sliceArray(projects[modal].techstack, 5)} 
           logo={projects[modal].clientlogourl}
           onClick={() => {setViewModal(false)}}/> 
         ))

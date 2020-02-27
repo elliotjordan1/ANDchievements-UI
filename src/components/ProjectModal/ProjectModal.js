@@ -57,6 +57,7 @@ const ProjectModal = ({ image, onClick, name, client, blurbOne, blurbTwo, blurbT
                   } catch {
                     tech = item;
                   }
+
                   return (
                     <TechListItem key={tech.technologyId}>
                       <Icon image={tech.imageURL}/>
