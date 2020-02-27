@@ -3,6 +3,7 @@ import { FormWrapper, HomepageWrapper } from '../../global/styles';
 import { FormTitle, FormBody, Label, FormInput, TextArea, InputContainer, SubmitButton } from './styles';
 import FormModal from '../FormModal/FormModal';
 import ANDIForm from '../ANDIForm/ANDIForm';
+import ClientAndStackForm from '../ClientAndStackForm/ClientAndStackForm';
 
 const ProjectForm = () => { 
   const [viewModal, setViewModal] = useState(false);
@@ -12,6 +13,18 @@ const ProjectForm = () => {
   const setToANDi = () => {
     setFormType(<ANDIForm />); 
     setFormTitle('Add an ANDi')
+    setViewModal(true); 
+  };
+
+  const setToTechStack = () => {
+    setFormType(<ClientAndStackForm />); 
+    setFormTitle('Add a Tech Stack')
+    setViewModal(true); 
+  };
+
+  const setToClient = () => {
+    setFormType(<ClientAndStackForm isClient />); 
+    setFormTitle('Add a Client')
     setViewModal(true); 
   };
   
@@ -25,7 +38,7 @@ const ProjectForm = () => {
           <FormInput maxLength={20} placeholder='Project title' />
         </div>
         <div>
-          <Label>Client</Label>
+          <Label onClick={() => {setToClient()}}>Client</Label>
           <FormInput placeholder='Select client' />
         </div>
         <div>
@@ -45,7 +58,7 @@ const ProjectForm = () => {
           <FormInput placeholder='Select ANDis' />
         </div>
         <div>
-          <Label>Tech Stack</Label>
+          <Label onClick={() => {setToTechStack()}}>Tech Stack</Label>
           <FormInput placeholder='Select Tech Stack' />
         </div>
         <div>
