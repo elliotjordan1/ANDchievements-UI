@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import { Input, MultiSelectWrapper, Options, OptionsWrapper, InputWrapper, SelectedOption, RemovalButton, AddButton } from './styles';
 
 
+// eslint-disable-next-line react/prop-types
 const MultiSelect = ({ placeholder }) => {
 
     const [visible, setVisible] =  useState(false);
