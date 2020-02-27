@@ -9,8 +9,6 @@ const options = {
 };
 
 const getAllProjects = async () => {
-  console.log(API_URL);
-  
   const response = await Axios.get(`${API_URL}/projects/get`, options);
   return response;
 };
