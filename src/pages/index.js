@@ -6,18 +6,10 @@ import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import HomepageWrapper from '../global/styles';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/projects';
-
+import { shuffleAndSliceArray } from '../global/helpers';
 const SPACE_BAR_KEY_CODE = 32;
 const INTERVAL_TIME = 45000;
 const TIMEOUT_INTERVAL = 40000;
-
-export const shuffleAndSliceArray = (array, sliceLength) => {
-  const arrayLength = array.length;
-
-  const shuffledArray = array.sort(() => Math.random() - 0.5);
-  
-  return shuffledArray.slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
-}
 
 const Homepage = () => {
   const [modal, setModal] = useState(0);
