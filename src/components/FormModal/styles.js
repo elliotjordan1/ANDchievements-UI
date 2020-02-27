@@ -10,6 +10,8 @@ export const FormTitle = styled.div`
   width: 100%;
   text-indent: 8px;
   height: min-content;
+  display: flex;
+  flex-direction: row;
   @media ${theme.media.tablet} {
     font-size: 24px;
   };
@@ -48,5 +50,19 @@ export const ModalBody = styled.div`
   @media ${theme.media.desktop}{
     margin: 30px auto;
     max-width: 730px;
+  };
+`;
+
+export const CloseIcon = styled.a`
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  height: 28px;
+  margin-left: 12px;
+  cursor: pointer;
+  & > svg{
+    height: 28px;
+    width: 28px;
+  }
   };
 `;

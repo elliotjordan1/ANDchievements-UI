@@ -11,19 +11,19 @@ const ProjectForm = () => {
   const [formTitle, setFormTitle] = useState();
 
   const setToANDi = () => {
-    setFormType(<ANDIForm />); 
+    setFormType(<ANDIForm close={() => {setViewModal(false)}}/>); 
     setFormTitle('Add an ANDi')
     setViewModal(true); 
   };
 
   const setToTechStack = () => {
-    setFormType(<ClientAndStackForm />); 
+    setFormType(<ClientAndStackForm close={() => {setViewModal(false)}} />); 
     setFormTitle('Add a Tech Stack')
     setViewModal(true); 
   };
 
   const setToClient = () => {
-    setFormType(<ClientAndStackForm isClient />); 
+    setFormType(<ClientAndStackForm isClient close={() => {setViewModal(false)}}/>); 
     setFormTitle('Add a Client')
     setViewModal(true); 
   };
@@ -71,6 +71,7 @@ const ProjectForm = () => {
           <FormModal 
             title={formTitle}
             form={formType}
+            close={() => {setViewModal(false)}}
           /> 
         ))
         }

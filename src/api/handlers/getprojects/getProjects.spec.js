@@ -1,7 +1,7 @@
 import getAllProjects from './getProjects';
 import makeGetRequest from '../../requests/getRequest/getRequest';
 
-jest.mock('../../requests/getRequest');
+jest.mock('../../requests/getRequest/getRequest');
 
 describe('getProjects', () => {
   it('calls makeGetRequest with correct endpoint', async () => {

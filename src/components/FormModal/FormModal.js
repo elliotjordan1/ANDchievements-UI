@@ -4,15 +4,22 @@ import PropTypes from 'prop-types';
 import { 
   Background, 
   ModalBody,
-  FormTitle
+  FormTitle,
+  CloseIcon
 } from './styles';
+import Icon from '../../assets/cross';
 
-const FormModal = ({ title, form }) => {
+const FormModal = ({ title, form, close }) => {
   return (
     <>
     <Background >
       <ModalBody >
-        <FormTitle>{title}</FormTitle>
+        <FormTitle>
+          {title} 
+          <CloseIcon onClick={() => {close()}}> 
+            <Icon />
+          </CloseIcon>
+        </FormTitle>
         {form}
       </ModalBody>
     </Background>
@@ -22,7 +29,8 @@ const FormModal = ({ title, form }) => {
 
 FormModal.propTypes = {
   title: PropTypes.string.isRequired,
-  form: PropTypes.object.isRequired
+  form: PropTypes.object.isRequired,
+  close: PropTypes.func.isRequired
 };
 
 export default FormModal;

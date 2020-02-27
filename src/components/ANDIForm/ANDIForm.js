@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import createANDi from '../../api/handlers/createANDi/createANDi';
 import { onInputChange } from '../../global/helpers';
 import { 
   Label, 
@@ -8,26 +9,26 @@ import {
   FormWrapper
 } from './styles';
 
-const ANDIForm = ({ name }) => {
+const ANDIForm = ({ close }) => {
   const [imageUrl, setImageUrl] = useState();
-  const [role, setRole] = useState();
+  const [name, setName] = useState();
 
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    return role;
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await createANDi({data: {'andiFullName': name, 'andiImageUrl': imageUrl}});
+    close();
   };
 
   return (
   <>
     <FormWrapper onSubmit={handleSubmit}>
-      <Label>{name}</Label>
+      <div>
+        <Label>ANDi Name</Label>
+        <FormInput maxLength={20} placeholder='ANDi Name' value={name} onChange={onInputChange(setName)}/>
+      </div>
       <div>
         <Label>ANDi Image Url</Label>
         <FormInput placeholder='ANDi image url' value={imageUrl} onChange={onInputChange(setImageUrl)} />
-      </div>
-      <div>
-        <Label>ANDi Project Role</Label>
-        <FormInput maxLength={20} placeholder='Role on the project' value={role} onChange={onInputChange(setRole)}/>
       </div>
       <div>
         <SubmitButton type='submit'>SUBMIT</SubmitButton>
@@ -37,7 +38,7 @@ const ANDIForm = ({ name }) => {
   )};
 
 ANDIForm.propTypes = {
-  name: PropTypes.string.isRequired
+  close: PropTypes.func.isRequired
 };
 
 export default ANDIForm;
