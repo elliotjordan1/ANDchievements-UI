@@ -3,13 +3,14 @@ import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/getprojects/getProjects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
+import getAllTechnologies from '../api/handlers/getTechnologies';
 
 const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
   const [projects, setProjects] = useState(undefined);
   const [error, setError] = useState(null);
-
+getAllTechnologies();
   const boxClick = id => {
     setModal(id);
     setViewModal(true);  

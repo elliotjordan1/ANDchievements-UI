@@ -88,8 +88,7 @@ const ProjectForm = () => {
           <Label>
             select:
             <MultiSelect 
-              placeholder="this is my placeholder"
-              options={[1,2,3,4]}
+              placeholder="Select..."
             />
           </Label>
 
