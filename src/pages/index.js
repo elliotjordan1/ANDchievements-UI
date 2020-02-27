@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-loop-func */
+/* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import HomepageWrapper from '../global/styles';
@@ -17,22 +20,59 @@ const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
   const [projects, setProjects] = useState(undefined);
+  let animationLength = 0;
 
   const boxClick = id => {
     setModal(id);
     setViewModal(true);  
   };
 
+  const animate = (start) => {
+      let run = start;
+      setViewModal(true);
+      setModal(run);
+      setTimeout(() => {
+        run +=1;
+        if(run===animationLength){
+          run = 0;
+        }
+        setViewModal(false);
+      }, 40000);
+  };
+
   useEffect(() => {
     const fetchProjects = async () => {
       const response = await getAllProjects();
       setProjects(response.data.projects);
+      animationLength = response.data.projects.length;
     };
 
     if (projects === undefined) {
       fetchProjects();
-    } 
+    }
   });
+
+  useEffect(() => {
+    const handleSpace = (e) => {
+      
+      if (e.keyCode === 32) {
+        let start = 0;
+        setViewModal(true);
+        setInterval(() => {
+          animate(start);
+          start +=1;
+          if(start===animationLength){
+            start = 0;
+          } 
+        }, 45000);
+      }
+    };
+    window.addEventListener('keydown', handleSpace);
+
+    return () => {
+      window.removeEventListener('keydown', handleSpace);
+    };
+  }, []);
   
   return (
     <HomepageWrapper>
