@@ -8,10 +8,18 @@ Object {
       <form
         class="styles__FormWrapper-p1at4m-1 gPiIqZ"
       >
-        <div
-          class="styles__Label-p1at4m-0 eKyFat"
-        >
-          Test User
+        <div>
+          <div
+            class="styles__Label-p1at4m-0 eKyFat"
+          >
+            ANDi Name
+          </div>
+          <input
+            class="styles__FormInput-p1at4m-2 gNsONR"
+            maxlength="20"
+            placeholder="ANDi Name"
+            value=""
+          />
         </div>
         <div>
           <div
@@ -22,19 +30,6 @@ Object {
           <input
             class="styles__FormInput-p1at4m-2 gNsONR"
             placeholder="ANDi image url"
-            value=""
-          />
-        </div>
-        <div>
-          <div
-            class="styles__Label-p1at4m-0 eKyFat"
-          >
-            ANDi Project Role
-          </div>
-          <input
-            class="styles__FormInput-p1at4m-2 gNsONR"
-            maxlength="20"
-            placeholder="Role on the project"
             value=""
           />
         </div>
@@ -53,10 +48,18 @@ Object {
     <form
       class="styles__FormWrapper-p1at4m-1 gPiIqZ"
     >
-      <div
-        class="styles__Label-p1at4m-0 eKyFat"
-      >
-        Test User
+      <div>
+        <div
+          class="styles__Label-p1at4m-0 eKyFat"
+        >
+          ANDi Name
+        </div>
+        <input
+          class="styles__FormInput-p1at4m-2 gNsONR"
+          maxlength="20"
+          placeholder="ANDi Name"
+          value=""
+        />
       </div>
       <div>
         <div
@@ -67,19 +70,6 @@ Object {
         <input
           class="styles__FormInput-p1at4m-2 gNsONR"
           placeholder="ANDi image url"
-          value=""
-        />
-      </div>
-      <div>
-        <div
-          class="styles__Label-p1at4m-0 eKyFat"
-        >
-          ANDi Project Role
-        </div>
-        <input
-          class="styles__FormInput-p1at4m-2 gNsONR"
-          maxlength="20"
-          placeholder="Role on the project"
           value=""
         />
       </div>

@@ -4,11 +4,11 @@ import makePostRequest from './postRequest';
 jest.mock('axios');
 
 describe('makeGetRequest', () => {
-  it('returns data on 200', () => {
-    const returned = {id: 'abcTest'};
-    axios.post.mockResolvedValue({status: 200, data: returned});
+  it('returns data on 200', async () => {
+    const content = {andiId: 'abcTest'};
+    axios.mockResolvedValue({status: 200, new_andi: content});
 
-    return makePostRequest('/andis/create').then(res => expect(res.data).toEqual(returned));
+    return makePostRequest('/andis/create', content).then(res => {expect(res.new_andi).toEqual(content); expect(res.status).toEqual(200)});
   });
   
 });
