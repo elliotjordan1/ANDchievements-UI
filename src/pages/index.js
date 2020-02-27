@@ -6,15 +6,7 @@ import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import HomepageWrapper from '../global/styles';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/projects';
-
-
-export const shuffleAndSliceArray = (array, sliceLength) => {
-  const arrayLength = array.length;
-
-  const shuffledArray = array.sort(() => Math.random() - 0.5);
-  
-  return shuffledArray.slice(0, arrayLength > sliceLength ? sliceLength : arrayLength);
-}
+import { shuffleAndSliceArray } from '../global/helpers';
 
 const Homepage = () => {
   const [modal, setModal] = useState(0);

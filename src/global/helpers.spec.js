@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-import { shuffleAndSliceArray } from './index';
+import { shuffleAndSliceArray } from './helpers';
 
 describe('index.js tests', () => {
   it('returns the same array when array length is less than slice length', () => {
