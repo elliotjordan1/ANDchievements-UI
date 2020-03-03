@@ -11,8 +11,7 @@ const createOptions = (endpoint, content) => {
     method: 'POST',
     headers: {
       'x-api-key' : AUTHENTICATION_TOKEN,
-      'Content-Type' : 'application/json',
-      'Accept' : 'application/json',
+      'Content-Type' : 'application/json'
     },
     data: jsonContent,
     url

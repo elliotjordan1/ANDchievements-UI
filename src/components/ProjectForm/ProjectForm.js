@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { FormWrapper, HomepageWrapper } from '../../global/styles';
+import * as AttributeTypes from '../../global/constants';
 import { FormTitle, FormBody, Label, FormInput, TextArea, InputContainer, SubmitButton } from './styles';
 import FormModal from '../FormModal/FormModal';
-import ANDIForm from '../ANDIForm/ANDIForm';
-import ClientAndStackForm from '../ClientAndStackForm/ClientAndStackForm';
+import AttributeForm from '../AttributeForm/AttributeForm';
 
 const ProjectForm = () => { 
   const [viewModal, setViewModal] = useState(false);
@@ -11,19 +11,19 @@ const ProjectForm = () => {
   const [formTitle, setFormTitle] = useState();
 
   const setToANDi = () => {
-    setFormType(<ANDIForm close={() => {setViewModal(false)}}/>); 
+    setFormType(<AttributeForm formType = {AttributeTypes.ANDi} close={() => {setViewModal(false)}}/>); 
     setFormTitle('Add an ANDi')
     setViewModal(true); 
   };
 
   const setToTechStack = () => {
-    setFormType(<ClientAndStackForm close={() => {setViewModal(false)}} />); 
+    setFormType(<AttributeForm formType = {AttributeTypes.TechStack} close={() => {setViewModal(false)}} />); 
     setFormTitle('Add a Tech Stack')
     setViewModal(true); 
   };
 
   const setToClient = () => {
-    setFormType(<ClientAndStackForm isClient close={() => {setViewModal(false)}}/>); 
+    setFormType(<AttributeForm formType = {AttributeTypes.Client} close={() => {setViewModal(false)}}/>); 
     setFormTitle('Add a Client')
     setViewModal(true); 
   };
@@ -58,7 +58,7 @@ const ProjectForm = () => {
           <FormInput placeholder='Select ANDis' />
         </div>
         <div>
-          <Label onClick={() => {setToTechStack()}}>Tech Stack</Label>
+          <Label onClick={() => {setToTechStack()}}>Tech Stacks</Label>
           <FormInput placeholder='Select Tech Stack' />
         </div>
         <div>
