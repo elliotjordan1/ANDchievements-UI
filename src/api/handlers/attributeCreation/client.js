@@ -2,14 +2,16 @@ import * as AttributeTypes from '../../../global/constants';
 import makePostRequest from '../../requests/postRequest/postRequest';
 
 class Client {
-  appliesTo = async (attributeType) => {
-    return attributeType === AttributeTypes.Client;
+  appliesTo(attributeType) {
+    this.clientType = AttributeTypes.Client;
+
+    return attributeType === this.clientType;
   }
 
-  create = async (formProps) => {
+  async create(formProps) {
     const { name, imageUrl } = formProps;
 
-    const postData = {      
+    this.postData = {      
       data : {
         clientName: name,
         clientSector: 'N/A',
@@ -18,9 +20,9 @@ class Client {
       }
     };
 
-    const response = await makePostRequest('/clients/create', postData);
+    this.response = await makePostRequest('/clients/create', this.postData);
 
-    const { status, data, statusText } = response;
+    const { status, data, statusText } = this.response;
 
     return ({
       status,

@@ -2,21 +2,23 @@ import * as AttributeTypes from '../../../global/constants';
 import makePostRequest from '../../requests/postRequest/postRequest';
 
 class ANDi {
-  appliesTo = async (attributeType) => {
-    return attributeType === AttributeTypes.ANDi;
+  appliesTo(attributeType) {
+    this.andiType = AttributeTypes.ANDi;
+
+    return attributeType === this.andiType;
   }
 
-  create = async (formProps) => {
-    const postData = {      
+  async create(formProps) {
+    this.postData = {      
       data : {
         andiFullName : formProps.name,
         andiImageUrl : formProps.imageUrl
       }
     };
 
-    const response = await makePostRequest('/andis/create', postData);
+    this.response = await makePostRequest('/andis/create', this.postData);
 
-    const { status, data, statusText } = response;
+    const { status, data, statusText } = this.response;
 
     return ({
       status,

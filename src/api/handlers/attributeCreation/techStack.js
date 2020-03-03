@@ -2,23 +2,25 @@ import * as AttributeTypes from '../../../global/constants';
 import makePostRequest from '../../requests/postRequest/postRequest';
 
 class TechStack {
-  appliesTo = async (attributeType) => {
-    return attributeType === AttributeTypes.TechStack;
+  appliesTo(attributeType) {
+    this.techStack = AttributeTypes.TechStack;
+
+    return attributeType === this.techStack;
   }
 
-  create = async (formProps) => {
+  async create(formProps) {
     const { name, imageUrl } = formProps;
 
-    const postData = {      
+    this.postData = {      
       data : {
         techName: name,
         techLogoImagePath: imageUrl
       }
     };
 
-    const response = await makePostRequest('/tech/create', postData);
+    this.response = await makePostRequest('/tech/create', this.postData);
 
-    const { status, data, statusText } = response;
+    const { status, data, statusText } = this.response;
 
     return ({
       status,
