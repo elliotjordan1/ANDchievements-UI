@@ -8,12 +8,17 @@ import getAllProjects from '../api/handlers/getprojects/getProjects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 import { shuffleAndSliceArray } from '../global/helpers';
 
+const SPACE_BAR_KEY_CODE = 32;
+const ESCAPE_KEY_CODE = 27;
+const INTERVAL_TIME = 45000;
+const TIMEOUT_INTERVAL = 40000;
+
 const Homepage = () => {
   const [modal, setModal] = useState(0);
   const [viewModal, setViewModal] = useState(false);
+  const [animationLength, setAnimationLength] = useState(0);
   const [projects, setProjects] = useState(undefined);
   const [error, setError] = useState(null);
-  let animationLength = 0;
 
   const boxClick = id => {
     setModal(id);
@@ -24,13 +29,16 @@ const Homepage = () => {
       let run = start;
       setViewModal(true);
       setModal(run);
+      
       setTimeout(() => {
         run +=1;
         if(run === animationLength){
           run = 0;
         }
+
         setViewModal(false);
-      }, 40000);
+
+      }, TIMEOUT_INTERVAL);
   };
 
   useEffect(() => {
@@ -38,7 +46,7 @@ const Homepage = () => {
       const response = await getAllProjects();
       if(response.status === 200){
         setProjects(response.projects);
-        animationLength = response.projects.length;
+        setAnimationLength(response.projects.length);
       }
       else{
         setError(response.message);
@@ -51,24 +59,29 @@ const Homepage = () => {
   });
 
   useEffect(() => {
-    const handleSpace = (e) => {
-      
-      if (e.keyCode === 32) {
+    const handleKeyDown = (e) => {      
+      if (e.keyCode === SPACE_BAR_KEY_CODE) {
         let start = 0;
+
         setViewModal(true);
         setInterval(() => {
           animate(start);
           start +=1;
-          if(start===animationLength){
+          if(start === animationLength){
             start = 0;
-          } 
-        }, 45000);
+          }
+        }, INTERVAL_TIME);
+      }
+
+      if (e.keyCode === ESCAPE_KEY_CODE) {
+        setViewModal(false);
       }
     };
-    window.addEventListener('keydown', handleSpace);
+
+    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      window.removeEventListener('keydown', handleSpace);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
   
@@ -76,7 +89,7 @@ const Homepage = () => {
     error ? (<ErrorWrapper >{error}</ErrorWrapper>) :
     <HomepageWrapper>
       {
-        (viewModal && (
+        ((viewModal && projects && projects.length > 0) && (
           <ProjectModal 
           image={projects[modal].imageurl} 
           name={projects[modal].name} 
