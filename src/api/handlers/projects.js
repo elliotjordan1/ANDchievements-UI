@@ -8,7 +8,7 @@ const options = {
   }
 };
 
-const getAllProjects = async () => {
+const getAllProjects = async () => {  
   const response = await Axios.get(`${API_URL}/projects/get`, options);
   return response;
 };

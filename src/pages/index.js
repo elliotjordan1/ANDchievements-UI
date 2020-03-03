@@ -7,7 +7,9 @@ import HomepageWrapper from '../global/styles';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
 import getAllProjects from '../api/handlers/projects';
 import { shuffleAndSliceArray } from '../global/helpers';
+
 const SPACE_BAR_KEY_CODE = 32;
+const ESCAPE_KEY_CODE = 27;
 const INTERVAL_TIME = 45000;
 const TIMEOUT_INTERVAL = 40000;
 
@@ -52,7 +54,7 @@ const Homepage = () => {
   });
 
   useEffect(() => {
-    const handleSpace = (e) => {      
+    const handleKeyDown = (e) => {      
       if (e.keyCode === SPACE_BAR_KEY_CODE) {
         let start = 0;
 
@@ -65,12 +67,16 @@ const Homepage = () => {
           }
         }, INTERVAL_TIME);
       }
+
+      if (e.keyCode === ESCAPE_KEY_CODE) {
+        setViewModal(false);
+      }
     };
 
-    window.addEventListener('keydown', handleSpace);
+    window.addEventListener('keydown', handleKeyDown);
 
     return () => {
-      window.removeEventListener('keydown', handleSpace);
+      window.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
   
