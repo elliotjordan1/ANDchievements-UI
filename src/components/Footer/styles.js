@@ -36,7 +36,7 @@ export const FooterText = styled.a`
   height: 20px;
   margin-left: 12px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
   @media ${theme.media.tablet} {
     height: 30px;
     font-size: 14px;

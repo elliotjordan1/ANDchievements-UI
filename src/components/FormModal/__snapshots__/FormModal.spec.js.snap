@@ -1,47 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProjectSummary renders correctly 1`] = `
+exports[`Form Modal component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="styles__SummaryBox-sc-1hxg8kz-0 hsvhqQ"
+        class="styles__Background-sc-2y3647-1 gLNmeB"
       >
         <div
-          class="styles__TextWrapper-sc-101ii58-1 ankUW"
+          class="styles__ModalBody-sc-2y3647-2 edftre"
         >
           <div
-            class="styles__ProjectName-sc-1hxg8kz-1 styles__ClientName-sc-1hxg8kz-2 hXBpVQ"
+            class="styles__FormTitle-sc-2y3647-0 giMjcK"
           >
-            Big Boss
+            Test Form Title
+            <a
+              class="styles__CloseIcon-sc-2y3647-3 aiGrZ"
+            >
+              <svg
+                fill="none"
+                height="61"
+                viewBox="0 0 61 61"
+                width="61"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M48.2918 16.2921L44.7081 12.7083L30.5002 26.9162L16.2922 12.7083L12.7085 16.2921L26.9164 30.5L12.7085 44.7079L16.2922 48.2917L30.5002 34.0837L44.7081 48.2917L48.2918 44.7079L34.0839 30.5L48.2918 16.2921Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
           </div>
-          <div
-            class="styles__ProjectName-sc-1hxg8kz-1 kucbUK"
-          >
-            Best Project
-          </div>
+          <form />
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="styles__SummaryBox-sc-1hxg8kz-0 hsvhqQ"
+      class="styles__Background-sc-2y3647-1 gLNmeB"
     >
       <div
-        class="styles__TextWrapper-sc-101ii58-1 ankUW"
+        class="styles__ModalBody-sc-2y3647-2 edftre"
       >
         <div
-          class="styles__ProjectName-sc-1hxg8kz-1 styles__ClientName-sc-1hxg8kz-2 hXBpVQ"
+          class="styles__FormTitle-sc-2y3647-0 giMjcK"
         >
-          Big Boss
+          Test Form Title
+          <a
+            class="styles__CloseIcon-sc-2y3647-3 aiGrZ"
+          >
+            <svg
+              fill="none"
+              height="61"
+              viewBox="0 0 61 61"
+              width="61"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M48.2918 16.2921L44.7081 12.7083L30.5002 26.9162L16.2922 12.7083L12.7085 16.2921L26.9164 30.5L12.7085 44.7079L16.2922 48.2917L30.5002 34.0837L44.7081 48.2917L48.2918 44.7079L34.0839 30.5L48.2918 16.2921Z"
+                fill="white"
+              />
+            </svg>
+          </a>
         </div>
-        <div
-          class="styles__ProjectName-sc-1hxg8kz-1 kucbUK"
-        >
-          Best Project
-        </div>
+        <form />
       </div>
     </div>
   </div>,

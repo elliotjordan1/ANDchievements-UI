@@ -61,6 +61,7 @@ export const LogoWrapper = styled.div`
   align-self: flex-end;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position-y: bottom;
   width: 175px;
   height: 70px;
   @media ${theme.media.tablet}{
