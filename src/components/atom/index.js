@@ -4,7 +4,7 @@ import FormTitle from './FormTitle';
 import FormBody from './FormBody';
 import TextArea from './TextArea';
 import SubmitButton from './SubmitButton';
-import Logo from './Logo';
+
 
 export {
   FormInput,
@@ -12,6 +12,5 @@ export {
   FormTitle,
   FormBody,
   TextArea,
-  SubmitButton,
-  Logo
+  SubmitButton
 }

@@ -21,11 +21,11 @@ const Title = styled.div`
 `;
 
 const FormTitle = ({
-  children
-}) => <Title>{children}</Title>
+  text
+}) => <Title>{text}</Title>
 
 FormTitle.propTypes = {
-  children: PropTypes.func.isRequired
+  text: PropTypes.string.isRequired
 };
 
 export default FormTitle;

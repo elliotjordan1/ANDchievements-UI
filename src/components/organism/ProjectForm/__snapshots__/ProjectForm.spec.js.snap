@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectForm component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="styles__HomepageWrapper-sc-101ii58-0 iCONwV"
+      >
+        <div
+          class="styles__FormWrapper-sc-101ii58-3 foeRUl"
+        >
+          <div
+            class="FormTitle__Title-oi1tko-0 dGHNUP"
+          >
+            Add a Project
+          </div>
+          <div
+            class="FormBody__Body-sc-19652hi-0 kTauxf"
+          >
+            <div>
+              <div
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+              >
+                Project Title
+              </div>
+              <input
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="20"
+                placeholder="Project title"
+              />
+            </div>
+            <div>
+              <div
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+              >
+                Client
+              </div>
+              <input
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
+                placeholder="Select client"
+              />
+            </div>
+            <div>
+              <div
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+              >
+                Project Description
+              </div>
+              <div
+                class="styles__InputContainer-sc-17bjb14-0 kFxat"
+              >
+                <textarea
+                  class="TextArea__Area-akp1wi-0 etxwJa"
+                  maxlength="60"
+                  placeholder="Client description"
+                />
+                <textarea
+                  class="TextArea__Area-akp1wi-0 etxwJa"
+                  maxlength="60"
+                  placeholder="Project description"
+                />
+                <textarea
+                  class="TextArea__Area-akp1wi-0 etxwJa"
+                  maxlength="60"
+                  placeholder="Project outcomes"
+                />
+              </div>
+            </div>
+            <div>
+              <div
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+              >
+                Cover Image
+              </div>
+              <input
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
+                placeholder="Cover image url"
+              />
+            </div>
+            <div>
+              <div
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+              >
+                ANDis
+              </div>
+              <input
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
+                placeholder="Select ANDis"
+              />
+            </div>
+            <div>
+              <div
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+              >
+                Tech Stacks
+              </div>
+              <input
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
+                placeholder="Select Tech Stack"
+              />
+            </div>
+            <div>
+              <button
+                class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <div
+      class="styles__HomepageWrapper-sc-101ii58-0 iCONwV"
+    >
+      <div
+        class="styles__FormWrapper-sc-101ii58-3 foeRUl"
+      >
+        <div
+          class="FormTitle__Title-oi1tko-0 dGHNUP"
+        >
+          Add a Project
+        </div>
+        <div
+          class="FormBody__Body-sc-19652hi-0 kTauxf"
+        >
+          <div>
+            <div
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+            >
+              Project Title
+            </div>
+            <input
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="20"
+              placeholder="Project title"
+            />
+          </div>
+          <div>
+            <div
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+            >
+              Client
+            </div>
+            <input
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
+              placeholder="Select client"
+            />
+          </div>
+          <div>
+            <div
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+            >
+              Project Description
+            </div>
+            <div
+              class="styles__InputContainer-sc-17bjb14-0 kFxat"
+            >
+              <textarea
+                class="TextArea__Area-akp1wi-0 etxwJa"
+                maxlength="60"
+                placeholder="Client description"
+              />
+              <textarea
+                class="TextArea__Area-akp1wi-0 etxwJa"
+                maxlength="60"
+                placeholder="Project description"
+              />
+              <textarea
+                class="TextArea__Area-akp1wi-0 etxwJa"
+                maxlength="60"
+                placeholder="Project outcomes"
+              />
+            </div>
+          </div>
+          <div>
+            <div
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+            >
+              Cover Image
+            </div>
+            <input
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
+              placeholder="Cover image url"
+            />
+          </div>
+          <div>
+            <div
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+            >
+              ANDis
+            </div>
+            <input
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
+              placeholder="Select ANDis"
+            />
+          </div>
+          <div>
+            <div
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+            >
+              Tech Stacks
+            </div>
+            <input
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
+              placeholder="Select Tech Stack"
+            />
+          </div>
+          <div>
+            <button
+              class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders correctly with mock project 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="styles__Background-vxuy5a-0 bnjYss"
+      >
+        <div
+          class="styles__ModalWrapper-vxuy5a-1 ewzIzR"
+        >
+          <div
+            class="styles__Image-vxuy5a-2 emKhIj"
+          >
+            <div
+              class="styles__LogoWrapper-vxuy5a-3 fCtdxj"
+            />
+          </div>
+          <div
+            class="styles__ProjectBody-vxuy5a-5 iFRyfQ"
+          >
+            <div
+              class="styles__HeadingText-vxuy5a-4 jKqfiz"
+            >
+              <em>
+                Big Boss
+              </em>
+              <br />
+              Best Project
+            </div>
+            <div
+              class="styles__BodyText-vxuy5a-6 dGLVIX"
+            >
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.
+            </div>
+            <div
+              class="styles__BodyText-vxuy5a-6 dGLVIX"
+            >
+              <b>
+                ANDis
+              </b>
+               
+              <br />
+            </div>
+            <div
+              class="styles__StackedList-vxuy5a-7 eQleti"
+            >
+              <div
+                class="styles__ListItem-vxuy5a-9 iHlhZa"
+              >
+                <div
+                  class="styles__Icon-vxuy5a-12 hHbhhf"
+                />
+                <div
+                  class="styles__ListDescription-vxuy5a-11 hdGJAi"
+                >
+                  Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
+                  <em />
+                </div>
+              </div>
+              <div
+                class="styles__ListItem-vxuy5a-9 iHlhZa"
+              >
+                <div
+                  class="styles__Icon-vxuy5a-12 hHbhhf"
+                />
+                <div
+                  class="styles__ListDescription-vxuy5a-11 hdGJAi"
+                >
+                  Damiola Olufemi
+                  <em />
+                </div>
+              </div>
+            </div>
+            <ul
+              class="styles__TechList-vxuy5a-8 iqmnvP"
+            >
+              <li
+                class="styles__TechListItem-vxuy5a-10 ksjrzC"
+              >
+                <div
+                  class="styles__Icon-vxuy5a-12 hHbhhf"
+                />
+              </li>
+              <li
+                class="styles__TechListItem-vxuy5a-10 ksjrzC"
+              >
+                <div
+                  class="styles__Icon-vxuy5a-12 hHbhhf"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="styles__Background-vxuy5a-0 bnjYss"
+    >
+      <div
+        class="styles__ModalWrapper-vxuy5a-1 ewzIzR"
+      >
+        <div
+          class="styles__Image-vxuy5a-2 emKhIj"
+        >
+          <div
+            class="styles__LogoWrapper-vxuy5a-3 fCtdxj"
+          />
+        </div>
+        <div
+          class="styles__ProjectBody-vxuy5a-5 iFRyfQ"
+        >
+          <div
+            class="styles__HeadingText-vxuy5a-4 jKqfiz"
+          >
+            <em>
+              Big Boss
+            </em>
+            <br />
+            Best Project
+          </div>
+          <div
+            class="styles__BodyText-vxuy5a-6 dGLVIX"
+          >
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.
+          </div>
+          <div
+            class="styles__BodyText-vxuy5a-6 dGLVIX"
+          >
+            <b>
+              ANDis
+            </b>
+             
+            <br />
+          </div>
+          <div
+            class="styles__StackedList-vxuy5a-7 eQleti"
+          >
+            <div
+              class="styles__ListItem-vxuy5a-9 iHlhZa"
+            >
+              <div
+                class="styles__Icon-vxuy5a-12 hHbhhf"
+              />
+              <div
+                class="styles__ListDescription-vxuy5a-11 hdGJAi"
+              >
+                Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
+                <em />
+              </div>
+            </div>
+            <div
+              class="styles__ListItem-vxuy5a-9 iHlhZa"
+            >
+              <div
+                class="styles__Icon-vxuy5a-12 hHbhhf"
+              />
+              <div
+                class="styles__ListDescription-vxuy5a-11 hdGJAi"
+              >
+                Damiola Olufemi
+                <em />
+              </div>
+            </div>
+          </div>
+          <ul
+            class="styles__TechList-vxuy5a-8 iqmnvP"
+          >
+            <li
+              class="styles__TechListItem-vxuy5a-10 ksjrzC"
+            >
+              <div
+                class="styles__Icon-vxuy5a-12 hHbhhf"
+              />
+            </li>
+            <li
+              class="styles__TechListItem-vxuy5a-10 ksjrzC"
+            >
+              <div
+                class="styles__Icon-vxuy5a-12 hHbhhf"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

@@ -24,7 +24,7 @@ const FormBody = ({
 }) => <Body>{children}</Body>
 
 FormBody.propTypes = {
-  children: PropTypes.func.isRequired
+  children: PropTypes.arrayOf(PropTypes.any).isRequired
 };
 
 export default FormBody;

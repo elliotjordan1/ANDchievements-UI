@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Modal component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="styles__Background-xo8fd7-1 iiyzYr"
+      >
+        <div
+          class="styles__ModalBody-xo8fd7-2 MIEYE"
+        >
+          <div
+            class="styles__FormTitle-xo8fd7-0 dkjxHw"
+          >
+            Test Form Title
+            <a
+              class="styles__CloseIcon-xo8fd7-3 bItPHH"
+            >
+              <svg
+                fill="none"
+                height="61"
+                viewBox="0 0 61 61"
+                width="61"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M48.2918 16.2921L44.7081 12.7083L30.5002 26.9162L16.2922 12.7083L12.7085 16.2921L26.9164 30.5L12.7085 44.7079L16.2922 48.2917L30.5002 34.0837L44.7081 48.2917L48.2918 44.7079L34.0839 30.5L48.2918 16.2921Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <form />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="styles__Background-xo8fd7-1 iiyzYr"
+    >
+      <div
+        class="styles__ModalBody-xo8fd7-2 MIEYE"
+      >
+        <div
+          class="styles__FormTitle-xo8fd7-0 dkjxHw"
+        >
+          Test Form Title
+          <a
+            class="styles__CloseIcon-xo8fd7-3 bItPHH"
+          >
+            <svg
+              fill="none"
+              height="61"
+              viewBox="0 0 61 61"
+              width="61"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M48.2918 16.2921L44.7081 12.7083L30.5002 26.9162L16.2922 12.7083L12.7085 16.2921L26.9164 30.5L12.7085 44.7079L16.2922 48.2917L30.5002 34.0837L44.7081 48.2917L48.2918 44.7079L34.0839 30.5L48.2918 16.2921Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+        <form />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
