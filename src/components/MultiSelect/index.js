@@ -1,5 +1,8 @@
+import { throttle } from 'lodash'
+
 import React , {useState} from 'react';
 import { Input, MultiSelectWrapper, Options, OptionsWrapper, InputWrapper, SelectedOption, RemovalButton, AddButton } from './styles';
+
 
 
 // eslint-disable-next-line react/prop-types
@@ -7,24 +10,27 @@ const MultiSelect = ({ placeholder }) => {
 
     const [visible, setVisible] =  useState(false);
     const[selectedValues, setSelectedValues] = useState([]);
-    const[options, setOptions] = useState([]);
     const optionList = ['JAI', 'HENRY', 'ELLIOT', 'DAMI', 'ILKAY', 'MIRA', 'MARTIN', 'NIRO'];
-    const[temp, setTemp] = useState(0);
-
-    if(options.length === 0 && temp ===0){
-        setOptions(optionList);
-        setTemp(1);
-    }
+    const[options, setOptions] = useState(optionList);
+    const[inputValue, setInputValue] = useState('');
+    const timeout = 1000;
 
     const handleChange = (event) => { 
-        if(event.target.value.length){
+        setInputValue(event.target.value);
+        if(event.target.value.length){            
+            const filteredOptions = optionList
+            .filter(x => !selectedValues.includes(x))
+            .concat(selectedValues
+            .filter(x => !optionList.includes(x)))
+            .filter(op => op.toLowerCase().includes(event.target.value.toLowerCase()));
+
+            setOptions(
+                
+              filteredOptions
+                );
             return setVisible(true)
         }
         return setVisible(false)
-    }
-
-    const handleClickOnInput = () => { 
-            return setVisible(true)
     }
 
     const handleClick = (value, index, event) => {
@@ -46,8 +52,17 @@ const MultiSelect = ({ placeholder }) => {
         event.preventDefault()        
     }
 
+    const handleMouseMoveThrottle = throttle(() => {
+        setVisible(false);
+        setInputValue('');
+    }, timeout, { leading: false});
+
+    const handleMouseMove = e => {
+        handleMouseMoveThrottle(e)
+    }
+
     return (  
-        <MultiSelectWrapper> 
+        <MultiSelectWrapper onMouseLeave={handleMouseMove} > 
             <InputWrapper>
                 {selectedValues.map((optionValue) => (
                     <SelectedOption>
@@ -57,10 +72,10 @@ const MultiSelect = ({ placeholder }) => {
                         </RemovalButton>
                     </SelectedOption>
                 ))}
-                <Input type='text' placeholder={placeholder} onChange={handleChange} onClick={handleClickOnInput} />
+                <Input type='text' placeholder={placeholder} onChange={handleChange} value={inputValue}/>
             </InputWrapper>
 
-            <OptionsWrapper visible={visible} class="dropup" >
+            <OptionsWrapper visible={visible}>
                 {options.map((value, index) => (<Options key={value} onClick={(event) => handleClick(value, index, event)} >{value}</Options>))}
                 <Options>
                     <AddButton type="submit" onClick={(event) => add(event)}>

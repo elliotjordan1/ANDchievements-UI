@@ -19,6 +19,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "babel-polyfill": "^6.26.0",
     "cors": "^2.8.5",
+    "lodash": "^4.17.15",
     "next": "^9.2.1",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
