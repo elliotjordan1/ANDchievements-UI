@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import HeaderWrapper from '../../atom/HeaderWrapper';
+import { HeaderWrapper } from '../../atom';
 import Logo from '../Logo';
 
 const Header = () => {

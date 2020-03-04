@@ -1,7 +1,9 @@
 import React from 'react';
-import FooterWrapper from '../../atom/FooterWrapper';
-import FooterText from '../../atom/FooterText';
-import FooterDiv from '../../atom/FooterTextContainer';
+import {
+  FooterWrapper,
+  FooterText,
+  FooterDiv
+} from '../../atom';
 
 const Footer = () => {
   return (

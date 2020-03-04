@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useToasts } from 'react-toast-notifications';
 import formReducer, { initialFormState } from '../../../reducers/createProject/reducer';
 import { onInputChange } from '../../../global/helpers';
-import { SubmitButton, Label, FormInput, FormWrapper } from './AttributeFormStyles.js';
+import { FormLabel, SubmitButton, FormWrapper, FormInput } from '../../atom';
 import ANDiCreator from '../../../api/handlers/attributeCreation/andi';
 import TechStackCreator from '../../../api/handlers/attributeCreation/techStack';
 import ClientCreator from '../../../api/handlers/attributeCreation/client';
@@ -41,7 +41,6 @@ const AttributeForm = ({
           addToast(`Success! ${name} has been added, with ImageURL: ${imageUrl}`, { appearance: 'success' });   
 
           dispatch({ type: `ADD_${formType}`, data });       
-          console.log(state);   
         } else {
           addToast('Uh oh! Something went wrong!', { appearance: 'error' });
         }
@@ -60,15 +59,15 @@ const AttributeForm = ({
     <>
       <FormWrapper onSubmit = {handleSubmit}>
         <div>
-          <Label>{nameLabel}</Label>
+          <FormLabel labelText={nameLabel} />
           <FormInput maxLength = {40} placeholder = {nameLabel} value = {name} onChange={onInputChange(setName)} />
         </div>
         <div>
-          <Label>{imageUrlLabel}</Label>
+          <FormLabel labelText = {imageUrlLabel} />
           <FormInput maxLength = {40} placeholder = {imageUrlLabel} value = {imageUrl} onChange={onInputChange(setImageUrl)} />
         </div>
         <div>
-          <SubmitButton type = 'submit'>SUBMIT</SubmitButton>
+          <SubmitButton type = 'submit' text = 'SUBMIT' />
         </div>
       </FormWrapper>
     </>

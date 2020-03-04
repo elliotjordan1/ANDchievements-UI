@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoWrapper from '../../atom/LogoWrapper';
+import { LogoWrapper } from '../../atom';
 
 const Index = () => (
   <LogoWrapper>
