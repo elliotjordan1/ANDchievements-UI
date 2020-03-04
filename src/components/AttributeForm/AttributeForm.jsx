@@ -1,7 +1,8 @@
 /* eslint-disable import/extensions */
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { useToasts } from 'react-toast-notifications';
+import formReducer, { initialFormState } from '../../reducers/createProject/reducer';
 import { onInputChange } from '../../global/helpers';
 import { SubmitButton, Label, FormInput, FormWrapper } from './AttributeFormStyles.js';
 import ANDiCreator from '../../api/handlers/attributeCreation/andi';
@@ -11,16 +12,18 @@ import ClientCreator from '../../api/handlers/attributeCreation/client';
 const AttributeForm = ({
   formType
 }) => {
-  const { addToast, removeAllToasts } = useToasts();
+  const { addToast, removeAllToasts } = useToasts();  
+
+  const [imageUrl, setImageUrl] = useState('');
+  const [name, setName] = useState('');
+
+  const [state, dispatch] = useReducer(formReducer, initialFormState);
 
   const creationStrategies = [
     new ANDiCreator(),
     new TechStackCreator(),
     new ClientCreator()
   ];
-
-  const [imageUrl, setImageUrl] = useState('');
-  const [name, setName] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -33,7 +36,12 @@ const AttributeForm = ({
         });     
 
         if (response.status === 201) {
-          addToast(`Success! ${name} has been added, with ImageURL: ${imageUrl}`, { appearance: 'success' });          
+          const { data } = response;
+
+          addToast(`Success! ${name} has been added, with ImageURL: ${imageUrl}`, { appearance: 'success' });   
+
+          dispatch({ type: `ADD_${formType}`, data });       
+          console.log(state);   
         } else {
           addToast('Uh oh! Something went wrong!', { appearance: 'error' });
         }
