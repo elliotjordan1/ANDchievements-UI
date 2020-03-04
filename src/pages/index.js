@@ -4,10 +4,10 @@
 import React, { useState, useEffect } from 'react';
 import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
 import ProjectModal from '../components/ProjectModal/ProjectModal';
-import getAllProjects from '../api/handlers/getprojects/getProjects';
+import getAllProjects from '../api/handlers/attributeRetrieval/getProjects/getProjects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 import { shuffleAndSliceArray } from '../global/helpers';
-import getAllTechnologies from '../api/handlers/getTechnologies';
+import getAllTechnologies from '../api/handlers/attributeRetrieval/getTechnologies/getTechnologies';
 
 const SPACE_BAR_KEY_CODE = 32;
 const ESCAPE_KEY_CODE = 27;
