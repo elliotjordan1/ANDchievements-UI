@@ -12,98 +12,182 @@ Object {
           class="styles__FormWrapper-sc-101ii58-3 foeRUl"
         >
           <div
-            class="styles__FormTitle-o9i1nk-0 kSseqx"
+            class="styles__FormTitle-o9i1nk-1 eKysUa"
           >
             Add a Project
           </div>
           <div
-            class="styles__FormBody-o9i1nk-1 bRDssG"
+            class="styles__FormBody-o9i1nk-2 ivACpD"
           >
             <div>
-              <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+              <label
+                class="styles__Label-o9i1nk-0 jgkMvb"
               >
                 Project Title
-              </div>
+              </label>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="styles__FormInput-o9i1nk-3 ciDVXO"
                 maxlength="20"
                 placeholder="Project title"
               />
             </div>
             <div>
-              <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+              <label
+                class="styles__Label-o9i1nk-0 jgkMvb"
               >
                 Client
-              </div>
+              </label>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="styles__FormInput-o9i1nk-3 ciDVXO"
                 placeholder="Select client"
               />
             </div>
             <div>
-              <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+              <label
+                class="styles__Label-o9i1nk-0 jgkMvb"
               >
                 Project Description
-              </div>
+              </label>
               <div
-                class="styles__InputContainer-o9i1nk-5 daXrpj"
+                class="styles__InputContainer-o9i1nk-8 HHcyi"
               >
                 <textarea
-                  class="styles__TextArea-o9i1nk-4 bcsRbv"
+                  class="styles__TextArea-o9i1nk-5 kRAUoh"
                   maxlength="60"
                   placeholder="Client description"
                 />
                 <textarea
-                  class="styles__TextArea-o9i1nk-4 bcsRbv"
+                  class="styles__TextArea-o9i1nk-5 kRAUoh"
                   maxlength="60"
                   placeholder="Project description"
                 />
                 <textarea
-                  class="styles__TextArea-o9i1nk-4 bcsRbv"
+                  class="styles__TextArea-o9i1nk-5 kRAUoh"
                   maxlength="60"
                   placeholder="Project outcomes"
                 />
               </div>
             </div>
             <div>
-              <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+              <label
+                class="styles__Label-o9i1nk-0 jgkMvb"
               >
                 Cover Image
-              </div>
+              </label>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="styles__FormInput-o9i1nk-3 ciDVXO"
                 placeholder="Cover image url"
               />
             </div>
             <div>
-              <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+              <label
+                class="styles__Label-o9i1nk-0 jgkMvb"
               >
                 ANDis
+              </label>
+              <div
+                class="styles__MultiSelectWrapper-fb62mp-0 bOPuln"
+              >
+                <div
+                  class="styles__InputWrapper-fb62mp-1 gSDgPd"
+                >
+                  <input
+                    class="styles__FormInput-o9i1nk-3 ciDVXO"
+                    placeholder="Select ANDis..."
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div
+                  class="styles__OptionsWrapper-fb62mp-2 jIIhVu"
+                >
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    JAI
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    HENRY
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    ELLIOT
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    DAMI
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    ILKAY
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    MIRA
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    MARTIN
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    NIRO
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    AUSER1
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    AUSER2
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    AUSER3
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    AUSER4
+                  </div>
+                  <div
+                    class="styles__Options-fb62mp-3 RapWO"
+                  >
+                    <button
+                      class="styles__AddButton-fb62mp-4 gxSgNm"
+                      type="submit"
+                    >
+                      + Add
+                    </button>
+                  </div>
+                </div>
               </div>
-              <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
-                placeholder="Select ANDis"
-              />
             </div>
             <div>
-              <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+              <label
+                class="styles__Label-o9i1nk-0 jgkMvb"
               >
                 Tech Stacks
-              </div>
+              </label>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="styles__FormInput-o9i1nk-3 ciDVXO"
                 placeholder="Select Tech Stack"
               />
             </div>
             <div>
               <button
-                class="styles__SubmitButton-o9i1nk-6 gpKOXk"
+                class="styles__SubmitButton-o9i1nk-9 bxOWwj"
               >
                 SUBMIT
               </button>
@@ -124,98 +208,182 @@ Object {
         class="styles__FormWrapper-sc-101ii58-3 foeRUl"
       >
         <div
-          class="styles__FormTitle-o9i1nk-0 kSseqx"
+          class="styles__FormTitle-o9i1nk-1 eKysUa"
         >
           Add a Project
         </div>
         <div
-          class="styles__FormBody-o9i1nk-1 bRDssG"
+          class="styles__FormBody-o9i1nk-2 ivACpD"
         >
           <div>
-            <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+            <label
+              class="styles__Label-o9i1nk-0 jgkMvb"
             >
               Project Title
-            </div>
+            </label>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="styles__FormInput-o9i1nk-3 ciDVXO"
               maxlength="20"
               placeholder="Project title"
             />
           </div>
           <div>
-            <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+            <label
+              class="styles__Label-o9i1nk-0 jgkMvb"
             >
               Client
-            </div>
+            </label>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="styles__FormInput-o9i1nk-3 ciDVXO"
               placeholder="Select client"
             />
           </div>
           <div>
-            <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+            <label
+              class="styles__Label-o9i1nk-0 jgkMvb"
             >
               Project Description
-            </div>
+            </label>
             <div
-              class="styles__InputContainer-o9i1nk-5 daXrpj"
+              class="styles__InputContainer-o9i1nk-8 HHcyi"
             >
               <textarea
-                class="styles__TextArea-o9i1nk-4 bcsRbv"
+                class="styles__TextArea-o9i1nk-5 kRAUoh"
                 maxlength="60"
                 placeholder="Client description"
               />
               <textarea
-                class="styles__TextArea-o9i1nk-4 bcsRbv"
+                class="styles__TextArea-o9i1nk-5 kRAUoh"
                 maxlength="60"
                 placeholder="Project description"
               />
               <textarea
-                class="styles__TextArea-o9i1nk-4 bcsRbv"
+                class="styles__TextArea-o9i1nk-5 kRAUoh"
                 maxlength="60"
                 placeholder="Project outcomes"
               />
             </div>
           </div>
           <div>
-            <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+            <label
+              class="styles__Label-o9i1nk-0 jgkMvb"
             >
               Cover Image
-            </div>
+            </label>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="styles__FormInput-o9i1nk-3 ciDVXO"
               placeholder="Cover image url"
             />
           </div>
           <div>
-            <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+            <label
+              class="styles__Label-o9i1nk-0 jgkMvb"
             >
               ANDis
+            </label>
+            <div
+              class="styles__MultiSelectWrapper-fb62mp-0 bOPuln"
+            >
+              <div
+                class="styles__InputWrapper-fb62mp-1 gSDgPd"
+              >
+                <input
+                  class="styles__FormInput-o9i1nk-3 ciDVXO"
+                  placeholder="Select ANDis..."
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="styles__OptionsWrapper-fb62mp-2 jIIhVu"
+              >
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  JAI
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  HENRY
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  ELLIOT
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  DAMI
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  ILKAY
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  MIRA
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  MARTIN
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  NIRO
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  AUSER1
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  AUSER2
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  AUSER3
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  AUSER4
+                </div>
+                <div
+                  class="styles__Options-fb62mp-3 RapWO"
+                >
+                  <button
+                    class="styles__AddButton-fb62mp-4 gxSgNm"
+                    type="submit"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
             </div>
-            <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
-              placeholder="Select ANDis"
-            />
           </div>
           <div>
-            <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+            <label
+              class="styles__Label-o9i1nk-0 jgkMvb"
             >
               Tech Stacks
-            </div>
+            </label>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="styles__FormInput-o9i1nk-3 ciDVXO"
               placeholder="Select Tech Stack"
             />
           </div>
           <div>
             <button
-              class="styles__SubmitButton-o9i1nk-6 gpKOXk"
+              class="styles__SubmitButton-o9i1nk-9 bxOWwj"
             >
               SUBMIT
             </button>

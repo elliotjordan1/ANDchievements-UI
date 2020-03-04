@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import CreatableSelect from 'react-select/creatable';
 import theme from '../../global/theme';
-import { MultiSelectWrapper, Input as Option } from '../MultiSelect/styles';
+import { MultiSelectWrapper } from '../MultiSelect/styles';
 
 
 
