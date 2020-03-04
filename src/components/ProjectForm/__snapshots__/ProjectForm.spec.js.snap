@@ -12,57 +12,58 @@ Object {
           class="styles__FormWrapper-sc-101ii58-3 foeRUl"
         >
           <div
-            class="styles__FormTitle-o9i1nk-0 kSseqx"
+            class="FormTitle__Title-oi1tko-0 dGHNUP"
           >
             Add a Project
           </div>
           <div
-            class="styles__FormBody-o9i1nk-1 bRDssG"
+            class="FormBody__Body-sc-19652hi-0 kTauxf"
           >
             <div>
               <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
               >
                 Project Title
               </div>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
                 maxlength="20"
                 placeholder="Project title"
               />
             </div>
             <div>
               <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
               >
                 Client
               </div>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
                 placeholder="Select client"
               />
             </div>
             <div>
               <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
               >
                 Project Description
               </div>
               <div
-                class="styles__InputContainer-o9i1nk-5 daXrpj"
+                class="styles__InputContainer-o9i1nk-0 dkIEjm"
               >
                 <textarea
-                  class="styles__TextArea-o9i1nk-4 bcsRbv"
+                  class="TextArea__Area-akp1wi-0 etxwJa"
                   maxlength="60"
                   placeholder="Client description"
                 />
                 <textarea
-                  class="styles__TextArea-o9i1nk-4 bcsRbv"
+                  class="TextArea__Area-akp1wi-0 etxwJa"
                   maxlength="60"
                   placeholder="Project description"
                 />
                 <textarea
-                  class="styles__TextArea-o9i1nk-4 bcsRbv"
+                  class="TextArea__Area-akp1wi-0 etxwJa"
                   maxlength="60"
                   placeholder="Project outcomes"
                 />
@@ -70,43 +71,44 @@ Object {
             </div>
             <div>
               <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
               >
                 Cover Image
               </div>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
                 placeholder="Cover image url"
               />
             </div>
             <div>
               <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
               >
                 ANDis
               </div>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
                 placeholder="Select ANDis"
               />
             </div>
             <div>
               <div
-                class="styles__Label-o9i1nk-2 hMWUiJ"
+                class="FormLabel__Label-wqrwj6-0 iJzIPZ"
               >
                 Tech Stacks
               </div>
               <input
-                class="styles__FormInput-o9i1nk-3 fWizUB"
+                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                maxlength="40"
                 placeholder="Select Tech Stack"
               />
             </div>
             <div>
               <button
-                class="styles__SubmitButton-o9i1nk-6 gpKOXk"
-              >
-                SUBMIT
-              </button>
+                class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+              />
             </div>
           </div>
         </div>
@@ -124,57 +126,58 @@ Object {
         class="styles__FormWrapper-sc-101ii58-3 foeRUl"
       >
         <div
-          class="styles__FormTitle-o9i1nk-0 kSseqx"
+          class="FormTitle__Title-oi1tko-0 dGHNUP"
         >
           Add a Project
         </div>
         <div
-          class="styles__FormBody-o9i1nk-1 bRDssG"
+          class="FormBody__Body-sc-19652hi-0 kTauxf"
         >
           <div>
             <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               Project Title
             </div>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
               maxlength="20"
               placeholder="Project title"
             />
           </div>
           <div>
             <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               Client
             </div>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
               placeholder="Select client"
             />
           </div>
           <div>
             <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               Project Description
             </div>
             <div
-              class="styles__InputContainer-o9i1nk-5 daXrpj"
+              class="styles__InputContainer-o9i1nk-0 dkIEjm"
             >
               <textarea
-                class="styles__TextArea-o9i1nk-4 bcsRbv"
+                class="TextArea__Area-akp1wi-0 etxwJa"
                 maxlength="60"
                 placeholder="Client description"
               />
               <textarea
-                class="styles__TextArea-o9i1nk-4 bcsRbv"
+                class="TextArea__Area-akp1wi-0 etxwJa"
                 maxlength="60"
                 placeholder="Project description"
               />
               <textarea
-                class="styles__TextArea-o9i1nk-4 bcsRbv"
+                class="TextArea__Area-akp1wi-0 etxwJa"
                 maxlength="60"
                 placeholder="Project outcomes"
               />
@@ -182,43 +185,44 @@ Object {
           </div>
           <div>
             <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               Cover Image
             </div>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
               placeholder="Cover image url"
             />
           </div>
           <div>
             <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               ANDis
             </div>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
               placeholder="Select ANDis"
             />
           </div>
           <div>
             <div
-              class="styles__Label-o9i1nk-2 hMWUiJ"
+              class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               Tech Stacks
             </div>
             <input
-              class="styles__FormInput-o9i1nk-3 fWizUB"
+              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              maxlength="40"
               placeholder="Select Tech Stack"
             />
           </div>
           <div>
             <button
-              class="styles__SubmitButton-o9i1nk-6 gpKOXk"
-            >
-              SUBMIT
-            </button>
+              class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+            />
           </div>
         </div>
       </div>
