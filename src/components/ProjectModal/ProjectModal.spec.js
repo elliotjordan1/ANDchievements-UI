@@ -13,7 +13,7 @@ describe('Header component', () => {
       image={project.imageURL} 
       name={project.name} 
       client={project.client} 
-      blurb={project.blurb} 
+      blurbOne={project.blurb} 
       ANDis={project.ANDis} 
       techStack={project.techStack} 
       logo={project.clientLogoURL} onClick={mockFunc}/>);

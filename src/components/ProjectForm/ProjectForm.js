@@ -1,121 +1,88 @@
 import React, { useState } from 'react';
-import CreatableSelect from 'react-select/creatable';
-import { Form, Label, Input, TextArea } from './styles';
+import { ToastProvider } from 'react-toast-notifications';
+import { FormWrapper, HomepageWrapper } from '../../global/styles';
+import * as AttributeTypes from '../../global/constants';
+import { FormTitle, FormBody, Label, FormInput, TextArea, InputContainer, SubmitButton } from './styles';
+import FormModal from '../FormModal/FormModal';
+import AttributeForm from '../AttributeForm/AttributeForm';
 import MultiSelect from '../MultiSelect';
 
-const ProjectForm = () => {
+const ProjectForm = () => { 
+  const [viewModal, setViewModal] = useState(false);
+  const [formType, setFormType] = useState();
+  const [formTitle, setFormTitle] = useState();
 
-    const clientOptions = [];
-    const technologyOptions = [];
-    const andiOptions = [];
+  const setToANDi = () => {
+    setFormType(<AttributeForm formType = {AttributeTypes.ANDi} />); 
+    setFormTitle('Add an ANDi')
+    setViewModal(true); 
+  };
 
-    const clientList = [];
-    const technologyList = [];
-    const andiList = [];
+  const setToTechStack = () => {
+    setFormType(<AttributeForm formType = {AttributeTypes.TechStack} />); 
+    setFormTitle('Add a Tech Stack')
+    setViewModal(true); 
+  };
 
-    clientList.forEach(element => {
-      const clientsValues = { value: element.value, label: element.label };
-      clientOptions.push(clientsValues);
-    });
-
-    technologyList.forEach(element => {
-      const technologiesValues = { value: element.value, label: element.label };
-      technologyOptions.push(technologiesValues);
-    });
-
-    andiList.forEach(element => {
-      const andiValues = { value: element.value, label: element.label };
-      technologyOptions.push(andiValues);
-    });
-
-    const [projectTitle, setName] = useState('');
-    const [projectDescription1, setProjectDescription1] = useState('');
-    const [projectDescription2, setProjectDescription2] = useState('');
-    const [projectDescription3, setProjectDescription3] = useState('');
-    const [projectCoverImageUrl, setProjectCoverImageUrl] = useState('');
-
-    return (
-        <Form >
-            <Label>
-            Project Title:
-            <Input
-              type='text'
-              value={projectTitle}
-              onChange={e => setName(e.target.value)}
-              placeholder='Enter your project title'
-            />
-            </Label>
-            <Label>
-            Client:
-                <CreatableSelect
-                options = {clientOptions}
-                />
-            </Label>
-            <Label>
-                About the client:
-                <TextArea
-                    type='text'
-                    value={projectDescription1}
-                    onChange={e => setProjectDescription1(e.target.value)}
-                    placeholder='Enter client info'
-                />
-            </Label>
-            <Label>
-                Goals of the project:
-                <TextArea
-                    type='text'
-                    value={projectDescription2}
-                    onChange={e => setProjectDescription2(e.target.value)}
-                    placeholder='Enter project goals'
-                />
-            </Label>
-            <Label>
-                End result of the project:
-                <TextArea
-                    type='text'
-                    value={projectDescription3}
-                    onChange={e => setProjectDescription3(e.target.value)}
-                    placeholder='Enter project results'
-                />
-            </Label>
-            <Label>
-            Technology Stack:
-                <CreatableSelect
-
-                />
-            </Label>
-
-          <Label>
-            select:
+  const setToClient = () => {
+    setFormType(<AttributeForm formType = {AttributeTypes.Client} />); 
+    setFormTitle('Add a Client')
+    setViewModal(true); 
+  };
+  
+  return (
+  <ToastProvider>
+    <HomepageWrapper>
+      <FormWrapper >
+        <FormTitle>Add a Project</FormTitle>
+        <FormBody>
+          <div>
+            <Label>Project Title</Label>
+            <FormInput maxLength={20} placeholder='Project title' />
+          </div>
+          <div>
+            <Label onClick={() => {setToClient()}}>Client</Label>
+            <FormInput placeholder='Select client' />
+          </div>
+          <div>
+            <Label>Project Description</Label>
+            <InputContainer>
+              <TextArea maxLength={60} placeholder='Client description' />
+              <TextArea maxLength={60} placeholder='Project description' />
+              <TextArea maxLength={60} placeholder='Project outcomes' />
+            </InputContainer>
+          </div>
+          <div>
+            <Label>Cover Image</Label>
+            <FormInput placeholder='Cover image url' />
+          </div>
+          <div>
+            <Label onClick={() => {setToANDi()}} >ANDis</Label>
             <MultiSelect 
-              placeholder='Select...'
-            />
-          </Label>
-
-
-            <Label>
-            Andis:
-                <CreatableSelect
-                      closeMenuOnSelect={false}
-                      isMulti
-                      options={andiOptions}
-                />
-            </Label>
-            <Label>
-                Project Cover Image URL:
-                <Input
-                  type='text'
-                  value={projectCoverImageUrl}
-                  onChange={e => setProjectCoverImageUrl(e.target.value)}
-                  placeholder='Enter your project cover image URL'
-                />
-            </Label>
-            <Label>
-              <Input type='submit' value='Submit'/>
-            </Label>
-        </Form>
-      );
-}
+                placeholder='Select ANDis...'
+              />
+          </div>
+          <div>
+            <Label onClick={() => {setToTechStack()}}>Tech Stacks</Label>
+            <FormInput placeholder='Select Tech Stack' />
+          </div>
+          <div>
+            <SubmitButton onClick={() => {}} >SUBMIT</SubmitButton>
+          </div>
+        </FormBody>
+      </FormWrapper>
+      {
+          (viewModal && (
+            <FormModal 
+              title={formTitle}
+              form={formType}
+              close={() => {setViewModal(false)}}
+            /> 
+          ))
+          }
+    </HomepageWrapper>
+  </ToastProvider>
+)};
 
 export default ProjectForm;
 

@@ -1,16 +1,14 @@
 import { throttle } from 'lodash'
-
 import React , {useState} from 'react';
-import { Input, MultiSelectWrapper, Options, OptionsWrapper, InputWrapper, SelectedOption, RemovalButton, AddButton } from './styles';
-
-
+import { MultiSelectWrapper, Options, OptionsWrapper, InputWrapper, SelectedOption, RemovalButton, AddButton } from './styles';
+import { FormInput } from '../ProjectForm/styles';
 
 // eslint-disable-next-line react/prop-types
 const MultiSelect = ({ placeholder }) => {
 
     const [visible, setVisible] =  useState(false);
     const[selectedValues, setSelectedValues] = useState([]);
-    const optionList = ['JAI', 'HENRY', 'ELLIOT', 'DAMI', 'ILKAY', 'MIRA', 'MARTIN', 'NIRO'];
+    const optionList = ['JAI', 'HENRY', 'ELLIOT', 'DAMI', 'ILKAY', 'MIRA', 'MARTIN', 'NIRO', 'AUSER1', 'AUSER2', 'AUSER3', 'AUSER4'];
     const[options, setOptions] = useState(optionList);
     const[inputValue, setInputValue] = useState('');
     const timeout = 1000;
@@ -72,7 +70,7 @@ const MultiSelect = ({ placeholder }) => {
                         </RemovalButton>
                     </SelectedOption>
                 ))}
-                <Input type='text' placeholder={placeholder} onChange={handleChange} value={inputValue}/>
+                <FormInput type='text' placeholder={placeholder} onChange={handleChange} value={inputValue}/>
             </InputWrapper>
 
             <OptionsWrapper visible={visible}>

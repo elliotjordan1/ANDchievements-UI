@@ -3,6 +3,12 @@ import theme from '../../global/theme';
 
 export const MultiSelectWrapper = styled.div`
     font-family: ${theme.fontFamily.primary};
+    flex-wrap: wrap;
+    background-color: hsl(0,0%,100%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    min-height: 55px;
 `;
 
 export const InputWrapper = styled.div`
@@ -14,34 +20,25 @@ export const InputWrapper = styled.div`
     border-style: solid;
     border-width: 1px;
     min-height: 55px;
-    width: 100%;
 `;
 
 export const OptionsWrapper = styled.div`
-    position: absolute;
-    z-index: 99999;
+    height: 150px;
+    overflow: scroll;
     display: ${({visible}) => visible ? 'block' : 'none'};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 50%
-`;
-
-export const Input = styled.input`
-width: 100%;
-    border: 0px;
-    display: flex;
-    font-family: ${theme.fontFamily.primary};
-    padding: 2px;
-    margin: 2px;
-    font-size: 16px;
+    flex-wrap: wrap;
+    background-color: hsl(0,0%,100%);
+    border-color: hsl(0,0%,80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    min-height: 55px;
     @media ${theme.media.tablet} {
-    font-size: 18px;
-    padding: 3px;
-    margin: 3px;
+    height: 200px;
     };
     @media ${theme.media.desktop} {
-    font-size: 22px;
-    padding: 5px;
-    margin: 5px;
+    height: 300px;
     };
 `;
 
@@ -68,8 +65,6 @@ export const AddButton = styled.button`
     font-size: 22px;
     };
 `;
-
-
 
 export const SelectedOption = styled.div`
     font-style: normal;

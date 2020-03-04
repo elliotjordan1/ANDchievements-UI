@@ -57,6 +57,7 @@ const ProjectModal = ({ image, onClick, name, client, blurbOne, blurbTwo, blurbT
                   } catch {
                     tech = item;
                   }
+
                   return (
                     <TechListItem key={tech.technologyId}>
                       <Icon image={tech.imageURL}/>
@@ -79,8 +80,8 @@ ProjectModal.propTypes = {
   blurbOne: PropTypes.string.isRequired,
   blurbTwo: PropTypes.string,
   blurbThree: PropTypes.string,
-  ANDis: PropTypes.arrayOf(PropTypes.string).isRequired,
-  techStack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  ANDis: PropTypes.arrayOf(PropTypes.object).isRequired,
+  techStack: PropTypes.arrayOf(PropTypes.object).isRequired,
   logo: PropTypes.string.isRequired
 };
 
