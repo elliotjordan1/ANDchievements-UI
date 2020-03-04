@@ -3,10 +3,10 @@ import { shuffleAndSliceArray } from './helpers';
 
 describe('index.js tests', () => {
   it('returns the same array when array length is less than slice length', () => {
-    const shortArray = [1, 2, 3];
-    const sliceLength = 5;
+    const shortArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    const sliceLength = 16;
 
-    const expectedResult = [1, 2, 3];
+    const expectedResult = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
     const actualResult = shuffleAndSliceArray(shortArray, sliceLength);
     

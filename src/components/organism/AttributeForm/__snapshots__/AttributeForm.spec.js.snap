@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttributeForm component renders correctly for a Tech Stack 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+      >
+        <div>
+          <div
+            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          >
+            Tech Stack Name
+          </div>
+          <input
+            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            maxlength="40"
+            placeholder="Tech Stack Name"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          >
+            Tech Stack Image URL
+          </div>
+          <input
+            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            maxlength="40"
+            placeholder="Tech Stack Image URL"
+            value=""
+          />
+        </div>
+        <div>
+          <button
+            class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
+            type="submit"
+          >
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <form
+      class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+    >
+      <div>
+        <div
+          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+        >
+          Tech Stack Name
+        </div>
+        <input
+          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          maxlength="40"
+          placeholder="Tech Stack Name"
+          value=""
+        />
+      </div>
+      <div>
+        <div
+          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+        >
+          Tech Stack Image URL
+        </div>
+        <input
+          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          maxlength="40"
+          placeholder="Tech Stack Image URL"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
+          type="submit"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`AttributeForm component renders correctly for a client 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+      >
+        <div>
+          <div
+            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          >
+            Client Name
+          </div>
+          <input
+            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            maxlength="40"
+            placeholder="Client Name"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          >
+            Client Image URL
+          </div>
+          <input
+            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            maxlength="40"
+            placeholder="Client Image URL"
+            value=""
+          />
+        </div>
+        <div>
+          <button
+            class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
+            type="submit"
+          >
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <form
+      class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+    >
+      <div>
+        <div
+          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+        >
+          Client Name
+        </div>
+        <input
+          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          maxlength="40"
+          placeholder="Client Name"
+          value=""
+        />
+      </div>
+      <div>
+        <div
+          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+        >
+          Client Image URL
+        </div>
+        <input
+          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          maxlength="40"
+          placeholder="Client Image URL"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
+          type="submit"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`AttributeForm component renders correctly for an ANDi 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+      >
+        <div>
+          <div
+            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          >
+            ANDi Name
+          </div>
+          <input
+            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            maxlength="40"
+            placeholder="ANDi Name"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          >
+            ANDi Image URL
+          </div>
+          <input
+            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            maxlength="40"
+            placeholder="ANDi Image URL"
+            value=""
+          />
+        </div>
+        <div>
+          <button
+            class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
+            type="submit"
+          >
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <form
+      class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+    >
+      <div>
+        <div
+          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+        >
+          ANDi Name
+        </div>
+        <input
+          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          maxlength="40"
+          placeholder="ANDi Name"
+          value=""
+        />
+      </div>
+      <div>
+        <div
+          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+        >
+          ANDi Image URL
+        </div>
+        <input
+          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          maxlength="40"
+          placeholder="ANDi Image URL"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
+          type="submit"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
