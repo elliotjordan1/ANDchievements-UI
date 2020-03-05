@@ -26,9 +26,10 @@ Object {
                 Project Title
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 maxlength="20"
                 placeholder="Project title"
+                value=""
               />
             </div>
             <div>
@@ -38,9 +39,9 @@ Object {
                 Client
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-                maxlength="40"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 placeholder="Select client"
+                value=""
               />
             </div>
             <div>
@@ -76,9 +77,9 @@ Object {
                 Cover Image
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-                maxlength="40"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 placeholder="Cover image url"
+                value=""
               />
             </div>
             <div>
@@ -88,9 +89,9 @@ Object {
                 ANDis
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-                maxlength="40"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 placeholder="Select ANDis"
+                value=""
               />
             </div>
             <div>
@@ -100,9 +101,9 @@ Object {
                 Tech Stacks
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-                maxlength="40"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 placeholder="Select Tech Stack"
+                value=""
               />
             </div>
             <div>
@@ -142,9 +143,10 @@ Object {
               Project Title
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               maxlength="20"
               placeholder="Project title"
+              value=""
             />
           </div>
           <div>
@@ -154,9 +156,9 @@ Object {
               Client
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-              maxlength="40"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               placeholder="Select client"
+              value=""
             />
           </div>
           <div>
@@ -192,9 +194,9 @@ Object {
               Cover Image
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-              maxlength="40"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               placeholder="Cover image url"
+              value=""
             />
           </div>
           <div>
@@ -204,9 +206,9 @@ Object {
               ANDis
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-              maxlength="40"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               placeholder="Select ANDis"
+              value=""
             />
           </div>
           <div>
@@ -216,9 +218,9 @@ Object {
               Tech Stacks
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-              maxlength="40"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               placeholder="Select Tech Stack"
+              value=""
             />
           </div>
           <div>
