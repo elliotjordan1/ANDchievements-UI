@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="FooterWrapper__Wrapper-sc-1emi1m6-0 vTEVf"
+        class="FooterWrapper-sc-1emi1m6-0 bOSiyY"
       >
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -19,7 +19,7 @@ Object {
           </a>
         </div>
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -29,7 +29,7 @@ Object {
           </a>
         </div>
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -39,7 +39,7 @@ Object {
           </a>
         </div>
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -49,7 +49,7 @@ Object {
           </a>
         </div>
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -59,7 +59,7 @@ Object {
           </a>
         </div>
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -69,7 +69,7 @@ Object {
           </a>
         </div>
         <div
-          class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+          class="FooterTextContainer-sc-5oqci2-0 EKzgp"
         >
           <a
             class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -83,10 +83,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="FooterWrapper__Wrapper-sc-1emi1m6-0 vTEVf"
+      class="FooterWrapper-sc-1emi1m6-0 bOSiyY"
     >
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -96,7 +96,7 @@ Object {
         </a>
       </div>
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -106,7 +106,7 @@ Object {
         </a>
       </div>
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -116,7 +116,7 @@ Object {
         </a>
       </div>
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -126,7 +126,7 @@ Object {
         </a>
       </div>
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -136,7 +136,7 @@ Object {
         </a>
       </div>
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"
@@ -146,7 +146,7 @@ Object {
         </a>
       </div>
       <div
-        class="FooterTextContainer__Container-sc-5oqci2-0 fexYHK"
+        class="FooterTextContainer-sc-5oqci2-0 EKzgp"
       >
         <a
           class="FooterText__Text-sc-16e21wj-0 iowypz"

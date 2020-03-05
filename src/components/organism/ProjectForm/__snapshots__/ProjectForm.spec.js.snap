@@ -12,12 +12,10 @@ Object {
           class="styles__FormWrapper-sc-101ii58-3 foeRUl"
         >
           <div
-            class="FormTitle__Title-oi1tko-0 dGHNUP"
-          >
-            Add a Project
-          </div>
+            class="FormTitle-oi1tko-0 fseZur"
+          />
           <div
-            class="FormBody__Body-sc-19652hi-0 kTauxf"
+            class="FormBody-sc-19652hi-0 eFLdXH"
           >
             <div>
               <div
@@ -91,10 +89,10 @@ Object {
                 ANDis
               </div>
               <div
-                class="MultiSelectWrapper__Wrapper-ehyr88-0 iBYzZm"
+                class="MultiSelectWrapper-ehyr88-0 PAJQb"
               >
                 <div
-                  class="InputWrapper__Wrapper-b1liev-0 dJvozm"
+                  class="InputWrapper-b1liev-0 ieRNSH"
                 >
                   <input
                     class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
@@ -211,12 +209,10 @@ Object {
         class="styles__FormWrapper-sc-101ii58-3 foeRUl"
       >
         <div
-          class="FormTitle__Title-oi1tko-0 dGHNUP"
-        >
-          Add a Project
-        </div>
+          class="FormTitle-oi1tko-0 fseZur"
+        />
         <div
-          class="FormBody__Body-sc-19652hi-0 kTauxf"
+          class="FormBody-sc-19652hi-0 eFLdXH"
         >
           <div>
             <div
@@ -290,10 +286,10 @@ Object {
               ANDis
             </div>
             <div
-              class="MultiSelectWrapper__Wrapper-ehyr88-0 iBYzZm"
+              class="MultiSelectWrapper-ehyr88-0 PAJQb"
             >
               <div
-                class="InputWrapper__Wrapper-b1liev-0 dJvozm"
+                class="InputWrapper-b1liev-0 ieRNSH"
               >
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
