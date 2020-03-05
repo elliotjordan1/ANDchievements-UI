@@ -1,7 +1,6 @@
 import Axios from 'axios';
 import { API_URL,  AUTHENTICATION_TOKEN } from 'react-native-dotenv';
 
-
 const createOptions = (endpoint, content) => {
   const url = `${API_URL}${endpoint}`;
   const jsonContent = JSON.stringify(content);
