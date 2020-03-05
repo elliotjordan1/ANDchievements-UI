@@ -1,14 +1,13 @@
 import React from 'react';
-import Link from 'next/link';
 import { HeaderWrapper } from '../../atom';
 import Logo from '../Logo';
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Link href={{ pathname: '/' }}>
+      <a href='/'>
         <Logo />
-      </Link>
+      </a>
     </HeaderWrapper>
   );
 };

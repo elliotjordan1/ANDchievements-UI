@@ -1,7 +1,16 @@
 import { throttle } from 'lodash'
 import React , {useState} from 'react';
-import { MultiSelectWrapper, Options, OptionsWrapper, InputWrapper, SelectedOption, RemovalButton, AddButton } from './styles';
-import { FormInput } from '../../atom';
+import { 
+  MultiSelectWrapper, 
+  MultiSelectOptions as Option, 
+  MultiSelectOptionsWrapper as OptionsWrapper, 
+  InputWrapper, 
+  SelectedOption, 
+  RemovalButton, 
+  AddButton , 
+  FormInput 
+} from '../../atom';
+
 
 // eslint-disable-next-line react/prop-types
 const MultiSelect = ({ placeholder }) => {
@@ -22,10 +31,7 @@ const MultiSelect = ({ placeholder }) => {
             .filter(x => !optionList.includes(x)))
             .filter(op => op.toLowerCase().includes(event.target.value.toLowerCase()));
 
-            setOptions(
-                
-              filteredOptions
-                );
+            setOptions( filteredOptions );            
             return setVisible(true)
         }
         return setVisible(false)
@@ -65,21 +71,20 @@ const MultiSelect = ({ placeholder }) => {
                 {selectedValues.map((optionValue) => (
                     <SelectedOption>
                             {optionValue}
-                        <RemovalButton type="submit" onClick={(event) => removeSelection(event, optionValue)}>
-                            x
-                        </RemovalButton>
+                        <RemovalButton buttonType="submit" onClick={(event) => removeSelection(event, optionValue)} labelText = "x" />
                     </SelectedOption>
                 ))}
-                <FormInput type='text' placeholder={placeholder} onChange={handleChange} value={inputValue}/>
+                <FormInput type='text' placeholder={placeholder} onChange={handleChange} value={inputValue} maxLength={40}/>
             </InputWrapper>
 
-            <OptionsWrapper visible={visible}>
-                {options.map((value, index) => (<Options key={value} onClick={(event) => handleClick(value, index, event)} >{value}</Options>))}
-                <Options>
-                    <AddButton type="submit" onClick={(event) => add(event)}>
-                        + Add
-                    </AddButton>
-                </Options>
+            <OptionsWrapper visible={visible} arrayLength={options.length}>
+                {options.length > 0 && options.map((value, index) => {
+                  return (
+                  <Option key={value} onClick={(event) => handleClick(value, index, event)} value ={value}  /> 
+                  );
+                })         
+                }       
+                <AddButton buttonType="submit" onClick={(event) => add(event)} labelText = "+ Add" />
             </OptionsWrapper>
         </MultiSelectWrapper>
     )

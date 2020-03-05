@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../../global/theme';
 
-const Wrapper = styled.a`
+const Wrapper = styled.div`
   display: block;
   align-self: center;
   height: 24px;
-  margin-left: 12px;
+  margin: 15px auto 10px 15px;
   cursor: pointer;
   & > svg{
     height: 24px;
