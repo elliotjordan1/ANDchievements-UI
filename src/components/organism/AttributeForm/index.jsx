@@ -17,7 +17,7 @@ const AttributeForm = ({
   const [imageUrl, setImageUrl] = useState('');
   const [name, setName] = useState('');
 
-  const [state, dispatch] = useReducer(formReducer, initialFormState);
+  const [, dispatch] = useReducer(formReducer, initialFormState);
 
   const creationStrategies = [
     new ANDiCreator(),
