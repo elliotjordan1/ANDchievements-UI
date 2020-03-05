@@ -2,9 +2,8 @@
 /* eslint-disable no-loop-func */
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react';
-import ProjectSummary from '../components/organism/ProjectSummary';
-import { ProjectModal } from '../components/organism';
-import getAllProjects from '../api/handlers/getprojects/getProjects';
+import { ProjectModal, ProjectSummary } from '../components/organism';
+import getAllProjects from '../api/handlers/getProjects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 import { shuffleAndSliceArray } from '../global/helpers';
 

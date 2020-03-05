@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <form
-        class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
       >
         <div>
           <div
-            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
           >
             Tech Stack Name
           </div>
           <input
-            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
             maxlength="40"
             placeholder="Tech Stack Name"
             value=""
@@ -23,12 +23,12 @@ Object {
         </div>
         <div>
           <div
-            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
           >
             Tech Stack Image URL
           </div>
           <input
-            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
             maxlength="40"
             placeholder="Tech Stack Image URL"
             value=""
@@ -36,8 +36,7 @@ Object {
         </div>
         <div>
           <button
-            class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
-            type="submit"
+            class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
           >
             SUBMIT
           </button>
@@ -50,16 +49,16 @@ Object {
   </body>,
   "container": <div>
     <form
-      class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
     >
       <div>
         <div
-          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
         >
           Tech Stack Name
         </div>
         <input
-          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
           maxlength="40"
           placeholder="Tech Stack Name"
           value=""
@@ -67,12 +66,12 @@ Object {
       </div>
       <div>
         <div
-          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
         >
           Tech Stack Image URL
         </div>
         <input
-          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
           maxlength="40"
           placeholder="Tech Stack Image URL"
           value=""
@@ -80,8 +79,7 @@ Object {
       </div>
       <div>
         <button
-          class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
-          type="submit"
+          class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
         >
           SUBMIT
         </button>
@@ -148,16 +146,16 @@ Object {
   "baseElement": <body>
     <div>
       <form
-        class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
       >
         <div>
           <div
-            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
           >
             Client Name
           </div>
           <input
-            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
             maxlength="40"
             placeholder="Client Name"
             value=""
@@ -165,12 +163,12 @@ Object {
         </div>
         <div>
           <div
-            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
           >
             Client Image URL
           </div>
           <input
-            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
             maxlength="40"
             placeholder="Client Image URL"
             value=""
@@ -178,8 +176,7 @@ Object {
         </div>
         <div>
           <button
-            class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
-            type="submit"
+            class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
           >
             SUBMIT
           </button>
@@ -192,16 +189,16 @@ Object {
   </body>,
   "container": <div>
     <form
-      class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
     >
       <div>
         <div
-          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
         >
           Client Name
         </div>
         <input
-          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
           maxlength="40"
           placeholder="Client Name"
           value=""
@@ -209,12 +206,12 @@ Object {
       </div>
       <div>
         <div
-          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
         >
           Client Image URL
         </div>
         <input
-          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
           maxlength="40"
           placeholder="Client Image URL"
           value=""
@@ -222,8 +219,7 @@ Object {
       </div>
       <div>
         <button
-          class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
-          type="submit"
+          class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
         >
           SUBMIT
         </button>
@@ -290,16 +286,16 @@ Object {
   "baseElement": <body>
     <div>
       <form
-        class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
       >
         <div>
           <div
-            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
           >
             ANDi Name
           </div>
           <input
-            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
             maxlength="40"
             placeholder="ANDi Name"
             value=""
@@ -307,12 +303,12 @@ Object {
         </div>
         <div>
           <div
-            class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
           >
             ANDi Image URL
           </div>
           <input
-            class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
             maxlength="40"
             placeholder="ANDi Image URL"
             value=""
@@ -320,8 +316,7 @@ Object {
         </div>
         <div>
           <button
-            class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
-            type="submit"
+            class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
           >
             SUBMIT
           </button>
@@ -334,16 +329,16 @@ Object {
   </body>,
   "container": <div>
     <form
-      class="AttributeFormStyles__FormWrapper-sc-1ojs94g-1 csCrRS"
+      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
     >
       <div>
         <div
-          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
         >
           ANDi Name
         </div>
         <input
-          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
           maxlength="40"
           placeholder="ANDi Name"
           value=""
@@ -351,12 +346,12 @@ Object {
       </div>
       <div>
         <div
-          class="AttributeFormStyles__Label-sc-1ojs94g-0 izxPpm"
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
         >
           ANDi Image URL
         </div>
         <input
-          class="AttributeFormStyles__FormInput-sc-1ojs94g-2 eKvJgu"
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
           maxlength="40"
           placeholder="ANDi Image URL"
           value=""
@@ -364,8 +359,7 @@ Object {
       </div>
       <div>
         <button
-          class="AttributeFormStyles__SubmitButton-sc-1ojs94g-3 jBIYwE"
-          type="submit"
+          class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
         >
           SUBMIT
         </button>

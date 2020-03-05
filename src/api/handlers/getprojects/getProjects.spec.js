@@ -1,4 +1,4 @@
-import getAllProjects from './getProjects';
+import getAllProjects from '.';
 import makeGetRequest from '../../requests/getRequest/getRequest';
 
 jest.mock('../../requests/getRequest/getRequest');

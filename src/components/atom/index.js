@@ -10,6 +10,15 @@ import FooterWrapper from './FooterWrapper';
 import FooterText from './FooterText';
 import FooterDiv from './FooterTextContainer';
 import FormWrapper from './FormWrapper';
+import InputWrapper from './InputWrapper';
+import { 
+  AddButton, 
+  MultiSelectWrapper,
+  MultiSelectOptions,
+  MultiSelectOptionsWrapper,
+  RemovalButton,
+  SelectedOption 
+} from './MutliSelect';
 
 export {
   FormInput,
@@ -23,5 +32,12 @@ export {
   FooterWrapper,
   FooterText,
   FooterDiv,
-  FormWrapper
+  FormWrapper,
+  AddButton, 
+  MultiSelectWrapper,
+  MultiSelectOptions,
+  MultiSelectOptionsWrapper,
+  RemovalButton,
+  SelectedOption,
+  InputWrapper
 }

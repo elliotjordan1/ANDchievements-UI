@@ -26,9 +26,10 @@ Object {
                 Project Title
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 maxlength="20"
                 placeholder="Project title"
+                value=""
               />
             </div>
             <div>
@@ -38,9 +39,10 @@ Object {
                 Client
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 maxlength="40"
                 placeholder="Select client"
+                value=""
               />
             </div>
             <div>
@@ -76,9 +78,10 @@ Object {
                 Cover Image
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-                maxlength="40"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                maxlength="200"
                 placeholder="Cover image url"
+                value=""
               />
             </div>
             <div>
@@ -87,11 +90,90 @@ Object {
               >
                 ANDis
               </div>
-              <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-                maxlength="40"
-                placeholder="Select ANDis"
-              />
+              <div
+                class="MultiSelectWrapper__Wrapper-ehyr88-0 iBYzZm"
+              >
+                <div
+                  class="InputWrapper__Wrapper-b1liev-0 dJvozm"
+                >
+                  <input
+                    class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                    maxlength="40"
+                    placeholder="Select ANDis..."
+                    value=""
+                  />
+                </div>
+                <div
+                  class="OptionsWrapper__Wrapper-bx0bji-0 fcmQKW"
+                >
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    JAI
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    HENRY
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    ELLIOT
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    DAMI
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    ILKAY
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    MIRA
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    MARTIN
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    NIRO
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    AUSER1
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    AUSER2
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    AUSER3
+                  </div>
+                  <div
+                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                  >
+                    AUSER4
+                  </div>
+                  <button
+                    class="AddButton__Button-c21il-0 hUnySS"
+                    type="submit"
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
             </div>
             <div>
               <div
@@ -100,9 +182,10 @@ Object {
                 Tech Stacks
               </div>
               <input
-                class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
                 maxlength="40"
                 placeholder="Select Tech Stack"
+                value=""
               />
             </div>
             <div>
@@ -142,9 +225,10 @@ Object {
               Project Title
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               maxlength="20"
               placeholder="Project title"
+              value=""
             />
           </div>
           <div>
@@ -154,9 +238,10 @@ Object {
               Client
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               maxlength="40"
               placeholder="Select client"
+              value=""
             />
           </div>
           <div>
@@ -192,9 +277,10 @@ Object {
               Cover Image
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-              maxlength="40"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+              maxlength="200"
               placeholder="Cover image url"
+              value=""
             />
           </div>
           <div>
@@ -203,11 +289,90 @@ Object {
             >
               ANDis
             </div>
-            <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
-              maxlength="40"
-              placeholder="Select ANDis"
-            />
+            <div
+              class="MultiSelectWrapper__Wrapper-ehyr88-0 iBYzZm"
+            >
+              <div
+                class="InputWrapper__Wrapper-b1liev-0 dJvozm"
+              >
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                  maxlength="40"
+                  placeholder="Select ANDis..."
+                  value=""
+                />
+              </div>
+              <div
+                class="OptionsWrapper__Wrapper-bx0bji-0 fcmQKW"
+              >
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  JAI
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  HENRY
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  ELLIOT
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  DAMI
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  ILKAY
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  MIRA
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  MARTIN
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  NIRO
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  AUSER1
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  AUSER2
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  AUSER3
+                </div>
+                <div
+                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+                >
+                  AUSER4
+                </div>
+                <button
+                  class="AddButton__Button-c21il-0 hUnySS"
+                  type="submit"
+                >
+                  + Add
+                </button>
+              </div>
+            </div>
           </div>
           <div>
             <div
@@ -216,9 +381,10 @@ Object {
               Tech Stacks
             </div>
             <input
-              class="CustomFormInput__FormInput-zm333l-0 eLZzgK"
+              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
               maxlength="40"
               placeholder="Select Tech Stack"
+              value=""
             />
           </div>
           <div>

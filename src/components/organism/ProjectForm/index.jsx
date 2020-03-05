@@ -8,6 +8,9 @@ import {
   TextArea,
   SubmitButton
 } from '../../atom';
+import {
+  MultiSelect
+} from '../../molecule';
 import { FormWrapper, HomepageWrapper } from '../../../global/styles';
 import * as AttributeTypes from '../../../global/constants';
 import { InputContainer } from './styles';
@@ -49,7 +52,7 @@ const ProjectForm = () => {
           </div>
           <div>
             <Label onClick={() => {setToClient()}} labelText = "Client" />
-            <FormInput placeholder='Select client' />
+            <FormInput placeholder='Select client' maxLength = {40} />
           </div>
           <div>
             <Label labelText = "Project Description" />
@@ -61,15 +64,15 @@ const ProjectForm = () => {
           </div>
           <div>
             <Label labelText = "Cover Image" />
-            <FormInput placeholder='Cover image url' />
+            <FormInput placeholder='Cover image url' maxLength={200}/>
           </div>
           <div>
             <Label onClick={() => {setToANDi()}} labelText = "ANDis" />
-            <FormInput placeholder='Select ANDis' />
+            <MultiSelect placeholder='Select ANDis...' />
           </div>
           <div>
             <Label onClick={() => {setToTechStack()}} labelText ="Tech Stacks" />
-            <FormInput placeholder='Select Tech Stack' />
+            <FormInput placeholder='Select Tech Stack' maxLength={40} />
           </div>
           <div>
             <SubmitButton text="SUBMIT" />
