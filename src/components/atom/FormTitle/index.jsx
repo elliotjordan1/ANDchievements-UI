@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../../global/theme';
 
-const Title = styled.div`
+export default styled.div`
     background-color: black;
     color: white;
     font: 500 22px ${theme.fontFamily.primary};
@@ -19,13 +19,3 @@ const Title = styled.div`
         font-size: 36px;
     };
 `;
-
-const FormTitle = ({
-  text
-}) => <Title>{text}</Title>
-
-FormTitle.propTypes = {
-  text: PropTypes.string.isRequired
-};
-
-export default FormTitle;

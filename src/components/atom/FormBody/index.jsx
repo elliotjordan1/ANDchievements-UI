@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../../global/theme';
 
-const Body = styled.div`
+export default styled.div`
     background-color: white;
     margin: 8px auto;
     padding: 8px 8px 24px 8px;
@@ -18,13 +16,3 @@ const Body = styled.div`
         margin: 32px auto;
     };
 `;
-
-const FormBody = ({
-  children
-}) => <Body>{children}</Body>
-
-FormBody.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.any).isRequired
-};
-
-export default FormBody;
