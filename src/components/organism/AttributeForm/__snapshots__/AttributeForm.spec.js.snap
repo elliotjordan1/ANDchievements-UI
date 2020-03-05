@@ -1,0 +1,421 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttributeForm component renders correctly for a Tech Stack 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+      >
+        <div>
+          <div
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+          >
+            Tech Stack Name
+          </div>
+          <input
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            maxlength="40"
+            placeholder="Tech Stack Name"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+          >
+            Tech Stack Image URL
+          </div>
+          <input
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            maxlength="40"
+            placeholder="Tech Stack Image URL"
+            value=""
+          />
+        </div>
+        <div>
+          <button
+            class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+          >
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <form
+      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+    >
+      <div>
+        <div
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+        >
+          Tech Stack Name
+        </div>
+        <input
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          maxlength="40"
+          placeholder="Tech Stack Name"
+          value=""
+        />
+      </div>
+      <div>
+        <div
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+        >
+          Tech Stack Image URL
+        </div>
+        <input
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          maxlength="40"
+          placeholder="Tech Stack Image URL"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`AttributeForm component renders correctly for a client 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+      >
+        <div>
+          <div
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+          >
+            Client Name
+          </div>
+          <input
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            maxlength="40"
+            placeholder="Client Name"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+          >
+            Client Image URL
+          </div>
+          <input
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            maxlength="40"
+            placeholder="Client Image URL"
+            value=""
+          />
+        </div>
+        <div>
+          <button
+            class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+          >
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <form
+      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+    >
+      <div>
+        <div
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+        >
+          Client Name
+        </div>
+        <input
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          maxlength="40"
+          placeholder="Client Name"
+          value=""
+        />
+      </div>
+      <div>
+        <div
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+        >
+          Client Image URL
+        </div>
+        <input
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          maxlength="40"
+          placeholder="Client Image URL"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`AttributeForm component renders correctly for an ANDi 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <form
+        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+      >
+        <div>
+          <div
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+          >
+            ANDi Name
+          </div>
+          <input
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            maxlength="40"
+            placeholder="ANDi Name"
+            value=""
+          />
+        </div>
+        <div>
+          <div
+            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+          >
+            ANDi Image URL
+          </div>
+          <input
+            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            maxlength="40"
+            placeholder="ANDi Image URL"
+            value=""
+          />
+        </div>
+        <div>
+          <button
+            class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+          >
+            SUBMIT
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="react-toast-notifications__container css-mrh2d-ToastContainer"
+    />
+  </body>,
+  "container": <div>
+    <form
+      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+    >
+      <div>
+        <div
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+        >
+          ANDi Name
+        </div>
+        <input
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          maxlength="40"
+          placeholder="ANDi Name"
+          value=""
+        />
+      </div>
+      <div>
+        <div
+          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+        >
+          ANDi Image URL
+        </div>
+        <input
+          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          maxlength="40"
+          placeholder="ANDi Image URL"
+          value=""
+        />
+      </div>
+      <div>
+        <button
+          class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

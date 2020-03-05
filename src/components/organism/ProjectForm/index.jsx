@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
 import { ToastProvider } from 'react-toast-notifications';
-import { FormWrapper, HomepageWrapper } from '../../global/styles';
-import * as AttributeTypes from '../../global/constants';
-import { FormTitle, FormBody, Label, FormInput, TextArea, InputContainer, SubmitButton } from './styles';
-import { MultiSelect } from '../molecule';
-import { FormModal, AttributeForm } from '../organism';
+import {
+  FormInput,
+  FormLabel as Label,
+  FormTitle,
+  FormBody,
+  TextArea,
+  SubmitButton
+} from '../../atom';
+import {
+  MultiSelect
+} from '../../molecule';
+import { FormWrapper, HomepageWrapper } from '../../../global/styles';
+import * as AttributeTypes from '../../../global/constants';
+import { InputContainer } from './styles';
+import FormModal from '../FormModal';
+import AttributeForm from '../AttributeForm';
 
 const ProjectForm = () => { 
   const [viewModal, setViewModal] = useState(false);
@@ -33,18 +44,18 @@ const ProjectForm = () => {
   <ToastProvider>
     <HomepageWrapper>
       <FormWrapper >
-        <FormTitle>Add a Project</FormTitle>
+        <FormTitle text = "Add a Project" />
         <FormBody>
           <div>
-            <Label>Project Title</Label>
+            <Label labelText ="Project Title" />
             <FormInput maxLength={20} placeholder='Project title' />
           </div>
           <div>
-            <Label onClick={() => {setToClient()}}>Client</Label>
+            <Label onClick={() => {setToClient()}} labelText = "Client" />
             <FormInput placeholder='Select client' />
           </div>
           <div>
-            <Label>Project Description</Label>
+            <Label labelText = "Project Description" />
             <InputContainer>
               <TextArea maxLength={60} placeholder='Client description' />
               <TextArea maxLength={60} placeholder='Project description' />
@@ -52,21 +63,19 @@ const ProjectForm = () => {
             </InputContainer>
           </div>
           <div>
-            <Label>Cover Image</Label>
+            <Label labelText = "Cover Image" />
             <FormInput placeholder='Cover image url' />
           </div>
           <div>
-            <Label onClick={() => {setToANDi()}} >ANDis</Label>
-            <MultiSelect 
-                placeholder='Select ANDis...'
-              />
+            <Label onClick={() => {setToANDi()}} labelText = "ANDis" />
+            <MultiSelect placeholder='Select ANDis...' />
           </div>
           <div>
-            <Label onClick={() => {setToTechStack()}}>Tech Stacks</Label>
+            <Label onClick={() => {setToTechStack()}} labelText ="Tech Stacks" />
             <FormInput placeholder='Select Tech Stack' />
           </div>
           <div>
-            <SubmitButton onClick={() => {}} >SUBMIT</SubmitButton>
+            <SubmitButton text="SUBMIT" />
           </div>
         </FormBody>
       </FormWrapper>

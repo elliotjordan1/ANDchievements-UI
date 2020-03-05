@@ -2,8 +2,7 @@ import './styles.css';
 import PropTypes from 'prop-types';
 import 'typeface-roboto';
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import { Footer, Header } from '../components/molecule';
 import AppWrapper from './styles';
 import 'babel-polyfill';
 

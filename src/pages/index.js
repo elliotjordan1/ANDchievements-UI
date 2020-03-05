@@ -2,12 +2,10 @@
 /* eslint-disable no-loop-func */
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react';
-import ProjectSummary from '../components/ProjectSummary/ProjectSummary';
-import ProjectModal from '../components/ProjectModal/ProjectModal';
-import getAllProjects from '../api/handlers/attributeRetrieval/getProjects/getProjects';
+import { ProjectModal, ProjectSummary } from '../components/organism';
+import getAllProjects from '../api/handlers/getProjects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 import { shuffleAndSliceArray } from '../global/helpers';
-import getAllTechnologies from '../api/handlers/attributeRetrieval/getTechnologies/getTechnologies';
 
 const SPACE_BAR_KEY_CODE = 32;
 const ESCAPE_KEY_CODE = 27;
@@ -21,7 +19,7 @@ const Homepage = () => {
   const [animationLength, setAnimationLength] = useState(0);
   const [projects, setProjects] = useState(undefined);
   const [error, setError] = useState(null);
-getAllTechnologies();
+
   const boxClick = id => {
     setCurrentAnimationIndex(id);
     setProjectModalIsActive(true);  
