@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react';
 import { ProjectModal, ProjectSummary } from '../components/organism';
-import getAllProjects from '../api/handlers/getProjects';
+import getAllProjects from '../api/handlers/getprojects';
 import { HomepageWrapper, ErrorWrapper } from '../global/styles';
 import { shuffleAndSliceArray } from '../global/helpers';
 
