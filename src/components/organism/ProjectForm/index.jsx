@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ToastProvider } from 'react-toast-notifications';
+
 import {
   FormInput,
   FormLabel as Label,
   FormTitle,
   FormBody,
   TextArea,
-  SubmitButton
+  SubmitButton,
+  FormSelect
 } from '../../atom';
 import {
   MultiSelect
@@ -16,8 +18,11 @@ import * as AttributeTypes from '../../../global/constants';
 import { InputContainer } from './styles';
 import FormModal from '../FormModal';
 import AttributeForm from '../AttributeForm';
+import getAllClients from '../../../api/handlers/attributeRetrieval/getClients/getClients';
 
 const ProjectForm = () => { 
+
+  const [clientOptions] = useState([]);
   const [viewModal, setViewModal] = useState(false);
   const [formType, setFormType] = useState();
   const [formTitle, setFormTitle] = useState();
@@ -39,6 +44,19 @@ const ProjectForm = () => {
     setFormTitle('Add a Client')
     setViewModal(true); 
   };
+
+  useEffect(() => {
+    const getClients = async () => {
+        const response = getAllClients();
+        (await response).clients.forEach(element => {
+          const clientsValues = { value: element.clientid, label: element.clientname };
+          clientOptions.push(clientsValues);
+        });
+    }
+    if (!clientOptions.length) {
+      getClients();
+    }
+  });
   
   return (
   <ToastProvider>
@@ -52,7 +70,7 @@ const ProjectForm = () => {
           </div>
           <div>
             <Label onClick={() => {setToClient()}} labelText = "Client" />
-            <FormInput placeholder='Select client' maxLength = {40} />
+            <FormSelect placeholder='Select client' maxLength = {40} options = {clientOptions}/>
           </div>
           <div>
             <Label labelText = "Project Description" />

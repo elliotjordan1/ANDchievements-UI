@@ -11,6 +11,7 @@ import FooterText from './FooterText';
 import FooterDiv from './FooterTextContainer';
 import FormWrapper from './FormWrapper';
 import InputWrapper from './InputWrapper';
+import FormSelect from './FormSelect';
 import { 
   AddButton, 
   MultiSelectWrapper,
@@ -39,5 +40,6 @@ export {
   MultiSelectOptionsWrapper,
   RemovalButton,
   SelectedOption,
-  InputWrapper
+  InputWrapper,
+  FormSelect
 }
