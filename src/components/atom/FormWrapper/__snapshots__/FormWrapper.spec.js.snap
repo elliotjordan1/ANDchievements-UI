@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <form
-        class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+        class="FormWrapper-sc-13nyj8f-0 gcOoNd"
       />
     </div>
   </body>,
   "container": <div>
     <form
-      class="FormWrapper__Wrapper-sc-13nyj8f-0 kWcBxY"
+      class="FormWrapper-sc-13nyj8f-0 gcOoNd"
     />
   </div>,
   "debug": [Function],

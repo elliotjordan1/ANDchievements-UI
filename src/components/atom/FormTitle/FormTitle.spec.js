@@ -4,7 +4,7 @@ import Component from '.';
 
 describe('FormTitle component', () => {
   it('renders correctly', () => {
-    const component = <Component />;
+    const component = <Component text ="FormTitle!" />;
 
     const wrapper = render(component);
     
