@@ -35,9 +35,11 @@ describe('client - attributeCreation', () => {
     const actualResult = await ClientCreator.create({ name: 'Jack Bryant', imageUrl: 'http://test.image.png' })
 
     const expectedResult = {
-      status: 500,
-      data: undefined,
-      message: 'Unable to connect to server'
+      status: 404,
+      data: {
+        statusText: 'Bad Request'
+      },
+      message: undefined
     };
 
     expect(actualResult).toEqual(expectedResult);

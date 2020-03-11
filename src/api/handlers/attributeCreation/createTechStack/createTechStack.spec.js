@@ -49,9 +49,9 @@ describe('techStack - attributeCreation', () => {
       });
 
     const expectedResult = {
-      status: 500,
-      data: undefined,
-      message: 'Unable to connect to server'
+      status: 404,
+      data: {},
+      message: undefined
     }
 
     return expect(actualResult).toEqual(expectedResult);

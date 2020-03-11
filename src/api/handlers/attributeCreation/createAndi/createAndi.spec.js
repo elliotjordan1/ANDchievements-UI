@@ -47,9 +47,11 @@ describe('andi - attributeCreation', () => {
       });
 
     const expectedResult = {
-      status: 500,
-      message: 'Unable to connect to server',
-      data: undefined
+      status: 404,
+      message: undefined,
+      data: {
+        statusText: 'Bad Request'
+      }
     }
 
     expect(actualResult).toEqual(expectedResult);

@@ -15,9 +15,13 @@ export default async (endpoint, content) => {
   try {
     return await Axios(options);
   } catch (error) {
-    return {
-      status: 500,
-      statusText: 'Unable to connect to server'
+    if (!error.response) {
+      return {
+        status: 500,
+        statusText: 'Unable to connect to server'
+      }
     }
+
+    return error.response;
   }
 }

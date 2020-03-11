@@ -38,6 +38,20 @@ describe('makePostRequest tests', () => {
 
     expect(actualResult).toEqual(expectedResult);
   });  
+  it('returns correct response for failed request', async () => {
+    const expectedResult = {
+      status: 404,
+      statusText: 'Unable to connect to server'
+    };
+    
+    const Mock = new MockAdapter(axios)
+
+    Mock.onPost().reply(404, {});
+
+    const actualResult = await makePostRequest('/projects/create', {});
+
+    expect(actualResult.status).toEqual(expectedResult.status);
+  });
   it('sets x-api-key header to a value on request', async () => {
     const Mock = new MockAdapter(axios);
 
