@@ -35,7 +35,7 @@ RemoveButton.propTypes = {
 }
 
 RemoveButton.defaultProps = {
-  onClick: () => {}
+  onClick: undefined
 }
 
 export default RemoveButton;

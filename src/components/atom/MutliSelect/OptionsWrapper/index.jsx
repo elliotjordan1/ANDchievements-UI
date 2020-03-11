@@ -34,7 +34,7 @@ OptionsWrapper.propTypes = {
 }
 
 OptionsWrapper.defaultProps = {
-  arrayLength: 1
+  arrayLength: undefined
 }
 
 export default OptionsWrapper;

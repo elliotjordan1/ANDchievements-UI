@@ -62,7 +62,7 @@ const ProjectForm = () => {
         <FormBody>
           <div>
             <Label labelText ="Project Title" />
-            <FormInput maxLength={20} placeholder='Project title' />
+            <FormInput maxLength={20} placeholder='Project title' onChange={() => {}} />
           </div>
           <div>
             <Label onClick={() => {setToClient()}} labelText = "Client" />
@@ -78,15 +78,15 @@ const ProjectForm = () => {
           </div>
           <div>
             <Label labelText = "Cover Image" />
-            <FormInput placeholder='Cover image url' maxLength={200}/>
+            <FormInput placeholder='Cover image url' maxLength={200} onChange={() => {}} />
           </div>
           <div>
             <Label onClick={() => {setToANDi()}} labelText = "ANDis" />
-            <MultiSelect placeholder='Select ANDis...' />
+            <MultiSelect placeholder='Select ANDis...' onChange={() => {}} />
           </div>
           <div>
             <Label onClick={() => {setToTechStack()}} labelText ="Tech Stacks" />
-            <FormInput placeholder='Select Tech Stack' maxLength={40} />
+            <FormInput placeholder='Select Tech Stack' maxLength={40} onChange={() => {}} />
           </div>
           <div>
             <SubmitButton text="SUBMIT" />

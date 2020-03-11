@@ -22,7 +22,7 @@ MultiSelectOptions.propTypes = {
 }
 
 MultiSelectOptions.defaultProps = {
-  onClick: () => {}
+  onClick: undefined
 }
 
 export default MultiSelectOptions;
