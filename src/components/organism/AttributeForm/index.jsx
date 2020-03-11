@@ -10,7 +10,7 @@ import { createAndi as ANDiCreator, createTechStack as TechStackCreator, createC
 const AttributeForm = ({
   formType
 }) => {
-  const { addToast, removeAllToasts } = useToasts();  
+  const { addToast } = useToasts();  
 
   const [imageUrl, setImageUrl] = useState('');
   const [name, setName] = useState('');
