@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../../../global/theme';
 
-const Option = styled.div`
+export default styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -27,13 +25,3 @@ const Option = styled.div`
     margin: 5px;
     };
 `;
-
-const SelectedOption = ({
-  children
-}) => <Option>{children}</Option>
-
-SelectedOption.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.any).isRequired
-}
-
-export default SelectedOption;

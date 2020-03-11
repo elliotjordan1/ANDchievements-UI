@@ -150,7 +150,7 @@ Object {
                 ANDis
               </div>
               <div
-                class="MultiSelectWrapper__Wrapper-ehyr88-0 iBYzZm"
+                class="MultiSelectWrapper-ehyr88-0 PAJQb"
               >
                 <div
                   class="InputWrapper-b1liev-0 ieRNSH"
@@ -164,74 +164,7 @@ Object {
                 </div>
                 <div
                   class="OptionsWrapper__Wrapper-bx0bji-0 fcmQKW"
-                >
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    JAI
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    HENRY
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    ELLIOT
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    DAMI
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    ILKAY
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    MIRA
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    MARTIN
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    NIRO
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    AUSER1
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    AUSER2
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    AUSER3
-                  </div>
-                  <div
-                    class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                  >
-                    AUSER4
-                  </div>
-                  <button
-                    class="AddButton__Button-c21il-0 hUnySS"
-                    type="submit"
-                  >
-                    + Add
-                  </button>
-                </div>
+                />
               </div>
             </div>
             <div>
@@ -408,7 +341,7 @@ Object {
               ANDis
             </div>
             <div
-              class="MultiSelectWrapper__Wrapper-ehyr88-0 iBYzZm"
+              class="MultiSelectWrapper-ehyr88-0 PAJQb"
             >
               <div
                 class="InputWrapper-b1liev-0 ieRNSH"
@@ -422,74 +355,7 @@ Object {
               </div>
               <div
                 class="OptionsWrapper__Wrapper-bx0bji-0 fcmQKW"
-              >
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  JAI
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  HENRY
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  ELLIOT
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  DAMI
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  ILKAY
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  MIRA
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  MARTIN
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  NIRO
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  AUSER1
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  AUSER2
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  AUSER3
-                </div>
-                <div
-                  class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-                >
-                  AUSER4
-                </div>
-                <button
-                  class="AddButton__Button-c21il-0 hUnySS"
-                  type="submit"
-                >
-                  + Add
-                </button>
-              </div>
+              />
             </div>
           </div>
           <div>

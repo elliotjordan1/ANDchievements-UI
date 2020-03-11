@@ -3,7 +3,7 @@ import makePostRequest from './postRequest';
 
 jest.mock('axios');
 
-describe('makeGetRequest', () => {
+describe('makePostRequest tests', () => {
   it('returns data on 200', async () => {
     const content = {andiId: 'abcTest'};
     axios.mockResolvedValue({status: 200, new_andi: content});
