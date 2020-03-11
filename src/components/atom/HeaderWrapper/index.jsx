@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import theme from '../../../global/theme';
 
-const HeaderWrapper = styled.div`
+export default styled.div`
   background-color: ${theme.colours.brand.red};
   position: fixed;
   top: 0;
@@ -19,13 +17,3 @@ const HeaderWrapper = styled.div`
     height: 88px;
   };
 `;
-
-const Wrapper = ({
-  children
-}) => <HeaderWrapper>{children}</HeaderWrapper>
-
-Wrapper.propTypes = {
-  children: PropTypes.objectOf(PropTypes.any).isRequired
-};
-
-export default Wrapper;
