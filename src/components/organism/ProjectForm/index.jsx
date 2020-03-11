@@ -15,6 +15,7 @@ import {
 import { FormWrapper, HomepageWrapper } from '../../../global/styles';
 import * as AttributeTypes from '../../../global/constants';
 import { getClients } from '../../../global/dropdownFormatters';
+import { onInputChange } from '../../../global/helpers';
 import { InputContainer } from './styles';
 import FormModal from '../FormModal';
 import AttributeForm from '../AttributeForm';
@@ -24,6 +25,9 @@ const ProjectForm = () => {
   const [viewModal, setViewModal] = useState(false);
   const [formType, setFormType] = useState();
   const [formTitle, setFormTitle] = useState();
+  const [projectTitle, setProjectTitle] = useState('');
+  const [techStack, setTechStack] = useState('');
+  const [coverImage, setCoverImage] = useState('');
 
   const setToANDi = () => {
     setFormType(<AttributeForm formType = {AttributeTypes.ANDi} />); 
@@ -62,7 +66,7 @@ const ProjectForm = () => {
         <FormBody>
           <div>
             <Label labelText ="Project Title" />
-            <FormInput maxLength={20} placeholder='Project title' onChange={() => {}} />
+            <FormInput value = {projectTitle} maxLength={20} placeholder='Project title' onChange={onInputChange(setProjectTitle)} />
           </div>
           <div>
             <Label onClick={() => {setToClient()}} labelText = "Client" />
@@ -78,15 +82,15 @@ const ProjectForm = () => {
           </div>
           <div>
             <Label labelText = "Cover Image" />
-            <FormInput placeholder='Cover image url' maxLength={200} onChange={() => {}} />
+            <FormInput value={coverImage} placeholder='Cover image url' maxLength={200} onChange={onInputChange(setCoverImage)} />
           </div>
           <div>
             <Label onClick={() => {setToANDi()}} labelText = "ANDis" />
-            <MultiSelect placeholder='Select ANDis...' onChange={() => {}} />
+            <MultiSelect placeholder='Select ANDis...' optionList = {[]} />
           </div>
           <div>
             <Label onClick={() => {setToTechStack()}} labelText ="Tech Stacks" />
-            <FormInput placeholder='Select Tech Stack' maxLength={40} onChange={() => {}} />
+            <FormInput value={techStack} placeholder='Select Tech Stack' maxLength={40} onChange={onInputChange(setTechStack)} />
           </div>
           <div>
             <SubmitButton text="SUBMIT" />

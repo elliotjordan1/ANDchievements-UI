@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-expressions */
-import { shuffleAndSliceArray } from './helpers';
+import { shuffleAndSliceArray, urlValidator } from './helpers';
 
 describe('index.js tests', () => {
   it('returns the same array when array length is less than slice length', () => {
@@ -24,4 +24,20 @@ describe('index.js tests', () => {
     expect(actualResult).not.toEqual(expectedResult);
     expect(actualResult.length).toEqual(sliceLength);
   });
+  describe('urlValidator', () => {
+    it('returns true for a valid URL', () => {
+      const validUrl = 'http://www.google.com';
+
+      const actualResult = urlValidator(validUrl);
+
+      expect(actualResult).toBeTruthy();
+    });
+    it('returns false for an invalid URL', () => {
+      const validUrl = 'invalid URL!';
+
+      const actualResult = urlValidator(validUrl);
+
+      expect(actualResult).toBeFalsy();
+    })
+  })
 });

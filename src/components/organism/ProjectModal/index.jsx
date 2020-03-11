@@ -18,19 +18,6 @@ import { ANDiListItem, TechListItem } from '../../molecule';
 const ProjectModal = ({project, onClick}) => {
   const { imageurl, name, client, blurb_one, blurb_two, blurb_three, andis, techstack, clientlogourl } = project;
 
-  const andiListComponent = andis && andis.map((item) => {
-    const andi = JSON.parse(item);
-
-     return (<ANDiListItem andi={andi} key={andi.andiid} />);
-    });
-
-  const techStackComponent = techstack && techstack.map((item) => {
-    const tech = JSON.parse(item);
-
-    return (
-      <TechListItem tech = {tech} key = {tech.technologyid}/>);
-  });
-
   return (
     <Background onClick={onClick}>
       <Wrapper>
@@ -44,10 +31,31 @@ const ProjectModal = ({project, onClick}) => {
             {blurb_three ? <BodyText>{blurb_three}</BodyText> : null}
             <BodyText><b>ANDis</b> <br /></BodyText>
             <ANDiListContainer>
-              {andiListComponent}
+              {andis && andis.map((item) => {
+                let andi;
+
+                try {
+                  andi = JSON.parse(item);
+                } catch {
+                  andi = item;
+                }
+
+                return (<ANDiListItem andi={andi} key={andi.andiid} />); 
+              })}
             </ANDiListContainer>
             <TechListContainer>
-              {techStackComponent}
+              {techstack && techstack.map((item) => {
+                let tech;
+
+                try {
+                  tech = JSON.parse(item);
+                } catch {
+                  tech = item;
+                }
+
+                return (
+                  <TechListItem tech = {tech} key = {tech.technologyid}/>);
+              })}
             </TechListContainer>
           </Body>
       </Wrapper>

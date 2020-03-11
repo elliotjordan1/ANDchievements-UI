@@ -17,4 +17,51 @@ describe('Header component', () => {
     
     expect(wrapper).toMatchSnapshot();
   });
+  it ('successfully generates andiListComponent', () => {
+    const andis = [
+      {
+        andiid : '1',
+        imageURL: 'image.url',
+        name: 'andi',
+        andiProjectRole: 'PD'
+      }
+    ];
+
+    const projectWithANDis = {
+      ...project,
+      andis
+    };
+
+    const component = render(<ProjectModal project = {projectWithANDis}  onClick={mockFunc}/>);
+
+    expect(component).toMatchSnapshot();
+  });
+  it ('successfully generates techistComponent', () => {
+    const techstack = [
+      {
+        technologyid : '1',
+        imageURL: 'image.url'
+      }
+    ];
+
+    const projectWithTechs = {
+      ...project,
+      techstack
+    };
+
+    const component = render(<ProjectModal project = {projectWithTechs}  onClick={mockFunc}/>);
+
+    expect(component).toMatchSnapshot();
+  });
+  it ('successfully generates with blurb two and blurb three', () => {
+    const projectWithBlurbs = {
+      ...project,
+      blurb_two: 'I am blurb two',
+      blurb_three: 'I am blurb three'
+    };
+
+    const component = render(<ProjectModal project = {projectWithBlurbs}  onClick={mockFunc}/>);
+
+    expect(component).toMatchSnapshot();
+  });
 });

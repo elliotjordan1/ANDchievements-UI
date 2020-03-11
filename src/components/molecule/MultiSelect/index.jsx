@@ -1,5 +1,6 @@
 import { throttle } from 'lodash'
 import React , {useState} from 'react';
+import PropTypes from 'prop-types';
 import { 
   MultiSelectWrapper, 
   MultiSelectOptions as Option, 
@@ -11,29 +12,33 @@ import {
   FormInput 
 } from '../../atom';
 
-
-// eslint-disable-next-line react/prop-types
-const MultiSelect = ({ placeholder }) => {
+const MultiSelect = ({ placeholder, optionList }) => {
 
     const [visible, setVisible] =  useState(false);
     const[selectedValues, setSelectedValues] = useState([]);
-    const optionList = ['JAI', 'HENRY', 'ELLIOT', 'DAMI', 'ILKAY', 'MIRA', 'MARTIN', 'NIRO', 'AUSER1', 'AUSER2', 'AUSER3', 'AUSER4'];
     const[options, setOptions] = useState(optionList);
     const[inputValue, setInputValue] = useState('');
     const timeout = 1000;
 
+    const filterOptionsByTerm = (term) => {
+      return optionList
+        .filter(option => !selectedValues.includes(option.value))
+        .concat(selectedValues
+        .filter(option => !optionList.includes(option.value)))
+        .filter(option => option.value.toLowerCase().includes(term.toLowerCase()));
+    }
+
     const handleChange = (event) => { 
         setInputValue(event.target.value);
-        if(event.target.value.length){            
-            const filteredOptions = optionList
-            .filter(x => !selectedValues.includes(x))
-            .concat(selectedValues
-            .filter(x => !optionList.includes(x)))
-            .filter(op => op.toLowerCase().includes(event.target.value.toLowerCase()));
 
-            setOptions( filteredOptions );            
+        if(event.target.value.length){            
+            const filteredOptions = filterOptionsByTerm(event.target.value)
+
+            setOptions(filteredOptions);
+
             return setVisible(true)
         }
+        
         return setVisible(false)
     }
 
@@ -49,8 +54,8 @@ const MultiSelect = ({ placeholder }) => {
         if (index > -1) {
             setSelectedValues(selectedValues.filter((e)=>(e !== optionValue)))
             setOptions([...options, optionValue]);
+        }
     }
-}
 
     const add = (event) => {
         event.preventDefault()        
@@ -89,5 +94,10 @@ const MultiSelect = ({ placeholder }) => {
         </MultiSelectWrapper>
     )
 };
+
+MultiSelect.propTypes = {
+  placeholder: PropTypes.string.isRequired,
+  optionList: PropTypes.arrayOf(PropTypes.object).isRequired
+}
 
 export default MultiSelect;
