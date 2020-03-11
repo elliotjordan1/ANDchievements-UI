@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-loop-func */
 /* eslint-disable no-undef */
@@ -21,8 +22,19 @@ const Homepage = () => {
   const [projects, setProjects] = useState(undefined);
   const [error, setError] = useState(null);
 
+  const currentProjectFormattedForModal = (projectIndex) => {
+    if (!projects) return;
+    
+    return {
+        ...projects[projectIndex],
+        ANDis: shuffleAndSliceArray(projects[projectIndex].andis, 8),
+        techStack: shuffleAndSliceArray(projects[projectIndex].techstack, 5)
+    } 
+  }
+  
   const boxClick = id => {
     setCurrentAnimationIndex(id);
+    setCurrentProject(currentProjectFormattedForModal(id));
     setProjectModalIsActive(true);  
   };
 
@@ -32,7 +44,7 @@ const Homepage = () => {
 
       if(response.status === 200){
         setProjects(response.projects);
-
+        setCurrentProject(currentProjectFormattedForModal(0));
         setAnimationLength(response.projects.length);       
       } else {
         setError(response.message);
@@ -59,11 +71,7 @@ const Homepage = () => {
       setCurrentAnimationIndex(currentAnimationIndex + 1);
       setCurrentModalIndex(shouldDisplayModal ? currentAnimationIndex / 2 : currentModalIndex);   
       
-      setCurrentProject({
-        ...projects[currentModalIndex],
-        ANDis: shuffleAndSliceArray(projects[currentModalIndex].andis, 8),
-        techStack: shuffleAndSliceArray(projects[currentModalIndex].techstack, 5)
-      });
+      setCurrentProject(currentProjectFormattedForModal(currentModalIndex));
 
     }, INTERVAL_TIME);
 
@@ -72,11 +80,7 @@ const Homepage = () => {
         setProjectModalIsActive(true);
         setIsAnimtating(true);
 
-        setCurrentProject({
-          ...projects[currentModalIndex],
-          ANDis: shuffleAndSliceArray(projects[currentModalIndex].andis, 8),
-          techStack: shuffleAndSliceArray(projects[currentModalIndex].techstack, 5)
-        });
+        setCurrentProject(currentProjectFormattedForModal(currentModalIndex));
       }
 
       if (e.keyCode === ESCAPE_KEY_CODE) {
