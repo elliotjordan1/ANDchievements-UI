@@ -18,11 +18,10 @@ import * as AttributeTypes from '../../../global/constants';
 import { InputContainer } from './styles';
 import FormModal from '../FormModal';
 import AttributeForm from '../AttributeForm';
-import getAllClients from '../../../api/handlers/attributeRetrieval/getClients/getClients';
+import { getClients } from '../../../global/dropdownFormatters';
 
 const ProjectForm = () => { 
-
-  const [clientOptions] = useState([]);
+  const [clientOptions, setClientOptions] = useState(undefined);
   const [viewModal, setViewModal] = useState(false);
   const [formType, setFormType] = useState();
   const [formTitle, setFormTitle] = useState();
@@ -46,15 +45,13 @@ const ProjectForm = () => {
   };
 
   useEffect(() => {
-    const getClients = async () => {
-        const response = getAllClients();
-        (await response).clients.forEach(element => {
-          const clientsValues = { value: element.clientid, label: element.clientname };
-          clientOptions.push(clientsValues);
-        });
-    }
-    if (!clientOptions.length) {
-      getClients();
+    const getAllClients = (async () => {
+      const formattedClients = await getClients();
+
+      setClientOptions(formattedClients);
+    })
+    if (clientOptions === undefined) {
+      getAllClients();
     }
   });
   

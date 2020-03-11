@@ -8,8 +8,8 @@ const FormSelect = styled(CreatableSelect)`
     border:  1px solid black;
     margin: 8px 0;
     .css-yk16xz-control {
-    min-height: 23px;
-    border: 0px;
+      min-height: 40px;
+      border: 0px;
     }
     font: 300 12px ${theme.fontFamily.primary};
     height: 40px;
