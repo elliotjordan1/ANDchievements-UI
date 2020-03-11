@@ -8,7 +8,7 @@ const options = {
   }
 };
 
-const makeGetRequest = async (endpoint) => {
+export default async (endpoint) => {
   try {
     return await Axios.get(`${API_URL}${endpoint}`, options);
   } catch (error) {
@@ -22,5 +22,3 @@ const makeGetRequest = async (endpoint) => {
     return error.response;
   }
 }
-
-export default makeGetRequest;

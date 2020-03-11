@@ -17,7 +17,7 @@ const createOptions = (endpoint, content) => {
   }
 )};
 
-const makePostRequest = async (endpoint, content) => {
+export default async (endpoint, content) => {
   try {
     return await Axios(createOptions(endpoint, content));
   } catch (error) {
@@ -27,5 +27,3 @@ const makePostRequest = async (endpoint, content) => {
     }
   }
 }
-
-export default makePostRequest;
