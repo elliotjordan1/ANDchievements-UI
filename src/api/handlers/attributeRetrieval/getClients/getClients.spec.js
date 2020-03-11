@@ -1,14 +1,19 @@
-import getAllClients from '.';
-import makeGetRequest from '../../../requests/getRequest/getRequest';
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
+import getAll from '.';
 
-jest.mock('../../../requests/getRequest/getRequest');
+let Mock;
 
-describe('getProjects', () => {
+describe('getClients', () => {
+  beforeEach(() => {
+    Mock = new MockAdapter(axios);
+  });
+
   it('returns expected response for successful request', async () => {
     const clientList = [
       {
-        clientid: 1,
-        clientname: 'Reginald'
+        clientId: 1,
+        clientName: 'Dekker'
       }
     ];
 
@@ -17,34 +22,35 @@ describe('getProjects', () => {
       clients: clientList
     };
 
-    const mockResponse = {
-      status: 200,
-      data: {
-        clients: clientList
-      }
-    }
+    Mock.onGet().reply(200, { clients: clientList });
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-
-    const actualResult = await getAllClients();
+    const actualResult = await getAll();
 
     return expect(actualResult).toEqual(expectedResult);
   });
   
   it('returns expected response for a failed request', async () => {
-    const mockResponse = {
-      status: 404,
-      statusText: 'Clients not found'
-    };
-
     const expectedResult = {
       status: 404,
-      message: 'Clients not found'
+      message: 'Failed to retrieve Clients'
     };
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
+    Mock.onGet().reply(404, {});
+    
+    const actualResult = await getAll();
 
-    const actualResult = await getAllClients();
+    return expect(actualResult).toEqual(expectedResult);
+  });
+
+  it('returns expected response for a failed network request', async () => {
+    const expectedResult = {
+      status: 500,
+      message: 'Failed to retrieve Clients'
+    };
+
+    Mock.onGet().networkError();
+    
+    const actualResult = await getAll();
 
     return expect(actualResult).toEqual(expectedResult);
   });

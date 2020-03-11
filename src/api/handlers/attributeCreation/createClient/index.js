@@ -1,5 +1,5 @@
-import * as AttributeTypes from '../../../global/constants';
-import makePostRequest from '../../requests/postRequest/postRequest';
+import * as AttributeTypes from '../../../../global/constants';
+import makePostRequest from '../../../requests/postRequest';
 
 class Client {
   appliesTo(attributeType) {

@@ -1,7 +1,7 @@
 import { getClients } from '.';
-import makeGetRequest from '../../../api/requests/getRequest/getRequest';
+import makeGetRequest from '../../../api/requests/getRequest';
 
-jest.mock('../../../api/requests/getRequest/getRequest');
+jest.mock('../../../api/requests/getRequest');
 
 const clientList = [
   {
@@ -35,16 +35,28 @@ const expectedResult = [
 
 describe('clientDropdownFormatter', () => {
   it('returns correct format for successful response', async () => {
-    const mockResponse = {status: 200, data : { clients: clientList }};
+    const mockResponse = {
+      status: 200, 
+      data : { clients: clientList }
+    };
+
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-    const response = await getClients();
-    return expect(response).toEqual(expectedResult);
+
+    const actualResult = await getClients();
+
+    return expect(actualResult).toEqual(expectedResult);
   });
 
   it('returns correct format for failed response', async () => {
-    const mockResponse = {status: 404, data : { clients: clientList }};
+    const mockResponse = {
+      status: 404, 
+      data : { clients: clientList }
+    };
+
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-    const response = await getClients();
-    return expect(response).toEqual([]);
+
+    const actualResult = await getClients();
+
+    return expect(actualResult).toEqual([]);
   });
 });

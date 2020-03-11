@@ -1,11 +1,16 @@
-import getAllTech from '.';
-import makeGetRequest from '../../../requests/getRequest/getRequest';
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
+import getAll from '.';
 
-jest.mock('../../../requests/getRequest/getRequest');
+let Mock;
 
-describe('getProjects', () => {
+describe('getTechnologies', () => {
+  beforeEach(() => {
+    Mock = new MockAdapter(axios);
+  });
+
   it('returns expected response for successful request', async () => {
-    const techList = [
+    const technologyList = [
       {
         techId: 1,
         techName: 'ReactJS'
@@ -14,38 +19,40 @@ describe('getProjects', () => {
 
     const expectedResult = {
       status: 200,
-      technologies: techList
+      technologies: technologyList
     };
 
-    const mockResponse = {
-      status: 200,
-      data: {
-        technologies: techList
-      }
-    }
+    Mock.onGet().reply(200, { technologies: technologyList });
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-
-    const actualResult = await getAllTech();
+    const actualResult = await getAll();
 
     return expect(actualResult).toEqual(expectedResult);
   });
   
   it('returns expected response for a failed request', async () => {
-    const mockResponse = {
-      status: 404,
-      statusText: 'Technologies not found'
-    };
-
     const expectedResult = {
       status: 404,
-      message: 'Get technologies request failed'
+      message: 'Failed to retrieve Technologies'
     };
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-
-    const actualResult = await getAllTech();
+    Mock.onGet().reply(404, {});
+    
+    const actualResult = await getAll();
 
     return expect(actualResult).toEqual(expectedResult);
   });
+
+  it('returns expected response for a failed network request', async () => {
+    const expectedResult = {
+      status: 500,
+      message: 'Failed to retrieve Technologies'
+    };
+
+    Mock.onGet().networkError();
+    
+    const actualResult = await getAll();
+
+    return expect(actualResult).toEqual(expectedResult);
+  });
+
 });

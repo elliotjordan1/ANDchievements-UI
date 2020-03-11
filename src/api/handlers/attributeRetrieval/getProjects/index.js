@@ -1,14 +1,14 @@
-import makeGetRequest from '../../../requests/getRequest/getRequest';
+import makeGetRequest from '../../../requests/getRequest';
 
 export default async () => {
   const response = await makeGetRequest('/projects/get');
 
-  const { status, data, statusText } = response;
+  const { status, data } = response;
 
   if (response.status !== 200) {
     const fail = {
       status,
-      message: statusText
+      message: 'Failed to retrieve Projects'
     };
 
     return(fail);

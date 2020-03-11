@@ -5,9 +5,10 @@ import { useToasts } from 'react-toast-notifications';
 import formReducer, { initialFormState } from '../../../reducers/createProject/reducer';
 import { onInputChange } from '../../../global/helpers';
 import { FormLabel, SubmitButton, FormWrapper, FormInput } from '../../atom';
-import ANDiCreator from '../../../api/handlers/attributeCreation/andi';
-import TechStackCreator from '../../../api/handlers/attributeCreation/techStack';
-import ClientCreator from '../../../api/handlers/attributeCreation/client';
+import { 
+  createAndi as ANDiCreator, 
+  createTechStack as TechStackCreator, 
+  createClient as ClientCreator } from '../../../api/handlers/attributeCreation';
 
 const AttributeForm = ({
   formType

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { ToastProvider } from 'react-toast-notifications';
-
 import {
   FormInput,
   FormLabel as Label,
@@ -15,10 +14,10 @@ import {
 } from '../../molecule';
 import { FormWrapper, HomepageWrapper } from '../../../global/styles';
 import * as AttributeTypes from '../../../global/constants';
+import { getClients } from '../../../global/dropdownFormatters';
 import { InputContainer } from './styles';
 import FormModal from '../FormModal';
 import AttributeForm from '../AttributeForm';
-import { getClients } from '../../../global/dropdownFormatters';
 
 const ProjectForm = () => { 
   const [clientOptions, setClientOptions] = useState(undefined);

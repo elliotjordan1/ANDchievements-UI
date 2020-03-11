@@ -1,4 +1,4 @@
-import makeGetRequest from '../../../requests/getRequest/getRequest';
+import makeGetRequest from '../../../requests/getRequest';
 
 export default async () => {
   const response = await makeGetRequest('/technology/get');
@@ -8,7 +8,7 @@ export default async () => {
   if (response.status !== 200) {
     const fail = {
       status, 
-      message: 'Get technologies request failed'
+      message: 'Failed to retrieve Technologies'
     };
     
     return(fail);

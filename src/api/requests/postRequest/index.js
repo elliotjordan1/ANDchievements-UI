@@ -21,14 +21,10 @@ const makePostRequest = async (endpoint, content) => {
   try {
     return await Axios(createOptions(endpoint, content));
   } catch (error) {
-    if (!error.response) {
-      return {
-        status: 500,
-        statusText: 'Unable to connect to server'
-      }
+    return {
+      status: 500,
+      statusText: 'Unable to connect to server'
     }
-    
-    return error.response;
   }
 }
 

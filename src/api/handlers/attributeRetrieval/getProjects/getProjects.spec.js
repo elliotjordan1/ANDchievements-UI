@@ -1,14 +1,19 @@
-import getAllProjects from '.';
-import makeGetRequest from '../../../requests/getRequest/getRequest';
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
+import getAll from '.';
 
-jest.mock('../../../requests/getRequest/getRequest');
+let Mock;
 
 describe('getProjects', () => {
+  beforeEach(() => {
+    Mock = new MockAdapter(axios);
+  });
+
   it('returns expected response for successful request', async () => {
     const projectList = [
       {
         projectId: 1,
-        projectName: 'Reginald'
+        projectName: 'CST'
       }
     ];
 
@@ -17,34 +22,35 @@ describe('getProjects', () => {
       projects: projectList
     };
 
-    const mockResponse = {
-      status: 200,
-      data: {
-        projects: projectList
-      }
-    }
+    Mock.onGet().reply(200, { projects: projectList });
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-
-    const actualResult = await getAllProjects();
+    const actualResult = await getAll();
 
     return expect(actualResult).toEqual(expectedResult);
   });
   
-  it('returns correct response for a failed request', async () => {
-    const mockResponse = {
-      status: 404, 
-      statusText : 'Projects not found!'
-    };
-
+  it('returns expected response for a failed request', async () => {
     const expectedResult = {
       status: 404,
-      message: 'Projects not found!'
-    }
+      message: 'Failed to retrieve Projects'
+    };
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
+    Mock.onGet().reply(404, {});
+    
+    const actualResult = await getAll();
 
-    const actualResult = await getAllProjects();
+    return expect(actualResult).toEqual(expectedResult);
+  });
+
+  it('returns expected response for a failed network request', async () => {
+    const expectedResult = {
+      status: 500,
+      message: 'Failed to retrieve Projects'
+    };
+
+    Mock.onGet().networkError();
+    
+    const actualResult = await getAll();
 
     return expect(actualResult).toEqual(expectedResult);
   });
