@@ -7,10 +7,10 @@ import {
 } from '../../atom';
 
 const TechListItem = ({tech}) => {
-  const { technologyId, imageURL } = tech;
+  const { imageURL } = tech;
 
   return (
-    <HorizontalListItem key ={technologyId}>
+    <HorizontalListItem>
       <Icon image = {imageURL} />
     </HorizontalListItem>
   )

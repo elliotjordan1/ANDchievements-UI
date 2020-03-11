@@ -6,23 +6,23 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styles__Background-vxuy5a-0 bnjYss"
+        class="Background-sc-1ewufq5-0 bfvyFR"
       >
         <div
-          class="styles__ModalWrapper-vxuy5a-1 ewzIzR"
+          class="Wrapper-p9h97m-0 bPAkAJ"
         >
           <div
-            class="styles__Image-vxuy5a-2 jnrJEh"
+            class="Image-xlz8tp-0 ecsWuJ"
           >
             <div
-              class="styles__LogoWrapper-vxuy5a-3 kvoOQi"
+              class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
             />
           </div>
           <div
-            class="styles__ProjectBody-vxuy5a-5 iFRyfQ"
+            class="Body-sc-1czt10-0 ffSvnW"
           >
             <div
-              class="styles__HeadingText-vxuy5a-4 jKqfiz"
+              class="HeadingText-sc-1dj0z06-0 hjLPZx"
             >
               <em>
                 Big Boss
@@ -31,10 +31,10 @@ Object {
               Best Project
             </div>
             <div
-              class="styles__BodyText-vxuy5a-6 dGLVIX"
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
             />
             <div
-              class="styles__BodyText-vxuy5a-6 dGLVIX"
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
             >
               <b>
                 ANDis
@@ -43,10 +43,10 @@ Object {
               <br />
             </div>
             <div
-              class="styles__StackedList-vxuy5a-7 eQleti"
+              class="ANDiListContainer-lpzxya-0 cVKKmb"
             />
             <ul
-              class="styles__TechList-vxuy5a-8 iqmnvP"
+              class="TechListContainer-sc-13ng48o-0 dCgVNF"
             />
           </div>
         </div>
@@ -55,23 +55,23 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styles__Background-vxuy5a-0 bnjYss"
+      class="Background-sc-1ewufq5-0 bfvyFR"
     >
       <div
-        class="styles__ModalWrapper-vxuy5a-1 ewzIzR"
+        class="Wrapper-p9h97m-0 bPAkAJ"
       >
         <div
-          class="styles__Image-vxuy5a-2 jnrJEh"
+          class="Image-xlz8tp-0 ecsWuJ"
         >
           <div
-            class="styles__LogoWrapper-vxuy5a-3 kvoOQi"
+            class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
           />
         </div>
         <div
-          class="styles__ProjectBody-vxuy5a-5 iFRyfQ"
+          class="Body-sc-1czt10-0 ffSvnW"
         >
           <div
-            class="styles__HeadingText-vxuy5a-4 jKqfiz"
+            class="HeadingText-sc-1dj0z06-0 hjLPZx"
           >
             <em>
               Big Boss
@@ -80,10 +80,10 @@ Object {
             Best Project
           </div>
           <div
-            class="styles__BodyText-vxuy5a-6 dGLVIX"
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
           />
           <div
-            class="styles__BodyText-vxuy5a-6 dGLVIX"
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
           >
             <b>
               ANDis
@@ -92,10 +92,10 @@ Object {
             <br />
           </div>
           <div
-            class="styles__StackedList-vxuy5a-7 eQleti"
+            class="ANDiListContainer-lpzxya-0 cVKKmb"
           />
           <ul
-            class="styles__TechList-vxuy5a-8 iqmnvP"
+            class="TechListContainer-sc-13ng48o-0 dCgVNF"
           />
         </div>
       </div>

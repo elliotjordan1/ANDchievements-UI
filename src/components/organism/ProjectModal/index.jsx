@@ -1,18 +1,18 @@
 /* eslint-disable camelcase */
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { 
   Background, 
-  ModalWrapper, 
+  Wrapper, 
   HeadingText, 
-  ProjectBody, 
+  Body, 
   BodyText, 
-  StackedList, 
   LogoWrapper, 
   Image
-} from './styles';
+} from '../../atom/ProjectModal';
 
-import { TechListContainer } from '../../atom';
+import { TechListContainer, ANDiListContainer } from '../../atom';
 import { ANDiListItem, TechListItem } from '../../molecule';
 
 const ProjectModal = ({project, onClick}) => {
@@ -21,36 +21,36 @@ const ProjectModal = ({project, onClick}) => {
   const andiListComponent = andis && andis.map((item) => {
     const andi = JSON.parse(item);
 
-     return (<ANDiListItem andi={andi} />);
+     return (<ANDiListItem andi={andi} key={andi.andiid} />);
     });
 
   const techStackComponent = techstack && techstack.map((item) => {
     const tech = JSON.parse(item);
 
     return (
-      <TechListItem tech = {tech} />);
+      <TechListItem tech = {tech} key = {tech.technologyid}/>);
   });
 
   return (
     <Background onClick={onClick}>
-      <ModalWrapper onClick={onClick}>
+      <Wrapper>
         <Image image={imageurl}>
           <LogoWrapper image={clientlogourl}/>
         </Image>
-          <ProjectBody>
+          <Body>
             <HeadingText><em>{client}</em><br />{name}</HeadingText>
             <BodyText>{blurb_one}</BodyText>
             {blurb_two ? <BodyText>{blurb_two}</BodyText> : null}
             {blurb_three ? <BodyText>{blurb_three}</BodyText> : null}
             <BodyText><b>ANDis</b> <br /></BodyText>
-            <StackedList>
+            <ANDiListContainer>
               {andiListComponent}
-            </StackedList>
+            </ANDiListContainer>
             <TechListContainer>
               {techStackComponent}
             </TechListContainer>
-          </ProjectBody>
-      </ModalWrapper>
+          </Body>
+      </Wrapper>
     </Background>
   );
 };

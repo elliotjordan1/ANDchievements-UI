@@ -17,6 +17,7 @@ import HorizontalListItem from './HorizontalListItem';
 import Icon from './Icon';
 import ListDescription from './ListDescription';
 import TechListContainer from './TechListContainer';
+import ANDiListContainer from './ANDiListContainer';
 
 import { 
   AddButton, 
@@ -52,5 +53,6 @@ export {
   HorizontalListItem,
   ListDescription,
   Icon,
-  TechListContainer
+  TechListContainer,
+  ANDiListContainer
 }

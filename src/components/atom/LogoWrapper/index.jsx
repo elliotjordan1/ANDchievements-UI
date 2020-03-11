@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from '../../../global/theme';
 
-const Wrapper = styled.div`
+export default styled.div`
   display: block;
   align-self: center;
   height: 24px;
@@ -31,13 +29,3 @@ const Wrapper = styled.div`
   };
   };
 `;
-
-const LogoWrapper = ({
-  children
-}) => <Wrapper>{children}</Wrapper>
-
-LogoWrapper.propTypes = {
-  children: PropTypes.objectOf(PropTypes.any).isRequired
-}
-
-export default LogoWrapper;

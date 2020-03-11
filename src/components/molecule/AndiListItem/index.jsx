@@ -8,10 +8,10 @@ import {
 } from '../../atom';
 
 const ANDiListItem = ({andi}) => {
-  const { andiId, imageURL, name, andiProjectRole } = andi;
+  const { imageURL, name, andiProjectRole } = andi;
 
   return (
-    <VerticalListItem key={andiId}>
+    <VerticalListItem>
       <Icon image={imageURL}/>
       <ListDescription>
         {name}
