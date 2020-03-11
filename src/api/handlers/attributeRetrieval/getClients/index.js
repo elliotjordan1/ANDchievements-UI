@@ -1,12 +1,23 @@
 import makeGetRequest from '../../../requests/getRequest/getRequest';
 
-const getAllClients = async () => {
+export default async () => {
   const response = await makeGetRequest('/clients/get');
-  if (response.status === 200) {
-    return({status: response.status, clients: response.data.clients});
+
+  const { status, data, statusText } = response;
+
+  if (response.status !== 200) {
+    const fail = {
+      status,
+      message: statusText
+    }
+
+    return(fail);
   } 
 
-  return({status: response.status, message: response.statusText});
-};
+  const success = {
+    status,
+    clients: data.clients
+  }
 
-export default getAllClients;
+  return(success);
+};

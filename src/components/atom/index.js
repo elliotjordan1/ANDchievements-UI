@@ -12,6 +12,12 @@ import FooterDiv from './FooterTextContainer';
 import FormWrapper from './FormWrapper';
 import InputWrapper from './InputWrapper';
 import FormSelect from './FormSelect';
+import VerticalListItem from './VerticalListItem';
+import HorizontalListItem from './HorizontalListItem';
+import Icon from './Icon';
+import ListDescription from './ListDescription';
+import TechListContainer from './TechListContainer';
+
 import { 
   AddButton, 
   MultiSelectWrapper,
@@ -41,5 +47,10 @@ export {
   RemovalButton,
   SelectedOption,
   InputWrapper,
-  FormSelect
+  FormSelect,
+  VerticalListItem,
+  HorizontalListItem,
+  ListDescription,
+  Icon,
+  TechListContainer
 }

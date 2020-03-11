@@ -1,7 +1,7 @@
 import makeGetRequest from '../../../requests/getRequest/getRequest';
 
 export default async () => {
-  const response = await makeGetRequest('/projects/get');
+  const response = await makeGetRequest('/andis/get');
 
   const { status, data, statusText } = response;
 
@@ -16,7 +16,7 @@ export default async () => {
 
   const success = {
     status,
-    projects: data.projects
+    andis: data.andis
   }
 
   return(success);

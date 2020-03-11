@@ -1,52 +1,51 @@
-import getAllProjects from '.';
+import getAllTech from '.';
 import makeGetRequest from '../../../requests/getRequest/getRequest';
 
 jest.mock('../../../requests/getRequest/getRequest');
 
 describe('getProjects', () => {
   it('returns expected response for successful request', async () => {
-    const projectList = [
+    const techList = [
       {
-        projectId: 1,
-        projectName: 'Reginald'
+        techId: 1,
+        techName: 'ReactJS'
       }
     ];
 
     const expectedResult = {
       status: 200,
-      projects: projectList
+      technologies: techList
     };
 
     const mockResponse = {
       status: 200,
       data: {
-        projects: projectList
+        technologies: techList
       }
     }
 
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
 
-    const actualResult = await getAllProjects();
+    const actualResult = await getAllTech();
 
     return expect(actualResult).toEqual(expectedResult);
   });
   
-  it('returns correct response for a failed request', async () => {
+  it('returns expected response for a failed request', async () => {
     const mockResponse = {
-      status: 404, 
-      statusText : 'Projects not found!'
+      status: 404,
+      statusText: 'Technologies not found'
     };
 
     const expectedResult = {
       status: 404,
-      message: 'Projects not found!'
-    }
+      message: 'Get technologies request failed'
+    };
 
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
 
-    const actualResult = await getAllProjects();
+    const actualResult = await getAllTech();
 
     return expect(actualResult).toEqual(expectedResult);
   });
-
 });

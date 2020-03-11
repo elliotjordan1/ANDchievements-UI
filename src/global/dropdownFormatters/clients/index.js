@@ -6,7 +6,7 @@ export const getClients = async () => {
 
   if (response.status !== 200)
     return [];
-    
+
   const formattedResponse = response.clients.map(client => (
     {
       value: client.clientid,

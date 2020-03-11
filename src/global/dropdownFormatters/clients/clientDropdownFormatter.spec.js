@@ -41,7 +41,7 @@ describe('clientDropdownFormatter', () => {
     return expect(response).toEqual(expectedResult);
   });
 
-  it('returns correct format for unsuccessful response', async () => {
+  it('returns correct format for failed response', async () => {
     const mockResponse = {status: 404, data : { clients: clientList }};
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
     const response = await getClients();

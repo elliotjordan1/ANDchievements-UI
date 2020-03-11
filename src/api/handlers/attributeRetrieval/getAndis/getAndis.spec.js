@@ -1,50 +1,50 @@
-import getAllProjects from '.';
+import getAllAndis from '.';
 import makeGetRequest from '../../../requests/getRequest/getRequest';
 
 jest.mock('../../../requests/getRequest/getRequest');
 
-describe('getProjects', () => {
+describe('getAndis', () => {
   it('returns expected response for successful request', async () => {
-    const projectList = [
+    const andiList = [
       {
-        projectId: 1,
-        projectName: 'Reginald'
+        andiid: 1,
+        andiname: 'Reginald'
       }
     ];
 
     const expectedResult = {
       status: 200,
-      projects: projectList
+      andis: andiList
     };
 
     const mockResponse = {
       status: 200,
       data: {
-        projects: projectList
+        andis: andiList
       }
     }
 
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
 
-    const actualResult = await getAllProjects();
+    const response = await getAllAndis();
 
-    return expect(actualResult).toEqual(expectedResult);
+    return expect(response).toEqual(expectedResult);
   });
   
-  it('returns correct response for a failed request', async () => {
+  it('returns expected response for a failed request', async () => {
     const mockResponse = {
-      status: 404, 
-      statusText : 'Projects not found!'
+      status: 404,
+      statusText: 'Clients not found'
     };
 
     const expectedResult = {
       status: 404,
-      message: 'Projects not found!'
-    }
+      message: 'Clients not found'
+    };
 
     makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
 
-    const actualResult = await getAllProjects();
+    const actualResult = await getAllAndis();
 
     return expect(actualResult).toEqual(expectedResult);
   });

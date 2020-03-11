@@ -9,14 +9,12 @@ const mockFunc = jest.fn;
 
 describe('Header component', () => {
   it('renders correctly with mock project', () => {
-    const wrapper = render(<ProjectModal 
-      image={project.imageURL} 
-      name={project.name} 
-      client={project.client} 
-      blurbOne={project.blurb} 
-      ANDis={project.ANDis} 
-      techStack={project.techStack} 
-      logo={project.clientLogoURL} onClick={mockFunc}/>);
+    const component = <ProjectModal
+                        project={project} 
+                        onClick={mockFunc}/>;
+
+    const wrapper = render(component);
+    
     expect(wrapper).toMatchSnapshot();
   });
 });
