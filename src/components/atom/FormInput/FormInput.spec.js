@@ -11,7 +11,7 @@ describe('FormInput component', () => {
     expect(wrapper).toMatchSnapshot();
   });
   it('renders correctly with default value', () => {
-    const component = <Component maxLength ={20} placeholder="I am an input" value="12" />;
+    const component = <Component maxLength ={20} placeholder="I am an input" value="12" onChange={() => {}} />;
 
     const wrapper = render(component);
     
