@@ -12,8 +12,10 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
+            type="text"
             value=""
           />
         </div>
@@ -31,8 +33,10 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
+          type="text"
           value=""
         />
       </div>
@@ -107,8 +111,10 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
+            type="text"
             value=""
           />
         </div>
@@ -126,8 +132,10 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
+          type="text"
           value=""
         />
       </div>
@@ -202,9 +210,11 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
             placeholder="Placeholder"
+            type="text"
             value=""
           />
         </div>
@@ -222,9 +232,11 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
           placeholder="Placeholder"
+          type="text"
           value=""
         />
       </div>
@@ -299,9 +311,11 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
             placeholder="Placeholder"
+            type="text"
             value=""
           />
         </div>
@@ -319,9 +333,11 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
           placeholder="Placeholder"
+          type="text"
           value=""
         />
       </div>

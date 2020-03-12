@@ -26,6 +26,7 @@ export const Background = styled.div`
   z-index: 2;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.6);
+  display: ${({open}) => open ? 'inline;' : 'none;' }
   top: 48px;
   @media ${theme.media.tablet}{
     top: 64px;

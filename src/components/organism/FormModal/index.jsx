@@ -9,10 +9,10 @@ import {
 } from './styles';
 import Icon from '../../../assets/cross';
 
-const FormModal = ({ title, form, close }) => {
+const FormModal = ({ title, form, close, open }) => {
   return (
     <>
-    <Background >
+    <Background open={open}>
       <ModalBody >
         <FormTitle>
           {title} 
@@ -30,7 +30,8 @@ const FormModal = ({ title, form, close }) => {
 FormModal.propTypes = {
   title: PropTypes.string.isRequired,
   form: PropTypes.object.isRequired,
-  close: PropTypes.func.isRequired
+  close: PropTypes.func.isRequired,
+  open: PropTypes.bool.isRequired
 };
 
 export default FormModal;
