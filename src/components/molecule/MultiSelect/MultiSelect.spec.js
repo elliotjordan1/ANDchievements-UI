@@ -2,53 +2,46 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import Component from '.';
 
+const optionList = [
+  {
+    id: 1,
+    value: 1,
+    label: 'Jess'
+  }
+]
+
 describe('TechListItem component', () => {
   it('renders correctly with optionList prop', () => {
-    const optionList = [1, 2, 3];
+    const RenderedComponent = () => <Component 
+                                        name='test' 
+                                        value='test' 
+                                        visible 
+                                        onSelect={jest.fn()} 
+                                        onRemove={jest.fn()} 
+                                        onChange={jest.fn()}
+                                        selectedValues={optionList} 
+                                        optionList={optionList} 
+                                        placeholder = "PLACEHOLDER" />;
 
-    const component = <Component optionList={optionList} />;
-
-    const wrapper = render(component);
-    
-    expect(wrapper).toMatchSnapshot();
-  });
-  it('renders correctly with placeholder prop', () => {
-    const placeholder = 'Placeholder';
-
-    const component = <Component placeholder={placeholder} />;
-
-    const wrapper = render(component);
-    
-    expect(wrapper).toMatchSnapshot();
-  });
-  it('renders correctly with no props', () => {
-    const component = <Component />;
-
-    const wrapper = render(component);
-    
-    expect(wrapper).toMatchSnapshot();
-  });
-  it('renders correctly with props', () => {
-    const placeholder = 'Placeholder';
-    const optionList = [1, 2, 3];
-
-    const component = <Component placeholder={placeholder} optionList={optionList} />;
-
-    const wrapper = render(component);
+    const wrapper = render(<RenderedComponent />);
     
     expect(wrapper).toMatchSnapshot();
   });
   it('renders correctly with selected options and adds option successfully', () => {
-    const optionList = [
-      {
-        value: 1,
-        label: 'Jess'
-      }
-    ]
-
     const onSelect = jest.fn();
 
-    const { component, getByText } = render(<Component visible placeholder="PLACEHOLDER" optionList={optionList} onSelect={onSelect} />);
+    const RenderedComponent = () => <Component 
+                                      name='test' 
+                                      value='test' 
+                                      visible 
+                                      onSelect={onSelect} 
+                                      onRemove={jest.fn()} 
+                                      onChange={jest.fn()}
+                                      selectedValues={optionList} 
+                                      optionList={optionList} 
+                                      placeholder = "PLACEHOLDER" />;
+
+    const { component, getByText } = render(<RenderedComponent />);
 
     expect(component).toMatchSnapshot();
 
@@ -61,16 +54,20 @@ describe('TechListItem component', () => {
     expect(onSelect).toHaveBeenCalledTimes(1);
   });
   it('renders correctly with selected options and removes option successfully', () => {
-    const optionList = [
-      {
-        andiId: 1,
-        andiName: 'Jess'
-      }
-    ]
-
     const onRemove = jest.fn();
 
-    const { component, getByText } = render(<Component placeholder="PLACEHOLDER" selectedValues={optionList} onRemove={onRemove} />);
+    const RenderedComponent = () => <Component 
+                                        name='test' 
+                                        value='test' 
+                                        visible 
+                                        onSelect={jest.fn()} 
+                                        onRemove={onRemove} 
+                                        onChange={jest.fn()}
+                                        selectedValues={optionList} 
+                                        optionList={optionList} 
+                                        placeholder = "PLACEHOLDER" />;
+
+    const { component, getByText } = render(<RenderedComponent />);
 
     expect(component).toMatchSnapshot();
 

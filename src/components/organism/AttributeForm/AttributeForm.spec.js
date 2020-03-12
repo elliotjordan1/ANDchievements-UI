@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, act } from '@testing-library/react';
 import { ToastProvider } from 'react-toast-notifications';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
@@ -22,111 +22,119 @@ describe('AttributeForm component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('executes the correct strategy for creation of a client', () => {
-    const Mock = new MockAdapter(axios);
-  
-    const responseObject = {
-      new_client: [
-        { 
-          clientid: 1,
-        }
-      ]
-    }
+  it('executes the correct strategy for creation of a client', async () => {
+    await act(async () => {
+      const Mock = new MockAdapter(axios);
+    
+      const responseObject = {
+        new_client: [
+          { 
+            clientid: 1,
+          }
+        ]
+      }
 
-    Mock.onPost().reply(201, responseObject);
+      Mock.onPost().reply(201, responseObject);
 
-    const { getByText, getByPlaceholderText} = render(<ToastProvider><AttributeForm formType={AttributeTypes.Client}/></ToastProvider>);
+      const { getByText, getByPlaceholderText} = await render(<ToastProvider><AttributeForm formType={AttributeTypes.Client}/></ToastProvider>);
 
-    const nameInput = getByPlaceholderText(`${AttributeTypes.Client} Name`);
-    const imageUrlInput = getByPlaceholderText(`${AttributeTypes.Client} Image URL`);
-    const input = getByText(`Create New ${AttributeTypes.Client}`);
+      const nameInput = getByPlaceholderText(`${AttributeTypes.Client} Name`);
+      const imageUrlInput = getByPlaceholderText(`${AttributeTypes.Client} Image URL`);
+      const input = getByText(`Create New ${AttributeTypes.Client}`);
 
-    expect(nameInput).toBeDefined();
-    expect(imageUrlInput).toBeDefined();
-    expect(input).toBeDefined();
+      expect(nameInput).toBeDefined();
+      expect(imageUrlInput).toBeDefined();
+      expect(input).toBeDefined();
 
-    fireEvent.change(nameInput, { target: { value: 'Bean'}});
-    fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
+      fireEvent.change(nameInput, { target: { value: 'Bean'}});
+      fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
 
-    fireEvent.click(input);
+      fireEvent.click(input);
+    });
   });
 
-  it('executes the correct strategy for creation of an andi', () => {
-    const Mock = new MockAdapter(axios);
-  
-    const responseObject = {
-      new_andi: [
-        { 
-          andiid: 1,
-        }
-      ]
-    }
+  it('executes the correct strategy for creation of an andi', async () => {
+    await act(async () => {
+      const Mock = new MockAdapter(axios);
 
-    Mock.onPost().reply(201, responseObject);
+      const responseObject = {
+        new_andi: [
+          { 
+            andiid: 1,
+          }
+        ]
+      }
 
-    const { getByText, getByPlaceholderText} = render(<ToastProvider><AttributeForm formType={AttributeTypes.ANDi}/></ToastProvider>);
+      Mock.onPost().reply(201, responseObject);
 
-    const nameInput = getByPlaceholderText(`${AttributeTypes.ANDi} Name`);
-    const imageUrlInput = getByPlaceholderText(`${AttributeTypes.ANDi} Image URL`);
-    const input = getByText(`Create New ${AttributeTypes.ANDi}`);
+      const { getByText, getByPlaceholderText} = await render(<ToastProvider><AttributeForm formType={AttributeTypes.ANDi}/></ToastProvider>);
 
-    expect(nameInput).toBeDefined();
-    expect(imageUrlInput).toBeDefined();
-    expect(input).toBeDefined();
+      const nameInput = getByPlaceholderText(`${AttributeTypes.ANDi} Name`);
+      const imageUrlInput = getByPlaceholderText(`${AttributeTypes.ANDi} Image URL`);
+      const input = getByText(`Create New ${AttributeTypes.ANDi}`);
 
-    fireEvent.change(nameInput, { target: { value: 'Bean'}});
-    fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
+      expect(nameInput).toBeDefined();
+      expect(imageUrlInput).toBeDefined();
+      expect(input).toBeDefined();
 
-    fireEvent.click(input);
+      fireEvent.change(nameInput, { target: { value: 'Bean'}});
+      fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
+
+      fireEvent.click(input);
+    });
   });
 
-  it('executes the correct strategy for creation of an andi', () => {
-    const Mock = new MockAdapter(axios);
-  
-    const responseObject = {
-      new_tech: [
-        { 
-          technologyid: 1,
-        }
-      ]
-    }
+  it('executes the correct strategy for creation of an andi', async () => {
+    await act(async () => {
+      const Mock = new MockAdapter(axios);
+    
+      const responseObject = {
+        new_tech: [
+          { 
+            technologyid: 1,
+          }
+        ]
+      }
 
-    Mock.onPost().reply(201, responseObject);
+      Mock.onPost().reply(201, responseObject);
 
-    const { getByText, getByPlaceholderText} = render(<ToastProvider><AttributeForm formType={AttributeTypes.TechStack}/></ToastProvider>);
+      const { getByText, getByPlaceholderText} = await render(<ToastProvider><AttributeForm formType={AttributeTypes.TechStack}/></ToastProvider>);
 
-    const nameInput = getByPlaceholderText(`${AttributeTypes.TechStack} Name`);
-    const imageUrlInput = getByPlaceholderText(`${AttributeTypes.TechStack} Image URL`);
-    const input = getByText(`Create New ${AttributeTypes.TechStack}`);
+      const nameInput = getByPlaceholderText(`${AttributeTypes.TechStack} Name`);
+      const imageUrlInput = getByPlaceholderText(`${AttributeTypes.TechStack} Image URL`);
+      const input = getByText(`Create New ${AttributeTypes.TechStack}`);
 
-    expect(nameInput).toBeDefined();
-    expect(imageUrlInput).toBeDefined();
-    expect(input).toBeDefined();
+      expect(nameInput).toBeDefined();
+      expect(imageUrlInput).toBeDefined();
+      expect(input).toBeDefined();
 
-    fireEvent.change(nameInput, { target: { value: 'Bean'}});
-    fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
+      fireEvent.change(nameInput, { target: { value: 'Bean'}});
+      fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
 
-    fireEvent.click(input);
+      fireEvent.click(input);
+    });
   });
 
-  it('errors when creation of attribute fails', () => {
-    const Mock = new MockAdapter(axios);
-  
-    Mock.onPost().networkError();
+  it('errors when creation of attribute fails', async () => {
+    await act(async () => {
+      const Mock = new MockAdapter(axios);
+    
+      Mock.onPost().networkError();
 
-    const { getByText, getByPlaceholderText} = render(<ToastProvider><AttributeForm formType={AttributeTypes.TechStack}/></ToastProvider>);
+      const { getByText, getByPlaceholderText} = await render(<ToastProvider><AttributeForm formType={AttributeTypes.TechStack}/></ToastProvider>);
 
-    const nameInput = getByPlaceholderText(`${AttributeTypes.TechStack} Name`);
-    const imageUrlInput = getByPlaceholderText(`${AttributeTypes.TechStack} Image URL`);
-    const input =  getByText(`Create New ${AttributeTypes.TechStack}`);
+      const nameInput = getByPlaceholderText(`${AttributeTypes.TechStack} Name`);
+      const imageUrlInput = getByPlaceholderText(`${AttributeTypes.TechStack} Image URL`);
+      const input =  getByText(`Create New ${AttributeTypes.TechStack}`);
 
-    expect(nameInput).toBeDefined();
-    expect(imageUrlInput).toBeDefined();
-    expect(input).toBeDefined();
+      expect(nameInput).toBeDefined();
+      expect(imageUrlInput).toBeDefined();
+      expect(input).toBeDefined();
 
-    fireEvent.change(nameInput, { target: { value: 'Bean'}});
-    fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
+      fireEvent.change(nameInput, { target: { value: 'Bean'}});
+      fireEvent.change(imageUrlInput, { target: { value: 'bean.url'}})
 
-    fireEvent.click(input);
+      fireEvent.click(input);
+    });
   });
 });

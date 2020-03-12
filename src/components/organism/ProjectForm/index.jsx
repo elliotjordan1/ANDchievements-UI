@@ -25,23 +25,34 @@ export const formValidator = (values) => {
   if (!values.projectTitle) {
     errors.projectTitle = 'Required';
   }
+
   if (!values.clientName || !values.clientId) {
     errors.clientName = 'Required';
   }
+
   if (!values.clientDescription || !values.projectDescription || !values.projectOutcomes) {
     errors.projectDescription = 'Required';
   }
+
   if (!values.coverImageUrl) {
     errors.coverImageUrl = 'Required';
   }
-  if (!values.andiIds || !values.andiNames) {
-    errors.andiNames = 'Required';
+
+  if (!values.projectAndis || values.projectAndis.length <= 0) {
+    errors.projectAndis = 'Required';
   }
-  if (!values.techStackIds || !values.techStackNames) {
-    errors.techStackNames = 'Required';
+
+  if (!values.projectTech || values.projectTech.length <= 0) {
+    errors.projectTech = 'Required';
   }
 
   return errors;
+}
+
+export const filterLists = (listOne, listTwo, filterValue) => {
+  return listOne.filter(x => x.label.toLowerCase().includes(filterValue.toLowerCase()))
+          .filter(x => !listOne.includes(x.label.toLowerCase()))
+          .filter(x => !listTwo.map(pa => pa.id).includes(x.value));
 }
 
 const ProjectForm = () => { 
@@ -111,12 +122,6 @@ const ProjectForm = () => {
           isSubmitting,
           setFieldValue
         }) => {
-          const filterLists = (listOne, listTwo, filterValue) => {
-            return listOne.filter(x => x.label.toLowerCase().includes(filterValue.toLowerCase()))
-                    .filter(x => !listOne.includes(x.label.toLowerCase()))
-                    .filter(x => !listTwo.map(pa => pa.id).includes(x.value));
-          }
-
           const handleSelect = (newItem, currentFieldValue, arrayFieldValue, existingValues, defaultOptionsList) => {
             const newEntry = {
               id: newItem.value,
@@ -186,6 +191,7 @@ const ProjectForm = () => {
                       <FormSelect 
                         placeholder='Select client' 
                         maxLength = {40} 
+                        data-testid='select-client-test'
                         options = {clientOptions} 
                         onChange={(e) => {
                           setFieldValue('clientId', e.value);
@@ -266,6 +272,7 @@ const ProjectForm = () => {
                           value={values.currentAndiName}
                         />
                       )}
+                      {errors.projectAndis && touched.currentAndiName && errors.projectAndis}
                     </div>
                     <div hidden={!addingANDi}>
                       <h3>Add New</h3>
@@ -286,7 +293,7 @@ const ProjectForm = () => {
                           value={values.currentTechName}
                         />
                       )}
-                      {errors.techStackNames && touched.techStackNames && errors.techStackNames}
+                      {errors.projectTech && touched.currentTechName && errors.projectTech}
                     </div>
                     <div hidden={!addingTechStack}>
                       <h3>Add New</h3>

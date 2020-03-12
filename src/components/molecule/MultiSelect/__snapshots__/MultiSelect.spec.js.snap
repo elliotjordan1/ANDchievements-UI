@@ -1,98 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TechListItem component renders correctly with no props 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="MultiSelectWrapper-ehyr88-0 PAJQb"
-      >
-        <div
-          class="InputWrapper-b1liev-0 ieRNSH"
-        >
-          <input
-            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-            maxlength="40"
-            name=""
-            type="text"
-            value=""
-          />
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MultiSelectWrapper-ehyr88-0 PAJQb"
-    >
-      <div
-        class="InputWrapper-b1liev-0 ieRNSH"
-      >
-        <input
-          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-          maxlength="40"
-          name=""
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
 exports[`TechListItem component renders correctly with optionList prop 1`] = `
 Object {
   "asFragment": [Function],
@@ -104,26 +11,33 @@ Object {
         <div
           class="InputWrapper-b1liev-0 ieRNSH"
         >
+          <div
+            class="SelectedOption-sc-17f1g1p-0 hQylbK"
+          >
+            <button
+              class="RemovalButton__Button-umv7ap-0 cQPDIR"
+              type="submit"
+            >
+              x
+            </button>
+          </div>
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
-            name=""
+            name="test"
+            placeholder="PLACEHOLDER"
             type="text"
-            value=""
+            value="test"
           />
         </div>
         <div
-          class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
+          class="OptionsWrapper__Wrapper-bx0bji-0 iZOYeD"
         >
           <div
             class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-          />
-          <div
-            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-          />
-          <div
-            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-          />
+          >
+            Jess
+          </div>
         </div>
       </div>
     </div>
@@ -135,242 +49,33 @@ Object {
       <div
         class="InputWrapper-b1liev-0 ieRNSH"
       >
+        <div
+          class="SelectedOption-sc-17f1g1p-0 hQylbK"
+        >
+          <button
+            class="RemovalButton__Button-umv7ap-0 cQPDIR"
+            type="submit"
+          >
+            x
+          </button>
+        </div>
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
-          name=""
+          name="test"
+          placeholder="PLACEHOLDER"
           type="text"
-          value=""
+          value="test"
         />
       </div>
       <div
-        class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
+        class="OptionsWrapper__Wrapper-bx0bji-0 iZOYeD"
       >
         <div
           class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-        />
-        <div
-          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-        />
-        <div
-          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-        />
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`TechListItem component renders correctly with placeholder prop 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="MultiSelectWrapper-ehyr88-0 PAJQb"
-      >
-        <div
-          class="InputWrapper-b1liev-0 ieRNSH"
         >
-          <input
-            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-            maxlength="40"
-            name=""
-            placeholder="Placeholder"
-            type="text"
-            value=""
-          />
+          Jess
         </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MultiSelectWrapper-ehyr88-0 PAJQb"
-    >
-      <div
-        class="InputWrapper-b1liev-0 ieRNSH"
-      >
-        <input
-          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-          maxlength="40"
-          name=""
-          placeholder="Placeholder"
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`TechListItem component renders correctly with props 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="MultiSelectWrapper-ehyr88-0 PAJQb"
-      >
-        <div
-          class="InputWrapper-b1liev-0 ieRNSH"
-        >
-          <input
-            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-            maxlength="40"
-            name=""
-            placeholder="Placeholder"
-            type="text"
-            value=""
-          />
-        </div>
-        <div
-          class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-        >
-          <div
-            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-          />
-          <div
-            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-          />
-          <div
-            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-          />
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="MultiSelectWrapper-ehyr88-0 PAJQb"
-    >
-      <div
-        class="InputWrapper-b1liev-0 ieRNSH"
-      >
-        <input
-          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-          maxlength="40"
-          name=""
-          placeholder="Placeholder"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-      >
-        <div
-          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-        />
-        <div
-          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-        />
-        <div
-          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
-        />
       </div>
     </div>
   </div>,

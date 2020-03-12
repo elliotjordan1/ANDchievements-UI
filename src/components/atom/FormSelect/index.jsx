@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import CreatableSelect from 'react-select/creatable';
 import theme from '../../../global/theme';
 
-const FormSelect = styled(CreatableSelect)`
+export default styled(CreatableSelect)`
     width: 100%;
     box-sizing: border-box;
     border:  1px solid black;
@@ -24,6 +24,3 @@ const FormSelect = styled(CreatableSelect)`
         margin: 8px 0 24px 0;
     };
 `;
-
-
-export default FormSelect;

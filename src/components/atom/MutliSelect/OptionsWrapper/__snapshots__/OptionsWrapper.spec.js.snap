@@ -7,13 +7,21 @@ Object {
     <div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 ikrgET"
-      />
+      >
+        1
+        2
+        3
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
       class="OptionsWrapper__Wrapper-bx0bji-0 ikrgET"
-    />
+    >
+      1
+      2
+      3
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -76,13 +84,21 @@ Object {
     <div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-      />
+      >
+        1
+        2
+        3
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
       class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-    />
+    >
+      1
+      2
+      3
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -145,13 +161,21 @@ Object {
     <div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 hYjjZy"
-      />
+      >
+        1
+        2
+        3
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
       class="OptionsWrapper__Wrapper-bx0bji-0 hYjjZy"
-    />
+    >
+      1
+      2
+      3
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
