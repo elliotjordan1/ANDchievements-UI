@@ -85,8 +85,8 @@ const MultiSelect = ({ placeholder, optionList }) => {
                 <FormInput type='text' placeholder={placeholder} onChange={handleChange} value={inputValue} maxLength={40}/>
             </InputWrapper>
 
-            <OptionsWrapper visible={visible} arrayLength={options.length}>
-                {options.length > 0 && options.map((value, index) => {
+            <OptionsWrapper visible={visible} arrayLength={options && options.length}>
+                {options && options.length > 0 && options.map((value, index) => {
                   return (
                   <Option key={value} onClick={(event) => handleClick(value, index, event)} value ={value}  /> 
                   );
