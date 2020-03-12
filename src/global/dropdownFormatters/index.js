@@ -1,6 +1,9 @@
-/* eslint-disable import/prefer-default-export */
-import { getClients } from './clients';
+import getClients from './clients';
+import getAndis from './andis';
+import getTechnologies from './tech';
 
 export {
-  getClients
+  getClients,
+  getTechnologies,
+  getAndis
 }

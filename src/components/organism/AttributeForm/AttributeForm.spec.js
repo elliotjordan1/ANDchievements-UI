@@ -39,7 +39,7 @@ describe('AttributeForm component', () => {
 
     const nameInput = getByPlaceholderText(`${AttributeTypes.Client} Name`);
     const imageUrlInput = getByPlaceholderText(`${AttributeTypes.Client} Image URL`);
-    const input = getByText('SUBMIT');
+    const input = getByText(`Create New ${AttributeTypes.Client}`);
 
     expect(nameInput).toBeDefined();
     expect(imageUrlInput).toBeDefined();
@@ -68,7 +68,7 @@ describe('AttributeForm component', () => {
 
     const nameInput = getByPlaceholderText(`${AttributeTypes.ANDi} Name`);
     const imageUrlInput = getByPlaceholderText(`${AttributeTypes.ANDi} Image URL`);
-    const input = getByText('SUBMIT');
+    const input = getByText(`Create New ${AttributeTypes.ANDi}`);
 
     expect(nameInput).toBeDefined();
     expect(imageUrlInput).toBeDefined();
@@ -97,7 +97,7 @@ describe('AttributeForm component', () => {
 
     const nameInput = getByPlaceholderText(`${AttributeTypes.TechStack} Name`);
     const imageUrlInput = getByPlaceholderText(`${AttributeTypes.TechStack} Image URL`);
-    const input = getByText('SUBMIT');
+    const input = getByText(`Create New ${AttributeTypes.TechStack}`);
 
     expect(nameInput).toBeDefined();
     expect(imageUrlInput).toBeDefined();
@@ -118,7 +118,7 @@ describe('AttributeForm component', () => {
 
     const nameInput = getByPlaceholderText(`${AttributeTypes.TechStack} Name`);
     const imageUrlInput = getByPlaceholderText(`${AttributeTypes.TechStack} Image URL`);
-    const input = getByText('SUBMIT');
+    const input =  getByText(`Create New ${AttributeTypes.TechStack}`);
 
     expect(nameInput).toBeDefined();
     expect(imageUrlInput).toBeDefined();

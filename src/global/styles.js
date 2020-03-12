@@ -32,7 +32,7 @@ export const ErrorWrapper = styled(HomepageWrapper)`
   text-align: center;
 `;
 
-export const FormWrapper = styled.div`
+export const FormWrapper = styled.form`
   justify-content: center;
   width: 100%;
   height: 100%;

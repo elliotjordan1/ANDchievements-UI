@@ -7,7 +7,7 @@ const Input = styled.input`
     width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
-    border:  1px solid black;
+    border:  ${({hiddenBorder}) => hiddenBorder ? '0px solid black' : '1px solid black'};
     margin: 8px 0;
     font: 300 12px ${theme.fontFamily.primary};
     height: 40px;
@@ -26,21 +26,42 @@ const Input = styled.input`
 
 const FormInput = ({
   maxLength,
+  type,
+  name,
+  onBlur,
+  hiddenBorder,
   placeholder,
   value,
   onChange
-}) => <Input maxLength = {maxLength} placeholder = {placeholder} value = {value} onChange={onChange} />
+}) => <Input 
+          type = {type}
+          name = {name}
+          onBlur = {onBlur}
+          hiddenBorder={hiddenBorder} 
+          maxLength = {maxLength} 
+          placeholder = {placeholder} 
+          value = {value} 
+          onChange={onChange} 
+      />
 
 FormInput.propTypes = {
   maxLength: PropTypes.number.isRequired,
   placeholder: PropTypes.string.isRequired,
   value: PropTypes.string,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  hiddenBorder: PropTypes.bool,
+  type: PropTypes.string,
+  name: PropTypes.string,
+  onBlur: PropTypes.func
 };
 
 FormInput.defaultProps = {
   value: '',
-  onChange: undefined
+  onChange: undefined,
+  hiddenBorder: false,
+  type: '',
+  name: '',
+  onBlur: undefined
 }
 
 export default FormInput;

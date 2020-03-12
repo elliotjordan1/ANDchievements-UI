@@ -8,7 +8,7 @@ Object {
       <div
         class="styles__HomepageWrapper-sc-101ii58-0 iCONwV"
       >
-        <div
+        <form
           class="styles__FormWrapper-sc-101ii58-3 foeRUl"
         >
           <div
@@ -26,9 +26,11 @@ Object {
                 Project Title
               </div>
               <input
-                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
                 maxlength="20"
+                name="projectTitle"
                 placeholder="Project title"
+                type="text"
                 value=""
               />
             </div>
@@ -104,6 +106,52 @@ Object {
                 </div>
               </div>
             </div>
+            <div
+              hidden=""
+            >
+              <h3>
+                Add New
+              </h3>
+              <div>
+                <div>
+                  <div
+                    class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                  >
+                    Client Name
+                  </div>
+                  <input
+                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                    maxlength="40"
+                    name=""
+                    placeholder="Client Name"
+                    type=""
+                    value=""
+                  />
+                </div>
+                <div>
+                  <div
+                    class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                  >
+                    Client Image URL
+                  </div>
+                  <input
+                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                    maxlength="40"
+                    name=""
+                    placeholder="Client Image URL"
+                    type=""
+                    value=""
+                  />
+                </div>
+                <div>
+                  <button
+                    class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  >
+                    Create New Client
+                  </button>
+                </div>
+              </div>
+            </div>
             <div>
               <div
                 class="FormLabel__Label-wqrwj6-0 iJzIPZ"
@@ -113,20 +161,29 @@ Object {
               <div
                 class="styles__InputContainer-sc-17bjb14-0 kFxat"
               >
-                <textarea
-                  class="TextArea__Area-akp1wi-0 etxwJa"
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
                   maxlength="60"
-                  placeholder="Client description"
+                  name="clientDescription"
+                  placeholder="Client Description"
+                  type="text"
+                  value=""
                 />
-                <textarea
-                  class="TextArea__Area-akp1wi-0 etxwJa"
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
                   maxlength="60"
-                  placeholder="Project description"
+                  name="projectDescription"
+                  placeholder="Project Description"
+                  type="text"
+                  value=""
                 />
-                <textarea
-                  class="TextArea__Area-akp1wi-0 etxwJa"
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
                   maxlength="60"
-                  placeholder="Project outcomes"
+                  name="projectOutcomes"
+                  placeholder="Project Outcomes"
+                  type="text"
+                  value=""
                 />
               </div>
             </div>
@@ -137,9 +194,11 @@ Object {
                 Cover Image
               </div>
               <input
-                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
                 maxlength="200"
-                placeholder="Cover image url"
+                name="coverImageUrl"
+                placeholder="Cover Image URL"
+                type="text"
                 value=""
               />
             </div>
@@ -149,22 +208,51 @@ Object {
               >
                 ANDis
               </div>
-              <div
-                class="MultiSelectWrapper-ehyr88-0 PAJQb"
-              >
-                <div
-                  class="InputWrapper-b1liev-0 ieRNSH"
-                >
+            </div>
+            <div
+              hidden=""
+            >
+              <h3>
+                Add New
+              </h3>
+              <div>
+                <div>
+                  <div
+                    class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                  >
+                    ANDi Name
+                  </div>
                   <input
-                    class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
                     maxlength="40"
-                    placeholder="Select ANDis..."
+                    name=""
+                    placeholder="ANDi Name"
+                    type=""
                     value=""
                   />
                 </div>
-                <div
-                  class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-                />
+                <div>
+                  <div
+                    class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                  >
+                    ANDi Image URL
+                  </div>
+                  <input
+                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                    maxlength="40"
+                    name=""
+                    placeholder="ANDi Image URL"
+                    type=""
+                    value=""
+                  />
+                </div>
+                <div>
+                  <button
+                    class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  >
+                    Create New ANDi
+                  </button>
+                </div>
               </div>
             </div>
             <div>
@@ -173,22 +261,62 @@ Object {
               >
                 Tech Stacks
               </div>
-              <input
-                class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
-                maxlength="40"
-                placeholder="Select Tech Stack"
-                value=""
-              />
+            </div>
+            <div
+              hidden=""
+            >
+              <h3>
+                Add New
+              </h3>
+              <div>
+                <div>
+                  <div
+                    class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                  >
+                    Tech Stack Name
+                  </div>
+                  <input
+                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                    maxlength="40"
+                    name=""
+                    placeholder="Tech Stack Name"
+                    type=""
+                    value=""
+                  />
+                </div>
+                <div>
+                  <div
+                    class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                  >
+                    Tech Stack Image URL
+                  </div>
+                  <input
+                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                    maxlength="40"
+                    name=""
+                    placeholder="Tech Stack Image URL"
+                    type=""
+                    value=""
+                  />
+                </div>
+                <div>
+                  <button
+                    class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  >
+                    Create New Tech Stack
+                  </button>
+                </div>
+              </div>
             </div>
             <div>
               <button
                 class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
               >
-                SUBMIT
+                CREATE
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
     <div
@@ -199,7 +327,7 @@ Object {
     <div
       class="styles__HomepageWrapper-sc-101ii58-0 iCONwV"
     >
-      <div
+      <form
         class="styles__FormWrapper-sc-101ii58-3 foeRUl"
       >
         <div
@@ -217,9 +345,11 @@ Object {
               Project Title
             </div>
             <input
-              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+              class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
               maxlength="20"
+              name="projectTitle"
               placeholder="Project title"
+              type="text"
               value=""
             />
           </div>
@@ -295,6 +425,52 @@ Object {
               </div>
             </div>
           </div>
+          <div
+            hidden=""
+          >
+            <h3>
+              Add New
+            </h3>
+            <div>
+              <div>
+                <div
+                  class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                >
+                  Client Name
+                </div>
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                  maxlength="40"
+                  name=""
+                  placeholder="Client Name"
+                  type=""
+                  value=""
+                />
+              </div>
+              <div>
+                <div
+                  class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                >
+                  Client Image URL
+                </div>
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                  maxlength="40"
+                  name=""
+                  placeholder="Client Image URL"
+                  type=""
+                  value=""
+                />
+              </div>
+              <div>
+                <button
+                  class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                >
+                  Create New Client
+                </button>
+              </div>
+            </div>
+          </div>
           <div>
             <div
               class="FormLabel__Label-wqrwj6-0 iJzIPZ"
@@ -304,20 +480,29 @@ Object {
             <div
               class="styles__InputContainer-sc-17bjb14-0 kFxat"
             >
-              <textarea
-                class="TextArea__Area-akp1wi-0 etxwJa"
+              <input
+                class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
                 maxlength="60"
-                placeholder="Client description"
+                name="clientDescription"
+                placeholder="Client Description"
+                type="text"
+                value=""
               />
-              <textarea
-                class="TextArea__Area-akp1wi-0 etxwJa"
+              <input
+                class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
                 maxlength="60"
-                placeholder="Project description"
+                name="projectDescription"
+                placeholder="Project Description"
+                type="text"
+                value=""
               />
-              <textarea
-                class="TextArea__Area-akp1wi-0 etxwJa"
+              <input
+                class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
                 maxlength="60"
-                placeholder="Project outcomes"
+                name="projectOutcomes"
+                placeholder="Project Outcomes"
+                type="text"
+                value=""
               />
             </div>
           </div>
@@ -328,9 +513,11 @@ Object {
               Cover Image
             </div>
             <input
-              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+              class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
               maxlength="200"
-              placeholder="Cover image url"
+              name="coverImageUrl"
+              placeholder="Cover Image URL"
+              type="text"
               value=""
             />
           </div>
@@ -340,22 +527,51 @@ Object {
             >
               ANDis
             </div>
-            <div
-              class="MultiSelectWrapper-ehyr88-0 PAJQb"
-            >
-              <div
-                class="InputWrapper-b1liev-0 ieRNSH"
-              >
+          </div>
+          <div
+            hidden=""
+          >
+            <h3>
+              Add New
+            </h3>
+            <div>
+              <div>
+                <div
+                  class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                >
+                  ANDi Name
+                </div>
                 <input
-                  class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
                   maxlength="40"
-                  placeholder="Select ANDis..."
+                  name=""
+                  placeholder="ANDi Name"
+                  type=""
                   value=""
                 />
               </div>
-              <div
-                class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-              />
+              <div>
+                <div
+                  class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                >
+                  ANDi Image URL
+                </div>
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                  maxlength="40"
+                  name=""
+                  placeholder="ANDi Image URL"
+                  type=""
+                  value=""
+                />
+              </div>
+              <div>
+                <button
+                  class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                >
+                  Create New ANDi
+                </button>
+              </div>
             </div>
           </div>
           <div>
@@ -364,22 +580,62 @@ Object {
             >
               Tech Stacks
             </div>
-            <input
-              class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
-              maxlength="40"
-              placeholder="Select Tech Stack"
-              value=""
-            />
+          </div>
+          <div
+            hidden=""
+          >
+            <h3>
+              Add New
+            </h3>
+            <div>
+              <div>
+                <div
+                  class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                >
+                  Tech Stack Name
+                </div>
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                  maxlength="40"
+                  name=""
+                  placeholder="Tech Stack Name"
+                  type=""
+                  value=""
+                />
+              </div>
+              <div>
+                <div
+                  class="FormLabel__Label-wqrwj6-0 iJzIPZ"
+                >
+                  Tech Stack Image URL
+                </div>
+                <input
+                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
+                  maxlength="40"
+                  name=""
+                  placeholder="Tech Stack Image URL"
+                  type=""
+                  value=""
+                />
+              </div>
+              <div>
+                <button
+                  class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                >
+                  Create New Tech Stack
+                </button>
+              </div>
+            </div>
           </div>
           <div>
             <button
               class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
             >
-              SUBMIT
+              CREATE
             </button>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>,
   "debug": [Function],

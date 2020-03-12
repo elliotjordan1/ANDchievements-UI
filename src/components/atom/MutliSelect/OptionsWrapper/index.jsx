@@ -25,12 +25,14 @@ const Wrapper = styled.div`
 
 export const OptionsWrapper = ({
   arrayLength,
-  visible
-}) => <Wrapper visible = {visible} arrayLength = {arrayLength} />
+  visible,
+  children
+}) => <Wrapper visible = {visible} arrayLength = {arrayLength}>{children}</Wrapper>
 
 OptionsWrapper.propTypes = {
   visible: PropTypes.bool.isRequired,
-  arrayLength: PropTypes.number
+  arrayLength: PropTypes.number,
+  children: PropTypes.arrayOf(PropTypes.any).isRequired
 }
 
 OptionsWrapper.defaultProps = {

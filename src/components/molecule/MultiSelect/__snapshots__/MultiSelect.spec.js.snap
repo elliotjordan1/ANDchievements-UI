@@ -12,14 +12,13 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
+            type="text"
             value=""
           />
         </div>
-        <div
-          class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-        />
       </div>
     </div>
   </body>,
@@ -31,14 +30,13 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
+          type="text"
           value=""
         />
       </div>
-      <div
-        class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-      />
     </div>
   </div>,
   "debug": [Function],
@@ -107,14 +105,26 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
+            type="text"
             value=""
           />
         </div>
         <div
           class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-        />
+        >
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+        </div>
       </div>
     </div>
   </body>,
@@ -126,14 +136,26 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
+          type="text"
           value=""
         />
       </div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-      />
+      >
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -202,15 +224,14 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
             placeholder="Placeholder"
+            type="text"
             value=""
           />
         </div>
-        <div
-          class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-        />
       </div>
     </div>
   </body>,
@@ -222,15 +243,14 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
           placeholder="Placeholder"
+          type="text"
           value=""
         />
       </div>
-      <div
-        class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-      />
     </div>
   </div>,
   "debug": [Function],
@@ -299,15 +319,27 @@ Object {
           class="InputWrapper-b1liev-0 ieRNSH"
         >
           <input
-            class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+            class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
+            name=""
             placeholder="Placeholder"
+            type="text"
             value=""
           />
         </div>
         <div
           class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-        />
+        >
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+        </div>
       </div>
     </div>
   </body>,
@@ -319,15 +351,27 @@ Object {
         class="InputWrapper-b1liev-0 ieRNSH"
       >
         <input
-          class="FormInput__Input-sc-1b0ub2b-0 jCNGCl"
+          class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
+          name=""
           placeholder="Placeholder"
+          type="text"
           value=""
         />
       </div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-      />
+      >
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -383,3 +427,7 @@ Object {
   "unmount": [Function],
 }
 `;
+
+exports[`TechListItem component renders correctly with selected options and adds option successfully 1`] = `undefined`;
+
+exports[`TechListItem component renders correctly with selected options and removes option successfully 1`] = `undefined`;

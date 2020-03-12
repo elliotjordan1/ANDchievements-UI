@@ -10,6 +10,20 @@ describe('FormInput component', () => {
     
     expect(wrapper).toMatchSnapshot();
   });
+  it('renders correctly with hidden border', () => {
+    const component = <Component hiddenBorder maxLength ={20} placeholder="I am an input" />;
+
+    const wrapper = render(component);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
+  it('renders correctly without hidden border', () => {
+    const component = <Component maxLength ={20} placeholder="I am an input" />;
+
+    const wrapper = render(component);
+    
+    expect(wrapper).toMatchSnapshot();
+  });
   it('renders correctly with default value', () => {
     const component = <Component maxLength ={20} placeholder="I am an input" value="12" onChange={() => {}} />;
 

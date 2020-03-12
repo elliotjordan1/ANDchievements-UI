@@ -1,46 +1,47 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import getClients from '.';
+import getTechnologies from '.';
 
-const clientList = [
+const techList = [
   {
-    clientid: 1,
-    clientname: 'Jack'
+    technologyid: 1,
+    name: 'NodeJS'
   },
   {
-    clientid: 2,
-    clientname: 'Percy'
+    technologyid: 2,
+    name: 'ReactJS'
   },
   {
-    clientid: 3,
-    clientname: 'Reginald'
+    technologyid: 3,
+    name: 'Java'
   }
 ]
 
 const expectedResult = [
   {
     value: 1,
-    label: 'Jack'
+    label: 'NodeJS'
   },
   {
     value: 2,
-    label: 'Percy'
+    label: 'ReactJS'
   },
   {
     value: 3,
-    label: 'Reginald'
+    label: 'Java'
   }
 ]
 
 let Mock;
 
-describe('clientDropdownFormatter', () => {
+describe('techStackDropdownFormatter', () => {
   beforeEach(() => {
     Mock = new MockAdapter(axios);
   });
   it('returns correct format for successful response', async () => {
-    Mock.onGet().reply(200, { clients: clientList });
-    const actualResult = await getClients();
+    Mock.onGet().reply(200, { technologies: techList });
+
+    const actualResult = await getTechnologies();
 
     return expect(actualResult).toEqual(expectedResult);
   });
@@ -48,7 +49,7 @@ describe('clientDropdownFormatter', () => {
   it('returns correct format for failed network response', async () => {
     Mock.onGet().networkError();
 
-    const actualResult = await getClients();
+    const actualResult = await getTechnologies();
 
     return expect(actualResult).toEqual([]);
   });
@@ -56,7 +57,7 @@ describe('clientDropdownFormatter', () => {
   it('returns correct format for failed network response', async () => {
     Mock.onGet().reply(404, {});
 
-    const actualResult = await getClients();
+    const actualResult = await getTechnologies();
 
     return expect(actualResult).toEqual([]);
   });
