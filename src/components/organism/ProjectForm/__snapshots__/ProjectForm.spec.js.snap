@@ -208,25 +208,6 @@ Object {
               >
                 ANDis
               </div>
-              <div
-                class="MultiSelectWrapper-ehyr88-0 PAJQb"
-              >
-                <div
-                  class="InputWrapper-b1liev-0 ieRNSH"
-                >
-                  <input
-                    class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-                    maxlength="40"
-                    name=""
-                    placeholder="Select ANDis..."
-                    type="text"
-                    value=""
-                  />
-                </div>
-                <div
-                  class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-                />
-              </div>
             </div>
             <div
               hidden=""
@@ -553,25 +534,6 @@ Object {
               class="FormLabel__Label-wqrwj6-0 iJzIPZ"
             >
               ANDis
-            </div>
-            <div
-              class="MultiSelectWrapper-ehyr88-0 PAJQb"
-            >
-              <div
-                class="InputWrapper-b1liev-0 ieRNSH"
-              >
-                <input
-                  class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-                  maxlength="40"
-                  name=""
-                  placeholder="Select ANDis..."
-                  type="text"
-                  value=""
-                />
-              </div>
-              <div
-                class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-              />
             </div>
           </div>
           <div

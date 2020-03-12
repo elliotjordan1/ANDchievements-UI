@@ -47,6 +47,7 @@ export const formValidator = (values) => {
 const ProjectForm = () => { 
   const [clientOptions, setClientOptions] = useState(undefined);
   const [andiOptions, setAndiOptions] = useState(undefined);
+  const [filteredAndiOptions, setFilteredAndiOptions] = useState(undefined);
   const [addingTechStack, setAddingTechStack] = useState(false);
   const [addingANDi, setAddingANDi] = useState(false);
   const [addingClient, setAddingClient] = useState(false);
@@ -58,6 +59,7 @@ const ProjectForm = () => {
 
       setClientOptions(formattedClients);
       setAndiOptions(formattedANDis);
+      setFilteredAndiOptions(formattedANDis);
     })
     if (clientOptions === undefined) {
       getAllAttributes();
@@ -72,8 +74,8 @@ const ProjectForm = () => {
     projectDescription: '',
     projectOutcomes: '',
     coverImageUrl: '',
-    andiIds: [],
-    andiNames: [],
+    projectAndis: [],
+    currentAndiName: '',
     techStackIds: [],
     techStackNames: []
   };
@@ -188,10 +190,53 @@ const ProjectForm = () => {
                   </div>
                   <div>
                     <Label onClick={() => {setAddingANDi(!addingANDi)}} labelText = "ANDis" />
+                    { 
+                    andiOptions && (
                     <MultiSelect 
                       placeholder='Select ANDis...' 
-                      optionList = {andiOptions} 
+                      name='currentAndiName'
+                      optionList = {filteredAndiOptions} 
+                      visible={values.currentAndiName !== ''}
+                      selectedValues={values.projectAndis}
+                      onRemove={e => {
+                        const newProjectAndis = values.projectAndis.filter(x => x.andiId !== e.andiId);
+                        
+                        setFieldValue('projectAndis', newProjectAndis);
+                      }}
+                      onSelect={e => {
+                        const newAndi = {
+                          andiId: e.value,
+                          andiName: e.label
+                        }
+
+                        const projectAndis = [...values.projectAndis, newAndi];
+
+                        setFieldValue('projectAndis', projectAndis);
+                        setFieldValue('currentAndiName', '');
+
+                        const newAndiOptions = andiOptions
+                          .filter(x => !andiOptions.includes(x.label.toLowerCase()))
+                          .filter(x => !values.projectAndis.map(pa => pa.andiId).includes(x.value));;
+
+                        setFilteredAndiOptions(newAndiOptions);
+                      }}
+                      onChange={e => {
+                        const newAndiOptions = andiOptions
+                          .filter(x => x.label.toLowerCase().includes(e.target.value.toLowerCase()))
+                          .filter(x => !andiOptions.includes(x.label.toLowerCase()))
+                          .filter(x => !values.projectAndis.map(pa => pa.andiId).includes(x.value));
+
+                        if (e.target.value === '') {
+                          setFilteredAndiOptions(andiOptions);
+                        } else {
+                          setFilteredAndiOptions(newAndiOptions);
+                        }
+
+                        handleChange(e);
+                      }}
+                      value={values.currentAndiName}
                     />
+                    )}
                   </div>
                   <div hidden={!addingANDi}>
                     <h3>Add New</h3>
