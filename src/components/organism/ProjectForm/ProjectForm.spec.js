@@ -4,6 +4,7 @@ import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import ProjectForm from '.';
 
+// eslint-disable-next-line no-unused-vars
 let Mock;
 
 describe('ProjectForm component', () => {
@@ -12,7 +13,6 @@ describe('ProjectForm component', () => {
   })
   it('renders correctly', () => {
     const wrapper = render(<ProjectForm><div>A Form!</div></ProjectForm>);
-    Mock.onGet().reply(200);
     expect(wrapper).toMatchSnapshot();
   });
 });
