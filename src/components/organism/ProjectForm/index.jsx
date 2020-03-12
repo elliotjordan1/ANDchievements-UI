@@ -17,6 +17,8 @@ import * as AttributeTypes from '../../../global/constants';
 import { getClients , getAndis, getTechnologies } from '../../../global/dropdownFormatters';
 import { InputContainer } from './styles';
 import AttributeForm from '../AttributeForm';
+import { ProjectPostFormatter } from '../../../global/postFormatters';
+import { createProject } from '../../../api/handlers/attributeCreation';
 
 
 export const formValidator = (values) => {
@@ -88,21 +90,37 @@ const ProjectForm = () => {
   });
 
   const formInitialValues = {
-    projectTitle: '',
-    clientId: '',
-    clientName: '',
-    clientDescription: '',
-    projectDescription: '',
-    projectOutcomes: '',
-    coverImageUrl: '',
-    projectAndis: [],
-    projectTech: [],
+    projectTitle: 'r',
+    clientId: 'r',
+    clientName: 'r',
+    clientDescription: 'r',
+    projectDescription: 'r',
+    projectOutcomes: 'r',
+    coverImageUrl: 'r',
+    projectAndis: [{ id: 1, name: 'James'}],
+    projectTech: [{id: 1, name: 'React'}],
     currentAndiName: '',
     currentTechName: ''
   };
 
-  const submitForm = (values, { setSubmitting }) => {
-    console.log(values, setSubmitting);
+  const submitForm = async (values, { setSubmitting }) => {
+    setSubmitting(true);
+    const formattedValues = ProjectPostFormatter(values);
+
+    console.log(formattedValues);
+    
+    const createdProject = await createProject({'data' : {
+      'projectName': '',
+      'clientId': '',
+      'projectDescriptionOne': '',
+      'projectDescriptionTwo': '',
+      'projectDescriptionThree': '',
+      'projectImageURL': '',
+      'andiIds': '[\'\']',
+      'techStackIds': '[\'\']'
+    }});
+
+    console.log(createdProject);
   }
 
   return (
@@ -111,7 +129,7 @@ const ProjectForm = () => {
       <Formik
         initialValues = {formInitialValues}
         validate={values => formValidator(values)}
-        onSubmit={(values, { setSubmitting}) => submitForm(values, setSubmitting)}>
+        onSubmit={(values,  { setSubmitting }) => submitForm(values, { setSubmitting } )}>
         {({
           values,
           errors,

@@ -31,7 +31,7 @@ Object {
                 name="projectTitle"
                 placeholder="Project title"
                 type="text"
-                value=""
+                value="r"
               />
             </div>
             <div>
@@ -146,6 +146,7 @@ Object {
                 <div>
                   <button
                     class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                    type="submit"
                   >
                     Create New Client
                   </button>
@@ -167,7 +168,7 @@ Object {
                   name="clientDescription"
                   placeholder="Client Description"
                   type="text"
-                  value=""
+                  value="r"
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -175,7 +176,7 @@ Object {
                   name="projectDescription"
                   placeholder="Project Description"
                   type="text"
-                  value=""
+                  value="r"
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -183,7 +184,7 @@ Object {
                   name="projectOutcomes"
                   placeholder="Project Outcomes"
                   type="text"
-                  value=""
+                  value="r"
                 />
               </div>
             </div>
@@ -199,7 +200,7 @@ Object {
                 name="coverImageUrl"
                 placeholder="Cover Image URL"
                 type="text"
-                value=""
+                value="r"
               />
             </div>
             <div>
@@ -249,6 +250,7 @@ Object {
                 <div>
                   <button
                     class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                    type="submit"
                   >
                     Create New ANDi
                   </button>
@@ -302,6 +304,7 @@ Object {
                 <div>
                   <button
                     class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                    type="submit"
                   >
                     Create New Tech Stack
                   </button>
@@ -311,6 +314,7 @@ Object {
             <div>
               <button
                 class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                type="submit"
               >
                 CREATE
               </button>
@@ -350,7 +354,7 @@ Object {
               name="projectTitle"
               placeholder="Project title"
               type="text"
-              value=""
+              value="r"
             />
           </div>
           <div>
@@ -465,6 +469,7 @@ Object {
               <div>
                 <button
                   class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  type="submit"
                 >
                   Create New Client
                 </button>
@@ -486,7 +491,7 @@ Object {
                 name="clientDescription"
                 placeholder="Client Description"
                 type="text"
-                value=""
+                value="r"
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -494,7 +499,7 @@ Object {
                 name="projectDescription"
                 placeholder="Project Description"
                 type="text"
-                value=""
+                value="r"
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -502,7 +507,7 @@ Object {
                 name="projectOutcomes"
                 placeholder="Project Outcomes"
                 type="text"
-                value=""
+                value="r"
               />
             </div>
           </div>
@@ -518,7 +523,7 @@ Object {
               name="coverImageUrl"
               placeholder="Cover Image URL"
               type="text"
-              value=""
+              value="r"
             />
           </div>
           <div>
@@ -568,6 +573,7 @@ Object {
               <div>
                 <button
                   class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  type="submit"
                 >
                   Create New ANDi
                 </button>
@@ -621,6 +627,7 @@ Object {
               <div>
                 <button
                   class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  type="submit"
                 >
                   Create New Tech Stack
                 </button>
@@ -630,6 +637,7 @@ Object {
           <div>
             <button
               class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+              type="submit"
             >
               CREATE
             </button>
@@ -723,7 +731,7 @@ Object {
                 name="projectTitle"
                 placeholder="Project title"
                 type="text"
-                value=""
+                value="r"
               />
             </div>
             <div>
@@ -838,6 +846,7 @@ Object {
                 <div>
                   <button
                     class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                    type="submit"
                   >
                     Create New Client
                   </button>
@@ -859,7 +868,7 @@ Object {
                   name="clientDescription"
                   placeholder="Client Description"
                   type="text"
-                  value=""
+                  value="r"
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -867,7 +876,7 @@ Object {
                   name="projectDescription"
                   placeholder="Project Description"
                   type="text"
-                  value=""
+                  value="r"
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -875,7 +884,7 @@ Object {
                   name="projectOutcomes"
                   placeholder="Project Outcomes"
                   type="text"
-                  value=""
+                  value="r"
                 />
               </div>
             </div>
@@ -891,7 +900,7 @@ Object {
                 name="coverImageUrl"
                 placeholder="Cover Image URL"
                 type="text"
-                value=""
+                value="r"
               />
             </div>
             <div>
@@ -941,6 +950,7 @@ Object {
                 <div>
                   <button
                     class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                    type="submit"
                   >
                     Create New ANDi
                   </button>
@@ -994,6 +1004,7 @@ Object {
                 <div>
                   <button
                     class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                    type="submit"
                   >
                     Create New Tech Stack
                   </button>
@@ -1003,6 +1014,7 @@ Object {
             <div>
               <button
                 class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                type="submit"
               >
                 CREATE
               </button>
@@ -1042,7 +1054,7 @@ Object {
               name="projectTitle"
               placeholder="Project title"
               type="text"
-              value=""
+              value="r"
             />
           </div>
           <div>
@@ -1157,6 +1169,7 @@ Object {
               <div>
                 <button
                   class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  type="submit"
                 >
                   Create New Client
                 </button>
@@ -1178,7 +1191,7 @@ Object {
                 name="clientDescription"
                 placeholder="Client Description"
                 type="text"
-                value=""
+                value="r"
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -1186,7 +1199,7 @@ Object {
                 name="projectDescription"
                 placeholder="Project Description"
                 type="text"
-                value=""
+                value="r"
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -1194,7 +1207,7 @@ Object {
                 name="projectOutcomes"
                 placeholder="Project Outcomes"
                 type="text"
-                value=""
+                value="r"
               />
             </div>
           </div>
@@ -1210,7 +1223,7 @@ Object {
               name="coverImageUrl"
               placeholder="Cover Image URL"
               type="text"
-              value=""
+              value="r"
             />
           </div>
           <div>
@@ -1260,6 +1273,7 @@ Object {
               <div>
                 <button
                   class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  type="submit"
                 >
                   Create New ANDi
                 </button>
@@ -1313,6 +1327,7 @@ Object {
               <div>
                 <button
                   class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+                  type="submit"
                 >
                   Create New Tech Stack
                 </button>
@@ -1322,6 +1337,7 @@ Object {
           <div>
             <button
               class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+              type="submit"
             >
               CREATE
             </button>

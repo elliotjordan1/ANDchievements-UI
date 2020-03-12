@@ -39,6 +39,7 @@ Object {
         <div>
           <button
             class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+            type="submit"
           >
             Create New Tech Stack
           </button>
@@ -84,6 +85,7 @@ Object {
       <div>
         <button
           class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+          type="submit"
         >
           Create New Tech Stack
         </button>
@@ -183,6 +185,7 @@ Object {
         <div>
           <button
             class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+            type="submit"
           >
             Create New Client
           </button>
@@ -228,6 +231,7 @@ Object {
       <div>
         <button
           class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+          type="submit"
         >
           Create New Client
         </button>
@@ -327,6 +331,7 @@ Object {
         <div>
           <button
             class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+            type="submit"
           >
             Create New ANDi
           </button>
@@ -372,6 +377,7 @@ Object {
       <div>
         <button
           class="SubmitButton__Button-sc-12s6sqe-0 bZVpPP"
+          type="submit"
         >
           Create New ANDi
         </button>
