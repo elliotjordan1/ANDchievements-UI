@@ -261,14 +261,6 @@ Object {
               >
                 Tech Stacks
               </div>
-              <input
-                class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-                maxlength="40"
-                name="techStackNames"
-                placeholder="Select Tech Stack"
-                type="text"
-                value=""
-              />
             </div>
             <div
               hidden=""
@@ -588,14 +580,6 @@ Object {
             >
               Tech Stacks
             </div>
-            <input
-              class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
-              maxlength="40"
-              name="techStackNames"
-              placeholder="Select Tech Stack"
-              type="text"
-              value=""
-            />
           </div>
           <div
             hidden=""
