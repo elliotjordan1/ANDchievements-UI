@@ -18,8 +18,8 @@ const MultiSelect = ({ placeholder, optionList, onChange, onSelect, selectedValu
         <MultiSelectWrapper> 
             <InputWrapper>
                 {selectedValues && selectedValues.map((val) => (
-                    <SelectedOption key ={val.andiId}>
-                            {val.andiName}
+                    <SelectedOption key ={val.id}>
+                            {val.name}
                         <RemovalButton buttonType="submit" onClick={() => onRemove(val)} labelText = "x" />
                     </SelectedOption>
                 ))}

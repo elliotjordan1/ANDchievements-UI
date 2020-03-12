@@ -1,6 +1,6 @@
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter';
-import { getAllAndis } from '.';
+import getAllAndis from '.';
 
 const andiList = [
     {
@@ -37,7 +37,7 @@ const expectedResult = [
 
 let Mock;
 
-describe('clientDropdownFormatter', () => {
+describe('andiDropdownFormatter', () => {
   beforeEach(() => {
     Mock = new MockAdapter(axios);
   });

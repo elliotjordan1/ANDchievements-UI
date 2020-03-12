@@ -1,7 +1,6 @@
-/* eslint-disable import/prefer-default-export */
 import { getAndis } from '../../../api/handlers/attributeRetrieval';
 
-export const getAllAndis = async () => {
+export default async () => {
   const response = await getAndis();
 
   if (response.status !== 200)
