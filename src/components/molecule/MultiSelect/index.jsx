@@ -2,15 +2,18 @@ import { throttle } from 'lodash'
 import React , {useState} from 'react';
 import PropTypes from 'prop-types';
 import { 
+  InputWrapper, 
+  FormInput 
+} from '../../atom';
+
+import {
   MultiSelectWrapper, 
   MultiSelectOptions as Option, 
   MultiSelectOptionsWrapper as OptionsWrapper, 
-  InputWrapper, 
   SelectedOption, 
   RemovalButton, 
-  AddButton , 
-  FormInput 
-} from '../../atom';
+  AddButton, 
+} from '../../atom/MutliSelect';
 
 const MultiSelect = ({ placeholder, optionList }) => {
 

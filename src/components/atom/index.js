@@ -19,15 +19,6 @@ import ListDescription from './ListDescription';
 import TechListContainer from './TechListContainer';
 import ANDiListContainer from './ANDiListContainer';
 
-import { 
-  AddButton, 
-  MultiSelectWrapper,
-  MultiSelectOptions,
-  MultiSelectOptionsWrapper,
-  RemovalButton,
-  SelectedOption 
-} from './MutliSelect';
-
 export {
   FormInput,
   FormLabel,
@@ -41,12 +32,6 @@ export {
   FooterText,
   FooterDiv,
   FormWrapper,
-  AddButton, 
-  MultiSelectWrapper,
-  MultiSelectOptions,
-  MultiSelectOptionsWrapper,
-  RemovalButton,
-  SelectedOption,
   InputWrapper,
   FormSelect,
   VerticalListItem,
