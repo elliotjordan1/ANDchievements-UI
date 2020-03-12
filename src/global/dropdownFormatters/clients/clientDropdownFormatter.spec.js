@@ -1,7 +1,6 @@
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
 import { getClients } from '.';
-import makeGetRequest from '../../../api/requests/getRequest';
-
-jest.mock('../../../api/requests/getRequest');
 
 const clientList = [
   {
@@ -33,27 +32,29 @@ const expectedResult = [
   }
 ]
 
+let Mock;
+
 describe('clientDropdownFormatter', () => {
+  beforeEach(() => {
+    Mock = new MockAdapter(axios);
+  });
   it('returns correct format for successful response', async () => {
-    const mockResponse = {
-      status: 200, 
-      data : { clients: clientList }
-    };
-
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
-
+    Mock.onGet().reply(200, { clients: clientList });
     const actualResult = await getClients();
 
     return expect(actualResult).toEqual(expectedResult);
   });
 
-  it('returns correct format for failed response', async () => {
-    const mockResponse = {
-      status: 404, 
-      data : { clients: clientList }
-    };
+  it('returns correct format for failed network response', async () => {
+    Mock.onGet().networkError();
 
-    makeGetRequest.mockReturnValueOnce(Promise.resolve(mockResponse));
+    const actualResult = await getClients();
+
+    return expect(actualResult).toEqual([]);
+  });
+
+  it('returns correct format for failed network response', async () => {
+    Mock.onGet().reply(404, {});
 
     const actualResult = await getClients();
 

@@ -17,6 +17,7 @@ import * as AttributeTypes from '../../../global/constants';
 import { getClients } from '../../../global/dropdownFormatters';
 import { InputContainer } from './styles';
 import AttributeForm from '../AttributeForm';
+import { getAllAndis } from '../../../global/dropdownFormatters/andis';
 
 export const formValidator = (values) => {
   const errors = {};
@@ -45,18 +46,21 @@ export const formValidator = (values) => {
 
 const ProjectForm = () => { 
   const [clientOptions, setClientOptions] = useState(undefined);
+  const [andiOptions, setAndiOptions] = useState(undefined);
   const [addingTechStack, setAddingTechStack] = useState(false);
   const [addingANDi, setAddingANDi] = useState(false);
   const [addingClient, setAddingClient] = useState(false);
 
   useEffect(() => {
-    const getAllClients = (async () => {
+    const getAllAttributes = (async () => {
       const formattedClients = await getClients();
+      const formattedANDis = await getAllAndis();
 
       setClientOptions(formattedClients);
+      setAndiOptions(formattedANDis);
     })
     if (clientOptions === undefined) {
-      getAllClients();
+      getAllAttributes();
     }
   });
 
@@ -74,8 +78,7 @@ const ProjectForm = () => {
     techStackNames: []
   };
 
-  const submitForm = (values, { setSubmitting}) => {
-    setSubmitting(true);
+  const submitForm = (values, { setSubmitting }) => {
     console.log(values, setSubmitting);
   }
 
@@ -93,7 +96,8 @@ const ProjectForm = () => {
           handleChange,
           handleBlur,
           handleSubmit,
-          isSubmitting
+          isSubmitting,
+          setFieldValue
         }) => (
           <>
             <FormWrapper onSubmit={handleSubmit}>
@@ -114,7 +118,16 @@ const ProjectForm = () => {
                   </div>
                   <div>
                     <Label onClick={() => {setAddingClient(!addingClient)}} labelText = "Client" />
-                    <FormSelect placeholder='Select client' maxLength = {40} options = {clientOptions}/>
+                    <FormSelect 
+                      placeholder='Select client' 
+                      maxLength = {40} 
+                      options = {clientOptions} 
+                      onChange={(e) => {
+                        setFieldValue('clientId', e.value);
+                        setFieldValue('clientName', e.label);             
+                      }}
+                      onBlur={handleBlur}
+                    />
                   </div>
                   <div hidden={!addingClient}>
                     <h3>Add New</h3>
@@ -175,7 +188,10 @@ const ProjectForm = () => {
                   </div>
                   <div>
                     <Label onClick={() => {setAddingANDi(!addingANDi)}} labelText = "ANDis" />
-                    <MultiSelect placeholder='Select ANDis...' optionList = {[]} />
+                    <MultiSelect 
+                      placeholder='Select ANDis...' 
+                      optionList = {andiOptions} 
+                    />
                   </div>
                   <div hidden={!addingANDi}>
                     <h3>Add New</h3>
@@ -199,7 +215,7 @@ const ProjectForm = () => {
                     <AttributeForm formType = {AttributeTypes.TechStack} />
                   </div>
                   <div>
-                    <SubmitButton text="CREATE" disabled={isSubmitting}/>
+                    <SubmitButton type="submit" text="CREATE" disabled={isSubmitting}/>
                   </div>
                 </FormBody>
               </FormWrapper>
