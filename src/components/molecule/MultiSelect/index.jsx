@@ -18,7 +18,7 @@ const MultiSelect = ({ placeholder, optionList, onChange, onSelect, selectedValu
         <MultiSelectWrapper> 
             <InputWrapper>
                 {selectedValues.map((val) => (
-                    <SelectedOption>
+                    <SelectedOption key ={val.andiId}>
                             {val.andiName}
                         <RemovalButton buttonType="submit" onClick={() => onRemove(val)} labelText = "x" />
                     </SelectedOption>
@@ -48,7 +48,7 @@ MultiSelect.propTypes = {
   value: PropTypes.string.isRequired,
   visible: PropTypes.bool.isRequired,
   onSelect: PropTypes.func.isRequired,
-  selectedValues: PropTypes.arrayOf(PropTypes.string).isRequired,
+  selectedValues: PropTypes.arrayOf(PropTypes.object).isRequired,
   onRemove: PropTypes.func.isRequired
 }
 
