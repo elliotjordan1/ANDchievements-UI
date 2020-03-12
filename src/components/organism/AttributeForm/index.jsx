@@ -5,19 +5,17 @@ import { useToasts } from 'react-toast-notifications';
 import formReducer, { initialFormState } from '../../../reducers/createProject/reducer';
 import { onInputChange } from '../../../global/helpers';
 import { FormLabel, SubmitButton, FormWrapper, FormInput } from '../../atom';
-import ANDiCreator from '../../../api/handlers/attributeCreation/andi';
-import TechStackCreator from '../../../api/handlers/attributeCreation/techStack';
-import ClientCreator from '../../../api/handlers/attributeCreation/client';
+import { createAndi as ANDiCreator, createTechStack as TechStackCreator, createClient as ClientCreator } from '../../../api/handlers/attributeCreation';
 
 const AttributeForm = ({
   formType
 }) => {
-  const { addToast, removeAllToasts } = useToasts();  
+  const { addToast } = useToasts();  
 
   const [imageUrl, setImageUrl] = useState('');
   const [name, setName] = useState('');
 
-  const [state, dispatch] = useReducer(formReducer, initialFormState);
+  const [, dispatch] = useReducer(formReducer, initialFormState);
 
   const creationStrategies = [
     new ANDiCreator(),
@@ -46,10 +44,6 @@ const AttributeForm = ({
         }
       }      
     });
-
-    setTimeout(() => {
-      removeAllToasts();
-    }, 3000);    
   };
 
   const nameLabel = `${formType  } Name`;

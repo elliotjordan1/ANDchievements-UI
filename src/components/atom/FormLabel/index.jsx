@@ -25,7 +25,7 @@ FormLabel.propTypes = {
 };
 
 FormLabel.defaultProps = {
-  onClick: () => {}
+  onClick: undefined
 }
 
 export default FormLabel;

@@ -6,23 +6,23 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styles__Background-vxuy5a-0 bnjYss"
+        class="Background-sc-1ewufq5-0 bfvyFR"
       >
         <div
-          class="styles__ModalWrapper-vxuy5a-1 ewzIzR"
+          class="Wrapper-p9h97m-0 bPAkAJ"
         >
           <div
-            class="styles__Image-vxuy5a-2 emKhIj"
+            class="Image-xlz8tp-0 ecsWuJ"
           >
             <div
-              class="styles__LogoWrapper-vxuy5a-3 fCtdxj"
+              class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
             />
           </div>
           <div
-            class="styles__ProjectBody-vxuy5a-5 iFRyfQ"
+            class="Body-sc-1czt10-0 ffSvnW"
           >
             <div
-              class="styles__HeadingText-vxuy5a-4 jKqfiz"
+              class="HeadingText-sc-1dj0z06-0 hjLPZx"
             >
               <em>
                 Big Boss
@@ -31,12 +31,10 @@ Object {
               Best Project
             </div>
             <div
-              class="styles__BodyText-vxuy5a-6 dGLVIX"
-            >
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.
-            </div>
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            />
             <div
-              class="styles__BodyText-vxuy5a-6 dGLVIX"
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
             >
               <b>
                 ANDis
@@ -45,50 +43,358 @@ Object {
               <br />
             </div>
             <div
-              class="styles__StackedList-vxuy5a-7 eQleti"
+              class="ANDiListContainer-lpzxya-0 cVKKmb"
+            />
+            <ul
+              class="TechListContainer-sc-13ng48o-0 dCgVNF"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Background-sc-1ewufq5-0 bfvyFR"
+    >
+      <div
+        class="Wrapper-p9h97m-0 bPAkAJ"
+      >
+        <div
+          class="Image-xlz8tp-0 ecsWuJ"
+        >
+          <div
+            class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
+          />
+        </div>
+        <div
+          class="Body-sc-1czt10-0 ffSvnW"
+        >
+          <div
+            class="HeadingText-sc-1dj0z06-0 hjLPZx"
+          >
+            <em>
+              Big Boss
+            </em>
+            <br />
+            Best Project
+          </div>
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          />
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          >
+            <b>
+              ANDis
+            </b>
+             
+            <br />
+          </div>
+          <div
+            class="ANDiListContainer-lpzxya-0 cVKKmb"
+          />
+          <ul
+            class="TechListContainer-sc-13ng48o-0 dCgVNF"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Header component successfully generates andiListComponent 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="Background-sc-1ewufq5-0 bfvyFR"
+      >
+        <div
+          class="Wrapper-p9h97m-0 bPAkAJ"
+        >
+          <div
+            class="Image-xlz8tp-0 ecsWuJ"
+          >
+            <div
+              class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
+            />
+          </div>
+          <div
+            class="Body-sc-1czt10-0 ffSvnW"
+          >
+            <div
+              class="HeadingText-sc-1dj0z06-0 hjLPZx"
+            >
+              <em>
+                Big Boss
+              </em>
+              <br />
+              Best Project
+            </div>
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            />
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            >
+              <b>
+                ANDis
+              </b>
+               
+              <br />
+            </div>
+            <div
+              class="ANDiListContainer-lpzxya-0 cVKKmb"
             >
               <div
-                class="styles__ListItem-vxuy5a-9 iHlhZa"
+                class="VerticalListItem-sc-1q5r9eq-0 esOjNi"
               >
                 <div
-                  class="styles__Icon-vxuy5a-12 hHbhhf"
+                  class="Icon-e1hn6e-0 irdoQp"
                 />
                 <div
-                  class="styles__ListDescription-vxuy5a-11 hdGJAi"
+                  class="ListDescription-sc-1tshlis-0 linVKL"
                 >
-                  Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
-                  <em />
-                </div>
-              </div>
-              <div
-                class="styles__ListItem-vxuy5a-9 iHlhZa"
-              >
-                <div
-                  class="styles__Icon-vxuy5a-12 hHbhhf"
-                />
-                <div
-                  class="styles__ListDescription-vxuy5a-11 hdGJAi"
-                >
-                  Damiola Olufemi
-                  <em />
+                  andi
+                  <em>
+                    PD
+                  </em>
                 </div>
               </div>
             </div>
             <ul
-              class="styles__TechList-vxuy5a-8 iqmnvP"
+              class="TechListContainer-sc-13ng48o-0 dCgVNF"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Background-sc-1ewufq5-0 bfvyFR"
+    >
+      <div
+        class="Wrapper-p9h97m-0 bPAkAJ"
+      >
+        <div
+          class="Image-xlz8tp-0 ecsWuJ"
+        >
+          <div
+            class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
+          />
+        </div>
+        <div
+          class="Body-sc-1czt10-0 ffSvnW"
+        >
+          <div
+            class="HeadingText-sc-1dj0z06-0 hjLPZx"
+          >
+            <em>
+              Big Boss
+            </em>
+            <br />
+            Best Project
+          </div>
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          />
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          >
+            <b>
+              ANDis
+            </b>
+             
+            <br />
+          </div>
+          <div
+            class="ANDiListContainer-lpzxya-0 cVKKmb"
+          >
+            <div
+              class="VerticalListItem-sc-1q5r9eq-0 esOjNi"
+            >
+              <div
+                class="Icon-e1hn6e-0 irdoQp"
+              />
+              <div
+                class="ListDescription-sc-1tshlis-0 linVKL"
+              >
+                andi
+                <em>
+                  PD
+                </em>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="TechListContainer-sc-13ng48o-0 dCgVNF"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Header component successfully generates techistComponent 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="Background-sc-1ewufq5-0 bfvyFR"
+      >
+        <div
+          class="Wrapper-p9h97m-0 bPAkAJ"
+        >
+          <div
+            class="Image-xlz8tp-0 ecsWuJ"
+          >
+            <div
+              class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
+            />
+          </div>
+          <div
+            class="Body-sc-1czt10-0 ffSvnW"
+          >
+            <div
+              class="HeadingText-sc-1dj0z06-0 hjLPZx"
+            >
+              <em>
+                Big Boss
+              </em>
+              <br />
+              Best Project
+            </div>
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            />
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            >
+              <b>
+                ANDis
+              </b>
+               
+              <br />
+            </div>
+            <div
+              class="ANDiListContainer-lpzxya-0 cVKKmb"
+            />
+            <ul
+              class="TechListContainer-sc-13ng48o-0 dCgVNF"
             >
               <li
-                class="styles__TechListItem-vxuy5a-10 ksjrzC"
+                class="HorizontalListItem-gs65dq-0 hYNJnh"
               >
                 <div
-                  class="styles__Icon-vxuy5a-12 hHbhhf"
-                />
-              </li>
-              <li
-                class="styles__TechListItem-vxuy5a-10 ksjrzC"
-              >
-                <div
-                  class="styles__Icon-vxuy5a-12 hHbhhf"
+                  class="Icon-e1hn6e-0 irdoQp"
                 />
               </li>
             </ul>
@@ -99,23 +405,23 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styles__Background-vxuy5a-0 bnjYss"
+      class="Background-sc-1ewufq5-0 bfvyFR"
     >
       <div
-        class="styles__ModalWrapper-vxuy5a-1 ewzIzR"
+        class="Wrapper-p9h97m-0 bPAkAJ"
       >
         <div
-          class="styles__Image-vxuy5a-2 emKhIj"
+          class="Image-xlz8tp-0 ecsWuJ"
         >
           <div
-            class="styles__LogoWrapper-vxuy5a-3 fCtdxj"
+            class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
           />
         </div>
         <div
-          class="styles__ProjectBody-vxuy5a-5 iFRyfQ"
+          class="Body-sc-1czt10-0 ffSvnW"
         >
           <div
-            class="styles__HeadingText-vxuy5a-4 jKqfiz"
+            class="HeadingText-sc-1dj0z06-0 hjLPZx"
           >
             <em>
               Big Boss
@@ -124,12 +430,10 @@ Object {
             Best Project
           </div>
           <div
-            class="styles__BodyText-vxuy5a-6 dGLVIX"
-          >
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32.
-          </div>
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          />
           <div
-            class="styles__BodyText-vxuy5a-6 dGLVIX"
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
           >
             <b>
               ANDis
@@ -138,53 +442,194 @@ Object {
             <br />
           </div>
           <div
-            class="styles__StackedList-vxuy5a-7 eQleti"
-          >
-            <div
-              class="styles__ListItem-vxuy5a-9 iHlhZa"
-            >
-              <div
-                class="styles__Icon-vxuy5a-12 hHbhhf"
-              />
-              <div
-                class="styles__ListDescription-vxuy5a-11 hdGJAi"
-              >
-                Elliot Joe Jordan Jordan Joe Jordan Jordan Jordan
-                <em />
-              </div>
-            </div>
-            <div
-              class="styles__ListItem-vxuy5a-9 iHlhZa"
-            >
-              <div
-                class="styles__Icon-vxuy5a-12 hHbhhf"
-              />
-              <div
-                class="styles__ListDescription-vxuy5a-11 hdGJAi"
-              >
-                Damiola Olufemi
-                <em />
-              </div>
-            </div>
-          </div>
+            class="ANDiListContainer-lpzxya-0 cVKKmb"
+          />
           <ul
-            class="styles__TechList-vxuy5a-8 iqmnvP"
+            class="TechListContainer-sc-13ng48o-0 dCgVNF"
           >
             <li
-              class="styles__TechListItem-vxuy5a-10 ksjrzC"
+              class="HorizontalListItem-gs65dq-0 hYNJnh"
             >
               <div
-                class="styles__Icon-vxuy5a-12 hHbhhf"
-              />
-            </li>
-            <li
-              class="styles__TechListItem-vxuy5a-10 ksjrzC"
-            >
-              <div
-                class="styles__Icon-vxuy5a-12 hHbhhf"
+                class="Icon-e1hn6e-0 irdoQp"
               />
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Header component successfully generates with blurb two and blurb three 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="Background-sc-1ewufq5-0 bfvyFR"
+      >
+        <div
+          class="Wrapper-p9h97m-0 bPAkAJ"
+        >
+          <div
+            class="Image-xlz8tp-0 ecsWuJ"
+          >
+            <div
+              class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
+            />
+          </div>
+          <div
+            class="Body-sc-1czt10-0 ffSvnW"
+          >
+            <div
+              class="HeadingText-sc-1dj0z06-0 hjLPZx"
+            >
+              <em>
+                Big Boss
+              </em>
+              <br />
+              Best Project
+            </div>
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            />
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            >
+              I am blurb two
+            </div>
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            >
+              I am blurb three
+            </div>
+            <div
+              class="BodyText-sc-1ge0nwk-0 cWFuAN"
+            >
+              <b>
+                ANDis
+              </b>
+               
+              <br />
+            </div>
+            <div
+              class="ANDiListContainer-lpzxya-0 cVKKmb"
+            />
+            <ul
+              class="TechListContainer-sc-13ng48o-0 dCgVNF"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="Background-sc-1ewufq5-0 bfvyFR"
+    >
+      <div
+        class="Wrapper-p9h97m-0 bPAkAJ"
+      >
+        <div
+          class="Image-xlz8tp-0 ecsWuJ"
+        >
+          <div
+            class="LogoWrapper-sc-1h2wcmv-0 iuBAvG"
+          />
+        </div>
+        <div
+          class="Body-sc-1czt10-0 ffSvnW"
+        >
+          <div
+            class="HeadingText-sc-1dj0z06-0 hjLPZx"
+          >
+            <em>
+              Big Boss
+            </em>
+            <br />
+            Best Project
+          </div>
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          />
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          >
+            I am blurb two
+          </div>
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          >
+            I am blurb three
+          </div>
+          <div
+            class="BodyText-sc-1ge0nwk-0 cWFuAN"
+          >
+            <b>
+              ANDis
+            </b>
+             
+            <br />
+          </div>
+          <div
+            class="ANDiListContainer-lpzxya-0 cVKKmb"
+          />
+          <ul
+            class="TechListContainer-sc-13ng48o-0 dCgVNF"
+          />
         </div>
       </div>
     </div>

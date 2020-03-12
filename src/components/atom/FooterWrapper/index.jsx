@@ -1,9 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import theme from '../../../global/theme';
 
-const Wrapper = styled.div`
+export default styled.div`
   display: flex;
   -webkit-align-items: center;
   justify-content: center;
@@ -21,13 +19,3 @@ const Wrapper = styled.div`
     height: 65px;
   };
 `;
-
-const FooterWrapper = ({
-  children
-}) => <Wrapper>{children}</Wrapper>
-
-FooterWrapper.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.any).isRequired
-}
-
-export default FooterWrapper;

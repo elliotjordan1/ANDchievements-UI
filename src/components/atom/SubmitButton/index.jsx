@@ -48,7 +48,7 @@ SubmitButton.propTypes = {
 };
 
 SubmitButton.defaultProps = {
-  onClick: () => {}
+  onClick: undefined
 };
 
 export default SubmitButton;

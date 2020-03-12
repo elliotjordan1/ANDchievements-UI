@@ -1,14 +1,73 @@
 import axios from 'axios';
-import makePostRequest from './postRequest';
+import MockAdapter from 'axios-mock-adapter';
+import makePostRequest from '.';
 
-jest.mock('axios');
+describe('makePostRequest tests', () => {
+  it('returns expected data on successful request', async () => {
+    const expectedResult = [{
+      projectId: 1,
+      projectName: 'Test Project'
+    }];
 
-describe('makeGetRequest', () => {
-  it('returns data on 200', async () => {
-    const content = {andiId: 'abcTest'};
-    axios.mockResolvedValue({status: 200, new_andi: content});
+    const newProject = [
+      {
+        projectId: 1,
+        projectName: 'Test Project'
+      }
+    ];
 
-    return makePostRequest('/andis/create', content).then(res => {expect(res.new_andi).toEqual(content); expect(res.status).toEqual(200)});
+    const Mock = new MockAdapter(axios);
+
+    Mock.onPost().reply(201, { new_project: newProject });
+
+    const actualResult = await makePostRequest('/projects/create', {});
+
+    expect(actualResult.data.new_project).toEqual(expectedResult);
+  });  
+  it('returns expected data on failed network request', async () => {
+    const expectedResult = {
+      status: 500,
+      statusText: 'Unable to connect to server'
+    };
+
+    const Mock = new MockAdapter(axios);
+
+    Mock.onPost().networkError();
+
+    const actualResult = await makePostRequest('/projects/create', {});
+
+    expect(actualResult).toEqual(expectedResult);
+  });  
+  it('returns correct response for failed request', async () => {
+    const expectedResult = {
+      status: 404,
+      statusText: 'Unable to connect to server'
+    };
+    
+    const Mock = new MockAdapter(axios)
+
+    Mock.onPost().reply(404, {});
+
+    const actualResult = await makePostRequest('/projects/create', {});
+
+    expect(actualResult.status).toEqual(expectedResult.status);
   });
-  
+  it('sets x-api-key header to a value on request', async () => {
+    const Mock = new MockAdapter(axios);
+
+    Mock.onPost().reply(201, {});
+
+    const actualResult = await makePostRequest('/projects/create', {});
+
+    expect(actualResult.config.headers['x-api-key']).toBeDefined();
+  });  
+  it('sets content type header to application/json', async () => {
+    const Mock = new MockAdapter(axios);
+
+    Mock.onPost().reply(201, {});
+
+    const actualResult = await makePostRequest('/projects/create', {});
+
+    expect(actualResult.config.headers['Content-Type']).toBe('application/json');
+  });  
 });

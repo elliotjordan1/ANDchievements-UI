@@ -16,7 +16,7 @@ const FormModal = ({ title, form, close }) => {
       <ModalBody >
         <FormTitle>
           {title} 
-          <CloseIcon onClick={() => {close()}}> 
+          <CloseIcon onClick={() => {close()}} data-testid="close-icon-test"> 
             <Icon />
           </CloseIcon>
         </FormTitle>

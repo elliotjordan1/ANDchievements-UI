@@ -1,30 +1,52 @@
 import axios from 'axios';
-import makeGetRequest from './getRequest';
+import MockAdapter from 'axios-mock-adapter';
+import makeGetRequest from '.';
 
-jest.mock('axios');
+let Mock;
 
-describe('makeGetRequest', () => {
-  it('returns data on 200', () => {
-    const projects = [{name: 'project 1'}, {name: 'project 2'}];
-    axios.get.mockResolvedValue({status: 200, data: projects});
+describe('getRequest', () => {
+  beforeEach(() => {
+    Mock = new MockAdapter(axios);
+  })
+  it('returns correct response for successful request', async () => {
+    const mockResponseData = {
+      some_data_id: 1,
+      some_data_desc: 'Joules'
+    };
 
-    return makeGetRequest('/get/projects').then(res => expect(res.data).toEqual(projects));
+    const expectedResult = {
+      some_data_id: 1,
+      some_data_desc: 'Joules'
+    }
+
+    Mock.onGet().reply(200, mockResponseData);
+
+    const actualResult = await makeGetRequest('/projects/get');
+
+    expect(actualResult.data).toEqual(expectedResult);
   });
+  it('returns correct response for failed network request', async () => {
+    const expectedResult = {
+      status: 500,
+      statusText: 'Unable to connect to server'
+    };
+    
+    Mock.onGet().networkError();
 
-  it('throws 500 error ', () => {
-    const expectedResponse = {status: 500,statusText: 'Unable to connect to server'}
+    const actualResult = await makeGetRequest('/projects/get');
 
-    axios.get.mockRejectedValue({error: 'network error'});
-
-    return makeGetRequest('/get/projects').then(res => expect(res).toEqual(expectedResponse));
+    expect(actualResult).toEqual(expectedResult);
   });
+  it('returns correct response for failed request', async () => {
+    const expectedResult = {
+      status: 404,
+      statusText: 'Unable to connect to server'
+    };
+    
+    Mock.onGet().reply(404, {});
 
-  it('throws 401 error for bad request', () => {
-    const expectedResponse = {status: 401, statusText: 'Unauthorized'}
+    const actualResult = await makeGetRequest('/projects/get');
 
-    axios.get.mockRejectedValue({response: {status: 401, statusText: 'Unauthorized'}});
-
-    return makeGetRequest('/get/projects').then(res => expect(res).toEqual(expectedResponse));
+    expect(actualResult.status).toEqual(expectedResult.status);
   });
-  
-});
+})

@@ -31,7 +31,7 @@ AddButton.propTypes = {
 }
 
 AddButton.defaultProps = {
-  onClick: () => {}
+  onClick: undefined
 }
 
 export default AddButton;

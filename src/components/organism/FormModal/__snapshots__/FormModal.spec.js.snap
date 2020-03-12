@@ -17,6 +17,7 @@ Object {
             Test Form Title
             <a
               class="styles__CloseIcon-xo8fd7-3 bItPHH"
+              data-testid="close-icon-test"
             >
               <svg
                 fill="none"
@@ -50,6 +51,7 @@ Object {
           Test Form Title
           <a
             class="styles__CloseIcon-xo8fd7-3 bItPHH"
+            data-testid="close-icon-test"
           >
             <svg
               fill="none"

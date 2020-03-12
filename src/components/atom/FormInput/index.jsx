@@ -40,7 +40,7 @@ FormInput.propTypes = {
 
 FormInput.defaultProps = {
   value: '',
-  onChange: () => {}
+  onChange: undefined
 }
 
 export default FormInput;
