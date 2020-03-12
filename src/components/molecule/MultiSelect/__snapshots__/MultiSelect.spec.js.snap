@@ -19,9 +19,6 @@ Object {
             value=""
           />
         </div>
-        <div
-          class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-        />
       </div>
     </div>
   </body>,
@@ -40,9 +37,6 @@ Object {
           value=""
         />
       </div>
-      <div
-        class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-      />
     </div>
   </div>,
   "debug": [Function],
@@ -120,7 +114,17 @@ Object {
         </div>
         <div
           class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-        />
+        >
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+        </div>
       </div>
     </div>
   </body>,
@@ -141,7 +145,17 @@ Object {
       </div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-      />
+      >
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -218,9 +232,6 @@ Object {
             value=""
           />
         </div>
-        <div
-          class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-        />
       </div>
     </div>
   </body>,
@@ -240,9 +251,6 @@ Object {
           value=""
         />
       </div>
-      <div
-        class="OptionsWrapper__Wrapper-bx0bji-0 JDVkX"
-      />
     </div>
   </div>,
   "debug": [Function],
@@ -321,7 +329,17 @@ Object {
         </div>
         <div
           class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-        />
+        >
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+          <div
+            class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+          />
+        </div>
       </div>
     </div>
   </body>,
@@ -343,7 +361,17 @@ Object {
       </div>
       <div
         class="OptionsWrapper__Wrapper-bx0bji-0 hqmxNK"
-      />
+      >
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+        <div
+          class="MutliSelectOptions__Options-sc-19b20qi-0 cMRzfs"
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -399,3 +427,7 @@ Object {
   "unmount": [Function],
 }
 `;
+
+exports[`TechListItem component renders correctly with selected options and adds option successfully 1`] = `undefined`;
+
+exports[`TechListItem component renders correctly with selected options and removes option successfully 1`] = `undefined`;
