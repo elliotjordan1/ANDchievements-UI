@@ -58,6 +58,11 @@ export const filterLists = (listOne, listTwo, filterValue) => {
           .filter(x => !listTwo.map(pa => pa.id).includes(x.value));
 }
 
+export const addNewClient = (newClient, { setFieldValue }) => {
+  setFieldValue('clientId', newClient.new_client[0].clientid);
+  setFieldValue('clientName', newClient.new_client[0].name);
+}
+
 export const submitForm = async (values, { setSubmitting, addToast }) => {
   setSubmitting(true);
   const formattedValues = ProjectPostFormatter(values);
@@ -111,8 +116,8 @@ const ProjectForm = ({ defaultValues }) => {
 
   const formInitialValues = {
     projectTitle: '',
-    clientId: `${defaultValues.clientId}`,
-    clientName: '',
+    clientId: defaultValues.clientId,
+    clientName: defaultValues.clientName,
     clientDescription: '',
     projectDescription: '',
     projectOutcomes: '',
@@ -210,20 +215,14 @@ const ProjectForm = ({ defaultValues }) => {
                           maxLength = {40} 
                           data-testid='select-client-test'
                           options = {clientOptions} 
-                          onChange={(e) => {
-                            setFieldValue('clientId', e.value);
-                            setFieldValue('clientName', e.label);             
-                          }}
+                          onChange={(e) => addNewClient(e, { setFieldValue })}
                           onBlur={handleBlur}>
                           {values.clientName}
                         </FormSelect>
                       </div>
                       <div hidden={!addingClient}>
                         <h3>Add New</h3>
-                        <AttributeForm formType = {AttributeTypes.Client} onAdd={newClient => {
-                          setFieldValue('clientId', newClient.new_client[0].clientid);
-                          setFieldValue('clientName', newClient.new_client[0].name);
-                        }} />
+                        <AttributeForm formType = {AttributeTypes.Client} onAdd={(e) => addNewClient(e, { setFieldValue })} />
                       </div>
                       <div>
                         <Label labelText = "Project Description" />
@@ -355,6 +354,7 @@ ProjectForm.propTypes = {
 ProjectForm.defaultProps = {
   defaultValues: {
     clientId: '',
+    clientName: '',
     projectAndis: [],
     projectTech: []
   }

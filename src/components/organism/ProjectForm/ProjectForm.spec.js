@@ -4,7 +4,7 @@ import { ToastProvider } from 'react-toast-notifications';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { act } from 'react-dom/test-utils';
-import ProjectForm, { formValidator, filterLists, submitForm } from '.';
+import ProjectForm, { formValidator, filterLists, submitForm, addNewClient } from '.';
 
 // eslint-disable-next-line no-unused-vars
 let Mock;
@@ -52,9 +52,9 @@ const clientList = [
   },
 ];
 
-const BaseComponent = (props) => (
+const BaseComponent = () => (
   <ToastProvider>
-    <ProjectForm {...props} >
+    <ProjectForm>
       <div>I am a form!</div>
     </ProjectForm>
   </ToastProvider>
@@ -137,11 +137,16 @@ describe('ProjectForm component', () => {
       });
 
       const { getByPlaceholderText, getByText } = await render(
-        <BaseComponent defaultValues = {{
-          clientId: '1',
-          projectAndis: ['2'],
-          projectTech: ['3']
-        }}/>
+        <ToastProvider>
+          <ProjectForm defaultValues = {{
+                        clientId: '1',
+                        clientName: 'AND',
+                        projectAndis: [ { id : '1', name: 'Jerry' }],
+                        projectTech: [{ id: '2', name: 'ReactJS'}]
+                      }} >
+            <div>I am a form!</div>
+          </ProjectForm>
+        </ToastProvider>
       );
 
       const projectTitle = getByPlaceholderText('Project title');
@@ -169,6 +174,24 @@ describe('ProjectForm component', () => {
     });
   });
 });
+
+describe('addNewClient', () => {
+  it('successfully calls setFieldValue on function call', () => {
+    const setFieldValue = jest.fn();
+
+    expect(setFieldValue).toHaveBeenCalledTimes(0);
+
+    addNewClient({ 
+      new_client: [ 
+      {
+        clientid: 1,
+        name: 'test'
+      }
+    ]},{ setFieldValue })
+
+    expect(setFieldValue).toHaveBeenCalledTimes(2);
+  })
+})
 
 describe('onSubmit', () => {
   beforeEach(() => {
