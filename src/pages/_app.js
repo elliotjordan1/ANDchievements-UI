@@ -2,17 +2,20 @@ import './styles.css';
 import PropTypes from 'prop-types';
 import 'typeface-roboto';
 import React from 'react';
+import { ToastProvider } from 'react-toast-notifications';
 import { Footer, Header } from '../components/molecule';
 import AppWrapper from './styles';
 import 'babel-polyfill';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <AppWrapper>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
-    </ AppWrapper>
+    <ToastProvider>
+      <AppWrapper>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </ AppWrapper>
+    </ToastProvider>
   );
 };
 

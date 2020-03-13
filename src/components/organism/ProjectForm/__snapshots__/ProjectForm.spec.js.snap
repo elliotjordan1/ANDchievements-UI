@@ -31,7 +31,7 @@ Object {
                 name="projectTitle"
                 placeholder="Project title"
                 type="text"
-                value="r"
+                value=""
               />
             </div>
             <div>
@@ -168,7 +168,7 @@ Object {
                   name="clientDescription"
                   placeholder="Client Description"
                   type="text"
-                  value="r"
+                  value=""
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -176,7 +176,7 @@ Object {
                   name="projectDescription"
                   placeholder="Project Description"
                   type="text"
-                  value="r"
+                  value=""
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -184,7 +184,7 @@ Object {
                   name="projectOutcomes"
                   placeholder="Project Outcomes"
                   type="text"
-                  value="r"
+                  value=""
                 />
               </div>
             </div>
@@ -200,7 +200,7 @@ Object {
                 name="coverImageUrl"
                 placeholder="Cover Image URL"
                 type="text"
-                value="r"
+                value=""
               />
             </div>
             <div>
@@ -354,7 +354,7 @@ Object {
               name="projectTitle"
               placeholder="Project title"
               type="text"
-              value="r"
+              value=""
             />
           </div>
           <div>
@@ -491,7 +491,7 @@ Object {
                 name="clientDescription"
                 placeholder="Client Description"
                 type="text"
-                value="r"
+                value=""
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -499,7 +499,7 @@ Object {
                 name="projectDescription"
                 placeholder="Project Description"
                 type="text"
-                value="r"
+                value=""
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -507,7 +507,7 @@ Object {
                 name="projectOutcomes"
                 placeholder="Project Outcomes"
                 type="text"
-                value="r"
+                value=""
               />
             </div>
           </div>
@@ -523,7 +523,7 @@ Object {
               name="coverImageUrl"
               placeholder="Cover Image URL"
               type="text"
-              value="r"
+              value=""
             />
           </div>
           <div>
@@ -731,7 +731,7 @@ Object {
                 name="projectTitle"
                 placeholder="Project title"
                 type="text"
-                value="r"
+                value=""
               />
             </div>
             <div>
@@ -868,7 +868,7 @@ Object {
                   name="clientDescription"
                   placeholder="Client Description"
                   type="text"
-                  value="r"
+                  value=""
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -876,7 +876,7 @@ Object {
                   name="projectDescription"
                   placeholder="Project Description"
                   type="text"
-                  value="r"
+                  value=""
                 />
                 <input
                   class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -884,7 +884,7 @@ Object {
                   name="projectOutcomes"
                   placeholder="Project Outcomes"
                   type="text"
-                  value="r"
+                  value=""
                 />
               </div>
             </div>
@@ -900,7 +900,7 @@ Object {
                 name="coverImageUrl"
                 placeholder="Cover Image URL"
                 type="text"
-                value="r"
+                value=""
               />
             </div>
             <div>
@@ -1054,7 +1054,7 @@ Object {
               name="projectTitle"
               placeholder="Project title"
               type="text"
-              value="r"
+              value=""
             />
           </div>
           <div>
@@ -1191,7 +1191,7 @@ Object {
                 name="clientDescription"
                 placeholder="Client Description"
                 type="text"
-                value="r"
+                value=""
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -1199,7 +1199,7 @@ Object {
                 name="projectDescription"
                 placeholder="Project Description"
                 type="text"
-                value="r"
+                value=""
               />
               <input
                 class="FormInput__Input-sc-1b0ub2b-0 emUbYX"
@@ -1207,7 +1207,7 @@ Object {
                 name="projectOutcomes"
                 placeholder="Project Outcomes"
                 type="text"
-                value="r"
+                value=""
               />
             </div>
           </div>
@@ -1223,7 +1223,7 @@ Object {
               name="coverImageUrl"
               placeholder="Cover Image URL"
               type="text"
-              value="r"
+              value=""
             />
           </div>
           <div>

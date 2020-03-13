@@ -8,7 +8,8 @@ import { FormLabel, SubmitButton, FormInput } from '../../atom';
 import { createAndi as ANDiCreator, createTechStack as TechStackCreator, createClient as ClientCreator } from '../../../api/handlers/attributeCreation';
 
 const AttributeForm = ({
-  formType
+  formType,
+  onAdd
 }) => {
   const { addToast } = useToasts();  
 
@@ -38,7 +39,9 @@ const AttributeForm = ({
 
           addToast(`Success! ${name} has been added, with ImageURL: ${imageUrl}`, { appearance: 'success' });   
 
-          dispatch({ type: `ADD_${formType}`, data });       
+          dispatch({ type: `ADD_${formType}`, data });
+          
+          onAdd(data);
         } else {
           addToast('Uh oh! Something went wrong!', { appearance: 'error' });
         }
@@ -67,7 +70,8 @@ const AttributeForm = ({
 }
 
 AttributeForm.propTypes = {
-  formType: PropTypes.string.isRequired
+  formType: PropTypes.string.isRequired,
+  onAdd: PropTypes.func.isRequired
 }
 
 export default AttributeForm;

@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 import PostFormatter from '.';
 
 describe('projectPostFormatter', () => {
@@ -20,8 +21,8 @@ describe('projectPostFormatter', () => {
       projectDescriptionTwo: 'A desc',
       projectDescriptionThree: 'Outcomes',
       projectImageURL: 'image.url',
-      andiIds: [1, 2],
-      techStackIds: [3, 4]
+      andiIds: "['1','2']",
+      techStackIds: "['3','4']"
     }
 
     const actualResult = PostFormatter(values);

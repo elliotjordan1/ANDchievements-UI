@@ -1,9 +1,10 @@
 import React from 'react';
 import { render, fireEvent, wait } from '@testing-library/react';
+import { ToastProvider } from 'react-toast-notifications';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
 import { act } from 'react-dom/test-utils';
-import ProjectForm, { formValidator, filterLists } from '.';
+import ProjectForm, { formValidator, filterLists, submitForm, addNewClient } from '.';
 
 // eslint-disable-next-line no-unused-vars
 let Mock;
@@ -51,6 +52,14 @@ const clientList = [
   },
 ];
 
+const BaseComponent = () => (
+  <ToastProvider>
+    <ProjectForm>
+      <div>I am a form!</div>
+    </ProjectForm>
+  </ToastProvider>
+)
+
 describe('ProjectForm component', () => {
   beforeEach(() => {
     Mock = new MockAdapter(axios);
@@ -59,7 +68,7 @@ describe('ProjectForm component', () => {
     await act(async () => {
       Mock.onGet().networkError();
 
-      const component = await render(<ProjectForm><div>I am a form!</div></ProjectForm>);
+      const component = await render(<BaseComponent />);
 
       expect(component).toMatchSnapshot();
     });
@@ -70,7 +79,7 @@ describe('ProjectForm component', () => {
       Mock.onGet(/.+?(?=\/technology\/get)/).reply(200, { technologies: techList });
       Mock.onGet(/.+?(?=\/clients\/get)/).reply(200, { clients: clientList });
 
-      const component = await render(<ProjectForm><div>I am a form!</div></ProjectForm>)
+      const component = await render(<BaseComponent />)
 
       expect(component).toMatchSnapshot();
     });
@@ -81,7 +90,7 @@ describe('ProjectForm component', () => {
       Mock.onGet(/.+?(?=\/technology\/get)/).reply(200, { technologies: techList });
       Mock.onGet(/.+?(?=\/clients\/get)/).reply(200, { clients: clientList });
 
-      const { getByPlaceholderText } = render(<ProjectForm><div>I am a form!</div></ProjectForm>)
+      const { getByPlaceholderText } = render(<BaseComponent />)
 
       await wait (() => {
         const input = getByPlaceholderText('Select ANDis...');
@@ -104,7 +113,7 @@ describe('ProjectForm component', () => {
       Mock.onGet(/.+?(?=\/technology\/get)/).reply(200, { technologies: techList });
       Mock.onGet(/.+?(?=\/clients\/get)/).reply(200, { clients: clientList });
 
-      const { getByPlaceholderText } = render(<ProjectForm><div>I am a form!</div></ProjectForm>)
+      const { getByPlaceholderText } = await render(<BaseComponent />)
 
       await wait (() => {
         const input = getByPlaceholderText('Select Tech Stacks...');
@@ -121,7 +130,112 @@ describe('ProjectForm component', () => {
       });
     });
   });
+  it('successfully inputs and enters the entire form with a successful', async () => {
+    await act(async () => {
+      Mock.onPost().reply(201, {
+        status: 201
+      });
+
+      const { getByPlaceholderText, getByText } = await render(
+        <ToastProvider>
+          <ProjectForm defaultValues = {{
+                        clientId: '1',
+                        clientName: 'AND',
+                        projectAndis: [ { id : '1', name: 'Jerry' }],
+                        projectTech: [{ id: '2', name: 'ReactJS'}]
+                      }} >
+            <div>I am a form!</div>
+          </ProjectForm>
+        </ToastProvider>
+      );
+
+      const projectTitle = getByPlaceholderText('Project title');
+      fireEvent.change(projectTitle, { target: { value: 'Title' }});
+      expect(projectTitle.value).toEqual('Title');
+
+      const clientDescription = getByPlaceholderText('Client Description');
+      fireEvent.change(clientDescription, { target: { value: 'Client Desc' }});
+      expect(clientDescription.value).toEqual('Client Desc');
+
+      const projectDescription = getByPlaceholderText('Project Description');
+      fireEvent.change(projectDescription, { target: { value: 'Proj Desc' }});
+      expect(projectDescription.value).toEqual('Proj Desc');
+
+      const projectOutcomes = getByPlaceholderText('Project Outcomes');
+      fireEvent.change(projectOutcomes, { target: { value: 'Proj Out' }});
+      expect(projectOutcomes.value).toEqual('Proj Out');
+
+      const coverImageUrl = getByPlaceholderText('Cover Image URL');
+      fireEvent.change(coverImageUrl, { target: { value: 'cover.image.url' }});
+      expect(coverImageUrl.value).toEqual('cover.image.url');
+
+      const submitButton = getByText('CREATE');
+      fireEvent.click(submitButton);
+    });
+  });
 });
+
+describe('addNewClient', () => {
+  it('successfully calls setFieldValue on function call', () => {
+    const setFieldValue = jest.fn();
+
+    expect(setFieldValue).toHaveBeenCalledTimes(0);
+
+    addNewClient({ 
+      new_client: [ 
+      {
+        clientid: 1,
+        name: 'test'
+      }
+    ]},{ setFieldValue })
+
+    expect(setFieldValue).toHaveBeenCalledTimes(2);
+  })
+})
+
+describe('onSubmit', () => {
+  beforeEach(() => {
+    Mock = new MockAdapter(axios);
+  });
+  it('runs expected functions for failed request', async () => {
+    Mock.onPost().networkError();
+
+    const values = {
+      projectAndis: ['1'],
+      projectTech: ['2']
+    };
+
+    const setSubmitting = jest.fn();
+    const addToast = jest.fn();
+
+    expect(setSubmitting).toHaveBeenCalledTimes(0);
+    expect(addToast).toHaveBeenCalledTimes(0);
+
+    await submitForm(values, { setSubmitting, addToast });
+
+    expect(setSubmitting).toHaveBeenCalledTimes(1);
+    expect(addToast).toHaveBeenCalledTimes(1);
+  });
+  it('runs expected functions for correct request', async () => {
+    Mock.onPost().reply(201, {});
+
+    const values = {
+      projectAndis: ['1'],
+      projectTech: ['2']
+    };
+
+    const setSubmitting = jest.fn();
+    const addToast = jest.fn();
+
+    expect(setSubmitting).toHaveBeenCalledTimes(0);
+    expect(addToast).toHaveBeenCalledTimes(0);
+
+    await submitForm(values, { setSubmitting, addToast });
+
+    expect(setSubmitting).toHaveBeenCalledTimes(1);
+    expect(addToast).toHaveBeenCalledTimes(1);
+  });
+})
 
 describe('formValidator function', () => {
   it ('validates projectTitle correctly', () => {
