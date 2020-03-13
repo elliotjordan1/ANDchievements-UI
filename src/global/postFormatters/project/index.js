@@ -11,13 +11,13 @@ export default (values) => {
   } = values;
 
   return {
-    projectName: projectTitle,
-		clientId,
-		projectDescriptionOne: clientDescription,
-		projectDescriptionTwo: projectDescription,
-		projectDescriptionThree: projectOutcomes,
-		projectImageURL: coverImageUrl,
-		andiIds: projectAndis.map(x => x.id),
-		techStackIds: projectTech.map(x => x.id)
+    'projectName': projectTitle,
+		'clientId': clientId,
+		'projectDescriptionOne': clientDescription,
+		'projectDescriptionTwo': projectDescription,
+		'projectDescriptionThree': projectOutcomes,
+		'projectImageURL': coverImageUrl,
+		'andiIds': `[${projectAndis.map(x => `'${x.id}'`)}]`,
+		'techStackIds': `[${projectTech.map(x => `'${x.id}'`)}]`
   }
 }
