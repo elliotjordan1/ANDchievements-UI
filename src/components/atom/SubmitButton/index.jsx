@@ -38,12 +38,14 @@ const Button = styled.button`
 `;
 
 const SubmitButton = ({
+  type,
   onClick,
   text
-}) => <Button onClick={onClick}>{text}</Button>
+}) => <Button type={type} onClick={onClick}>{text}</Button>
 
 SubmitButton.propTypes = {
   onClick: PropTypes.func,
+  type: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired
 };
 

@@ -17,6 +17,8 @@ import * as AttributeTypes from '../../../global/constants';
 import { getClients , getAndis, getTechnologies } from '../../../global/dropdownFormatters';
 import { InputContainer } from './styles';
 import AttributeForm from '../AttributeForm';
+import { ProjectPostFormatter } from '../../../global/postFormatters';
+import { createProject } from '../../../api/handlers/attributeCreation';
 
 
 export const formValidator = (values) => {
@@ -25,23 +27,34 @@ export const formValidator = (values) => {
   if (!values.projectTitle) {
     errors.projectTitle = 'Required';
   }
+
   if (!values.clientName || !values.clientId) {
     errors.clientName = 'Required';
   }
+
   if (!values.clientDescription || !values.projectDescription || !values.projectOutcomes) {
     errors.projectDescription = 'Required';
   }
+
   if (!values.coverImageUrl) {
     errors.coverImageUrl = 'Required';
   }
-  if (!values.andiIds || !values.andiNames) {
-    errors.andiNames = 'Required';
+
+  if (!values.projectAndis || values.projectAndis.length <= 0) {
+    errors.projectAndis = 'Required';
   }
-  if (!values.techStackIds || !values.techStackNames) {
-    errors.techStackNames = 'Required';
+
+  if (!values.projectTech || values.projectTech.length <= 0) {
+    errors.projectTech = 'Required';
   }
 
   return errors;
+}
+
+export const filterLists = (listOne, listTwo, filterValue) => {
+  return listOne.filter(x => x.label.toLowerCase().includes(filterValue.toLowerCase()))
+          .filter(x => !listOne.includes(x.label.toLowerCase()))
+          .filter(x => !listTwo.map(pa => pa.id).includes(x.value));
 }
 
 const ProjectForm = () => { 
@@ -77,21 +90,37 @@ const ProjectForm = () => {
   });
 
   const formInitialValues = {
-    projectTitle: '',
-    clientId: '',
-    clientName: '',
-    clientDescription: '',
-    projectDescription: '',
-    projectOutcomes: '',
-    coverImageUrl: '',
-    projectAndis: [],
-    projectTech: [],
+    projectTitle: 'r',
+    clientId: 'r',
+    clientName: 'r',
+    clientDescription: 'r',
+    projectDescription: 'r',
+    projectOutcomes: 'r',
+    coverImageUrl: 'r',
+    projectAndis: [{ id: 1, name: 'James'}],
+    projectTech: [{id: 1, name: 'React'}],
     currentAndiName: '',
     currentTechName: ''
   };
 
-  const submitForm = (values, { setSubmitting }) => {
-    console.log(values, setSubmitting);
+  const submitForm = async (values, { setSubmitting }) => {
+    setSubmitting(true);
+    const formattedValues = ProjectPostFormatter(values);
+
+    console.log(formattedValues);
+    
+    const createdProject = await createProject({'data' : {
+      'projectName': '',
+      'clientId': '',
+      'projectDescriptionOne': '',
+      'projectDescriptionTwo': '',
+      'projectDescriptionThree': '',
+      'projectImageURL': '',
+      'andiIds': '[\'\']',
+      'techStackIds': '[\'\']'
+    }});
+
+    console.log(createdProject);
   }
 
   return (
@@ -100,7 +129,7 @@ const ProjectForm = () => {
       <Formik
         initialValues = {formInitialValues}
         validate={values => formValidator(values)}
-        onSubmit={(values, { setSubmitting}) => submitForm(values, setSubmitting)}>
+        onSubmit={(values,  { setSubmitting }) => submitForm(values, { setSubmitting } )}>
         {({
           values,
           errors,
@@ -111,12 +140,6 @@ const ProjectForm = () => {
           isSubmitting,
           setFieldValue
         }) => {
-          const filterLists = (listOne, listTwo, filterValue) => {
-            return listOne.filter(x => x.label.toLowerCase().includes(filterValue.toLowerCase()))
-                    .filter(x => !listOne.includes(x.label.toLowerCase()))
-                    .filter(x => !listTwo.map(pa => pa.id).includes(x.value));
-          }
-
           const handleSelect = (newItem, currentFieldValue, arrayFieldValue, existingValues, defaultOptionsList) => {
             const newEntry = {
               id: newItem.value,
@@ -186,6 +209,7 @@ const ProjectForm = () => {
                       <FormSelect 
                         placeholder='Select client' 
                         maxLength = {40} 
+                        data-testid='select-client-test'
                         options = {clientOptions} 
                         onChange={(e) => {
                           setFieldValue('clientId', e.value);
@@ -266,6 +290,7 @@ const ProjectForm = () => {
                           value={values.currentAndiName}
                         />
                       )}
+                      {errors.projectAndis && touched.currentAndiName && errors.projectAndis}
                     </div>
                     <div hidden={!addingANDi}>
                       <h3>Add New</h3>
@@ -286,7 +311,7 @@ const ProjectForm = () => {
                           value={values.currentTechName}
                         />
                       )}
-                      {errors.techStackNames && touched.techStackNames && errors.techStackNames}
+                      {errors.projectTech && touched.currentTechName && errors.projectTech}
                     </div>
                     <div hidden={!addingTechStack}>
                       <h3>Add New</h3>

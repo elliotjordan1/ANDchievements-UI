@@ -4,42 +4,42 @@ import Component from '.';
 
 describe('FormInput component', () => {
   it('renders correctly with required props', () => {
-    const component = <Component maxLength ={20} placeholder="I am an input" />;
+    const component = <Component maxLength ={20} placeholder="I am an input" onChange={jest.fn()}/>;
 
     const wrapper = render(component);
     
     expect(wrapper).toMatchSnapshot();
   });
   it('renders correctly with hidden border', () => {
-    const component = <Component hiddenBorder maxLength ={20} placeholder="I am an input" />;
+    const component = <Component hiddenBorder maxLength ={20} placeholder="I am an input" onChange={jest.fn()} />;
 
     const wrapper = render(component);
     
     expect(wrapper).toMatchSnapshot();
   });
   it('renders correctly without hidden border', () => {
-    const component = <Component maxLength ={20} placeholder="I am an input" />;
+    const component = <Component maxLength ={20} placeholder="I am an input" onChange={jest.fn()}/>;
 
     const wrapper = render(component);
     
     expect(wrapper).toMatchSnapshot();
   });
   it('renders correctly with default value', () => {
-    const component = <Component maxLength ={20} placeholder="I am an input" value="12" onChange={() => {}} />;
+    const component = <Component maxLength ={20} placeholder="I am an input" value="12" onChange={jest.fn()} />;
 
     const wrapper = render(component);
     
     expect(wrapper).toMatchSnapshot();
   });
   it('renders correctly with default value and onChange', () => {
-    const component = <Component maxLength ={20} placeholder="I am an input" value="12" onChange={() => {}}/>;
+    const component = <Component maxLength ={20} placeholder="I am an input" value="12" onChange={jest.fn()}/>;
 
     const wrapper = render(component);
     
     expect(wrapper).toMatchSnapshot();
   });
   it('renders with the correct value for default value', () => {
-    const { getByPlaceholderText } = render(<Component maxLength ={20} placeholder="I am an input" value="12" onChange={() => {}} />);
+    const { getByPlaceholderText } = render(<Component maxLength ={20} placeholder="I am an input" value="12" onChange={jest.fn()} />);
 
     const input = getByPlaceholderText('I am an input');
 
