@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { ProjectModal, ProjectSummary } from '../components/organism';
 import { getProjects } from '../api/handlers/attributeRetrieval';
-import { HomepageWrapper, ErrorWrapper } from '../global/styles';
+import { HomepageWrapper, ErrorWrapper } from '../components/atom';
 import { shuffleAndSliceArray } from '../global/helpers';
 
 const SPACE_BAR_KEY_CODE = 32;

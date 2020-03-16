@@ -6,18 +6,18 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="styles__SummaryBox-a95zck-0 jOMQHf"
+        class="SummaryBox-sc-1x8bjhj-0 lhdLMA"
       >
         <div
-          class="styles__TextWrapper-sc-101ii58-1 ankUW"
+          class="TextWrapper-sc-1vdnje0-0 deIGLi"
         >
           <div
-            class="styles__ProjectName-a95zck-1 styles__ClientName-a95zck-2 fhXwXr"
+            class="ProjectName-xqjmk3-0 ClientName-zesrc3-0 dqxRWu"
           >
             Big Boss
           </div>
           <div
-            class="styles__ProjectName-a95zck-1 cCZRel"
+            class="ProjectName-xqjmk3-0 bUHhNt"
           >
             Best Project
           </div>
@@ -27,18 +27,18 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="styles__SummaryBox-a95zck-0 jOMQHf"
+      class="SummaryBox-sc-1x8bjhj-0 lhdLMA"
     >
       <div
-        class="styles__TextWrapper-sc-101ii58-1 ankUW"
+        class="TextWrapper-sc-1vdnje0-0 deIGLi"
       >
         <div
-          class="styles__ProjectName-a95zck-1 styles__ClientName-a95zck-2 fhXwXr"
+          class="ProjectName-xqjmk3-0 ClientName-zesrc3-0 dqxRWu"
         >
           Big Boss
         </div>
         <div
-          class="styles__ProjectName-a95zck-1 cCZRel"
+          class="ProjectName-xqjmk3-0 bUHhNt"
         >
           Best Project
         </div>

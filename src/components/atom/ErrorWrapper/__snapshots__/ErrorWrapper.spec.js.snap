@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormWrapper component renders correctly 1`] = `
+exports[`ErrorWrapper component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <form
-        class="FormWrapper-sc-13nyj8f-0 clftxu"
+      <div
+        class="HomepageWrapper-sc-1dstl5-0 ErrorWrapper-sc-1gds1xf-0 gNthaf"
       />
     </div>
   </body>,
   "container": <div>
-    <form
-      class="FormWrapper-sc-13nyj8f-0 clftxu"
+    <div
+      class="HomepageWrapper-sc-1dstl5-0 ErrorWrapper-sc-1gds1xf-0 gNthaf"
     />
   </div>,
   "debug": [Function],

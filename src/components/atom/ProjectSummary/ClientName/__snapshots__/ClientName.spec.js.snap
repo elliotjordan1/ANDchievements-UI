@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormWrapper component renders correctly 1`] = `
+exports[`ProjectSummary - ClientName renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <form
-        class="FormWrapper-sc-13nyj8f-0 clftxu"
+      <div
+        class="ProjectName-xqjmk3-0 ClientName-zesrc3-0 dqxRWu"
       />
     </div>
   </body>,
   "container": <div>
-    <form
-      class="FormWrapper-sc-13nyj8f-0 clftxu"
+    <div
+      class="ProjectName-xqjmk3-0 ClientName-zesrc3-0 dqxRWu"
     />
   </div>,
   "debug": [Function],
