@@ -1,9 +1,4 @@
-export const onInputChange = set => event => set(event.target.value);
-
-export const urlValidator = (givenValue) => {
-  return (/^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([-.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/.test((givenValue)));
-}
-
+/* eslint-disable import/prefer-default-export */
 export const shuffleAndSliceArray = (array, sliceLength) => {
   let newArray = array;
 
@@ -17,5 +12,3 @@ export const shuffleAndSliceArray = (array, sliceLength) => {
 
   return newArray;
 }
-
-export default onInputChange;

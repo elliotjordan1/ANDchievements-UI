@@ -8,15 +8,16 @@ import {
   FormTitle,
   FormBody,
   SubmitButton,
-  FormSelect
+  FormSelect,
+  InputContainer,
+  HomepageWrapper,
+  FormWrapper
 } from '../../atom';
 import {
   MultiSelect
 } from '../../molecule';
-import { FormWrapper, HomepageWrapper } from '../../../global/styles';
 import * as AttributeTypes from '../../../global/constants';
 import { getClients , getAndis, getTechnologies } from '../../../global/dropdownFormatters';
-import { InputContainer } from './styles';
 import AttributeForm from '../AttributeForm';
 import { ProjectPostFormatter } from '../../../global/postFormatters';
 import { createProject } from '../../../api/handlers/attributeCreation';

@@ -18,6 +18,9 @@ import Icon from './Icon';
 import ListDescription from './ListDescription';
 import TechListContainer from './TechListContainer';
 import ANDiListContainer from './ANDiListContainer';
+import InputContainer from './InputContainer';
+import HomepageWrapper from './HomepageWrapper';
+import ErrorWrapper from './ErrorWrapper';
 
 export {
   FormInput,
@@ -39,5 +42,8 @@ export {
   ListDescription,
   Icon,
   TechListContainer,
-  ANDiListContainer
+  ANDiListContainer,
+  InputContainer,
+  HomepageWrapper,
+  ErrorWrapper
 }
