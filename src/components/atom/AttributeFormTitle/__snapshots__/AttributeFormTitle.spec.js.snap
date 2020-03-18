@@ -1,22 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormTitle component renders correctly 1`] = `
+exports[`AttributeFormTitle component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="FormTitle-oi1tko-0 fseZur"
+        class="FormTitle-oi1tko-0 AttributeFormTitle-sc-1ev8f59-0 guzjNX"
       >
-        FormTitle
+        AttributeFormTitle
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="FormTitle-oi1tko-0 fseZur"
+      class="FormTitle-oi1tko-0 AttributeFormTitle-sc-1ev8f59-0 guzjNX"
     >
-      FormTitle
+      AttributeFormTitle
     </div>
   </div>,
   "debug": [Function],

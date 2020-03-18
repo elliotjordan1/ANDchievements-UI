@@ -1,23 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormTitle component renders correctly 1`] = `
+exports[`FormContainer component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="FormTitle-oi1tko-0 fseZur"
-      >
-        FormTitle
-      </div>
+        class="FormContainer-sc-8s9ya3-0 fDwXTj"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="FormTitle-oi1tko-0 fseZur"
-    >
-      FormTitle
-    </div>
+      class="FormContainer-sc-8s9ya3-0 fDwXTj"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

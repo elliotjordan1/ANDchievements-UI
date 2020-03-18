@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { useToasts } from 'react-toast-notifications';
 import formReducer, { initialFormState } from '../../../reducers/createProject/reducer';
 import { onInputChange } from '../../../global/helpers';
-import { FormLabel, SubmitButton, FormInput } from '../../atom';
+import { FormLabel, SubmitButton, FormInput, FormContainer, FormTitle, AttributeFormTitle } from '../../atom';
 import { createAndi as ANDiCreator, createTechStack as TechStackCreator, createClient as ClientCreator } from '../../../api/handlers/attributeCreation';
 
 const AttributeForm = ({
@@ -53,7 +53,8 @@ const AttributeForm = ({
   const imageUrlLabel = `${formType  } Image URL`;
 
   return (
-    <div>
+    <FormContainer>
+      <AttributeFormTitle>Add New {formType}</AttributeFormTitle>
       <div>
         <FormLabel labelText={nameLabel} />
         <FormInput maxLength = {40} placeholder = {nameLabel} value = {name} onChange={onInputChange(setName)} />
@@ -65,7 +66,7 @@ const AttributeForm = ({
       <div>
         <SubmitButton type = 'submit' text = {`Create New ${formType}`} onClick={handleSubmit} />
       </div>
-    </div>
+    </FormContainer>
   )
 }
 
