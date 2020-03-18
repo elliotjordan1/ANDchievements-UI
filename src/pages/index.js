@@ -5,7 +5,7 @@
 import React, { useState, useEffect } from 'react';
 import { ProjectModal, ProjectSummary } from '../components/organism';
 import { getProjects } from '../api/handlers/attributeRetrieval';
-import { HomepageWrapper, ErrorWrapper } from '../components/atom';
+import { HomepageWrapper, ErrorWrapper, ErrorText } from '../components/atom';
 import { shuffleAndSliceArray } from '../global/helpers';
 
 const SPACE_BAR_KEY_CODE = 32;
@@ -98,7 +98,7 @@ const Homepage = () => {
   }, [currentAnimationIndex, isAnimating, animationLength, projectModalIsActive, currentModalIndex]);
 
   return (
-    error ? (<ErrorWrapper >{error}</ErrorWrapper>) :
+    error ? (<ErrorWrapper ><ErrorText>{error}</ErrorText></ErrorWrapper>) :
     <HomepageWrapper>
       {
         ((projectModalIsActive && projects && projects.length > 0) && (

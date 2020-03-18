@@ -6,18 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-      >
-        Label text!
-      </div>
+        class="FormLabel-wqrwj6-0 bOWOhD"
+      />
     </div>
   </body>,
   "container": <div>
     <div
-      class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-    >
-      Label text!
-    </div>
+      class="FormLabel-wqrwj6-0 bOWOhD"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

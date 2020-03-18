@@ -38,10 +38,13 @@ import ANDiListContainer from './ANDiListContainer';
 
 /* General Wrappers */
 import HomepageWrapper from './HomepageWrapper';
-import ErrorWrapper from './ErrorWrapper';
 
 /* AttributeForm */
 import AttributeFormTitle from './AttributeFormTitle';
+
+/* Errors */
+import ErrorWrapper from './ErrorWrapper';
+import ErrorText from './ErrorText';
 
 export {
   LogoWrapper,
@@ -67,6 +70,7 @@ export {
   TechListContainer,
   ANDiListContainer,
   HomepageWrapper,
+  AttributeFormTitle,
   ErrorWrapper,
-  AttributeFormTitle
+  ErrorText
 }
