@@ -194,7 +194,7 @@ const ProjectForm = ({ defaultValues }) => {
             return (
               <>
                 <FormWrapper onSubmit={handleSubmit}>
-                  <FormTitle text = "Add a Project" />
+                  <FormTitle>Add a Project</FormTitle>
                     <FormBody>
                       <div>
                         <Label labelText ="Project Title" />
@@ -222,7 +222,6 @@ const ProjectForm = ({ defaultValues }) => {
                         </FormSelect>
                       </div>
                       <div hidden={!addingClient}>
-                        <h3>Add New</h3>
                         <AttributeForm formType = {AttributeTypes.Client} onAdd={(e) => addNewClient(e, { setFieldValue })} />
                       </div>
                       <div>
@@ -296,7 +295,6 @@ const ProjectForm = ({ defaultValues }) => {
                         {errors.projectAndis && touched.currentAndiName && errors.projectAndis}
                       </div>
                       <div hidden={!addingANDi}>
-                        <h3>Add New</h3>
                         <AttributeForm formType = {AttributeTypes.ANDi} onAdd={newItem => { 
                             const newEntry = {
                               id: newItem.new_andi[0].andiid,
@@ -325,7 +323,6 @@ const ProjectForm = ({ defaultValues }) => {
                         {errors.projectTech && touched.currentTechName && errors.projectTech}
                       </div>
                       <div hidden={!addingTechStack}>
-                        <h3>Add New</h3>
                         <AttributeForm formType = {AttributeTypes.TechStack} onAdd={newItem => { 
                             const newEntry = {
                               id: newItem.new_tech[0].technologyid,
