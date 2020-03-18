@@ -16,10 +16,8 @@ Object {
         </div>
         <div>
           <div
-            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-          >
-            Tech Stack Name
-          </div>
+            class="FormLabel-wqrwj6-0 bOWOhD"
+          />
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
@@ -31,10 +29,8 @@ Object {
         </div>
         <div>
           <div
-            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-          >
-            Tech Stack Image URL
-          </div>
+            class="FormLabel-wqrwj6-0 bOWOhD"
+          />
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
@@ -70,10 +66,8 @@ Object {
       </div>
       <div>
         <div
-          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-        >
-          Tech Stack Name
-        </div>
+          class="FormLabel-wqrwj6-0 bOWOhD"
+        />
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
@@ -85,10 +79,8 @@ Object {
       </div>
       <div>
         <div
-          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-        >
-          Tech Stack Image URL
-        </div>
+          class="FormLabel-wqrwj6-0 bOWOhD"
+        />
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
@@ -178,10 +170,8 @@ Object {
         </div>
         <div>
           <div
-            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-          >
-            Client Name
-          </div>
+            class="FormLabel-wqrwj6-0 bOWOhD"
+          />
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
@@ -193,10 +183,8 @@ Object {
         </div>
         <div>
           <div
-            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-          >
-            Client Image URL
-          </div>
+            class="FormLabel-wqrwj6-0 bOWOhD"
+          />
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
@@ -232,10 +220,8 @@ Object {
       </div>
       <div>
         <div
-          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-        >
-          Client Name
-        </div>
+          class="FormLabel-wqrwj6-0 bOWOhD"
+        />
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
@@ -247,10 +233,8 @@ Object {
       </div>
       <div>
         <div
-          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-        >
-          Client Image URL
-        </div>
+          class="FormLabel-wqrwj6-0 bOWOhD"
+        />
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
@@ -340,10 +324,8 @@ Object {
         </div>
         <div>
           <div
-            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-          >
-            ANDi Name
-          </div>
+            class="FormLabel-wqrwj6-0 bOWOhD"
+          />
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
@@ -355,10 +337,8 @@ Object {
         </div>
         <div>
           <div
-            class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-          >
-            ANDi Image URL
-          </div>
+            class="FormLabel-wqrwj6-0 bOWOhD"
+          />
           <input
             class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
             maxlength="40"
@@ -394,10 +374,8 @@ Object {
       </div>
       <div>
         <div
-          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-        >
-          ANDi Name
-        </div>
+          class="FormLabel-wqrwj6-0 bOWOhD"
+        />
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"
@@ -409,10 +387,8 @@ Object {
       </div>
       <div>
         <div
-          class="FormLabel__Label-wqrwj6-0 iJzIPZ"
-        >
-          ANDi Image URL
-        </div>
+          class="FormLabel-wqrwj6-0 bOWOhD"
+        />
         <input
           class="FormInput__Input-sc-1b0ub2b-0 jdgKUs"
           maxlength="40"

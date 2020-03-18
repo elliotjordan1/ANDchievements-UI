@@ -4,14 +4,15 @@ import { useToasts } from 'react-toast-notifications';
 import { Formik } from 'formik';
 import {
   FormInput,
-  FormLabel as Label,
+  FormLabel,
   FormTitle,
   FormBody,
   SubmitButton,
   FormSelect,
   InputContainer,
   HomepageWrapper,
-  FormWrapper
+  FormWrapper,
+  ErrorText
 } from '../../atom';
 import {
   MultiSelect
@@ -197,7 +198,15 @@ const ProjectForm = ({ defaultValues }) => {
                   <FormTitle>Add a Project</FormTitle>
                     <FormBody>
                       <div>
-                        <Label labelText ="Project Title" />
+                        {errors.projectTitle && touched.projectTitle ? (
+                          <ErrorText>
+                            Project Title - Required
+                          </ErrorText>
+                        ) : (
+                          <FormLabel>
+                            Project Title
+                          </FormLabel>
+                        )}                        
                         <FormInput 
                           type="text"
                           name="projectTitle"
@@ -207,10 +216,17 @@ const ProjectForm = ({ defaultValues }) => {
                           onBlur={handleBlur}
                           value={values.projectTitle}  
                         />
-                        {errors.projectTitle && touched.projectTitle && errors.projectTitle}
                       </div>
                       <div>
-                        <Label onClick={() => {setAddingClient(!addingClient)}} labelText = "Client" />
+                        {errors.clientName && touched.clientName ? (
+                          <ErrorText>
+                            Client - Required
+                          </ErrorText>
+                        ) : (
+                          <FormLabel onClick={() => {setAddingClient(!addingClient)}}>
+                            Client
+                          </FormLabel>
+                        )}  
                         <FormSelect 
                           placeholder='Select client' 
                           maxLength = {40} 
@@ -225,7 +241,17 @@ const ProjectForm = ({ defaultValues }) => {
                         <AttributeForm formType = {AttributeTypes.Client} onAdd={(e) => addNewClient(e, { setFieldValue })} />
                       </div>
                       <div>
-                        <Label labelText = "Project Description" />
+                        {errors.projectDescription && (touched.projectDescription && 
+                          touched.projectOutcomes && 
+                          touched.clientDescription) ? (
+                          <ErrorText>
+                            Project Description - Required
+                          </ErrorText>
+                        ) : (
+                          <FormLabel>
+                            Project Description
+                          </FormLabel>
+                        )}  
                         <InputContainer>
                           <FormInput
                             type="text"
@@ -258,14 +284,17 @@ const ProjectForm = ({ defaultValues }) => {
                             value={values.projectOutcomes}
                           />
                         </InputContainer>
-                        {errors.projectDescription && 
-                          (touched.projectDescription && 
-                          touched.projectOutcomes && 
-                          touched.clientDescription) && 
-                        errors.projectDescription}
                       </div>
                       <div>
-                        <Label labelText = "Cover Image" />
+                        {errors.coverImageUrl && touched.coverImageUrl ? (
+                          <ErrorText>
+                            Cover Image - Required
+                          </ErrorText>
+                        ) : (
+                          <FormLabel>
+                            Cover Image
+                          </FormLabel>
+                        )}  
                         <FormInput 
                           type='text'
                           name='coverImageUrl'
@@ -275,10 +304,17 @@ const ProjectForm = ({ defaultValues }) => {
                           onblur={handleBlur}
                           value={values.coverImageUrl}
                         />
-                        {errors.coverImageUrl && touched.coverImageUrl && errors.coverImageUrl}
                       </div>
                       <div>
-                        <Label onClick={() => {setAddingANDi(!addingANDi)}} labelText = "ANDis" />
+                        {errors.projectAndis && touched.projectAndis ? (
+                          <ErrorText>
+                            ANDis - Required
+                          </ErrorText>
+                        ) : (
+                          <FormLabel onClick={() => {setAddingANDi(!addingANDi)}}>
+                            ANDis
+                          </FormLabel>
+                        )}  
                         { andiOptions && filteredAndiOptions && (
                           <MultiSelect 
                             placeholder='Select ANDis...' 
@@ -292,7 +328,6 @@ const ProjectForm = ({ defaultValues }) => {
                             value={values.currentAndiName}
                           />
                         )}
-                        {errors.projectAndis && touched.currentAndiName && errors.projectAndis}
                       </div>
                       <div hidden={!addingANDi}>
                         <AttributeForm formType = {AttributeTypes.ANDi} onAdd={newItem => { 
@@ -306,7 +341,15 @@ const ProjectForm = ({ defaultValues }) => {
                           }} />
                       </div>
                       <div>
-                        <Label onClick={() => {setAddingTechStack(!addingTechStack)}} labelText ="Tech Stacks" />
+                        {errors.projectTech && touched.projectTech ? (
+                          <ErrorText>
+                            Tech Stacks - Required
+                          </ErrorText>
+                        ) : (
+                          <FormLabel onClick={() => {setAddingTechStack(!addingTechStack)}}>
+                            Tech Stacks
+                          </FormLabel>
+                        )}  
                         { techStackOptions && filteredTechStackOptions && (
                           <MultiSelect 
                             placeholder='Select Tech Stacks...' 
@@ -320,7 +363,6 @@ const ProjectForm = ({ defaultValues }) => {
                             value={values.currentTechName}
                           />
                         )}
-                        {errors.projectTech && touched.currentTechName && errors.projectTech}
                       </div>
                       <div hidden={!addingTechStack}>
                         <AttributeForm formType = {AttributeTypes.TechStack} onAdd={newItem => { 

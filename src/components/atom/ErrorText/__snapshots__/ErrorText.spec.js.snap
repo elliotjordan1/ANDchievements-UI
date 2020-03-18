@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ErrorWrapper component renders correctly 1`] = `
+exports[`ErrorText component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="HomepageWrapper-sc-1dstl5-0 ErrorWrapper-sc-1gds1xf-0 fPpUsT"
+      <p
+        class="ErrorText-juub2u-0 iQaJil"
       />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="HomepageWrapper-sc-1dstl5-0 ErrorWrapper-sc-1gds1xf-0 fPpUsT"
+    <p
+      class="ErrorText-juub2u-0 iQaJil"
     />
   </div>,
   "debug": [Function],
