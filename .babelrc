@@ -16,6 +16,7 @@
   },
   "plugins": [
     ["styled-components", { "ssr": true, "displayName": true, "preprocess": false } ],
-    ["@babel/plugin-transform-runtime"]
+    ["@babel/plugin-transform-runtime"],
+    ["emotion"]
   ]
 }

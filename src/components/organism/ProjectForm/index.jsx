@@ -7,8 +7,10 @@ import {
   FormLabel,
   FormTitle,
   FormBody,
+  FormSpinner,
   SubmitButton,
   FormSelect,
+  SpinnerContainer,
   InputContainer,
   HomepageWrapper,
   FormWrapper,
@@ -22,6 +24,7 @@ import { getClients , getAndis, getTechnologies } from '../../../global/dropdown
 import AttributeForm from '../AttributeForm';
 import { ProjectPostFormatter } from '../../../global/postFormatters';
 import { createProject } from '../../../api/handlers/attributeCreation';
+import theme from '../../../global/theme';
 
 
 export const formValidator = (values) => {
@@ -197,187 +200,199 @@ const ProjectForm = ({ defaultValues }) => {
                 <FormWrapper onSubmit={handleSubmit}>
                   <FormTitle>Add a Project</FormTitle>
                     <FormBody>
-                      <div>
-                        {errors.projectTitle && touched.projectTitle ? (
-                          <ErrorText>
-                            Project Title - Required
-                          </ErrorText>
-                        ) : (
-                          <FormLabel>
-                            Project Title
-                          </FormLabel>
-                        )}                        
-                        <FormInput 
-                          type="text"
-                          name="projectTitle"
-                          maxLength={20} 
-                          placeholder='Project title' 
-                          onChange={handleChange}
-                          onBlur={handleBlur}
-                          value={values.projectTitle}  
-                        />
-                      </div>
-                      <div>
-                        {errors.clientName && touched.clientName ? (
-                          <ErrorText>
-                            Client - Required
-                          </ErrorText>
-                        ) : (
-                          <FormLabel onClick={() => {setAddingClient(!addingClient)}}>
-                            Client
-                          </FormLabel>
-                        )}  
-                        <FormSelect 
-                          placeholder='Select client' 
-                          maxLength = {40} 
-                          data-testid='select-client-test'
-                          options = {clientOptions} 
-                          onChange={(e) => addNewClient(e, { setFieldValue })}
-                          onBlur={handleBlur}>
-                          {values.clientName}
-                        </FormSelect>
-                      </div>
-                      <div hidden={!addingClient}>
-                        <AttributeForm formType = {AttributeTypes.Client} onAdd={(e) => addNewClient(e, { setFieldValue })} />
-                      </div>
-                      <div>
-                        {errors.projectDescription && (touched.projectDescription && 
-                          touched.projectOutcomes && 
-                          touched.clientDescription) ? (
-                          <ErrorText>
-                            Project Description - Required
-                          </ErrorText>
-                        ) : (
-                          <FormLabel>
-                            Project Description
-                          </FormLabel>
-                        )}  
-                        <InputContainer>
-                          <FormInput
-                            type="text"
-                            name="clientDescription"
-                            maxLength={60}
-                            placeholder='Client Description'
-                            hiddenBorder
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.clientDescription}
+                      {(andiOptions === undefined || techStackOptions === undefined || clientOptions ===undefined) ? (
+                        <SpinnerContainer>
+                          <FormSpinner
+                            size={200}
+                            color={theme.colours.brand.red}
+                            loading
                           />
-                          <FormInput
-                            type='text'
-                            name='projectDescription'
-                            maxLength={60}
-                            placeholder='Project Description'
-                            hiddenBorder
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.projectDescription}
-                          />
-                          <FormInput
-                            type='text'
-                            name='projectOutcomes'
-                            maxLength={60}
-                            hiddenBorder
-                            placeholder='Project Outcomes'
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            value={values.projectOutcomes}
-                          />
-                        </InputContainer>
-                      </div>
-                      <div>
-                        {errors.coverImageUrl && touched.coverImageUrl ? (
-                          <ErrorText>
-                            Cover Image - Required
-                          </ErrorText>
-                        ) : (
-                          <FormLabel>
-                            Cover Image
-                          </FormLabel>
-                        )}  
-                        <FormInput 
-                          type='text'
-                          name='coverImageUrl'
-                          maxLength={200}
-                          placeholder = 'Cover Image URL'
-                          onChange={handleChange}
-                          onblur={handleBlur}
-                          value={values.coverImageUrl}
-                        />
-                      </div>
-                      <div>
-                        {errors.projectAndis && touched.projectAndis ? (
-                          <ErrorText>
-                            ANDis - Required
-                          </ErrorText>
-                        ) : (
-                          <FormLabel onClick={() => {setAddingANDi(!addingANDi)}}>
-                            ANDis
-                          </FormLabel>
-                        )}  
-                        { andiOptions && filteredAndiOptions && (
-                          <MultiSelect 
-                            placeholder='Select ANDis...' 
-                            name='currentAndiName'
-                            optionList = {filteredAndiOptions} 
-                            visible={values.currentAndiName !== ''}
-                            selectedValues={values.projectAndis}
-                            onRemove={e => handleRemove(e.id, 'projectAndis', values.projectAndis)}
-                            onSelect={e => handleSelect(e, 'currentAndiName', 'projectAndis', values.projectAndis, andiOptions)}
-                            onChange={e => handleAndiChange(e)}
-                            value={values.currentAndiName}
-                          />
-                        )}
-                      </div>
-                      <div hidden={!addingANDi}>
-                        <AttributeForm formType = {AttributeTypes.ANDi} onAdd={newItem => { 
-                            const newEntry = {
-                              id: newItem.new_andi[0].andiid,
-                              name: newItem.new_andi[0].name
-                            }
-                            const newArrayFieldValue = [...values.projectAndis, newEntry];
+                        </SpinnerContainer>
+                      ) : (
+                        <>
+                          <div> 
+                            {errors.projectTitle && touched.projectTitle ? (
+                              <ErrorText>
+                                Project Title - Required
+                              </ErrorText>
+                            ) : (
+                              <FormLabel>
+                                Project Title
+                              </FormLabel>
+                            )}                        
+                            <FormInput 
+                              type="text"
+                              name="projectTitle"
+                              maxLength={20} 
+                              placeholder='Project title' 
+                              onChange={handleChange}
+                              onBlur={handleBlur}
+                              value={values.projectTitle}  
+                            />
+                          </div>
+                          <div>
+                            {errors.clientName && touched.clientName ? (
+                              <ErrorText>
+                                Client - Required
+                              </ErrorText>
+                            ) : (
+                              <FormLabel onClick={() => {setAddingClient(!addingClient)}}>
+                                Client
+                              </FormLabel>
+                            )}  
+                            <FormSelect 
+                              placeholder='Select client' 
+                              maxLength = {40} 
+                              data-testid='select-client-test'
+                              options = {clientOptions} 
+                              onChange={(e) => addNewClient(e, { setFieldValue })}
+                              onBlur={handleBlur}>
+                              {values.clientName}
+                            </FormSelect>
+                          </div>
+                          <div hidden={!addingClient}>
+                            <AttributeForm formType = {AttributeTypes.Client} onAdd={(e) => addNewClient(e, { setFieldValue })} />
+                          </div>
+                          <div>
+                            {errors.projectDescription && (touched.projectDescription && 
+                              touched.projectOutcomes && 
+                              touched.clientDescription) ? (
+                              <ErrorText>
+                                Project Description - Required
+                              </ErrorText>
+                            ) : (
+                              <FormLabel>
+                                Project Description
+                              </FormLabel>
+                            )}  
+                            <InputContainer>
+                              <FormInput
+                                type="text"
+                                name="clientDescription"
+                                maxLength={60}
+                                placeholder='Client Description'
+                                hiddenBorder
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.clientDescription}
+                              />
+                              <FormInput
+                                type='text'
+                                name='projectDescription'
+                                maxLength={60}
+                                placeholder='Project Description'
+                                hiddenBorder
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.projectDescription}
+                              />
+                              <FormInput
+                                type='text'
+                                name='projectOutcomes'
+                                maxLength={60}
+                                hiddenBorder
+                                placeholder='Project Outcomes'
+                                onChange={handleChange}
+                                onBlur={handleBlur}
+                                value={values.projectOutcomes}
+                              />
+                            </InputContainer>
+                          </div>
+                          <div>
+                            {errors.coverImageUrl && touched.coverImageUrl ? (
+                              <ErrorText>
+                                Cover Image - Required
+                              </ErrorText>
+                            ) : (
+                              <FormLabel>
+                                Cover Image
+                              </FormLabel>
+                            )}  
+                            <FormInput 
+                              type='text'
+                              name='coverImageUrl'
+                              maxLength={200}
+                              placeholder = 'Cover Image URL'
+                              onChange={handleChange}
+                              onblur={handleBlur}
+                              value={values.coverImageUrl}
+                            />
+                          </div>
+                          <div>
+                            {errors.projectAndis && touched.projectAndis ? (
+                              <ErrorText>
+                                ANDis - Required
+                              </ErrorText>
+                            ) : (
+                              <FormLabel onClick={() => {setAddingANDi(!addingANDi)}}>
+                                ANDis
+                              </FormLabel>
+                            )}  
+                            { andiOptions && filteredAndiOptions && (
+                              <MultiSelect 
+                                placeholder='Select ANDis...' 
+                                name='currentAndiName'
+                                optionList = {filteredAndiOptions} 
+                                visible={values.currentAndiName !== ''}
+                                selectedValues={values.projectAndis}
+                                onRemove={e => handleRemove(e.id, 'projectAndis', values.projectAndis)}
+                                onSelect={e => handleSelect(e, 'currentAndiName', 'projectAndis', values.projectAndis, andiOptions)}
+                                onChange={e => handleAndiChange(e)}
+                                value={values.currentAndiName}
+                              />
+                            )}
+                          </div>
+                          <div hidden={!addingANDi}>
+                            <AttributeForm formType = {AttributeTypes.ANDi} onAdd={newItem => { 
+                                const newEntry = {
+                                  id: newItem.new_andi[0].andiid,
+                                  name: newItem.new_andi[0].name
+                                }
+                                const newArrayFieldValue = [...values.projectAndis, newEntry];
 
-                            setFieldValue('projectAndis', newArrayFieldValue);
-                          }} />
-                      </div>
-                      <div>
-                        {errors.projectTech && touched.projectTech ? (
-                          <ErrorText>
-                            Tech Stacks - Required
-                          </ErrorText>
-                        ) : (
-                          <FormLabel onClick={() => {setAddingTechStack(!addingTechStack)}}>
-                            Tech Stacks
-                          </FormLabel>
-                        )}  
-                        { techStackOptions && filteredTechStackOptions && (
-                          <MultiSelect 
-                            placeholder='Select Tech Stacks...' 
-                            name='currentTechName'
-                            optionList = {filteredTechStackOptions} 
-                            visible={values.currentTechName !== ''}
-                            selectedValues={values.projectTech}
-                            onRemove={e => handleRemove(e.id, 'projectTech', values.projectTech)}
-                            onSelect={e => handleSelect(e, 'currentTechName', 'projectTech', values.projectTech, techStackOptions)}
-                            onChange={e => handleTechStackChange(e)}
-                            value={values.currentTechName}
-                          />
-                        )}
-                      </div>
-                      <div hidden={!addingTechStack}>
-                        <AttributeForm formType = {AttributeTypes.TechStack} onAdd={newItem => { 
-                            const newEntry = {
-                              id: newItem.new_tech[0].technologyid,
-                              name: newItem.new_tech[0].name
-                            }
-                            const newArrayFieldValue = [...values.projectTech, newEntry];
+                                setFieldValue('projectAndis', newArrayFieldValue);
+                              }} />
+                          </div>
+                          <div>
+                            {errors.projectTech && touched.projectTech ? (
+                              <ErrorText>
+                                Tech Stacks - Required
+                              </ErrorText>
+                            ) : (
+                              <FormLabel onClick={() => {setAddingTechStack(!addingTechStack)}}>
+                                Tech Stacks
+                              </FormLabel>
+                            )}  
+                            { techStackOptions && filteredTechStackOptions && (
+                              <MultiSelect 
+                                placeholder='Select Tech Stacks...' 
+                                name='currentTechName'
+                                optionList = {filteredTechStackOptions} 
+                                visible={values.currentTechName !== ''}
+                                selectedValues={values.projectTech}
+                                onRemove={e => handleRemove(e.id, 'projectTech', values.projectTech)}
+                                onSelect={e => handleSelect(e, 'currentTechName', 'projectTech', values.projectTech, techStackOptions)}
+                                onChange={e => handleTechStackChange(e)}
+                                value={values.currentTechName}
+                              />
+                            )}
+                          </div>
+                          <div hidden={!addingTechStack}>
+                            <AttributeForm formType = {AttributeTypes.TechStack} onAdd={newItem => { 
+                                const newEntry = {
+                                  id: newItem.new_tech[0].technologyid,
+                                  name: newItem.new_tech[0].name
+                                }
+                                const newArrayFieldValue = [...values.projectTech, newEntry];
 
-                            setFieldValue('projectTech', newArrayFieldValue);
-                          }} />
-                      </div>
-                      <div>
-                        <SubmitButton type="submit" text="CREATE" disabled={isSubmitting}/>
-                      </div>
+                                setFieldValue('projectTech', newArrayFieldValue);
+                              }} />
+                          </div>
+                          <div>
+                            <SubmitButton type="submit" text="CREATE" disabled={isSubmitting}/>
+                          </div>
+                        </>
+                      )}
                     </FormBody>
                   </FormWrapper>
               </>
