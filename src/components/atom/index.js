@@ -28,6 +28,8 @@ import FormInput from './FormInput';
 import FormLabel from './FormLabel';
 import FormTitle from './FormTitle';
 import FormBody from './FormBody';
+import FormSpinner from './FormSpinner';
+import SpinnerContainer from './SpinnerContainer';
 
 /* ListItems */
 import VerticalListItem from './VerticalListItem';
@@ -64,6 +66,8 @@ export {
   FormLabel,
   FormTitle,
   FormBody,
+  FormSpinner,
+  SpinnerContainer,
   VerticalListItem,
   HorizontalListItem,
   ListDescription,

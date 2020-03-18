@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FormWrapper component renders correctly 1`] = `
+exports[`FormSpinner component renders correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <form
-        class="FormWrapper-sc-13nyj8f-0 eksyeF"
+      <div
+        class="css-1458dhy"
       />
     </div>
   </body>,
   "container": <div>
-    <form
-      class="FormWrapper-sc-13nyj8f-0 eksyeF"
+    <div
+      class="css-1458dhy"
     />
   </div>,
   "debug": [Function],

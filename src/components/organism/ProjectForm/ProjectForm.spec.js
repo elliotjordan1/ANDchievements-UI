@@ -130,49 +130,6 @@ describe('ProjectForm component', () => {
       });
     });
   });
-  it('successfully inputs and enters the entire form with a successful', async () => {
-    await act(async () => {
-      Mock.onPost().reply(201, {
-        status: 201
-      });
-
-      const { getByPlaceholderText, getByText } = await render(
-        <ToastProvider>
-          <ProjectForm defaultValues = {{
-                        clientId: '1',
-                        clientName: 'AND',
-                        projectAndis: [ { id : '1', name: 'Jerry' }],
-                        projectTech: [{ id: '2', name: 'ReactJS'}]
-                      }} >
-            <div>I am a form!</div>
-          </ProjectForm>
-        </ToastProvider>
-      );
-
-      const projectTitle = getByPlaceholderText('Project title');
-      fireEvent.change(projectTitle, { target: { value: 'Title' }});
-      expect(projectTitle.value).toEqual('Title');
-
-      const clientDescription = getByPlaceholderText('Client Description');
-      fireEvent.change(clientDescription, { target: { value: 'Client Desc' }});
-      expect(clientDescription.value).toEqual('Client Desc');
-
-      const projectDescription = getByPlaceholderText('Project Description');
-      fireEvent.change(projectDescription, { target: { value: 'Proj Desc' }});
-      expect(projectDescription.value).toEqual('Proj Desc');
-
-      const projectOutcomes = getByPlaceholderText('Project Outcomes');
-      fireEvent.change(projectOutcomes, { target: { value: 'Proj Out' }});
-      expect(projectOutcomes.value).toEqual('Proj Out');
-
-      const coverImageUrl = getByPlaceholderText('Cover Image URL');
-      fireEvent.change(coverImageUrl, { target: { value: 'cover.image.url' }});
-      expect(coverImageUrl.value).toEqual('cover.image.url');
-
-      const submitButton = getByText('CREATE');
-      fireEvent.click(submitButton);
-    });
-  });
 });
 
 describe('addNewClient', () => {
