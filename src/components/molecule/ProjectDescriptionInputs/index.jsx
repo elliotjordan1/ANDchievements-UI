@@ -12,9 +12,16 @@ const ProjectDescriptionInputs = ({
   values,
   errors,
   touched
-}) => (
-  <>
-    <FormLabel>Project Description</FormLabel>
+}) => {
+  const isError = 
+      errors.projectDescription && 
+        (touched.projectDescription ||
+        touched.projectOutcomes || 
+        touched.clientDescription);
+
+  return (
+    <>
+      <FormLabel error = {isError} >Project Description</FormLabel>
       <InputContainer>
         <FormInput
           type="text"
@@ -47,13 +54,9 @@ const ProjectDescriptionInputs = ({
           value={values.projectOutcomes}
         />
       </InputContainer>
-    {errors.projectDescription && 
-      (touched.projectDescription && 
-      touched.projectOutcomes && 
-      touched.clientDescription) && 
-    errors.projectDescription}
-  </>
-);
+    </>
+  );
+};
 
 ProjectDescriptionInputs.propTypes = {
   handleChange: PropTypes.func.isRequired,

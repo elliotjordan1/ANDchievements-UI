@@ -255,49 +255,13 @@ const ProjectForm = ({ defaultValues }) => {
                             <AttributeForm formType = {AttributeTypes.Client} onAdd={(e) => addNewClient(e, { setFieldValue })} />
                           </div>
                           <div>
-                            {errors.projectDescription && (touched.projectDescription && 
-                              touched.projectOutcomes && 
-                              touched.clientDescription) ? (
-                              <ErrorText>
-                                Project Description - Required
-                              </ErrorText>
-                            ) : (
-                              <FormLabel>
-                                Project Description
-                              </FormLabel>
-                            )}  
-                            <InputContainer>
-                              <FormInput
-                                type="text"
-                                name="clientDescription"
-                                maxLength={60}
-                                placeholder='Client Description'
-                                hiddenBorder
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.clientDescription}
-                              />
-                              <FormInput
-                                type='text'
-                                name='projectDescription'
-                                maxLength={60}
-                                placeholder='Project Description'
-                                hiddenBorder
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.projectDescription}
-                              />
-                              <FormInput
-                                type='text'
-                                name='projectOutcomes'
-                                maxLength={60}
-                                hiddenBorder
-                                placeholder='Project Outcomes'
-                                onChange={handleChange}
-                                onBlur={handleBlur}
-                                value={values.projectOutcomes}
-                              />
-                            </InputContainer>
+                            <ProjectDescriptionInputs 
+                              handleChange={handleChange}
+                              handleBlur={handleBlur}
+                              values={values}
+                              errors={errors}
+                              touched={touched}
+                            />
                           </div>
                           <div>
                             {errors.coverImageUrl && touched.coverImageUrl ? (

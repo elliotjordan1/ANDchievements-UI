@@ -5,14 +5,14 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="FormLabel-wqrwj6-0 bOWOhD"
+      <h2
+        class="FormLabel-wqrwj6-0 JaPpn"
       />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="FormLabel-wqrwj6-0 bOWOhD"
+    <h2
+      class="FormLabel-wqrwj6-0 JaPpn"
     />
   </div>,
   "debug": [Function],
