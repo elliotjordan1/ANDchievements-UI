@@ -4,6 +4,7 @@ import Header from './Header';
 import MultiSelect from './MultiSelect';
 import ANDiListItem from './AndiListItem';
 import TechListItem from './TechListItem';
+import ProjectDescriptionInputs from './ProjectDescriptionInputs';
 
 export {
   Logo,
@@ -11,5 +12,6 @@ export {
   Header,
   MultiSelect,
   ANDiListItem,
-  TechListItem
+  TechListItem,
+  ProjectDescriptionInputs
 }

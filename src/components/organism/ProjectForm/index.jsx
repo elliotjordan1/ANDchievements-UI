@@ -17,7 +17,8 @@ import {
   ErrorText
 } from '../../atom';
 import {
-  MultiSelect
+  MultiSelect,
+  ProjectDescriptionInputs
 } from '../../molecule';
 import * as AttributeTypes from '../../../global/constants';
 import { getClients , getAndis, getTechnologies } from '../../../global/dropdownFormatters';
